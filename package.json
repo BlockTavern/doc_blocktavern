@@ -1,0 +1,28 @@
+{
+  "name": "doc_blocktavern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Re0XIAOPA/doc_blocktavern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Re0XIAOPA/doc_blocktavern/issues"
+  },
+  "homepage": "https://github.com/Re0XIAOPA/doc_blocktavern#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  }
+}
