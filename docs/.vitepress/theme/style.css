@@ -1,0 +1,257 @@
+/* BlockTavern 主题样式 */
+
+
+
+
+
+
+
+/* 文字发光效果 - 黄色系 */
+.VPHero .name {
+  text-shadow: 0 0 20px rgba(255, 208, 0, 0.6);
+  animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 20px rgba(255, 208, 0, 0.6), 0 0 30px rgba(255, 208, 0, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(255, 193, 7, 0.8), 0 0 40px rgba(255, 152, 0, 0.5);
+  }
+}
+
+/* 主页自定义样式 */
+.custom-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.adventure-path {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.step {
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.step-number {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: var(--vp-c-brand-1);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.step h4 {
+  margin: 0.5rem 0;
+  color: var(--vp-c-text-1);
+}
+
+.step p {
+  color: var(--vp-c-text-2);
+  margin: 0.5rem 0;
+}
+
+.step a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.step a:hover {
+  text-decoration: underline;
+}
+
+.tavern-footer {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.tavern-footer p {
+  margin: 0.5rem 0;
+}
+
+.tavern-footer em {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* 深色模式适配 */
+html.dark .step {
+  border-color: #404040;
+}
+
+html.dark .step:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+  .adventure-path {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .step {
+    text-align: center;
+  }
+  
+  .step-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 全局美化 - 黄色主题 */
+:root {
+  --vp-c-brand-1: #FFD000;
+  --vp-c-brand-2: #FFC107;
+  --vp-c-brand-3: #FF8F00;
+  --vp-c-accent: #FFD000;
+  --vp-c-accent-soft: rgba(255, 208, 0, 0.1);
+}
+
+/* 自定义容器样式 */
+.vp-doc .custom-container-title {
+  font-weight: 600;
+}
+
+
+
+/* 导航链接悬停效果 */
+.VPNavBarMenuLink:hover {
+  color: #FFD000 !important;
+  text-shadow: 0 0 8px rgba(255, 208, 0, 0.7);
+}
+
+
+
+/* 按钮美化 */
+.VPButton {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.VPButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.VPButton:hover::before {
+  left: 100%;
+}
+
+.VPButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 208, 0, 0.4);
+}
+
+
+
+/* 代码块美化 */
+div[class*="language-"] {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 表格美化 */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 链接美化 */
+.vp-doc a {
+  transition: color 0.3s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+/* 特殊容器美化 */
+.custom-container.tip {
+  border-left: 4px solid #42b883;
+}
+
+.custom-container.warning {
+  border-left: 4px solid #e7c000;
+}
+
+.custom-container.danger {
+  border-left: 4px solid #e13238;
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.step:nth-child(1) { animation-delay: 0.1s; }
+.step:nth-child(2) { animation-delay: 0.2s; }
+.step:nth-child(3) { animation-delay: 0.3s; }
+
+
+
+
+
+
+
+/* 滚动动画 */
+.vp-doc h1, .vp-doc h2, .vp-doc h3 {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 
