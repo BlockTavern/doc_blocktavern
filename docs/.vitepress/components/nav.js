@@ -11,10 +11,6 @@ export const navConfig = [
     link: '/gameplay/' 
   },
   { 
-    text: '问题解决', 
-    link: '/troubleshooting/' 
-  },
-  { 
     text: '常见问题', 
     link: '/faq/' 
   },
