@@ -8,18 +8,18 @@ export const navConfig = [
   },
    { 
     text: '安装教程', 
-    link: '/components/InstallationTutorial/' 
+    link: '/InstallationTutorial/' 
   },
   { 
     text: '游玩指南', 
-    link: '/components/GameplayGuide/' 
+    link: '/GameplayGuide/' 
   },
   { 
     text: '常见问题', 
-    link: '/components/FAQ/' 
+    link: '/FAQ/' 
   },
   { 
     text: '开发指南', 
-    link: '/components/DevelopmentGuide/' 
+    link: '/DevelopmentGuide/' 
   }
 ]

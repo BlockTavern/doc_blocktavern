@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "BlockTavern"
-  text: ""
+  text: "非完善 仅参考"
   tagline: 在这里，每一个方块都有故事，每一个玩家都是传奇
   image:
     src: /logo.png
@@ -11,24 +11,24 @@ hero:
   actions:
     - theme: brand
       text: 进入教程
-      link: /components/GameplayGuide/
+      link: /GameplayGuide/
     - theme: alt  
       text: 开发指南(贡献文档)
-      link: /components/DevelopmentGuide/
+      link: /DevelopmentGuide/
 
 features:
   - icon: 📦
     title: 安装教程
     details: 安装BlockTavern游戏，准备开始你的冒险
-    link: /components/InstallationTutorial/
+    link: /InstallationTutorial/
   - icon: 🎮
     title: 游玩指南
     details: 了解游戏的基本规则和玩法
-    link: /components/GameplayGuide/
+    link: /GameplayGuide/
   - icon: ❓
     title: 常见问题
     details: 快速解决你的问题
-    link: /components/FAQ/
+    link: /FAQ/
 ---
 
 ### 贡献概要
