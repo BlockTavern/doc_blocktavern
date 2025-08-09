@@ -5,7 +5,7 @@
 ## 服务器相关
 
 ### 如何加入服务器？
-请参考我们的[加入服务器指南](/gameplay/join-server)。
+请参考我们的[安装教程](../InstallationTutorial/index.md)。
 
 ### 服务器地址是什么？
 服务器地址将在您完成新手指南后提供。
@@ -16,7 +16,7 @@
 ## 游戏玩法
 
 ### 新手应该从哪里开始？
-建议先阅读[服务器规则](/gameplay/server-rules)，然后查看[基础玩法指南](/gameplay/basic-gameplay)。
+建议先查看[基础玩法指南](../GameplayGuide/basic-gameplay.md)，然后了解[建筑系统](../GameplayGuide/building-system.md)。
 
 ### 可以建造什么？
 在遵守服务器规则的前提下，您可以自由建造。详情请查看建造规范。
@@ -30,7 +30,7 @@
 4. 联系管理员
 
 ### 游戏卡顿怎么解决？
-请参考[性能优化指南](/installation/performance-optimization)。
+请参考[Java安装指南](../InstallationTutorial/java-installation.md)和[客户端配置](../InstallationTutorial/minecraft-client.md)。
 
 ---
 

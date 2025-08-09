@@ -235,7 +235,6 @@ description: Minecraft基础操作和BlockTavern服务器特色玩法介绍
 
 掌握了基础玩法后，您可以继续学习：
 
-- [建筑系统](/components/GameplayGuide/building-system) - 高级建筑技巧
-- [冒险探索](/components/GameplayGuide/adventure) - 探索世界的奥秘
-- [社交互动](/components/GameplayGuide/social) - 与其他玩家互动
-- [高级技巧](/components/GameplayGuide/advanced) - 进阶游戏技巧
+- [建筑系统](./building-system.md) - 高级建筑技巧
+- [高级技巧](./advanced.md) - 探索世界的奥秘
+- [社交互动](./social.md) - 与其他玩家互动
