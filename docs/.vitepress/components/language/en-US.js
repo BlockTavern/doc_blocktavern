@@ -1,16 +1,9 @@
 /**
- * 多语言配置
- * VitePress 多语言支持配置
+ * 英文语言配置
+ * English Language Configuration
  */
 
-// 中文配置（根语言）
-const zhConfig = {
-  label: '简体中文',
-  lang: 'zh-CN'
-}
-
-// 英文配置
-const enConfig = {
+export const enConfig = {
   label: 'English',
   lang: 'en-US',
   link: '/en/',
@@ -25,7 +18,7 @@ const enConfig = {
       { text: 'Development', link: '/en/DevelopmentGuide/' }
     ],
     sidebar: {
-      // 英文侧边栏配置将在这里添加
+      // 英文侧边栏配置
       '/en/InstallationTutorial/': [
         {
           text: 'Installation Tutorial',
@@ -81,11 +74,4 @@ const enConfig = {
   }
 }
 
-// 多语言配置对象
-export const localesConfig = {
-  root: zhConfig,
-  en: enConfig  // 启用英文版本
-}
-
-// 导出单独的配置以便按需使用
-export { zhConfig, enConfig }
+export default enConfig
