@@ -11,7 +11,7 @@ order: 3
 ## 服务器相关
 
 ### 如何加入服务器？
-请参考我们的[安装教程](../InstallationTutorial/index.md)。
+请参考我们的[安装教程](/zh-CN/InstallationTutorial/)。
 
 ### 服务器地址是什么？
 服务器地址将在您完成新手指南后提供。

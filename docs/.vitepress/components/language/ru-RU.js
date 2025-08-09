@@ -1,5 +1,5 @@
 /**
- * Конфигурация русского языка
+ * 俄语语言配置
  * Russian Language Configuration
  */
 
@@ -14,44 +14,12 @@ export const ruConfig = {
       { text: 'Главная', link: '/ru/' },
       { text: 'Установка', link: '/ru/InstallationTutorial/' },
       { text: 'Руководство по игре', link: '/ru/GameplayGuide/' },
-      { text: 'Часто задаваемые вопросы', link: '/ru/FAQ/' },
+      { text: 'FAQ', link: '/ru/FAQ/' },
       { text: 'Руководство разработчика', link: '/ru/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // Конфигурация боковой панели на русском языке
-      '/ru/InstallationTutorial/': [
-        {
-          text: 'Руководство по установке',
-          items: [
-            { text: 'Обзор', link: '/ru/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/ru/GameplayGuide/': [
-        {
-          text: 'Руководство по игре',
-          items: [
-            { text: 'Обзор', link: '/ru/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/ru/FAQ/': [
-        {
-          text: 'Часто задаваемые вопросы',
-          items: [
-            { text: 'Обзор', link: '/ru/FAQ/' }
-          ]
-        }
-      ],
-      '/ru/DevelopmentGuide/': [
-        {
-          text: 'Руководство разработчика',
-          items: [
-            { text: 'Обзор', link: '/ru/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
+    // 其他主题配置
     outline: {
       label: 'На этой странице'
     },

@@ -1,5 +1,5 @@
 /**
- * Configuración de idioma español
+ * 西班牙语语言配置
  * Spanish Language Configuration
  */
 
@@ -14,44 +14,12 @@ export const esConfig = {
       { text: 'Inicio', link: '/es/' },
       { text: 'Instalación', link: '/es/InstallationTutorial/' },
       { text: 'Guía de juego', link: '/es/GameplayGuide/' },
-      { text: 'Preguntas frecuentes', link: '/es/FAQ/' },
+      { text: 'FAQ', link: '/es/FAQ/' },
       { text: 'Guía de desarrollo', link: '/es/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // Configuración de barra lateral en español
-      '/es/InstallationTutorial/': [
-        {
-          text: 'Tutorial de instalación',
-          items: [
-            { text: 'Resumen', link: '/es/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/es/GameplayGuide/': [
-        {
-          text: 'Guía de juego',
-          items: [
-            { text: 'Resumen', link: '/es/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/es/FAQ/': [
-        {
-          text: 'Preguntas frecuentes',
-          items: [
-            { text: 'Resumen', link: '/es/FAQ/' }
-          ]
-        }
-      ],
-      '/es/DevelopmentGuide/': [
-        {
-          text: 'Guía de desarrollo',
-          items: [
-            { text: 'Resumen', link: '/es/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
+    // 其他主题配置
     outline: {
       label: 'En esta página'
     },

@@ -17,41 +17,9 @@ export const zhTWConfig = {
       { text: '常見問題', link: '/zh-TW/FAQ/' },
       { text: '開發指南', link: '/zh-TW/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // 繁體中文側邊欄配置
-      '/zh-TW/InstallationTutorial/': [
-        {
-          text: '安裝教程',
-          items: [
-            { text: '概覽', link: '/zh-TW/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/zh-TW/GameplayGuide/': [
-        {
-          text: '遊戲指南',
-          items: [
-            { text: '概覽', link: '/zh-TW/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/zh-TW/FAQ/': [
-        {
-          text: '常見問題',
-          items: [
-            { text: '概覽', link: '/zh-TW/FAQ/' }
-          ]
-        }
-      ],
-      '/zh-TW/DevelopmentGuide/': [
-        {
-          text: '開發指南',
-          items: [
-            { text: '概覽', link: '/zh-TW/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
+    // 其他主题配置
     outline: {
       label: '本頁內容'
     },

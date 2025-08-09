@@ -1,5 +1,5 @@
 /**
- * Configuration de langue française
+ * 法语语言配置
  * French Language Configuration
  */
 
@@ -17,41 +17,9 @@ export const frConfig = {
       { text: 'FAQ', link: '/fr/FAQ/' },
       { text: 'Guide développeur', link: '/fr/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // Configuration de la barre latérale française
-      '/fr/InstallationTutorial/': [
-        {
-          text: 'Tutoriel d\'installation',
-          items: [
-            { text: 'Aperçu', link: '/fr/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/fr/GameplayGuide/': [
-        {
-          text: 'Guide de gameplay',
-          items: [
-            { text: 'Aperçu', link: '/fr/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/fr/FAQ/': [
-        {
-          text: 'Questions fréquentes',
-          items: [
-            { text: 'Aperçu', link: '/fr/FAQ/' }
-          ]
-        }
-      ],
-      '/fr/DevelopmentGuide/': [
-        {
-          text: 'Guide de développement',
-          items: [
-            { text: 'Aperçu', link: '/fr/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
+    // 其他主题配置
     outline: {
       label: 'Sur cette page'
     },
@@ -60,8 +28,8 @@ export const frConfig = {
       next: 'Suivant'
     },
     darkModeSwitchLabel: 'Thème',
-    lightModeSwitchTitle: 'Passer au thème clair',
-    darkModeSwitchTitle: 'Passer au thème sombre',
+    lightModeSwitchTitle: 'Basculer vers le thème clair',
+    darkModeSwitchTitle: 'Basculer vers le thème sombre',
     sidebarMenuLabel: 'Menu',
     returnToTopLabel: 'Retour en haut',
     lastUpdated: {

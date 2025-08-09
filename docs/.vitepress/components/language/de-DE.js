@@ -1,5 +1,5 @@
 /**
- * Deutsche Sprachkonfiguration
+ * 德语语言配置
  * German Language Configuration
  */
 
@@ -17,41 +17,9 @@ export const deConfig = {
       { text: 'FAQ', link: '/de/FAQ/' },
       { text: 'Entwicklerhandbuch', link: '/de/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // Deutsche Seitenleisten-Konfiguration
-      '/de/InstallationTutorial/': [
-        {
-          text: 'Installations-Tutorial',
-          items: [
-            { text: 'Übersicht', link: '/de/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/de/GameplayGuide/': [
-        {
-          text: 'Gameplay-Anleitung',
-          items: [
-            { text: 'Übersicht', link: '/de/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/de/FAQ/': [
-        {
-          text: 'Häufig gestellte Fragen',
-          items: [
-            { text: 'Übersicht', link: '/de/FAQ/' }
-          ]
-        }
-      ],
-      '/de/DevelopmentGuide/': [
-        {
-          text: 'Entwicklungshandbuch',
-          items: [
-            { text: 'Übersicht', link: '/de/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
+    // 其他主题配置
     outline: {
       label: 'Auf dieser Seite'
     },

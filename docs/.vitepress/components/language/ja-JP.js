@@ -17,41 +17,9 @@ export const jaConfig = {
       { text: 'よくある質問', link: '/ja/FAQ/' },
       { text: '開発ガイド', link: '/ja/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // 日本語サイドバー設定
-      '/ja/InstallationTutorial/': [
-        {
-          text: 'インストールチュートリアル',
-          items: [
-            { text: '概要', link: '/ja/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/ja/GameplayGuide/': [
-        {
-          text: 'ゲームプレイガイド',
-          items: [
-            { text: '概要', link: '/ja/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/ja/FAQ/': [
-        {
-          text: 'よくある質問',
-          items: [
-            { text: '概要', link: '/ja/FAQ/' }
-          ]
-        }
-      ],
-      '/ja/DevelopmentGuide/': [
-        {
-          text: '開発ガイド',
-          items: [
-            { text: '概要', link: '/ja/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
+    // 其他主题配置
     outline: {
       label: 'このページの内容'
     },

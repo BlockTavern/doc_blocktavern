@@ -12,46 +12,14 @@ export const koConfig = {
   themeConfig: {
     nav: [
       { text: '홈', link: '/ko/' },
-      { text: '설치 가이드', link: '/ko/InstallationTutorial/' },
+      { text: '설치', link: '/ko/InstallationTutorial/' },
       { text: '게임 가이드', link: '/ko/GameplayGuide/' },
-      { text: '자주 묻는 질문', link: '/ko/FAQ/' },
+      { text: 'FAQ', link: '/ko/FAQ/' },
       { text: '개발 가이드', link: '/ko/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // 한국어 사이드바 설정
-      '/ko/InstallationTutorial/': [
-        {
-          text: '설치 튜토리얼',
-          items: [
-            { text: '개요', link: '/ko/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/ko/GameplayGuide/': [
-        {
-          text: '게임플레이 가이드',
-          items: [
-            { text: '개요', link: '/ko/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/ko/FAQ/': [
-        {
-          text: '자주 묻는 질문',
-          items: [
-            { text: '개요', link: '/ko/FAQ/' }
-          ]
-        }
-      ],
-      '/ko/DevelopmentGuide/': [
-        {
-          text: '개발 가이드',
-          items: [
-            { text: '개요', link: '/ko/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
+    // 其他主题配置
     outline: {
       label: '이 페이지의 내용'
     },

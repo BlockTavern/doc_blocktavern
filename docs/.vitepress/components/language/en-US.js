@@ -17,41 +17,8 @@ export const enConfig = {
       { text: 'FAQ', link: '/en/FAQ/' },
       { text: 'Development', link: '/en/DevelopmentGuide/' }
     ],
-    sidebar: {
-      // 英文侧边栏配置
-      '/en/InstallationTutorial/': [
-        {
-          text: 'Installation Tutorial',
-          items: [
-            { text: 'Overview', link: '/en/InstallationTutorial/' }
-          ]
-        }
-      ],
-      '/en/GameplayGuide/': [
-        {
-          text: 'Gameplay Guide',
-          items: [
-            { text: 'Overview', link: '/en/GameplayGuide/' }
-          ]
-        }
-      ],
-      '/en/FAQ/': [
-        {
-          text: 'FAQ',
-          items: [
-            { text: 'Overview', link: '/en/FAQ/' }
-          ]
-        }
-      ],
-      '/en/DevelopmentGuide/': [
-        {
-          text: 'Development Guide',
-          items: [
-            { text: 'Overview', link: '/en/DevelopmentGuide/' }
-          ]
-        }
-      ]
-    },
+    // 侧边栏配置由 vitepress-sidebar 插件自动生成
+    // sidebar 配置已在主配置文件中统一处理
     outline: {
       label: 'On this page'
     },
