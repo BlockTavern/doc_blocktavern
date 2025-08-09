@@ -105,6 +105,6 @@ description: 解决游戏过程中遇到的各种问题
 
 如果您的问题没有在此页面找到解决方案：
 
-- 查看 [技术问题](/components/FAQ/technical-issues) 页面
-- 访问 [服务器问题](/components/FAQ/server-issues) 页面
+- 查看 [技术问题](./technical-issues.md) 页面
+- 访问 [服务器问题](./server-issues.md) 页面
 - 联系在线管理员或客服

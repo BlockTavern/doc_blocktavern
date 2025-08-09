@@ -2,10 +2,6 @@ import {
   siteConfig, 
   themeBaseConfig, 
   navConfig, 
-  /** 
-   * 手动配置侧边栏已启用 （已使用自动生成侧边栏）
-   * sidebarConfig,
-   * **/
   socialLinksConfig 
 } from './components/index.js'
 import { generateSidebar } from 'vitepress-sidebar'
@@ -22,13 +18,9 @@ export default {
   themeConfig: {
     ...themeBaseConfig,
     nav: navConfig,
-    /** 
-     * 手动配置侧边栏已启用 （已使用自动生成侧边栏）
-     * sidebar: sidebarConfig,
-     * **/
+    // 使用自动生成的侧边栏，手动配置已弃用
     sidebar: generateSidebar({
       documentRootPath: 'docs',
-      scanStartPath: 'components',
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       hyphenToSpace: true,
@@ -41,7 +33,10 @@ export default {
       includeFolderIndexFile: true,
       excludeFiles: ['README.md'],
       rootGroupText: '文档导航',
-      rootGroupCollapsed: false
+      rootGroupCollapsed: false,
+      manualSortFileNameByPriority: ['index.md'],
+      convertSameNameSubFileToGroupIndexPage: true,
+      folderLinkNotIncludesFileName: false
     }),
     socialLinks: socialLinksConfig
   }

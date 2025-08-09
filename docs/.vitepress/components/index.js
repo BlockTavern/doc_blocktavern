@@ -6,8 +6,9 @@
  * 文件结构：
  * - site.js: 站点基础配置和主题基础配置
  * - nav.js: 主导航配置
- * - sidebar.js: 侧边栏配置
  * - social.js: 社交链接配置
+ * 
+ * 注：侧边栏现使用 vitepress-sidebar 插件自动生成
  */
 
 export { siteConfig, themeBaseConfig } from './site.js'

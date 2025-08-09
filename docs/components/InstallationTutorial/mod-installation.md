@@ -748,7 +748,7 @@ mods/
 
 ## 相关链接
 
-- [Java安装指南](/components/InstallationTutorial/java-installation) - 安装Java环境
-- [Minecraft客户端安装](/components/InstallationTutorial/minecraft-client) - 安装游戏客户端
-- [技术问题](/components/FAQ/technical-issues) - 解决技术问题
-- [高级技巧](/components/GameplayGuide/advanced) - 游戏进阶技巧
+- [Java安装指南](./java-installation.md) - 安装Java环境
+- [Minecraft客户端安装](./minecraft-client.md) - 安装游戏客户端
+- [技术问题](../FAQ/technical-issues.md) - 解决技术问题
+- [高级技巧](../GameplayGuide/advanced.md) - 游戏进阶技巧

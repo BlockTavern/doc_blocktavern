@@ -120,11 +120,11 @@ java -version
 
 如果您在安装过程中遇到问题：
 
-1. 查看[常见问题FAQ](/components/FAQ/)
+1. 查看[常见问题FAQ](../FAQ/index.md)
 2. 联系服务器管理员
 3. 在社区论坛发帖求助
 4. 加入官方QQ群或Discord
 
 ---
 
-安装完成后，别忘了阅读[游戏指南](/components/GameplayGuide/)来了解服务器的特色玩法！
+安装完成后，别忘了阅读[游戏指南](../GameplayGuide/index.md)来了解服务器的特色玩法！

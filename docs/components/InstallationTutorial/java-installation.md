@@ -514,6 +514,6 @@ java @minecraft_jvm.conf -jar minecraft.jar
 
 ## 相关链接
 
-- [Minecraft客户端安装](/components/InstallationTutorial/minecraft-client) - 下一步安装客户端
-- [模组安装指南](/components/InstallationTutorial/mod-installation) - 安装游戏模组
-- [技术问题](/components/FAQ/technical-issues) - 解决技术问题
+- [Minecraft客户端安装](./minecraft-client.md) - 下一步安装客户端
+- [模组安装指南](./mod-installation.md) - 安装游戏模组
+- [技术问题](../FAQ/technical-issues.md) - 解决技术问题

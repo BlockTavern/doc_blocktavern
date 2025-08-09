@@ -639,7 +639,7 @@ echo "备份完成：minecraft_$DATE"
 
 ## 相关链接
 
-- [Java安装指南](/components/InstallationTutorial/java-installation) - 安装Java环境
-- [模组安装指南](/components/InstallationTutorial/mod-installation) - 安装游戏模组
-- [技术问题](/components/FAQ/technical-issues) - 解决技术问题
-- [基础玩法](/components/GameplayGuide/basic-gameplay) - 开始游戏
+- [Java安装指南](./java-installation.md) - 安装Java环境
+- [模组安装指南](./mod-installation.md) - 安装游戏模组
+- [技术问题](../FAQ/technical-issues.md) - 解决技术问题
+- [基础玩法](../GameplayGuide/basic-gameplay.md) - 开始游戏

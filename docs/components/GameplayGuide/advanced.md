@@ -588,6 +588,6 @@ description: 掌握BlockTavern的高级游戏机制和专业技巧
 
 ## 相关链接
 
-- [基础玩法](/components/GameplayGuide/basic-gameplay) - 回顾基础知识
-- [建筑系统](/components/GameplayGuide/building-system) - 高级建筑技巧
-- [社交互动](/components/GameplayGuide/social) - 与其他玩家交流经验
+- [基础玩法](./basic-gameplay.md) - 回顾基础知识
+- [建筑系统](./building-system.md) - 高级建筑技巧
+- [社交互动](./social.md) - 与其他玩家交流经验

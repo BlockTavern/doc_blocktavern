@@ -601,7 +601,7 @@ BlockTavern不仅是一个建造和生存的世界，更是一个充满活力的
 
 ## 相关链接
 
-- [基础玩法](/components/GameplayGuide/basic-gameplay) - 了解游戏基础
-- [建筑系统](/components/GameplayGuide/building-system) - 合作建造技巧
-- [高级技巧](/components/GameplayGuide/advanced) - 提升个人技能
-- [常见问题](/components/FAQ/) - 解决社交相关问题
+- [基础玩法](./basic-gameplay.md) - 了解游戏基础
+- [建筑系统](./building-system.md) - 合作建造技巧
+- [高级技巧](./advanced.md) - 提升个人技能
+- [常见问题](../FAQ/index.md) - 解决社交相关问题
