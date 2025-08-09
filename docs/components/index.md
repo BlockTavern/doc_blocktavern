@@ -1,4 +1,5 @@
 ---
-title: 文档
-description: 文档相关内容
+title: 组件
+description: 组件相关内容
+order: 5
 ---

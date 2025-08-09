@@ -1,6 +1,7 @@
 ---
 title: 游戏指南
-description: 服务器游戏指南目录
+description: 游戏指南目录
+order: 2
 ---
 
 # 游戏指南

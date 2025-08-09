@@ -1,6 +1,7 @@
 ---
 title: 常见问题
-description: 服务器常见问题目录
+description: 常见问题目录
+order: 3
 ---
 
 # 常见问题 FAQ
