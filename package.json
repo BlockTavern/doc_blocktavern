@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/Re0XIAOPA/doc_blocktavern#readme",
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "vitepress-sidebar": "^1.33.0"
   },
   "dependencies": {
+    "lucide-vue-next": "^0.539.0",
     "particles.js": "^2.0.0"
   }
 }
