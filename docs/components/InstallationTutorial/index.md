@@ -1,3 +1,8 @@
+---
+title: 安装教程
+description: 服务器安装教程目录
+---
+
 # 安装教程
 
 欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。

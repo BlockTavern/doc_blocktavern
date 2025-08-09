@@ -14,3 +14,4 @@
 export { siteConfig, themeBaseConfig } from './site.js'
 export { navConfig } from './nav.js'
 export { socialLinksConfig } from './social.js'
+export { generateSidebarConfig, generateMultiLangSidebar, generateSimpleSidebar, sidebarConfig } from './sidebar.js'
