@@ -73,41 +73,51 @@ export const navConfig = [
 - `text`: 显示的文本
 - `link`: 链接地址，以 `/` 开头的相对路径
 
-## 侧边栏配置 (sidebar.js)
+## 侧边栏配置 (自动生成)
 
-定义不同路径下的侧边栏结构，支持多级嵌套：
+::: warning 配置变更
+从 2025年1月 开始，项目已启用自动侧边栏生成功能。手动配置的 `sidebar.js` 文件已弃用但保留作为参考。
+:::
+
+项目现在使用 `vitepress-sidebar` 插件自动生成侧边栏，无需手动维护配置：
 
 ```javascript
-// 开发指南侧边栏示例
-const developmentSidebar = [
-  {
-    text: '开发指南',
-    items: [
-      { text: '快速开始', link: '/components/DevelopmentGuide/' },
-      { text: '项目结构', link: '/components/DevelopmentGuide/project-structure' },
-      { text: '配置说明', link: '/components/DevelopmentGuide/configuration' },
-      { text: '文档编写', link: '/components/DevelopmentGuide/writing-docs' },
-      { text: '部署发布', link: '/components/DevelopmentGuide/deployment' },
-      { text: '故障排除', link: '/components/DevelopmentGuide/troubleshooting' }
-    ]
-  }
-]
+// config.mjs 中的自动侧边栏配置
+import { generateSidebar } from 'vitepress-sidebar'
 
-// 侧边栏配置映射
-export const sidebarConfig = {
-  '/gameplay/': gameplaySidebar,
-  '/troubleshooting/': troubleshootingSidebar,
-  '/faq/': faqSidebar,
-  '/installation/': installationSidebar,
-  '/components/DevelopmentGuide/': developmentSidebar
+export default {
+  themeConfig: {
+    sidebar: generateSidebar({
+      documentRootPath: 'docs',
+      scanStartPath: 'components',
+      useTitleFromFileHeading: true,
+      useTitleFromFrontmatter: true,
+      hyphenToSpace: true,
+      underscoreToSpace: true,
+      capitalizeFirst: true,
+      collapsed: true,
+      collapseDepth: 2,
+      sortMenusByName: true,
+      includeRootIndexFile: false,
+      includeFolderIndexFile: true,
+      excludeFiles: ['README.md'],
+      rootGroupText: '文档导航',
+      rootGroupCollapsed: false
+    })
+  }
 }
 ```
 
-### 侧边栏配置说明
-- 每个路径对应一个侧边栏配置
-- `text`: 分组标题
-- `items`: 子项列表
-- `link`: 页面链接地址
+### 自动侧边栏特性
+- **智能扫描**: 自动扫描 `components` 目录下的所有 Markdown 文件
+- **标题提取**: 从文件的 H1 标题或 Front Matter 中提取菜单标题
+- **层级结构**: 根据文件夹结构自动生成多级侧边栏
+- **实时更新**: 添加或删除文件时自动更新侧边栏
+- **智能排序**: 按文件名自动排序，保持结构清晰
+
+### 旧配置文件状态
+- `sidebar.js` 文件已弃用但未删除，作为历史参考保留
+- 如需自定义侧边栏行为，请修改 `config.mjs` 中的 `generateSidebar` 参数
 
 ## 社交链接配置 (social.js)
 
@@ -153,7 +163,27 @@ export const socialLinksConfig = [
 
 ### 添加新页面的步骤
 
-1. 在 `docs/components/` 下创建新的目录和文件
-2. 在 `sidebar.js` 中添加对应的侧边栏配置
-3. 在 `nav.js` 中添加导航链接（如需要）
-4. 重启开发服务器查看效果
+::: tip 简化流程
+使用自动侧边栏生成后，添加新页面变得非常简单！
+:::
+
+1. 在 `docs/components/` 下创建新的目录和 Markdown 文件
+2. 在文件中添加合适的标题（H1）或 Front Matter
+3. 保存文件，侧边栏会自动更新
+4. 如需要，在 `nav.js` 中添加顶部导航链接
+
+**示例**：
+```markdown
+---
+title: 我的新页面
+---
+
+# 我的新页面
+
+页面内容...
+```
+
+**文件命名建议**：
+- 使用小写字母和连字符：`my-new-page.md`
+- 文件夹名会自动转换为侧边栏分组标题
+- `index.md` 文件会作为该目录的首页

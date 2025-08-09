@@ -1,5 +1,17 @@
 /**
- * 游玩指南侧边栏
+ * ⚠️  此文件已弃用 - DEPRECATED
+ * 
+ * 从 2025年1月 开始，项目已启用自动侧边栏生成功能。
+ * 此文件保留作为历史参考，但不再被使用。
+ * 
+ * 新的侧边栏配置位于：docs/.vitepress/config.mjs
+ * 使用 vitepress-sidebar 插件自动生成
+ * 
+ * 如需修改侧边栏行为，请编辑 config.mjs 中的 generateSidebar 参数
+ */
+
+/**
+ * 游玩指南侧边栏 (已弃用)
  */
 const gameplaySidebar = [
   {
@@ -8,9 +20,6 @@ const gameplaySidebar = [
       { text: '游戏介绍', link: '/components/GameplayGuide/' },
       { text: '基础玩法', link: '/components/GameplayGuide/basic-gameplay' },
       { text: '建筑系统', link: '/components/GameplayGuide/building-system' },
-      { text: '冒险探索', link: '/components/GameplayGuide/adventure' },
-      { text: '社交互动', link: '/components/GameplayGuide/social' },
-      { text: '高级技巧', link: '/components/GameplayGuide/advanced' }
     ]
   }
 ]
@@ -50,9 +59,6 @@ const installationSidebar = [
     text: '安装教程',
     items: [
       { text: '安装指南', link: '/components/InstallationTutorial/' },
-      { text: '系统要求', link: '/components/InstallationTutorial/requirements' },
-      { text: 'Java版安装', link: '/components/InstallationTutorial/java-edition' },
-      { text: '基岩版安装', link: '/components/InstallationTutorial/bedrock-edition' },
       { text: '启动器配置', link: '/components/InstallationTutorial/launcher-config' },
       { text: '常见问题', link: '/components/InstallationTutorial/troubleshooting' }
     ]
