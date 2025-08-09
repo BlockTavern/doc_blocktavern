@@ -73,5 +73,3 @@ git push origin main
    - 描述：详细解释你的更改动机和影响
 8. **提交 Pull Request**：点击 "Create Pull Request" 提交你的更改。
 9. **等待审核**：项目维护者会审核你的 Pull Request。
-
-:::

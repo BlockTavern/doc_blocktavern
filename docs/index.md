@@ -11,24 +11,26 @@ hero:
   actions:
     - theme: brand
       text: 进入教程
-      link: /GameplayGuide/
+      link: /zh-CN/GameplayGuide/
     - theme: alt  
       text: 开发指南(贡献文档)
-      link: /DevelopmentGuide/
+      link: /zh-CN/DevelopmentGuide/
 
 features:
   - icon: 📦
     title: 安装教程
     details: 安装BlockTavern游戏，准备开始你的冒险
-    link: /InstallationTutorial/
+    link: /zh-CN/InstallationTutorial/
+
   - icon: 🎮
     title: 游玩指南
     details: 了解游戏的基本规则和玩法
-    link: /GameplayGuide/
+    link: /zh-CN/GameplayGuide/
+    
   - icon: ❓
     title: 常见问题
     details: 快速解决你的问题
-    link: /FAQ/
+    link: /zh-CN/FAQ/
 ---
 
 ### 贡献概要
@@ -73,5 +75,3 @@ git push origin main
    - 描述：详细解释你的更改动机和影响
 8. **提交 Pull Request**：点击 "Create Pull Request" 提交你的更改。
 9. **等待审核**：项目维护者会审核你的 Pull Request。
-
-:::

@@ -22,7 +22,7 @@ order: 3
 ## 游戏玩法
 
 ### 新手应该从哪里开始？
-建议先查看[基础玩法指南](../GameplayGuide/basic-gameplay.md)，然后了解[建筑系统](../GameplayGuide/building-system.md)。
+建议先查看[基础玩法指南](/zh-CN/GameplayGuide/basic-gameplay.md)，然后了解[建筑系统](/zh-CN/GameplayGuide/building-system.md)。
 
 ### 可以建造什么？
 在遵守服务器规则的前提下，您可以自由建造。详情请查看建造规范。
@@ -36,7 +36,7 @@ order: 3
 4. 联系管理员
 
 ### 游戏卡顿怎么解决？
-请参考[Java安装指南](../InstallationTutorial/java-installation.md)和[客户端配置](../InstallationTutorial/minecraft-client.md)。
+请参考[Java安装指南](/zh-CN/InstallationTutorial/java-installation.md)和[客户端配置](/zh-CN/InstallationTutorial/minecraft-client.md)。
 
 ---
 

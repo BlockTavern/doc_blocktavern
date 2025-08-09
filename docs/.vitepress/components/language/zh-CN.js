@@ -6,12 +6,12 @@
 export const zhConfig = {
   label: '简体中文',
   lang: 'zh-CN',
-  link: '/zh-CN/',
+  link: '/',
   title: 'BlockTavern 文档',
   description: 'BlockTavern Minecraft 服务器文档',
   themeConfig: {
     nav: [
-      { text: '首页', link: '/zh-CN/' },
+      { text: '首页', link: '/' },
       { text: '安装教程', link: '/zh-CN/InstallationTutorial/' },
       { text: '游戏指南', link: '/zh-CN/GameplayGuide/' },
       { text: '常见问题', link: '/zh-CN/FAQ/' },
