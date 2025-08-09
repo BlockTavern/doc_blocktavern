@@ -1,11 +1,11 @@
 /**
  * 侧边栏配置组件
- * 
+ *
  * 该文件负责生成VitePress的侧边栏配置
  * 使用 vitepress-sidebar 插件自动生成侧边栏结构
  */
 
-import { generateSidebar } from 'vitepress-sidebar'
+import { generateSidebar } from "vitepress-sidebar";
 
 /**
  * 生成多语言侧边栏配置
@@ -14,10 +14,10 @@ import { generateSidebar } from 'vitepress-sidebar'
 export function generateSidebarConfig() {
   return generateSidebar([
     {
-      documentRootPath: 'docs',
-      scanStartPath: '/',
-      basePath: '/',
-      resolvePath: '/',
+      documentRootPath: "docs",
+      scanStartPath: "/",
+      basePath: "/",
+      resolvePath: "/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -31,18 +31,18 @@ export function generateSidebarConfig() {
       sortMenusByFrontmatterOrder: true,
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
-      includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['zh-CN', 'en', '.vitepress', 'public', 'components'],
-      rootGroupText: '文档导航',
+      includeFolderIndexFile: false,
+      excludeFiles: ["README.md", "index.md"],
+      excludeFolders: ["zh-CN", "en", ".vitepress", "public", "components"],
+      rootGroupText: "文档导航",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'zh-CN',
-      basePath: '/zh-CN/',
-      resolvePath: '/zh-CN/',
+      documentRootPath: "docs",
+      scanStartPath: "zh-CN",
+      basePath: "/zh-CN/",
+      resolvePath: "/zh-CN/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -56,18 +56,18 @@ export function generateSidebarConfig() {
       sortMenusByFrontmatterOrder: true,
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
-      includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: '文档导航',
+      includeFolderIndexFile: false,
+      excludeFiles: ["README.md", "index.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "文档导航",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'en',
-      basePath: '/en/',
-      resolvePath: '/en/',
+      documentRootPath: "docs",
+      scanStartPath: "en",
+      basePath: "/en/",
+      resolvePath: "/en/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -81,18 +81,18 @@ export function generateSidebarConfig() {
       sortMenusByFrontmatterOrder: true,
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
-      includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'Documentation',
+      includeFolderIndexFile: false,
+      excludeFiles: ["README.md", "index.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "Documentation",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'zh-TW',
-      basePath: '/zh-TW/',
-      resolvePath: '/zh-TW/',
+      documentRootPath: "docs",
+      scanStartPath: "zh-TW",
+      basePath: "/zh-TW/",
+      resolvePath: "/zh-TW/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -106,18 +106,18 @@ export function generateSidebarConfig() {
       sortMenusByFrontmatterOrder: true,
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
-      includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: '文檔導航',
+      includeFolderIndexFile: false,
+      excludeFiles: ["README.md", "index.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "文檔導航",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'ja',
-      basePath: '/ja/',
-      resolvePath: '/ja/',
+      documentRootPath: "docs",
+      scanStartPath: "ja",
+      basePath: "/ja/",
+      resolvePath: "/ja/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -131,14 +131,14 @@ export function generateSidebarConfig() {
       sortMenusByFrontmatterOrder: true,
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
-      includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'ドキュメント',
+      includeFolderIndexFile: false,
+      excludeFiles: ["README.md", "index.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "ドキュメント",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
-    }
-  ])
+      manualSortFileNameByPriority: ["index.md"],
+    },
+  ]);
 }
 
 /**
@@ -146,7 +146,7 @@ export function generateSidebarConfig() {
  * @returns {Object} 侧边栏配置
  */
 export function generateSimpleSidebar() {
-  return generateSidebarConfig()
+  return generateSidebarConfig();
 }
 
 /**
@@ -156,10 +156,10 @@ export function generateSimpleSidebar() {
 export function generateMultiLangSidebar() {
   return generateSidebar([
     {
-      documentRootPath: 'docs',
-      scanStartPath: '/',
-      basePath: '/',
-      resolvePath: '/',
+      documentRootPath: "docs",
+      scanStartPath: "/",
+      basePath: "/",
+      resolvePath: "/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -174,17 +174,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['zh-CN', 'en', '.vitepress', 'public', 'components'],
-      rootGroupText: '文档导航',
+      excludeFiles: ["README.md"],
+      excludeFolders: ["zh-CN", "en", ".vitepress", "public", "components"],
+      rootGroupText: "文档导航",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'zh-CN',
-      basePath: '/zh-CN/',
-      resolvePath: '/zh-CN/',
+      documentRootPath: "docs",
+      scanStartPath: "zh-CN",
+      basePath: "/zh-CN/",
+      resolvePath: "/zh-CN/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -199,17 +199,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: '文档导航',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "文档导航",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'en',
-      basePath: '/en/',
-      resolvePath: '/en/',
+      documentRootPath: "docs",
+      scanStartPath: "en",
+      basePath: "/en/",
+      resolvePath: "/en/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -224,17 +224,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'Documentation',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "Documentation",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'zh-TW',
-      basePath: '/zh-TW/',
-      resolvePath: '/zh-TW/',
+      documentRootPath: "docs",
+      scanStartPath: "zh-TW",
+      basePath: "/zh-TW/",
+      resolvePath: "/zh-TW/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -249,17 +249,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: '文檔導航',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "文檔導航",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'ja',
-      basePath: '/ja/',
-      resolvePath: '/ja/',
+      documentRootPath: "docs",
+      scanStartPath: "ja",
+      basePath: "/ja/",
+      resolvePath: "/ja/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -274,17 +274,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'ドキュメント',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "ドキュメント",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'ko',
-      basePath: '/ko/',
-      resolvePath: '/ko/',
+      documentRootPath: "docs",
+      scanStartPath: "ko",
+      basePath: "/ko/",
+      resolvePath: "/ko/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -299,17 +299,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: '문서 탐색',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "문서 탐색",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'fr',
-      basePath: '/fr/',
-      resolvePath: '/fr/',
+      documentRootPath: "docs",
+      scanStartPath: "fr",
+      basePath: "/fr/",
+      resolvePath: "/fr/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -324,17 +324,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'Navigation Documentation',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "Navigation Documentation",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'de',
-      basePath: '/de/',
-      resolvePath: '/de/',
+      documentRootPath: "docs",
+      scanStartPath: "de",
+      basePath: "/de/",
+      resolvePath: "/de/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -349,17 +349,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'Dokumentation',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "Dokumentation",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'es',
-      basePath: '/es/',
-      resolvePath: '/es/',
+      documentRootPath: "docs",
+      scanStartPath: "es",
+      basePath: "/es/",
+      resolvePath: "/es/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -374,17 +374,17 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'Documentación',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "Documentación",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
+      manualSortFileNameByPriority: ["index.md"],
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'ru',
-      basePath: '/ru/',
-      resolvePath: '/ru/',
+      documentRootPath: "docs",
+      scanStartPath: "ru",
+      basePath: "/ru/",
+      resolvePath: "/ru/",
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
@@ -399,20 +399,20 @@ export function generateMultiLangSidebar() {
       frontmatterOrderDefaultValue: 999,
       includeRootIndexFile: false,
       includeFolderIndexFile: true,
-      excludeFiles: ['README.md'],
-      excludeFolders: ['.vitepress', 'public', 'components'],
-      rootGroupText: 'Документация',
+      excludeFiles: ["README.md"],
+      excludeFolders: [".vitepress", "public", "components"],
+      rootGroupText: "Документация",
       rootGroupCollapsed: false,
-      manualSortFileNameByPriority: ['index.md']
-    }
-  ])
+      manualSortFileNameByPriority: ["index.md"],
+    },
+  ]);
 }
 
 /**
  * 侧边栏配置导出
  * 默认导出侧边栏配置
  */
-export const sidebarConfig = generateSidebarConfig()
+export const sidebarConfig = generateSidebarConfig();
 
 // 默认导出
-export default sidebarConfig
+export default sidebarConfig;
