@@ -3,7 +3,8 @@ import {
   themeBaseConfig, 
   navConfig, 
   socialLinksConfig,
-  sidebarConfig
+  sidebarConfig,
+  localesConfig
 } from './components/index.js'
 
 /**
@@ -13,6 +14,9 @@ import {
 export default {
   // 站点基础配置
   ...siteConfig,
+  
+  // 多语言配置（组件化）
+  locales: localesConfig,
   
   // 主题配置
   themeConfig: {

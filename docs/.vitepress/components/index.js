@@ -7,6 +7,7 @@
  * - site.js: 站点基础配置和主题基础配置
  * - nav.js: 主导航配置
  * - social.js: 社交链接配置
+ * - locales.js: 多语言配置
  * 
  * 注：侧边栏现使用 vitepress-sidebar 插件自动生成
  */
@@ -15,3 +16,4 @@ export { siteConfig, themeBaseConfig } from './site.js'
 export { navConfig } from './nav.js'
 export { socialLinksConfig } from './social.js'
 export { generateSidebarConfig, generateMultiLangSidebar, generateSimpleSidebar, sidebarConfig } from './sidebar.js'
+export { localesConfig, zhConfig, enConfig } from './locales.js'
