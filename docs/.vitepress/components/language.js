@@ -20,7 +20,7 @@ import { ruConfig } from './language/ru-RU.js'
 export const localesConfig = {
   root: zhConfig,        // 默认语言（简体中文）
   // // 'zh-CN': zhConfig,     // 简体中文
-  en: enConfig,           // 启用英文版本
+  // en: enConfig,           // 启用英文版本
   // 其他语言配置（暂时注释，需要时可启用）
   // 'zh-TW': zhTWConfig,  // 繁體中文
   // ja: jaConfig,         // 日本語
