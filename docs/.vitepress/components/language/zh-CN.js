@@ -12,10 +12,10 @@ export const zhConfig = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '安装教程', link: '/zh-CN/InstallationTutorial/' },
-      { text: '游戏指南', link: '/zh-CN/GameplayGuide/' },
-      { text: '常见问题', link: '/zh-CN/FAQ/' },
-      { text: '开发指南', link: '/zh-CN/DevelopmentGuide/' }
+      { text: '安装教程', link: '/zh-CN/InstallationTutorial/installation-details' },
+      { text: '游戏指南', link: '/zh-CN/GameplayGuide/gameplay-details' },
+      { text: '常见问题', link: '/zh-CN/FAQ/faq-details' },
+      { text: '开发指南', link: '/zh-CN/DevelopmentGuide/development-details' }
     ],
     // 侧边栏配置由 vitepress-sidebar 插件自动生成
     // sidebar 配置已在主配置文件中统一处理

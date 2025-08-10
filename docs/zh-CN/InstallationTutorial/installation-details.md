@@ -8,121 +8,44 @@ order: 1
 
 欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。
 
-## 🎯 系统要求
+在开始安装之前，请确保您具备以下条件：
 
-### 最低配置
-- **操作系统**：Windows 10/11, macOS 10.14+, Linux
-- **内存**：4GB RAM
-- **存储空间**：至少2GB可用空间
-- **网络**：稳定的互联网连接
+**1. Java 17 或更高版本**
 
-### 推荐配置
-- **内存**：8GB RAM或更多
-- **显卡**：独立显卡（提升游戏体验）
-- **存储空间**：SSD硬盘（加快加载速度）
+   | 站点 | JDK版本 | 下载链接 | 备注 |
+   | --- | --- | --- | --- |
+   | Zoho workdrive | 17 | [下载](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | 无需登录下载
+   | 小飞机网盘 | 17 | [下载](https://share.feijipan.com/s/sxOQO9u7) | 无需登录下载 |
+   | 123云盘 | 17 | [下载](https://www.123684.com/s/92S0Vv-iVGld) | [备用链接](https://www.123912.com/s/92S0Vv-iVGld)  需要登录下载|
+   | [Oracle](https://www.oracle.com/cn/) | 17 | [下载](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登录下载 |
+   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下载](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 无需登录但速度稍慢 |
 
-## 📦 安装步骤
+**2. 下载启动器**
 
-### 1. 获取Minecraft
+| 启动器 | 链接 | 备注 |
+| --- | --- | --- |
+| 官方启动器 | [下载](https://www.minecraft.net/zh-hans/download) | 不推荐 |
+| PCL2启动器 | [下载](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推荐 |
+| HMCL启动器 | [下载](https://hmcl.huangyuhui.net/download/) | 推荐 |
+| Modrinth启动器 | [下载](https://modrinth.com/app) | 需正版登录 |
 
-#### Java版（推荐）
-1. 访问[Minecraft官网](https://www.minecraft.net/)
-2. 购买并下载Minecraft Java Edition
-3. 创建或登录您的Microsoft账户
+**下载在线游戏安装包**
 
-#### 基岩版
-- 可通过Microsoft Store或各大应用商店下载
-- 注意：部分服务器功能可能不兼容
+下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
 
-### 2. 安装Java环境
+![下载图片01](./installation-details/installation-details01.png)
 
-```bash
-# 检查Java版本
-java -version
+你就会得到一个安装文件，接下来就可以安装它了。
 
-# 如果没有安装Java，请下载Java 17或更高版本
-# 推荐使用Oracle JDK或OpenJDK
-```
+![下载图片02](./installation-details/installation-details02.png)
 
-### 3. 启动器配置
+**PCL2一键安装（推荐）**
 
-#### 官方启动器
-1. 打开Minecraft Launcher
-2. 选择正确的游戏版本（1.20.x）
-3. 配置内存分配（推荐4-6GB）
+![下载图片03](./installation-details/installation-details03.png)
 
-#### 第三方启动器（可选）
-- **MultiMC**：适合管理多个游戏实例
-- **ATLauncher**：支持模组包管理
-- **CurseForge**：丰富的模组资源
+![下载图片04](./installation-details/installation-details04.png)
 
-## ⚙️ 游戏设置优化
-
-### 性能优化
-```
-视频设置建议：
-- 渲染距离：8-12区块
-- 图形：快速/精美（根据配置选择）
-- 平滑光照：关闭或最小
-- 垂直同步：关闭
-- 最大帧率：60-120fps
-```
-
-### 控制设置
-- 熟悉基本按键操作
-- 自定义快捷键绑定
-- 调整鼠标灵敏度
-
-## 🔧 模组安装（可选）
-
-### Fabric模组加载器
-1. 下载[Fabric Installer](https://fabricmc.net/)
-2. 选择对应的Minecraft版本
-3. 安装到游戏目录
-
-### 推荐模组
-- **OptiFine/Sodium**：性能优化
-- **JEI**：物品查询
-- **Minimap**：小地图
-- **Inventory Tweaks**：背包整理
-
-## 🌐 连接服务器
-
-### 添加服务器
-1. 启动Minecraft
-2. 选择"多人游戏"
-3. 点击"添加服务器"
-4. 输入服务器信息：
-   - **服务器名称**：BlockTavern
-   - **服务器地址**：[待提供]
-
-### 连接测试
-```
-连接前检查清单：
-☐ 游戏版本正确
-☐ 网络连接稳定
-☐ 防火墙设置允许
-☐ 已阅读服务器规则
-```
-
-## 🚨 常见问题
-
-### 连接失败
-- 检查服务器地址是否正确
-- 确认游戏版本匹配
-- 尝试重启游戏和网络
-
-### 性能问题
-- 降低视频设置
-- 关闭不必要的后台程序
-- 增加Java内存分配
-
-### 模组冲突
-- 逐个禁用模组排查
-- 查看崩溃日志
-- 更新模组到最新版本
-
-## 📞 获取帮助
+## 获取帮助
 
 如果您在安装过程中遇到问题：
 

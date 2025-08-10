@@ -3,7 +3,6 @@ title: 开发细节
 description: 开发文档站点开发细节。
 ---
 
-
 # 快速开始
 
 欢迎来到 BlockTavern 文档站点开发指南！
