@@ -47,6 +47,8 @@
   bottom: 0;
   left: 0;
   overflow-y: auto;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 .aside-container {
@@ -54,4 +56,40 @@
   bottom: 0;
   right: 0;
   overflow-y: auto;
+}
+
+/* 减少侧边栏左边距 */
+.VPSidebar .group {
+  padding-left: 8px !important;
+}
+
+.VPSidebar .VPSidebarItem .item {
+  padding-left: 8px !important;
+}
+
+.VPSidebar .VPSidebarItem .text {
+  padding-left: 4px !important;
+}
+
+/* 减少整体内容区域左边距 */
+.VPContent {
+  padding-left: 8px !important;
+}
+
+/* 调整主容器布局 */
+.VPApp .VPContent .VPDoc .container {
+  padding-left: 8px !important;
+}
+
+.VPApp .VPContent .VPDoc .content {
+  padding-left: 8px !important;
+}
+
+/* 调整导航栏项目间距 */
+.VPSidebarItem.level-2 .item {
+  padding-left: 12px !important;
+}
+
+.VPSidebarItem.level-3 .item {
+  padding-left: 20px !important;
 }
