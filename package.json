@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/Re0XIAOPA/doc_blocktavern#readme",
   "devDependencies": {
-    "@nolebase/markdown-it-unlazy-img": "^2.18.1",
     "vitepress": "^1.6.3",
     "vitepress-sidebar": "^1.33.0"
   },

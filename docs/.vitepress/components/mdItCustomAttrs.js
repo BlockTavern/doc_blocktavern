@@ -7,7 +7,6 @@
  */
 
 import mdItCustomAttrs from "markdown-it-custom-attrs";
-import { UnlazyImages } from "@nolebase/markdown-it-unlazy-img";
 
 export const mdItCustomAttrsConfig = {
   markdown: {
@@ -15,11 +14,6 @@ export const mdItCustomAttrsConfig = {
       // use more markdown-it plugins!
       md.use(mdItCustomAttrs, "image", {
         "data-fancybox": "gallery",
-      });
-      
-      // 添加延迟加载模糊缩略图插件
-      md.use(UnlazyImages(), {
-        imgElementTag: 'NolebaseUnlazyImg',
       });
     },
   },
