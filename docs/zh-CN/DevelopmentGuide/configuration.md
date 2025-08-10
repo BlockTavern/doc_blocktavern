@@ -195,3 +195,5 @@ title: 我的新页面
 - 使用小写字母和连字符：`my-new-page.md`
 - 文件夹名会自动转换为侧边栏分组标题
 - `index.md` 文件会作为该目录的首页
+
+<Contributors />

@@ -24,6 +24,7 @@
     "vitepress-sidebar": "^1.33.0"
   },
   "dependencies": {
+    "axios": "^1.11.0",
     "lucide-vue-next": "^0.539.0",
     "markdown-it-custom-attrs": "^1.0.2",
     "particles.js": "^2.0.0"
