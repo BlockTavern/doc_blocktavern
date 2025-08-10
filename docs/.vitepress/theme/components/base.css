@@ -1,0 +1,51 @@
+/*
+  base.css
+  此文件包含网站的通用样式，如自定义容器、导航链接悬停效果、代码块、表格和链接美化。
+  它确保了网站在不同元素上保持一致的视觉风格。
+*/
+
+/* 自定义容器样式 */
+.vp-doc .custom-container-title {
+  font-weight: 600;
+}
+
+/* 导航链接悬停效果 */
+.VPNavBarMenuLink:hover {
+  color: var(--vp-c-link-hover) !important;
+}
+
+/* 代码块美化 */
+div[class*="language-"] {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 表格美化 */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 链接美化 */
+.vp-doc a {
+  transition: color 0.3s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-link-hover) !important;
+  text-decoration: underline;
+}
+
+/* 特殊容器美化 */
+.custom-container.tip {
+  border-left: 4px solid #42b883;
+}
+
+.custom-container.warning {
+  border-left: 4px solid #e7c000;
+}
+
+.custom-container.danger {
+  border-left: 4px solid #e13238;
+}

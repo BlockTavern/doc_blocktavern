@@ -1,0 +1,37 @@
+/*
+  animation.css
+  此文件包含网站的动画样式。
+  它定义了页面元素的进入动画，如`fadeInUp`和`slideInLeft`，用于提升用户体验和视觉吸引力。
+*/
+
+.step {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.step:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.step:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.step:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* 滚动动画 */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

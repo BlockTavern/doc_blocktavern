@@ -1,0 +1,121 @@
+/*
+  layout.css
+  此文件包含主页布局相关的样式，如自定义容器、冒险路径、步骤卡片和底部样式。
+  它定义了页面元素的排列、间距、背景和响应式行为，确保页面结构清晰且适应不同屏幕尺寸。
+*/
+
+/* 自定义容器样式 */
+.custom-container {
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+}
+
+.custom-container p {
+  margin: 0;
+}
+
+/* 冒险路径样式 */
+.adventure-path {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--vp-c-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.step-icon {
+  font-size: 24px;
+  color: var(--vp-c-brand-1);
+}
+
+.step-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--vp-c-text-1);
+}
+
+.step-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+}
+
+/* 深色模式适配 */
+html.dark .step {
+  background-color: var(--vp-c-bg-alt);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .step:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .adventure-path {
+    padding: 15px;
+  }
+
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-icon {
+    margin-bottom: 10px;
+  }
+}
+
+/* 底部样式 */
+.tavern-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid var(--vp-c-border);
+  color: var(--vp-c-text-3);
+  font-size: 14px;
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

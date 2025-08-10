@@ -1,0 +1,119 @@
+/* 首页特色卡片优化 - 四角勾勒边框 */
+/*
+  features.css
+  此文件包含主页特色卡片的样式和动画。
+  它定义了特色卡片的布局、边框效果、图标、文字颜色、深色模式下的样式以及动画效果，确保卡片在视觉上吸引人并具有交互性。
+*/
+
+.VPFeatures {
+  padding: 4rem 0;
+}
+
+.VPFeature {
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 208, 0, 0.1);
+}
+
+.VPFeatures .item:hover .VPFeature {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(255, 208, 0, 0.3);
+}
+
+/* 简洁的卡片边框效果 */
+.VPFeatures .item {
+  position: relative;
+}
+
+.VPFeature {
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.VPFeatures .item:hover .VPFeature {
+  border-color: #ffd000;
+  box-shadow: 0 0 20px rgba(255, 208, 0, 0.3);
+}
+
+.VPFeature .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.VPFeatures .item:hover .VPFeature .icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* 特性卡片文字颜色优化 */
+.VPFeature .title {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.VPFeature .details {
+  color: #5a6c7d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* 深色模式下的文字颜色 */
+html.dark .VPFeature .title {
+  color: #e2e8f0;
+}
+
+html.dark .VPFeature .details {
+  color: #94a3b8;
+}
+
+/* 深色模式下的特色卡片 */
+html.dark .VPFeature {
+  background: rgba(30, 30, 30, 0.8);
+  border-color: rgba(255, 208, 0, 0.2);
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInScale {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.VPFeature {
+  animation: slideInScale 0.6s ease forwards;
+}
+
+.VPFeature:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.VPFeature:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.VPFeature:nth-child(3) {
+  animation-delay: 0.3s;
+}

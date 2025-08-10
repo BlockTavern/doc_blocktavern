@@ -1,0 +1,32 @@
+/*
+  button.css
+  此文件包含网站按钮的样式。
+  它定义了按钮的圆角、字体样式、背景和边框颜色，以及悬停效果，确保按钮在不同状态下保持一致的视觉表现。
+*/
+/* 按钮样式 - 移除动效 */
+.VPButton {
+  border-radius: 12px;
+}
+
+/* 首页Hero区域按钮 */
+.VPHero .VPButton {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.VPHero .VPButton.brand {
+  background: var(--vp-c-brand-1);
+  border: none;
+  color: var(--vp-c-bg);
+}
+
+.VPHero .VPButton.alt {
+  background: var(--vp-c-bg-alt);
+  border: 1px solid var(--vp-c-bg-alt);
+}
+
+.VPHero .VPButton:hover {
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+  border-color: var(--vp-c-brand-1);
+}
