@@ -1,6 +1,6 @@
 <template>
   <div class="contributors-container">
-    <h2>项目贡献者</h2>
+    <h2>贡献者</h2>
     <div v-if="loading" class="loading">加载中...</div>
     <div v-else-if="error" class="error">加载贡献者失败: {{ error.message }}</div>
     <div v-else class="contributors-grid">
@@ -43,58 +43,68 @@ onMounted(() => {
 
 <style scoped>
 .contributors-container {
-  padding: 20px;
-  text-align: center;
+  padding: 20px 0;
+  text-align: left;
+  margin: 20px 0;
+  max-width: 100%;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 h2 {
   margin-bottom: 20px;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: var(--vp-c-text-1);
+  padding-bottom: 10px;
 }
 
 .loading,
 .error {
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--vp-c-text-2);
+  margin-top: 10px;
 }
 
 .contributors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  max-width: 960px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  max-width: 100%;
+  margin: 0;
 }
 
 .contributor-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: var(--vp-c-text-1);
-  transition: transform 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: transparent;
 }
 
 .contributor-card:hover {
-  transform: translateY(-5px);
+  background-color: var(--vp-c-bg-soft);
 }
 
 .contributor-avatar {
-  width: 80px;
-  height: 80px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  margin-bottom: 8px;
-  border: 2px solid var(--vp-c-brand-1);
+  margin-right: 8px;
+  border: 1px solid var(--vp-c-divider);
+  object-fit: cover;
 }
 
 .contributor-name {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 0.9em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100px; /* Limit name width */
+  color: var(--vp-c-text-1);
+}
+
+.contributor-card:hover .contributor-name {
+  color: var(--vp-c-brand-1);
 }
 </style>
