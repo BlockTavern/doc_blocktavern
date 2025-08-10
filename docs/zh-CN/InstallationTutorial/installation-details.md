@@ -1,14 +1,18 @@
 ---
-title: 安装教程11
-description: 安装教程目录
+title: 安装前准备
+description: 安装前准备：BlockTavern游戏
 order: 1
 ---
 
-# 安装教程
+# 安装前准备
 
 欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。
 
 在开始安装之前，请确保您具备以下条件：
+- Java 17+
+- Minecraft任意游戏启动器（不推荐官启）
+
+## 安装Java
 
 **1. Java 17 或更高版本**
 
@@ -20,6 +24,9 @@ order: 1
    | [Oracle](https://www.oracle.com/cn/) | 17 | [下载](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登录下载 |
    | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下载](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 无需登录但速度稍慢 |
 
+
+## 安装游戏启动器
+
 **2. 下载启动器**
 
 | 启动器 | 链接 | 备注 |
@@ -29,7 +36,9 @@ order: 1
 | HMCL启动器 | [下载](https://hmcl.huangyuhui.net/download/) | 推荐 |
 | Modrinth启动器 | [下载](https://modrinth.com/app) | 需正版登录 |
 
-**下载在线游戏安装包**
+## 下载游戏
+
+**3. 下载在线游戏安装包**
 
 下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
 
@@ -38,12 +47,6 @@ order: 1
 你就会得到一个安装文件，接下来就可以安装它了。
 
 ![下载图片02](./installation-details/installation-details02.png)
-
-**PCL2一键安装（推荐）**
-
-![下载图片03](./installation-details/installation-details03.png)
-
-![下载图片04](./installation-details/installation-details04.png)
 
 ## 获取帮助
 

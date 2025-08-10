@@ -4,7 +4,9 @@ import {
   navConfig, 
   socialLinksConfig,
   sidebarConfig,
-  localesConfig
+  localesConfig,
+  mdItCustomAttrs,
+
 } from './components/index.js'
 
 /**
@@ -14,6 +16,10 @@ import {
 export default {
   // 站点基础配置
   ...siteConfig,
+
+  // 自定义 Markdown 配置
+  markdown: mdItCustomAttrs.markdown,
+  head: mdItCustomAttrs.head,
   
   // 多语言配置（组件化）
   locales: localesConfig,

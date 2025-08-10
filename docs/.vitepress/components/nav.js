@@ -1,5 +1,9 @@
 /**
- * 主导航配置
+ * 主导航配置 
+ * 格式参考：https://v2.vuepress.vuejs.org/zh/reference/default-theme/config.html
+ * 如果没有需要，可以删除本文件
+ * 注意：如果添加了新的页面，需要在侧边栏配置中添加对应的链接
+ * 现在配置你可以前往Zh-CN、En-US版本的主导航（如果需要），
  */
 export const navConfig = [
   { 
