@@ -20,3 +20,35 @@
 
 /* 导入动画样式 */
 @import './components/animation.css';
+
+
+/* 侧边栏滚动条样式 */
+.VPSidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.VPSidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+.VPSidebar{
+  position: fixed;
+  bottom: 0;
+  right: 0 !important;
+  /* overflow-y: auto; */
+  background-color: transparent;
+
+}
+
+.aside-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+}
