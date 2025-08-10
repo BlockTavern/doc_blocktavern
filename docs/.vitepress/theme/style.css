@@ -40,62 +40,33 @@
 /* 统一设置侧边栏背景色变量 */
 :root {
   --vp-sidebar-bg-color: transparent;
-  --vp-sidebar-width: 320px !important; /* 增加侧边栏宽度 */
 }
 
-.VPSidebar{
+.VPSidebar {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 36px !important;
   overflow-y: auto;
   padding-left: 0 !important;
   margin-left: 0 !important;
   width: var(--vp-sidebar-width) !important;
 }
 
-.aside-container {
+.container {
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   overflow-y: auto;
 }
 
-/* 减少侧边栏左边距 */
-.VPSidebar .group {
-  padding-left: 12px !important;
+
+.aside {
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  overflow-y: auto !important;
 }
 
-.VPSidebar .VPSidebarItem .item {
-  padding-left: 8px !important;
-}
-
-.VPSidebar .VPSidebarItem .text {
-  padding-left: 4px !important;
-}
-
-/* 内容区域布局调整 */
-.VPContent {
-  padding-left: 0 !important;
-}
-
-@media (min-width: 960px) {
-  .VPContent.has-sidebar {
-    padding-left: var(--vp-sidebar-width) !important;
-  }
-  
-  .VPDoc .container {
-    padding-left: 24px !important;
-  }
-}
-
-/* 调整导航栏项目间距 */
-.VPSidebarItem.level-2 .item {
-  padding-left: 12px !important;
-}
-
-.VPSidebarItem.level-3 .item {
-  padding-left: 20px !important;
-}
 
 /* 修复导航栏透明问题 */
 .VPNavBar {
@@ -111,12 +82,6 @@
   padding-right: 0 !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-}
-
-.VPNavBar .container {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-  max-width: 100% !important;
 }
 
 /* 确保导航栏内容对齐 */
@@ -140,7 +105,7 @@
 }
 
 /* 调整搜索框位置 */
-.VPNavBarSearch {
+.VPNavBarSearch #local-search {
   margin-left: 0 !important;
   padding-left: 0 !important;
 }
@@ -155,7 +120,27 @@
   box-sizing: border-box !important;
 }
 
-/* Logo和文档名在左边 */
+@media (min-width: 1450px) {
+
+  /* Logo和文档名在左边 */
+  .title {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+    padding-left: 32px !important;
+  }
+}
+
+@media (min-width: 956px) {
+
+  /* 调整搜索框位置 */
+  .VPNavBarSearch #local-search {
+    margin-left: 194px !important;
+    padding-left: 0 !important;
+  }
+}
+
 .VPNavBarTitle {
   margin: 0 !important;
   padding: 0 !important;
@@ -201,16 +186,16 @@
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
-  
+
   .VPNavBarTitle {
     margin-right: auto !important;
   }
-  
+
   .VPNavBarSearch {
     margin-left: auto !important;
     margin-right: 0 !important;
   }
-  
+
   .VPNavBarMenu {
     display: none !important;
   }
@@ -221,14 +206,29 @@
   .VPContent.has-sidebar {
     padding-left: var(--vp-sidebar-width) !important;
   }
-  
+
   .VPDoc .container {
-    padding-left: 24px !important;
+    padding-left: 48px !important;
+    /* 增加左padding以对齐侧边栏线 */
+    max-width: 100% !important;
+    /* 调整为100%宽度 */
+    margin-left: 0 !important;
+    /* 左对齐 */
+    margin-right: auto !important;
+  }
+
+  .VPDoc .content {
+    padding-right: 48px !important;
   }
 }
 
 @media (max-width: 959px) {
   .VPContent.has-sidebar {
     padding-left: 0 !important;
+  }
+
+  .VPDoc .container {
+    max-width: 100% !important;
+    padding: 0 16px !important;
   }
 }
