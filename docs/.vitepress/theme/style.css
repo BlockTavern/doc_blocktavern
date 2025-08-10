@@ -93,3 +93,59 @@
 .VPSidebarItem.level-3 .item {
   padding-left: 20px !important;
 }
+
+/* 修复导航栏透明问题 */
+.VPNavBar {
+  background-color: var(--vp-c-bg) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--vp-c-divider);
+  z-index: 1000;
+}
+
+/* 调整导航栏边距使其与侧边栏对齐 */
+.VPNavBar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.VPNavBar .container {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  max-width: 100% !important;
+}
+
+/* 确保导航栏内容对齐 */
+.VPNavBar .content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* 精确对齐侧边栏 */
+.VPNavBar .content-body {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+/* 调整导航栏菜单间距 */
+.VPNavBarMenu {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* 调整搜索框位置 */
+.VPNavBarSearch {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* 移动端适配 */
+@media (min-width: 960px) {
+  .VPNavBar .content-body {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+}
