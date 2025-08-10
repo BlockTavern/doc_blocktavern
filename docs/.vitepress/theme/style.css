@@ -53,10 +53,10 @@
   width: var(--vp-sidebar-width) !important;
 }
 
-.VPDoc{
+/* .VPDoc{
   padding-left: 0 !important;
   margin-left: 0 !important;
-}
+} */
 
 .VPContent .container {
   /* position: relative; */
