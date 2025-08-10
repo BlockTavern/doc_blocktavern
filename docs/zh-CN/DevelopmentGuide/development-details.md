@@ -1,6 +1,7 @@
 ---
-title: 开发细节
-description: 开发文档站点开发细节。
+title: 开始贡献
+description: 开发者可以用这个页面做贡献说明。
+order: 1
 ---
 
 # 快速开始
@@ -46,9 +47,3 @@ npm run docs:dev
 ```
 
 访问 `http://localhost:5173` 预览文档站点。
-
-### 4. 构建项目
-
-```bash
-npm run docs:build
-```

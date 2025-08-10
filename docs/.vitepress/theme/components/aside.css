@@ -5,3 +5,34 @@
  * 1. 左右侧边栏容器样式
  * 2. 滚动条样式
  */
+
+ 
+/* 侧边栏滚动条样式 */
+.VPSidebar::-webkit-scrollbar {
+  width: 6px;
+}
+/* 侧边栏滚动条轨道样式 */
+.VPSidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 侧边栏滚动条样式 */
+.VPSidebar::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+/* 统一设置侧边栏背景色变量 */
+:root {
+  --vp-sidebar-bg-color: transparent;
+}
+
+
+/* 修复导航栏透明问题 */
+.VPNavBar {
+  background-color: var(--vp-c-bg) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--vp-c-divider);
+  z-index: 1000;
+}

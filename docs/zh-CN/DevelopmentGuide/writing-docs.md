@@ -1,9 +1,12 @@
 ---
 title: 文档编写
 description: 服务器文档编写目录
+order: 4
 ---
 
 # 文档编写
+
+本指南将帮助您了解如何编写和维护 BlockTavern 的文档。我们使用 VitePress 作为文档生成工具，以下是一些基本的编写规范和技巧。
 
 ## Markdown 基础语法
 

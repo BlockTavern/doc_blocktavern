@@ -1,10 +1,13 @@
 ---
 title: 项目结构
 description: 服务器项目结构目录
+order: 2
 ---
 
 
 # 项目结构
+
+本章节将详细讲解 BlockTavern 项目目录结构。
 
 ## 目录结构
 
