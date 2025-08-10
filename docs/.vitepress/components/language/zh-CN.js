@@ -3,8 +3,6 @@
  * Chinese (Simplified) Language Configuration
  */
 
-import { UnlazyImages } from "@nolebase/markdown-it-unlazy-img";
-
 export const zhConfig = {
   label: "简体中文",
   lang: "zh-CN",
