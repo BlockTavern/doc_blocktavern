@@ -1,6 +1,6 @@
 <template>
   <div class="contributors-container">
-    <h2>贡献者</h2>
+    <h2># 贡献者</h2>
     <div v-if="loading" class="loading">加载中...</div>
     <div v-else-if="error" class="error">加载贡献者失败: {{ error.message }}</div>
     <div v-else class="contributors-grid">
@@ -79,7 +79,7 @@ h2 {
   align-items: center;
   text-decoration: none;
   color: var(--vp-c-text-1);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   padding: 5px 10px;
   border-radius: 4px;
   background-color: transparent;
