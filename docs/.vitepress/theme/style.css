@@ -37,13 +37,16 @@
   background-clip: content-box;
 }
 
+/* 统一设置侧边栏背景色变量 */
+:root {
+  --vp-sidebar-bg-color: transparent;
+}
+
 .VPSidebar{
   position: fixed;
   bottom: 0;
-  right: 0 !important;
-  /* overflow-y: auto; */
-  background-color: transparent;
-
+  left: 0;
+  overflow-y: auto;
 }
 
 .aside-container {
