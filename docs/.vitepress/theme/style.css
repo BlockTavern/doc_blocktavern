@@ -52,11 +52,12 @@
   width: var(--vp-sidebar-width) !important;
 }
 
-.container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  overflow-y: auto;
+.VPContent .container {
+  /* position: relative; */
+  max-width: 100% !important;
+  margin: 0 auto;
+  margin-left: auto !important;
+  /* padding: 0 16px; */
 }
 
 
@@ -208,7 +209,7 @@
   }
 
   .VPDoc .container {
-    padding-left: 48px !important;
+    padding-right: 48px !important;
     /* 增加左padding以对齐侧边栏线 */
     max-width: 100% !important;
     /* 调整为100%宽度 */
@@ -219,6 +220,19 @@
 
   .VPDoc .content {
     padding-right: 48px !important;
+  }
+}
+
+/* 自定义content-container样式 */
+.content-container {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 36px !important;
+}
+
+@media (min-width: 960px) {
+  .content-container {
+    padding: 0 48px;
   }
 }
 
