@@ -6,6 +6,7 @@ import {
   sidebarConfig,
   localesConfig,
   mdItCustomAttrs,
+  editLink,
 
 } from './components/index.js'
 
@@ -16,6 +17,10 @@ import {
 export default {
   // 站点基础配置
   ...siteConfig,
+
+  // 编辑链接
+  editLinks: true,
+  editLink,
 
   // 禁用(忽略)死链接
   ignoreDeadLinks: true,
