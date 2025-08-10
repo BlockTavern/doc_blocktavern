@@ -202,3 +202,5 @@ description: 解决客户端、网络等技术相关问题
 - **技术QQ群**：[群号]
 - **Discord频道**：#技术支持
 - **邮箱支持**：tech@blocktavern.com
+
+<Contributors />

@@ -60,3 +60,5 @@ order: 1
 ---
 
 安装完成后，别忘了阅读[游戏指南](/zh-CN/GameplayGuide/)来了解服务器的特色玩法！
+
+<Contributors />

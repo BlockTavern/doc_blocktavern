@@ -343,3 +343,5 @@ description: 深入了解BlockTavern的建筑规范、技巧和创意建造
 - [基础玩法](./basic-gameplay.md) - 学习基础操作
 - [高级技巧](./advanced.md) - 进阶建筑技术
 - [社交互动](./social.md) - 与其他建筑师交流
+
+<Contributors />

@@ -60,3 +60,5 @@ VitePress 的配置目录：
 ### `public/` 目录
 
 静态资源文件，如图片、图标等。
+
+<Contributors />

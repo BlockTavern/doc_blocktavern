@@ -238,3 +238,5 @@ description: Minecraft基础操作和BlockTavern服务器特色玩法介绍
 - [建筑系统](./building-system.md) - 高级建筑技巧
 - [高级技巧](./advanced.md) - 探索世界的奥秘
 - [社交互动](./social.md) - 与其他玩家互动
+
+<Contributors />

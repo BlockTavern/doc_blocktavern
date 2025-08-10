@@ -108,3 +108,5 @@ description: 解决游戏过程中遇到的各种问题
 - 查看 [技术问题](./technical-issues.md) 页面
 - 访问 [服务器问题](./server-issues.md) 页面
 - 联系在线管理员或客服
+
+<Contributors />

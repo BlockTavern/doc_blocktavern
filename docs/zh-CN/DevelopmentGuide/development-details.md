@@ -47,3 +47,5 @@ npm run docs:dev
 ```
 
 访问 `http://localhost:5173` 预览文档站点。
+
+<Contributors />
