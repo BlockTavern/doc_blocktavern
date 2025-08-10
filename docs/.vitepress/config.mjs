@@ -17,6 +17,9 @@ export default {
   // 站点基础配置
   ...siteConfig,
 
+  // 禁用(忽略)死链接
+  ignoreDeadLinks: true,
+
   // 自定义 Markdown 配置
   markdown: mdItCustomAttrs.markdown,
   head: mdItCustomAttrs.head,
