@@ -5,11 +5,11 @@
 */
 :root {
   /* 亮色主题颜色 */
-  --vp-c-brand-1: #ffc107;
-  --vp-c-brand-2: #ffc107;
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
   --vp-c-brand-3: #1e40af;
-  --vp-c-accent: #ffc107;
-  --vp-c-accent-soft: rgba(255, 193, 7, 0.1);
+  --vp-c-accent: #2563eb;
+  --vp-c-accent-soft: rgba(37, 99, 235, 0.1);
 
   /* 文本颜色 */
   --vp-c-text-1: rgba(0, 0, 0, 0.9);
@@ -35,11 +35,11 @@
 
 html.dark {
   /* 暗色主题颜色 */
-  --vp-c-brand-1: #4285F4;
-  --vp-c-brand-2: #4285F4;
-  --vp-c-brand-3: #3367D6;
-  --vp-c-accent: #4285F4;
-  --vp-c-accent-soft: rgba(66, 133, 244, 0.1);
+  --vp-c-brand-1: #ffc107;
+  --vp-c-brand-2: #ffc107;
+  --vp-c-brand-3: #e0a800;
+  --vp-c-accent: #ffc107;
+  --vp-c-accent-soft: rgba(255, 193, 7, 0.1);
 
   /* 文本颜色 */
   --vp-c-text-1: rgba(255, 255, 255, 0.9);
@@ -66,11 +66,11 @@ html.dark {
 /* Fallback for systems not preferring dark mode, but light mode is active */
 @media (prefers-color-scheme: light) {
   html:not(.dark) {
-    --vp-c-brand-1: #ffc107;
-    --vp-c-brand-2: #ffc107;
+    --vp-c-brand-1: #2563eb;
+    --vp-c-brand-2: #1d4ed8;
     --vp-c-brand-3: #1e40af;
-    --vp-c-accent: #ffc107;
-    --vp-c-accent-soft: rgba(255, 193, 7, 0.1);
+    --vp-c-accent: #2563eb;
+    --vp-c-accent-soft: rgba(37, 99, 235, 0.1);
 
     /* 文本颜色 */
     --vp-c-text-1: rgba(0, 0, 0, 0.9);

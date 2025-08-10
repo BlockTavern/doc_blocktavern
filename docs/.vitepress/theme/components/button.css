@@ -14,19 +14,16 @@
   letter-spacing: 0.5px;
 }
 
-.VPHero .VPButton.brand {
-  background: var(--vp-c-brand-1);
-  border: none;
-  color: var(--vp-c-bg);
-}
+  .VPHero .VPButton.brand {
+    background: var(--vp-c-brand-1);
+  }
 
-.VPHero .VPButton.alt {
-  background: var(--vp-c-bg-alt);
-  border: 1px solid var(--vp-c-bg-alt);
-}
+  .VPHero .VPButton.alt {
+    border: 1px solid var(--vp-c-divider);
+  }
 
-.VPHero .VPButton:hover {
-  background: var(--vp-c-brand-1);
-  color: var(--vp-c-bg);
-  border-color: var(--vp-c-brand-1);
-}
+  .VPHero .VPButton:hover {
+    background: var(--vp-c-brand-1);
+    border-color: var(--vp-c-brand-1);
+    color: var(--vp-c-bg);
+  }
