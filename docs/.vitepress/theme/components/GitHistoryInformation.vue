@@ -1,23 +1,24 @@
 <template>
   <div class="git-history-information">
-    <!-- 最后更新信息 -->
-    <div class="last-updated-section">
-      <div v-if="lastCommit" class="last-updated">
-        <span class="icon">🕒</span>
-        最后编辑时间: 
-        <time :datetime="lastCommit.commit.author.date">
+    <!-- 统一的头部区域 -->
+    <div class="history-header" @click="toggleHistory">
+      <div class="header-left">
+        <Clock class="icon" :size="16" />
+        <span class="last-updated-text">最后编辑时间:</span>
+        <time v-if="lastCommit" :datetime="lastCommit.commit.author.date" class="last-updated-time">
           {{ formatDate(lastCommit.commit.author.date) }}
         </time>
+        <span v-else class="last-updated-time">未知</span>
+      </div>
+      <div class="header-right">
+        <History class="icon" :size="16" />
+        <span class="history-title">查看完整历史记录</span>
+        <ChevronDown class="toggle-icon" :size="14" :class="{ 'expanded': isHistoryExpanded }" />
       </div>
     </div>
 
     <!-- 文件历史部分 -->
     <div class="file-history-section">
-      <div class="history-header" @click="toggleHistory">
-        <span class="icon">📝</span>
-        <span class="history-title">查看完整历史记录</span>
-        <span class="toggle-icon" :class="{ 'expanded': isHistoryExpanded }">▼</span>
-      </div>
       
       <div class="history-content" :class="{ 'expanded': isHistoryExpanded }">
         <div v-if="historyLoading" class="loading">
@@ -25,26 +26,34 @@
           加载文件历史中...
         </div>
         <div v-else-if="historyError" class="error">
-          <span class="icon">⚠️</span>
+          <AlertTriangle class="icon" :size="16" />
           加载文件历史失败: {{ historyError }}
         </div>
         <div v-else class="history-list">
           <div v-for="commit in fileHistory" :key="commit.sha" class="history-item">
             <div class="commit-info">
-              <a 
-                :href="commit.html_url" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="commit-sha"
-              >
-                {{ commit.sha.substring(0, 7) }}
-              </a>
-              <span class="commit-type">feat</span>
-              <span class="commit-description">{{ commit.commit.message }}</span>
-              <span class="commit-meta">
-                <span class="commit-number">#{{ commit.sha.substring(0, 4) }}</span>
+              <div class="commit-left">
+                <ExternalLink class="commit-icon" :size="14" />
+                <a 
+                  :href="commit.html_url" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="commit-sha"
+                >
+                  {{ commit.sha.substring(0, 7) }}
+                </a>
+                <span class="commit-separator">-</span>
+                <span class="commit-type">{{ getCommitType(commit.commit.message) }}</span>
+                <span class="commit-scope" v-if="getCommitScope(commit.commit.message)">
+                  ({{ getCommitScope(commit.commit.message) }})
+                </span>
+                <span class="commit-separator">:</span>
+                <span class="commit-description">{{ getCommitDescription(commit.commit.message) }}</span>
+              </div>
+              <div class="commit-right">
+                <span class="commit-number">(#{{ commit.sha.substring(0, 3) }})</span>
                 <span class="commit-date">{{ formatDate(commit.commit.author.date) }}</span>
-              </span>
+              </div>
             </div>
           </div>
         </div>
@@ -57,6 +66,7 @@
 import { ref, onMounted, computed } from 'vue'
 import { useData } from 'vitepress'
 import axios from 'axios'
+import { Clock, History, ChevronDown, AlertTriangle, ExternalLink } from 'lucide-vue-next'
 
 const { page } = useData()
 
@@ -159,6 +169,24 @@ const formatDate = (dateString) => {
   }
 }
 
+// 解析提交类型
+const getCommitType = (message) => {
+  const match = message.match(/^(\w+)(\(.+\))?:/)
+  return match ? match[1] : 'feat'
+}
+
+// 解析提交作用域
+const getCommitScope = (message) => {
+  const match = message.match(/^\w+\((.+)\):/)
+  return match ? match[1] : null
+}
+
+// 解析提交描述
+const getCommitDescription = (message) => {
+  const match = message.match(/^\w+(\(.+\))?:\s*(.+)$/)
+  return match ? match[2] : message
+}
+
 // 组件挂载时获取数据
 onMounted(() => {
   fetchFileHistory()
@@ -174,7 +202,8 @@ onMounted(() => {
 }
 
 .icon {
-  font-size: 1rem;
+  color: var(--vp-c-text-2);
+  flex-shrink: 0;
 }
 
 .loading {
@@ -209,14 +238,24 @@ onMounted(() => {
   padding: 1rem;
 }
 
-/* 最后更新样式 */
-.last-updated-section {
+/* 统一头部样式 */
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0.75rem 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
   border-bottom: 1px solid var(--vp-c-divider);
   background-color: var(--vp-c-bg);
 }
 
-.last-updated {
+.history-header:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.header-left {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -224,24 +263,24 @@ onMounted(() => {
   color: var(--vp-c-text-2);
 }
 
-/* 文件历史样式 */
-.file-history-section {
-  background-color: var(--vp-c-bg);
+.last-updated-text {
+  color: var(--vp-c-text-2);
 }
 
-.history-header {
+.last-updated-time {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+
+.header-right {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 0.2s ease;
-  border-bottom: 1px solid var(--vp-c-divider);
 }
 
-.history-header:hover {
-  background-color: var(--vp-c-bg-soft);
+/* 文件历史样式 */
+.file-history-section {
+  background-color: var(--vp-c-bg);
 }
 
 .history-title {
@@ -252,10 +291,10 @@ onMounted(() => {
 }
 
 .toggle-icon {
-  font-size: 0.8rem;
   color: var(--vp-c-text-2);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
+  flex-shrink: 0;
 }
 
 .toggle-icon.expanded {
@@ -292,9 +331,23 @@ onMounted(() => {
 .commit-info {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: space-between;
   padding: 0.75rem 1rem;
   font-size: 0.85rem;
+  gap: 1rem;
+}
+
+.commit-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.commit-icon {
+  color: var(--vp-c-text-3);
+  flex-shrink: 0;
 }
 
 .commit-sha {
@@ -302,54 +355,74 @@ onMounted(() => {
   color: var(--vp-c-brand-1);
   text-decoration: none;
   font-weight: 500;
-  min-width: 60px;
+  font-size: 0.8rem;
 }
 
 .commit-sha:hover {
   text-decoration: underline;
 }
 
+.commit-separator {
+  color: var(--vp-c-text-3);
+  font-weight: normal;
+}
+
 .commit-type {
-  background-color: var(--vp-c-brand-soft);
   color: var(--vp-c-brand-1);
-  padding: 0.2rem 0.5rem;
-  border-radius: 12px;
-  font-size: 0.75rem;
   font-weight: 500;
-  min-width: 40px;
-  text-align: center;
+  font-size: 0.85rem;
+}
+
+.commit-scope {
+  color: var(--vp-c-text-2);
+  font-size: 0.85rem;
 }
 
 .commit-description {
-  flex: 1;
   color: var(--vp-c-text-1);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   min-width: 0;
+  flex: 1;
 }
 
-.commit-meta {
+.commit-right {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--vp-c-text-2);
   font-size: 0.8rem;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .commit-number {
   font-family: var(--vp-font-family-mono);
+  color: var(--vp-c-text-3);
 }
 
 .commit-date {
-  white-space: nowrap;
+  color: var(--vp-c-text-2);
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
   .git-history-information {
     margin: 1rem 0;
+  }
+  
+  .history-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+  
+  .header-left,
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
   }
   
   .commit-info {
@@ -359,14 +432,22 @@ onMounted(() => {
     padding: 0.75rem;
   }
   
+  .commit-left {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
   .commit-description {
     white-space: normal;
     overflow: visible;
     text-overflow: unset;
+    width: 100%;
+    margin-top: 0.25rem;
   }
   
-  .commit-meta {
+  .commit-right {
     align-self: flex-end;
+    margin-top: 0.25rem;
   }
 }
 </style>
