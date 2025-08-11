@@ -72,7 +72,16 @@ Update README.md
 
 ## 🚀 自动化工作流
 
-本项目配置了 GitHub Actions 工作流 (`.github/workflows/conventional-commits.yml`)，提供以下功能：
+本项目采用**组件化的 GitHub Actions 工作流**设计，将不同功能拆分为独立的工作流文件，提高可维护性和执行效率：
+
+### 📁 工作流文件结构
+
+- **`main.yml`** - 主工作流，协调所有任务的执行
+- **`validate-commits.yml`** - 提交信息验证（仅在 PR 时运行）
+- **`release.yml`** - 自动版本发布（Push 到 main 分支时运行）
+- **`git-history.yml`** - Git 历史数据生成（定时或手动更新）
+
+### 🎯 工作流功能
 
 ### 1. 📋 提交信息验证
 - 在 Pull Request 时自动验证提交信息格式
@@ -143,17 +152,27 @@ commitlint --from HEAD~1 --to HEAD --verbose
 
 ## 🔧 配置文件
 
-### `.commitlintrc.json`
-提交信息验证规则配置
+### 动态生成的配置文件
 
-### `.releaserc.json`
-语义化发布配置，包括：
-- 版本分析规则
-- 变更日志生成规则
-- 发布流程配置
+以下配置文件在工作流运行时动态生成，无需手动维护：
 
-### `conventional-commits.yml`
-GitHub Actions 工作流配置
+- **`.commitlintrc.json`** - 提交信息验证规则配置
+- **`.releaserc.json`** - 语义化发布配置，包括版本分析规则、变更日志生成规则、发布流程配置
+
+### 工作流配置文件
+
+- **`main.yml`** - 主工作流协调器
+- **`validate-commits.yml`** - 提交信息验证工作流
+- **`release.yml`** - 版本发布工作流
+- **`git-history.yml`** - Git 历史数据生成工作流
+
+### 🎯 组件化优势
+
+1. **独立运行** - 每个工作流可以独立触发和调试
+2. **按需执行** - 只运行必要的任务，节省 CI/CD 资源
+3. **易于维护** - 功能分离，便于修改和扩展
+4. **并行执行** - 不同任务可以并行运行，提高效率
+5. **错误隔离** - 单个组件失败不影响其他功能
 
 ## 💡 最佳实践
 

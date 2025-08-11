@@ -1,0 +1,108 @@
+# 提交信息验证工作流
+name: Validate Commits
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    name: Validate Commit Messages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install commitlint
+        run: |
+          npm install -g @commitlint/cli @commitlint/config-conventional
+
+      - name: Create commitlint config
+        run: |
+          cat > .commitlintrc.json << 'EOF'
+          {
+            "extends": ["@commitlint/config-conventional"],
+            "rules": {
+              "type-enum": [
+                2,
+                "always",
+                [
+                  "feat",
+                  "fix",
+                  "docs",
+                  "style",
+                  "refactor",
+                  "perf",
+                  "test",
+                  "build",
+                  "ci",
+                  "chore"
+                ]
+              ],
+              "type-case": [2, "always", "lower-case"],
+              "type-empty": [2, "never"],
+              "scope-case": [2, "always", "lower-case"],
+              "subject-case": [2, "never", ["sentence-case", "start-case", "pascal-case", "upper-case"]],
+              "subject-empty": [2, "never"],
+              "subject-full-stop": [2, "never", "."],
+              "header-max-length": [2, "always", 100]
+            }
+          }
+          EOF
+
+      - name: Validate commit messages
+        run: |
+          # 获取 PR 中的所有提交
+          git log --oneline ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }} --pretty=format:"%s" | while read commit_msg; do
+            echo "Validating: $commit_msg"
+            echo "$commit_msg" | npx commitlint
+          done
+
+      - name: Comment PR if validation fails
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## ❌ 提交信息验证失败
+              
+              您的提交信息不符合 [Conventional Commits](https://www.conventionalcommits.org/zh-hans/) 规范。
+              
+              请使用以下格式：
+              \`\`\`
+              <类型>[可选作用域]: <描述>
+              \`\`\`
+              
+              **支持的类型：**
+              - \`feat\`: ✨ 新功能
+              - \`fix\`: 🐛 Bug 修复
+              - \`docs\`: 📚 文档更新
+              - \`style\`: 💄 代码格式
+              - \`refactor\`: ♻️ 代码重构
+              - \`perf\`: ⚡ 性能优化
+              - \`test\`: ✅ 测试
+              - \`build\`: 📦 构建系统
+              - \`ci\`: 👷 CI/CD
+              - \`chore\`: 🔧 其他变更
+              
+              **示例：**
+              - \`feat: 添加用户登录功能\`
+              - \`fix: 修复移动端样式问题\`
+              - \`docs: 更新 API 文档\`
+              `
+            })

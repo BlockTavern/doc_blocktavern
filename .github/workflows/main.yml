@@ -1,0 +1,103 @@
+# 主工作流 - 协调所有 Conventional Commits 相关任务
+name: Main Workflow
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      force_release:
+        description: '强制创建发布版本'
+        required: false
+        default: false
+        type: boolean
+      update_history:
+        description: '强制更新 Git 历史数据'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  # PR 时验证提交信息
+  validate-commits:
+    if: github.event_name == 'pull_request'
+    uses: ./.github/workflows/validate-commits.yml
+    permissions:
+      contents: read
+      pull-requests: write
+
+  # Push 到 main 时创建发布版本
+  create-release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/release.yml
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    secrets: inherit
+
+  # 手动触发或 Push 到 main 时更新 Git 历史
+  update-git-history:
+    if: |
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.update_history == 'true')
+    uses: ./.github/workflows/git-history.yml
+    permissions:
+      contents: write
+    secrets: inherit
+
+  # 手动强制发布
+  force-release:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.force_release == 'true'
+    uses: ./.github/workflows/release.yml
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    secrets: inherit
+
+  # 汇总报告
+  summary:
+    name: Workflow Summary
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [validate-commits, create-release, update-git-history, force-release]
+    steps:
+      - name: Generate workflow summary
+        run: |
+          echo "## 🚀 工作流执行报告" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📋 执行的任务" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "- ✅ 提交信息验证: ${{ needs.validate-commits.result }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            echo "- 🏷️ 版本发布: ${{ needs.create-release.result }}" >> $GITHUB_STEP_SUMMARY
+            echo "- 📊 Git 历史更新: ${{ needs.update-git-history.result }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ github.event.inputs.force_release }}" = "true" ]; then
+              echo "- 🚀 强制发布: ${{ needs.force-release.result }}" >> $GITHUB_STEP_SUMMARY
+            fi
+            if [ "${{ github.event.inputs.update_history }}" = "true" ]; then
+              echo "- 📊 Git 历史更新: ${{ needs.update-git-history.result }}" >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📚 相关文档" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- [Conventional Commits 规范指南](./CONVENTIONAL_COMMITS.md)" >> $GITHUB_STEP_SUMMARY
+          echo "- [项目变更日志](./CHANGELOG.md)" >> $GITHUB_STEP_SUMMARY
+          echo "- [最新发布版本](https://github.com/${{ github.repository }}/releases/latest)" >> $GITHUB_STEP_SUMMARY

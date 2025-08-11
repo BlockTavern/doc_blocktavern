@@ -1,0 +1,217 @@
+# Git 历史数据生成工作流
+name: Generate Git History
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 每天凌晨 2 点自动更新历史数据
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-history:
+    name: Generate Git History Data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate Git History JSON
+        run: |
+          # 创建 git 历史数据生成脚本
+          cat > generate-git-history.js << 'EOF'
+          const { execSync } = require('child_process');
+          const fs = require('fs');
+          const path = require('path');
+          
+          console.log('🚀 开始生成 Git 历史数据...');
+          
+          // 获取所有文件的 git 历史
+          function getFileHistory(filePath) {
+            try {
+              const gitLog = execSync(
+                `git log --follow --pretty=format:"%H|%an|%ae|%ad|%s" --date=iso -- "${filePath}"`,
+                { encoding: 'utf8' }
+              );
+              
+              if (!gitLog.trim()) return [];
+              
+              return gitLog.trim().split('\n').map(line => {
+                const [hash, authorName, authorEmail, date, message] = line.split('|');
+                return {
+                  hash,
+                  authorName,
+                  authorEmail,
+                  date,
+                  message
+                };
+              });
+            } catch (error) {
+              console.error(`❌ 获取 ${filePath} 历史失败:`, error.message);
+              return [];
+            }
+          }
+          
+          // 获取所有 .md 文件
+          function getAllMarkdownFiles(dir, fileList = []) {
+            const files = fs.readdirSync(dir);
+            
+            files.forEach(file => {
+              const filePath = path.join(dir, file);
+              const stat = fs.statSync(filePath);
+              
+              if (stat.isDirectory() && !file.startsWith('.') && file !== 'node_modules') {
+                getAllMarkdownFiles(filePath, fileList);
+              } else if (file.endsWith('.md')) {
+                fileList.push(filePath);
+              }
+            });
+            
+            return fileList;
+          }
+          
+          // 获取仓库统计信息
+          function getRepoStats() {
+            try {
+              const totalCommits = execSync('git rev-list --all --count', { encoding: 'utf8' }).trim();
+              const contributors = execSync('git log --format="%an" | sort -u | wc -l', { encoding: 'utf8' }).trim();
+              const firstCommit = execSync('git log --reverse --format="%ad" --date=iso | head -1', { encoding: 'utf8' }).trim();
+              const lastCommit = execSync('git log -1 --format="%ad" --date=iso', { encoding: 'utf8' }).trim();
+              
+              return {
+                totalCommits: parseInt(totalCommits),
+                contributors: parseInt(contributors),
+                firstCommit,
+                lastCommit,
+                generatedAt: new Date().toISOString()
+              };
+            } catch (error) {
+              console.error('❌ 获取仓库统计失败:', error.message);
+              return {
+                totalCommits: 0,
+                contributors: 0,
+                firstCommit: null,
+                lastCommit: null,
+                generatedAt: new Date().toISOString()
+              };
+            }
+          }
+          
+          // 生成历史数据
+          const docsDir = './docs';
+          const markdownFiles = getAllMarkdownFiles(docsDir);
+          const gitHistoryData = {
+            _meta: getRepoStats(),
+            files: {}
+          };
+          
+          console.log(`📁 发现 ${markdownFiles.length} 个 Markdown 文件`);
+          
+          let processedCount = 0;
+          markdownFiles.forEach(filePath => {
+            const relativePath = path.relative('.', filePath).replace(/\\/g, '/');
+            const history = getFileHistory(relativePath);
+            
+            if (history.length > 0) {
+              gitHistoryData.files[relativePath] = {
+                history,
+                lastUpdated: history[0]?.date || null,
+                totalCommits: history.length,
+                contributors: [...new Set(history.map(h => h.authorName))].length
+              };
+              console.log(`✅ ${relativePath}: ${history.length} 次提交`);
+              processedCount++;
+            } else {
+              console.log(`⚠️ ${relativePath}: 无提交历史`);
+            }
+          });
+          
+          // 保存到 JSON 文件
+          const outputPath = './docs/public/git-history.json';
+          fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+          fs.writeFileSync(outputPath, JSON.stringify(gitHistoryData, null, 2));
+          
+          console.log(`\n🎉 Git 历史数据生成完成!`);
+          console.log(`📊 统计信息:`);
+          console.log(`   - 总文件数: ${markdownFiles.length}`);
+          console.log(`   - 有历史记录的文件: ${processedCount}`);
+          console.log(`   - 总提交数: ${gitHistoryData._meta.totalCommits}`);
+          console.log(`   - 贡献者数: ${gitHistoryData._meta.contributors}`);
+          console.log(`   - 输出文件: ${outputPath}`);
+          console.log(`   - 文件大小: ${(fs.statSync(outputPath).size / 1024).toFixed(2)} KB`);
+          EOF
+          
+          # 运行脚本生成历史数据
+          node generate-git-history.js
+
+      - name: Validate generated data
+        run: |
+          if [ ! -f "docs/public/git-history.json" ]; then
+            echo "❌ Git 历史数据文件未生成"
+            exit 1
+          fi
+          
+          # 检查 JSON 格式是否有效
+          if ! node -e "JSON.parse(require('fs').readFileSync('docs/public/git-history.json', 'utf8'))"; then
+            echo "❌ 生成的 JSON 文件格式无效"
+            exit 1
+          fi
+          
+          echo "✅ Git 历史数据验证通过"
+
+      - name: Commit and push git history data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if [ -f "docs/public/git-history.json" ]; then
+            git add docs/public/git-history.json
+            if git diff --staged --quiet; then
+              echo "ℹ️ Git 历史数据无变更"
+            else
+              git commit -m "chore: update git history data [skip ci]"
+              git push
+              echo "✅ Git 历史数据已更新并推送"
+            fi
+          else
+            echo "❌ Git 历史数据文件不存在"
+            exit 1
+          fi
+
+      - name: Create summary
+        run: |
+          echo "## 📊 Git 历史数据生成报告" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "docs/public/git-history.json" ]; then
+            FILE_SIZE=$(stat -c%s "docs/public/git-history.json")
+            FILE_SIZE_KB=$((FILE_SIZE / 1024))
+            
+            echo "### ✅ 生成成功" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "- 📁 输出文件: \`docs/public/git-history.json\`" >> $GITHUB_STEP_SUMMARY
+            echo "- 📏 文件大小: ${FILE_SIZE_KB} KB" >> $GITHUB_STEP_SUMMARY
+            echo "- 🕐 生成时间: $(date)" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 📋 数据预览" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
+            head -20 docs/public/git-history.json >> $GITHUB_STEP_SUMMARY
+            echo "..." >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### ❌ 生成失败" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Git 历史数据文件生成失败，请检查日志。" >> $GITHUB_STEP_SUMMARY
+          fi

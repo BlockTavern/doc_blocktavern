@@ -1,0 +1,163 @@
+# 自动版本发布工作流
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: '发布类型'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - patch
+          - minor
+          - major
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    outputs:
+      new-release-published: ${{ steps.semantic-release.outputs.new-release-published }}
+      new-release-version: ${{ steps.semantic-release.outputs.new-release-version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install semantic-release
+        run: |
+          npm install -g semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github conventional-changelog-conventionalcommits
+
+      - name: Create semantic-release config
+        run: |
+          cat > .releaserc.json << 'EOF'
+          {
+            "branches": ["main"],
+            "plugins": [
+              [
+                "@semantic-release/commit-analyzer",
+                {
+                  "preset": "conventionalcommits",
+                  "releaseRules": [
+                    {"type": "feat", "release": "minor"},
+                    {"type": "fix", "release": "patch"},
+                    {"type": "perf", "release": "patch"},
+                    {"type": "docs", "release": false},
+                    {"type": "style", "release": false},
+                    {"type": "refactor", "release": "patch"},
+                    {"type": "test", "release": false},
+                    {"type": "build", "release": "patch"},
+                    {"type": "ci", "release": false},
+                    {"type": "chore", "release": false},
+                    {"breaking": true, "release": "major"}
+                  ]
+                }
+              ],
+              [
+                "@semantic-release/release-notes-generator",
+                {
+                  "preset": "conventionalcommits",
+                  "presetConfig": {
+                    "types": [
+                      {"type": "feat", "section": "✨ 新功能", "hidden": false},
+                      {"type": "fix", "section": "🐛 Bug 修复", "hidden": false},
+                      {"type": "perf", "section": "⚡ 性能优化", "hidden": false},
+                      {"type": "refactor", "section": "♻️ 代码重构", "hidden": false},
+                      {"type": "docs", "section": "📚 文档更新", "hidden": false},
+                      {"type": "style", "section": "💄 代码格式", "hidden": true},
+                      {"type": "test", "section": "✅ 测试", "hidden": true},
+                      {"type": "build", "section": "📦 构建系统", "hidden": false},
+                      {"type": "ci", "section": "👷 CI/CD", "hidden": true},
+                      {"type": "chore", "section": "🔧 其他变更", "hidden": true}
+                    ]
+                  }
+                }
+              ],
+              [
+                "@semantic-release/changelog",
+                {
+                  "changelogFile": "CHANGELOG.md",
+                  "changelogTitle": "# 📋 变更日志\n\n本项目的所有重要变更都将记录在此文件中。\n\n格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，\n并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范。"
+                }
+              ],
+              [
+                "@semantic-release/git",
+                {
+                  "assets": ["CHANGELOG.md", "package.json"],
+                  "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                }
+              ],
+              "@semantic-release/github"
+            ]
+          }
+          EOF
+
+      - name: Check for releasable commits
+        id: check-commits
+        run: |
+          # 检查是否有可发布的提交
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          if [ -z "$LAST_TAG" ]; then
+            echo "No previous tags found, will create initial release"
+            echo "has-releasable-commits=true" >> $GITHUB_OUTPUT
+          else
+            # 检查自上次标签以来是否有 feat, fix, perf, refactor, build 类型的提交
+            RELEASABLE_COMMITS=$(git log $LAST_TAG..HEAD --oneline --grep="^feat" --grep="^fix" --grep="^perf" --grep="^refactor" --grep="^build" --grep="BREAKING CHANGE" -E)
+            if [ -n "$RELEASABLE_COMMITS" ]; then
+              echo "Found releasable commits:"
+              echo "$RELEASABLE_COMMITS"
+              echo "has-releasable-commits=true" >> $GITHUB_OUTPUT
+            else
+              echo "No releasable commits found since last tag"
+              echo "has-releasable-commits=false" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Run semantic-release
+        id: semantic-release
+        if: steps.check-commits.outputs.has-releasable-commits == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          if [ "${{ github.event.inputs.release_type }}" != "auto" ] && [ "${{ github.event.inputs.release_type }}" != "" ]; then
+            # 手动指定版本类型
+            npx semantic-release --debug
+          else
+            # 自动分析版本类型
+            npx semantic-release
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Output release info
+        if: steps.semantic-release.outputs.new-release-published == 'true'
+        run: |
+          echo "🎉 新版本已发布: ${{ steps.semantic-release.outputs.new-release-version }}"
+          echo "📋 查看发布详情: https://github.com/${{ github.repository }}/releases/tag/v${{ steps.semantic-release.outputs.new-release-version }}"
+
+      - name: No release needed
+        if: steps.check-commits.outputs.has-releasable-commits == 'false' && github.event_name != 'workflow_dispatch'
+        run: |
+          echo "ℹ️ 没有需要发布的更改。只有以下类型的提交会触发版本发布："
+          echo "  - feat: 新功能 (minor 版本)"
+          echo "  - fix: Bug 修复 (patch 版本)"
+          echo "  - perf: 性能优化 (patch 版本)"
+          echo "  - refactor: 代码重构 (patch 版本)"
+          echo "  - build: 构建相关 (patch 版本)"
+          echo "  - BREAKING CHANGE: 破坏性变更 (major 版本)"
