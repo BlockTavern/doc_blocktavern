@@ -3,46 +3,48 @@ layout: home
 
 hero:
   name: "BlockTavern"
-  text: "Minecraft 伺服器文檔"
-  tagline: 歡迎來到 BlockTavern！這裡是您的 Minecraft 冒險起點。
+  text: ""
+  tagline: 在這裡，每一個方塊都有故事，每一個玩家都是傳奇
+  image:
+    src: /logo.png
+    alt: BlockTavern Logo
   actions:
     - theme: brand
-      text: 安裝教學
+      text: 進入教學
       link: /zh-HK/InstallationTutorial/
-    - theme: alt
-      text: 遊戲指南
-      link: /zh-HK/GameplayGuide/
+    - theme: alt  
+      text: 開發指南
+      link: /zh-HK/DevelopmentGuide/
 
 features:
-  - title: 🚀 快速開始
-    details: 簡單易懂的安裝教學，讓您快速加入我們的伺服器
-  - title: 🎮 遊戲指南
-    details: 詳細的遊戲玩法說明，幫助您更好地享受遊戲體驗
-  - title: 🛠️ 開發文檔
-    details: 為開發者提供的詳細技術文檔和 API 參考
-  - title: ❓ 常見問題
-    details: 收集了玩家最常遇到的問題和解決方案
+  - icon: 📦
+    title: 安裝教學
+    details: 安裝BlockTavern遊戲，準備開始你的冒險
+    link: /zh-HK/InstallationTutorial/
+
+  - icon: 🎮
+    title: 遊玩指南
+    details: 了解遊戲的基本規則和玩法
+    link: /zh-HK/GameplayGuide/
+    
+  - icon: ❓
+    title: 常見問題
+    details: 快速解決你的問題
+    link: /zh-HK/FAQ/
 ---
 
 ## 關於 BlockTavern
 
-BlockTavern 是一個致力於提供優質 Minecraft 遊戲體驗的伺服器。我們擁有：
+BlockTavern 是一個充滿創意和冒險的 Minecraft 伺服器。在這裡，你可以：
 
-- **穩定的伺服器環境** - 24/7 不間斷運行
-- **友好的社群氛圍** - 歡迎所有玩家加入
-- **豐富的遊戲內容** - 多樣化的遊戲模式和活動
-- **專業的技術支援** - 快速響應玩家需求
+- 🏗️ **建造夢想**：使用無限的創意建造你的理想世界
+- 🤝 **社群互動**：與來自世界各地的玩家一起遊玩
+- 🎯 **挑戰任務**：參與各種有趣的任務和活動
+- 🛡️ **安全環境**：享受公平、友善的遊戲環境
 
-## 快速導航
+### 快速導航
 
-### 新手指南
-- [安裝教學](/zh-HK/InstallationTutorial/) - 如何安裝和配置遊戲
-- [遊戲指南](/zh-HK/GameplayGuide/) - 基本遊戲玩法介紹
-
-### 進階內容
-- [開發指南](/zh-HK/DevelopmentGuide/) - 技術文檔和開發資源
-- [常見問題](/zh-HK/FAQ/) - 疑難解答和技術支援
-
----
-
-*準備好開始您的 Minecraft 冒險了嗎？立即查看我們的 [安裝教學](/zh-HK/InstallationTutorial/) 開始吧！*
+- [📖 安裝教學](/zh-HK/InstallationTutorial/) - 學習如何安裝和設定遊戲
+- [🎮 遊戲指南](/zh-HK/GameplayGuide/) - 掌握遊戲規則和技巧
+- [❓ 常見問題](/zh-HK/FAQ/) - 找到常見問題的解答
+- [🔧 開發指南](/zh-HK/DevelopmentGuide/) - 了解如何貢獻到項目
