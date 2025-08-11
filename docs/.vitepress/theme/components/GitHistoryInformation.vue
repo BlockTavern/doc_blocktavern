@@ -1,102 +1,53 @@
 <template>
   <div class="git-history-information">
-    <!-- 贡献者部分 -->
-    <div class="contributors-section">
-      <h2 class="section-title">
-        <span class="icon">👥</span>
-        贡献者
-      </h2>
-      <div v-if="contributorsLoading" class="loading">
-        <span class="loading-spinner"></span>
-        加载贡献者中...
-      </div>
-      <div v-else-if="contributorsError" class="error">
-        <span class="icon">⚠️</span>
-        加载贡献者失败: {{ contributorsError }}
-      </div>
-      <div v-else class="contributors-list">
-        <a 
-          v-for="contributor in contributors" 
-          :key="contributor.login"
-          :href="contributor.html_url" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="contributor-item"
-          :title="`${contributor.login} - ${contributor.contributions} 次贡献`"
-        >
-          <img 
-            :src="contributor.avatar_url" 
-            :alt="contributor.login" 
-            class="contributor-avatar"
-            loading="lazy"
-          />
-          <div class="contributor-info">
-            <span class="contributor-name">{{ contributor.login }}</span>
-            <span class="contributor-contributions">{{ contributor.contributions }} 次贡献</span>
-          </div>
-        </a>
+    <!-- 最后更新信息 -->
+    <div class="last-updated-section">
+      <div v-if="lastCommit" class="last-updated">
+        <span class="icon">🕒</span>
+        最后编辑时间: 
+        <time :datetime="lastCommit.commit.author.date">
+          {{ formatDate(lastCommit.commit.author.date) }}
+        </time>
       </div>
     </div>
 
     <!-- 文件历史部分 -->
     <div class="file-history-section">
-      <h2 class="section-title">
+      <div class="history-header" @click="toggleHistory">
         <span class="icon">📝</span>
-        文件历史
-      </h2>
-      <div v-if="historyLoading" class="loading">
-        <span class="loading-spinner"></span>
-        加载文件历史中...
+        <span class="history-title">查看完整历史记录</span>
+        <span class="toggle-icon" :class="{ 'expanded': isHistoryExpanded }">▼</span>
       </div>
-      <div v-else-if="historyError" class="error">
-        <span class="icon">⚠️</span>
-        加载文件历史失败: {{ historyError }}
-      </div>
-      <div v-else class="history-list">
-        <div v-for="commit in fileHistory" :key="commit.sha" class="history-item">
-          <div class="commit-header">
-            <a 
-              :href="commit.html_url" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="commit-link"
-            >
-              <span class="commit-sha">{{ commit.sha.substring(0, 7) }}</span>
-            </a>
-            <span class="commit-date">{{ formatDate(commit.commit.author.date) }}</span>
-          </div>
-          <div class="commit-message">{{ commit.commit.message }}</div>
-          <div class="commit-author">
-            <img 
-              :src="commit.author?.avatar_url || 'https://github.com/ghost.png'" 
-              :alt="commit.commit.author.name" 
-              class="author-avatar"
-              loading="lazy"
-            />
-            <span class="author-name">{{ commit.commit.author.name }}</span>
-            <span class="author-email">{{ commit.commit.author.email }}</span>
+      
+      <div class="history-content" :class="{ 'expanded': isHistoryExpanded }">
+        <div v-if="historyLoading" class="loading">
+          <span class="loading-spinner"></span>
+          加载文件历史中...
+        </div>
+        <div v-else-if="historyError" class="error">
+          <span class="icon">⚠️</span>
+          加载文件历史失败: {{ historyError }}
+        </div>
+        <div v-else class="history-list">
+          <div v-for="commit in fileHistory" :key="commit.sha" class="history-item">
+            <div class="commit-info">
+              <a 
+                :href="commit.html_url" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="commit-sha"
+              >
+                {{ commit.sha.substring(0, 7) }}
+              </a>
+              <span class="commit-type">feat</span>
+              <span class="commit-description">{{ commit.commit.message }}</span>
+              <span class="commit-meta">
+                <span class="commit-number">#{{ commit.sha.substring(0, 4) }}</span>
+                <span class="commit-date">{{ formatDate(commit.commit.author.date) }}</span>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- 最后更新信息 -->
-    <div class="last-updated-section">
-      <div v-if="lastCommit" class="last-updated">
-        <span class="icon">🕒</span>
-        最后更新于 
-        <time :datetime="lastCommit.commit.author.date">
-          {{ formatDate(lastCommit.commit.author.date) }}
-        </time>
-        由 
-        <a 
-          :href="lastCommit.author?.html_url || '#'" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="author-link"
-        >
-          {{ lastCommit.commit.author.name }}
-        </a>
       </div>
     </div>
   </div>
@@ -110,12 +61,10 @@ import axios from 'axios'
 const { page } = useData()
 
 // 响应式数据
-const contributors = ref([])
 const fileHistory = ref([])
-const contributorsLoading = ref(true)
 const historyLoading = ref(true)
-const contributorsError = ref(null)
 const historyError = ref(null)
+const isHistoryExpanded = ref(false)
 
 // 配置
 const GITHUB_REPO_OWNER = 'Re0XIAOPA'
@@ -136,28 +85,9 @@ const getCurrentFilePath = () => {
   return filePath.startsWith('docs/') ? filePath : `docs/${filePath}`
 }
 
-// 获取贡献者列表
-const fetchContributors = async () => {
-  try {
-    contributorsLoading.value = true
-    contributorsError.value = null
-    
-    const response = await axios.get(
-      `${GITHUB_API_BASE}/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contributors`,
-      {
-        params: {
-          per_page: 100
-        }
-      }
-    )
-    
-    contributors.value = response.data
-  } catch (error) {
-    console.error('获取贡献者失败:', error)
-    contributorsError.value = error.response?.data?.message || error.message || '未知错误'
-  } finally {
-    contributorsLoading.value = false
-  }
+// 切换历史记录展开状态
+const toggleHistory = () => {
+  isHistoryExpanded.value = !isHistoryExpanded.value
 }
 
 // 获取文件历史
@@ -216,7 +146,6 @@ const formatDate = (dateString) => {
 
 // 组件挂载时获取数据
 onMounted(() => {
-  fetchContributors()
   fetchFileHistory()
 })
 </script>
@@ -224,26 +153,13 @@ onMounted(() => {
 <style scoped>
 .git-history-information {
   margin: 2rem 0;
-  padding: 1.5rem;
-  border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background-color: var(--vp-c-bg-soft);
-}
-
-.section-title {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0 0 1rem 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-  border-bottom: 1px solid var(--vp-c-divider);
-  padding-bottom: 0.5rem;
+  overflow: hidden;
 }
 
 .icon {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .loading {
@@ -252,6 +168,7 @@ onMounted(() => {
   gap: 0.5rem;
   color: var(--vp-c-text-2);
   font-size: 0.9rem;
+  padding: 1rem;
 }
 
 .loading-spinner {
@@ -274,204 +191,167 @@ onMounted(() => {
   gap: 0.5rem;
   color: var(--vp-c-danger-1);
   font-size: 0.9rem;
-}
-
-/* 贡献者样式 */
-.contributors-section {
-  margin-bottom: 2rem;
-}
-
-.contributors-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.contributor-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 6px;
-  background-color: var(--vp-c-bg);
-  text-decoration: none;
-  color: var(--vp-c-text-1);
-  transition: all 0.2s ease;
-  min-width: 0;
-}
-
-.contributor-item:hover {
-  border-color: var(--vp-c-brand-1);
-  background-color: var(--vp-c-brand-soft);
-  transform: translateY(-1px);
-}
-
-.contributor-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid var(--vp-c-divider);
-  flex-shrink: 0;
-}
-
-.contributor-info {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.contributor-name {
-  font-weight: 500;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.contributor-contributions {
-  font-size: 0.75rem;
-  color: var(--vp-c-text-2);
-  white-space: nowrap;
-}
-
-/* 文件历史样式 */
-.file-history-section {
-  margin-bottom: 2rem;
-}
-
-.history-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.history-item {
   padding: 1rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 6px;
-  background-color: var(--vp-c-bg);
-  transition: border-color 0.2s ease;
-}
-
-.history-item:hover {
-  border-color: var(--vp-c-brand-1);
-}
-
-.commit-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.commit-link {
-  text-decoration: none;
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
-}
-
-.commit-link:hover {
-  text-decoration: underline;
-}
-
-.commit-sha {
-  font-family: var(--vp-font-family-mono);
-  font-size: 0.85rem;
-  padding: 0.2rem 0.4rem;
-  background-color: var(--vp-c-bg-soft);
-  border-radius: 4px;
-  border: 1px solid var(--vp-c-divider);
-}
-
-.commit-date {
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-}
-
-.commit-message {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  margin-bottom: 0.75rem;
-  color: var(--vp-c-text-1);
-}
-
-.commit-author {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.author-avatar {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid var(--vp-c-divider);
-}
-
-.author-name {
-  font-weight: 500;
-  font-size: 0.85rem;
-  color: var(--vp-c-text-1);
-}
-
-.author-email {
-  font-size: 0.8rem;
-  color: var(--vp-c-text-2);
 }
 
 /* 最后更新样式 */
 .last-updated-section {
-  border-top: 1px solid var(--vp-c-divider);
-  padding-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  background-color: var(--vp-c-bg);
 }
 
 .last-updated {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--vp-c-text-2);
 }
 
-.author-link {
-  color: var(--vp-c-brand-1);
-  text-decoration: none;
+/* 文件历史样式 */
+.file-history-section {
+  background-color: var(--vp-c-bg);
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.history-header:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.history-title {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-1);
   font-weight: 500;
 }
 
-.author-link:hover {
+.toggle-icon {
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.toggle-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.history-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.history-content.expanded {
+  max-height: 1000px;
+}
+
+.history-list {
+  padding: 0;
+}
+
+.history-item {
+  border-bottom: 1px solid var(--vp-c-divider);
+  transition: background-color 0.2s ease;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-item:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.commit-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+}
+
+.commit-sha {
+  font-family: var(--vp-font-family-mono);
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
+  min-width: 60px;
+}
+
+.commit-sha:hover {
   text-decoration: underline;
+}
+
+.commit-type {
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: center;
+}
+
+.commit-description {
+  flex: 1;
+  color: var(--vp-c-text-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.commit-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.commit-number {
+  font-family: var(--vp-font-family-mono);
+}
+
+.commit-date {
+  white-space: nowrap;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
   .git-history-information {
-    padding: 1rem;
     margin: 1rem 0;
   }
   
-  .contributors-list {
-    gap: 0.5rem;
-  }
-  
-  .contributor-item {
-    padding: 0.4rem;
-  }
-  
-  .contributor-avatar {
-    width: 28px;
-    height: 28px;
-  }
-  
-  .commit-header {
+  .commit-info {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    padding: 0.75rem;
   }
   
-  .commit-author {
-    flex-wrap: wrap;
+  .commit-description {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+  
+  .commit-meta {
+    align-self: flex-end;
   }
 }
 </style>
