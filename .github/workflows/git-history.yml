@@ -183,7 +183,11 @@ jobs:
               echo "ℹ️ Git 历史数据无变更"
             else
               git commit -m "chore: update git history data [skip ci]"
-              git push
+              # 推送前先拉取远程更新以避免冲突
+              git pull --rebase origin main || {
+                echo "⚠️ 拉取远程更新失败，尝试强制推送"
+                git push --force-with-lease
+              } && git push
               echo "✅ Git 历史数据已更新并推送"
             fi
           else
