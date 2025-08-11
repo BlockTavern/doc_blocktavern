@@ -25,7 +25,7 @@ features:
   - icon: 🎮
     title: 游玩指南
     details: 了解游戏的基本规则和玩法
-    link: /zh-CN/GameplayGuide/
+    link: /zh-CN/GameplayGuide/command-list/
   - icon: ❓
     title: 常见问题
     details: 快速解决你的问题

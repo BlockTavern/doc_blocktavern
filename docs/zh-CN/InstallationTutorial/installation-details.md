@@ -52,13 +52,10 @@ order: 1
 
 如果您在安装过程中遇到问题：
 
-1. 查看[常见问题FAQ](/zh-CN/FAQ/)
+1. 查看 [常见问题FAQ](/zh-CN/FAQ/faq-details)
 2. 联系服务器管理员
 3. 在社区论坛发帖求助
 4. 加入官方QQ群或Discord
 
----
-
-安装完成后，别忘了阅读[游戏指南](/zh-CN/GameplayGuide/)来了解服务器的特色玩法！
 
 <Contributors />

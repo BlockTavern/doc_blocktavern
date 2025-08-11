@@ -81,12 +81,15 @@ h2 {
   color: var(--vp-c-text-1);
   transition: background-color 0.2s ease-in-out;
   padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-bg);
   background-color: transparent;
 }
 
 .contributor-card:hover {
   background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-brand-1);
+  text-decoration: none;
 }
 
 .contributor-avatar {

@@ -1,45 +1,40 @@
 ---
-title: 常见问题详情
+title: 常见问题
 description: 常见问题详情目录
-order: 5
+order: 1
 ---
 
 # 常见问题 FAQ
 
 欢迎来到BlockTavern的常见问题页面！这里收集了玩家们最常遇到的问题和解答。
 
-## 服务器相关
+## 如何加入服务器？
+请参考我们的 [安装教程](/zh-CN/InstallationTutorial/installation-details)。
 
-### 如何加入服务器？
-请参考我们的[安装教程](/zh-CN/InstallationTutorial/)。
 
 ### 服务器地址是什么？
-服务器地址将在您完成新手指南后提供。
+服务器地址已经打包在游戏内。
 
 ### 服务器支持哪些版本？
-目前支持Java版1.20.x系列版本。
-
-## 游戏玩法
-
-### 新手应该从哪里开始？
-建议先查看[基础玩法指南](/zh-CN/GameplayGuide/basic-gameplay.md)，然后了解[建筑系统](/zh-CN/GameplayGuide/building-system.md)。
+目前仅支持Java版1.21系列版本。
 
 ### 可以建造什么？
-在遵守服务器规则的前提下，您可以自由建造。详情请查看建造规范。
+在遵守服务器规则的前提下，您可以自由建造。详情请查看 [建造规范](/zh-CN/GameplayGuide/server-rules)。
 
-## 技术问题
+### 连接不上服务器、延迟高？
+检查自身网络卡顿，是否开启了VPN等。（服务器是优选线路）  
+自身网络无问题，建议联系服务器管理员
 
-### 连接不上服务器怎么办？
-1. 检查网络连接
-2. 确认游戏版本正确
-3. 查看服务器状态公告
-4. 联系管理员
 
-### 游戏卡顿怎么解决？
-请参考[Java安装指南](/zh-CN/InstallationTutorial/java-installation.md)和[客户端配置](/zh-CN/InstallationTutorial/minecraft-client.md)。
+## 无法验证身份服务器
 
----
+| 问题  | 错误信息 |  
+| ----- | --- |
+| 无法验证您的帐户 | 登录失败:暂时无法连接到身份验证服务器，请稍后再试 | 
+| 解决办法 | 视频内工具下载地址  | 
+| [B站视频 - 解决办法](https://www.bilibili.com/video/BV16tejetEUH/) | [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/18627/) | |
 
-如果您的问题没有在这里找到答案，请联系我们的管理团队或在社区中提问。
+![err](./faq-details/faq-details01.png)
+
 
 <Contributors />

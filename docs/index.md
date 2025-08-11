@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 进入教程
-      link: /zh-CN/InstallationTutorial/installation-details/
+      link: /zh-CN/InstallationTutorial/installation-details
     - theme: alt  
       text: 开发指南(贡献文档)
       link: /zh-CN/DevelopmentGuide/development-details
@@ -20,12 +20,12 @@ features:
   - icon: 📦
     title: 安装教程
     details: 安装BlockTavern游戏，准备开始你的冒险
-    link: /zh-CN/InstallationTutorial/installation-details/
+    link: /zh-CN/InstallationTutorial/installation-details
 
   - icon: 🎮
     title: 游玩指南
     details: 了解游戏的基本规则和玩法
-    link: /zh-CN/GameplayGuide/gameplay-details/
+    link: /zh-CN/GameplayGuide/command-list
     
   - icon: ❓
     title: 常见问题

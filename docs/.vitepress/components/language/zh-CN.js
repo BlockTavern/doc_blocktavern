@@ -17,7 +17,7 @@ export const zhConfig = {
         text: "安装教程",
         link: "/zh-CN/InstallationTutorial/installation-details",
       },
-      { text: "游戏指南", link: "/zh-CN/GameplayGuide/gameplay-details" },
+      { text: "游戏指南", link: "/zh-CN/GameplayGuide/command-list" },
       { text: "常见问题", link: "/zh-CN/FAQ/faq-details" },
       { text: "开发指南", link: "/zh-CN/DevelopmentGuide/development-details" },
     ],
