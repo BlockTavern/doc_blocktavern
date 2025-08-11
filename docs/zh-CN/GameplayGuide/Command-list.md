@@ -40,8 +40,8 @@ order: 1
 | ![homeset](./command-list/Command-list06.png) | |
 | /home tp | 传送回家 |
 | ![hometp](./command-list/Command-list07.png) | |
-| /home del | 删除家 |
-| ![homedel](./command-list/Command-list08.png) | |
+| /home unset | 删除家 |
+| ![homeunset](./command-list/Command-list08.png) | |
 | /home list | 家列表 |
 | ![homelist](./command-list/Command-list09.png) | |
 
