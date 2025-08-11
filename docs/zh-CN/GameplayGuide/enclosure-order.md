@@ -1,7 +1,7 @@
 ---
 title: "领地指令"
 description: BlockTavern的领地指令
-order: 2
+order: 3
 ---
 
 # 领地指令

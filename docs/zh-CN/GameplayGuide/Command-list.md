@@ -1,7 +1,7 @@
 ---
 title: 指令列表
 description: 指令列表
-order: 1
+order: 2
 ---
 
 # 基本指令

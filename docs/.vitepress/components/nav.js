@@ -11,7 +11,7 @@
 export const navConfig = [
   { 
     text: '首页', 
-    link: '/' 
+    link: '/zh-CN/' 
   },
    { 
     text: '安装教程', 

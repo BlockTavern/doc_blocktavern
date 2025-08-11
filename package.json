@@ -2,7 +2,8 @@
   "name": "doc_blocktavern",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./zh-CN/index.js",
+
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",

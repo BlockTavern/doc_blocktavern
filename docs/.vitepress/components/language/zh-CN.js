@@ -6,7 +6,7 @@
 export const zhConfig = {
   label: "简体中文",
   lang: "zh-CN",
-  link: "/",
+  link: "/zh-CN/",
   title: "BlockTavern 文档",
   description: "BlockTavern Minecraft 服务器文档",
   themeConfig: {
