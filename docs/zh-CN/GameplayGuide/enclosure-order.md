@@ -41,3 +41,5 @@ BlockTavern 加入了 Enclosure 领地，玩家可以使用木锄头来为自己
 
 
 <Contributors />
+
+<GitHistoryInformation />

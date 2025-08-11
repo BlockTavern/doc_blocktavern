@@ -7,9 +7,8 @@ import {
   localesConfig,
   mdItCustomAttrs,
   editLink,
-
-
 } from './components/index.js'
+import { GitHistoryInformation, GitHistoryInformationMarkdownSection } from './plugins/git-history-information.js'
 
 /**
  * VitePress 配置
@@ -26,14 +25,35 @@ export default {
   // 禁用(忽略)死链接
   ignoreDeadLinks: true,
 
+  // Vite 配置
+  vite: {
+    plugins: [
+      GitHistoryInformation({
+        repoURL: 'https://github.com/Re0XIAOPA/doc_blocktavern',
+        maxCommits: 20,
+        maxContributors: 100,
+        includeContributors: true,
+        includeHistory: true,
+        includeLastUpdated: true
+      })
+      // 暂时禁用 GitHistoryInformationMarkdownSection 插件
+      // GitHistoryInformationMarkdownSection({
+      //   sections: ['contributors', 'history'],
+      //   exclude: [
+      //     'index.md',
+      //     '/zh-CN/index.md',
+      //     '/en-US/index.md'
+      //   ]
+      // })
+    ]
+  },
+
   // 自定义 Markdown 配置
   markdown: mdItCustomAttrs.markdown,
   head: mdItCustomAttrs.head,
 
   // 多语言配置（组件化）
   locales: localesConfig,
-
-
 
   // 主题配置
   themeConfig: {

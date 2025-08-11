@@ -176,3 +176,5 @@ git commit -m "feat(search): 添加搜索功能"
 感谢您的贡献！每一份贡献都让 BlockTavern 文档变得更好。
 
 <Contributors />
+
+<GitHistoryInformation />

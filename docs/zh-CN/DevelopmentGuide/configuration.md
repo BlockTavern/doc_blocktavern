@@ -317,3 +317,5 @@ export const siteConfig = {
 通过以上配置说明，你应该能够根据项目需求对各个配置文件进行相应的修改和定制。如果遇到具体问题，建议查阅 [VitePress 官方文档](https://vitepress.dev/) 或 [vitepress-sidebar 插件文档](https://vitepress-sidebar.cdget.com/)。
 
 <Contributors />
+
+<GitHistoryInformation />

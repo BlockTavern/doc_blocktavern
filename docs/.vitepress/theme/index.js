@@ -2,12 +2,14 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import { createParticles } from './particles.js' // 确保这个导入是正确的
 import Contributors from './components/Contributors.vue'
+import GitHistoryInformation from './components/GitHistoryInformation.vue'
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app, router, siteData }) {
     // 注册全局组件
     app.component('Contributors', Contributors)
+    app.component('GitHistoryInformation', GitHistoryInformation)
 
     // 在客户端初始化粒子效果
     if (typeof window !== 'undefined') {

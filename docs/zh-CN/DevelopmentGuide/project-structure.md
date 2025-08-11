@@ -114,3 +114,5 @@ doc_blocktavern/
 - **本地搜索**：内置全文搜索功能
 
 <Contributors />
+
+<GitHistoryInformation />

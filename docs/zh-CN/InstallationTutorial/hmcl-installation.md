@@ -25,3 +25,4 @@ order: 3
 ![下载图片12](./installation-details/installation-details12.png)
 
 <Contributors />
+<GitHistoryInformation />

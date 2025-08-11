@@ -20,3 +20,5 @@ BlockTavern 加入了假人指令，玩家可以模拟出多个假的玩家，�
 
 
 <Contributors />
+
+<GitHistoryInformation />

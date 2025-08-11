@@ -47,3 +47,5 @@ order: 2
 
 
 <Contributors />
+
+<GitHistoryInformation />

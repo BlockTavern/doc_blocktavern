@@ -30,3 +30,5 @@ PCL2是一个Minecraft启动器，它可以帮助您方便地安装和管理Mine
 ![下载图片07](./installation-details/installation-details07.png)
 
 <Contributors />
+
+<GitHistoryInformation />

@@ -142,3 +142,5 @@ npm run docs:preview
 :::
 
 <Contributors />
+
+<GitHistoryInformation />

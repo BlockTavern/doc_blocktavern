@@ -15,7 +15,7 @@ order: 4
 1. 在对应语言目录下创建 `.md` 文件
 2. 添加 Front Matter 配置
 3. 编写内容并保存
-4. 文档末尾添加 `<Contributors />` 贡献者组件
+4. 文档末尾添加 `<Contributors />` 贡献者组件 `<GitHistoryInformation />` Git历史组件
 
 ::: tip 开发环境
 使用 `npm run docs:dev` 启动本地预览，支持热重载。
@@ -298,3 +298,5 @@ npm install
 遵循本指南可以创建高质量的文档。如有疑问，请联系项目维护者。
 
 <Contributors />
+
+<GitHistoryInformation />

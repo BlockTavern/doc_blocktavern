@@ -197,3 +197,5 @@ title: 我的新页面
 - `index.md` 文件会作为该目录的首页
 
 <Contributors />
+
+<GitHistoryInformation />
