@@ -5,78 +5,140 @@ order: 5
 ---
 
 # 故障排除
-本页面将帮助您解决在开发和使用 BlockTavern 过程中可能遇到的一些常见问题。无论是文档编写、配置错误还是部署问题，我们都将提供详细的解决方案和调试技巧。
 
-## 常见问题
+快速解决 BlockTavern 文档开发中的常见问题。
 
-### 开发服务器启动失败
+## 开发问题
 
-**问题**：运行 `npm run docs:dev` 时出错
+### 服务器启动失败
+
+```bash
+npm run docs:dev
+```
 
 **解决方案**：
-1. 检查 Node.js 版本是否符合要求
-2. 删除 `node_modules` 目录并重新安装依赖
-3. 检查端口是否被占用
+- 检查 Node.js 版本（推荐 18+）
+- 重新安装依赖：`rm -rf node_modules && npm install`
+- 检查端口占用：`netstat -ano | findstr :5173`
 
 ### 构建失败
 
-**问题**：运行 `npm run docs:build` 时出错
+```bash
+npm run docs:build
+```
 
 **解决方案**：
-1. 检查所有 Markdown 文件的语法
-2. 确保所有链接都是有效的
-3. 检查配置文件是否有语法错误
+- 检查 Markdown 语法错误
+- 验证所有内部链接有效性
+- 检查配置文件语法
 
-### 页面显示异常
+### 页面异常
 
-**问题**：页面内容显示不正确或样式异常
-
-**解决方案**：
-1. 清除浏览器缓存
-2. 检查 Markdown 语法
-3. 验证 Front Matter 配置
-4. 检查图片路径是否正确
-
-### 搜索功能不工作
-
-**问题**：站点搜索功能无法正常工作
+**常见症状**：内容显示错误、样式异常
 
 **解决方案**：
-1. 确保搜索配置正确
-2. 重新构建项目
-3. 检查是否有 JavaScript 错误
+- 清除浏览器缓存（Ctrl+F5）
+- 检查 Front Matter 格式
+- 验证图片路径正确性
+
+### 搜索失效
+
+**解决方案**：
+- 重新构建项目
+- 检查浏览器控制台错误
+- 验证搜索配置
 
 ## 调试技巧
 
-### 开发模式调试
+### 开发调试
 
-1. **使用浏览器开发者工具**：
-   - 检查控制台错误
-   - 查看网络请求
-   - 调试 JavaScript 代码
+**浏览器开发者工具**（F12）：
+- 控制台查看错误信息
+- 网络面板检查资源加载
+- 元素面板调试样式
 
-2. **VitePress 调试模式**：
-   ```bash
-   DEBUG=vitepress:* npm run docs:dev
-   ```
+**VitePress 调试模式**：
+```bash
+# Windows
+set DEBUG=vitepress:* && npm run docs:dev
 
-3. **检查构建输出**：
-   ```bash
-   npm run docs:build -- --debug
-   ```
+# Linux/Mac
+DEBUG=vitepress:* npm run docs:dev
+```
 
-### 生产环境调试
+**构建调试**：
+```bash
+npm run docs:build -- --debug
+```
 
-1. **本地预览生产版本**：
-   ```bash
-   npm run docs:build
-   npm run docs:preview
-   ```
+### 生产调试
 
-2. **检查构建文件**：
-   查看 `docs/.vitepress/dist/` 目录下的文件
+**本地预览**：
+```bash
+npm run docs:build
+npm run docs:preview
+```
 
-3. **验证链接**：
-   使用工具检查所有链接的有效性
+**文件检查**：
+- 构建输出：`docs/.vitepress/dist/`
+- 静态资源：`docs/.vitepress/dist/assets/`
+- 页面文件：检查 HTML 结构
 
-   <Contributors />
+### 常用工具
+
+- **链接检查**：使用 `markdown-link-check` 验证链接
+- **语法检查**：使用 `markdownlint` 检查格式
+- **性能分析**：浏览器 Lighthouse 工具
+
+## 配置问题
+
+### 侧边栏不显示
+
+**原因**：文件结构不符合自动生成规则
+
+**解决方案**：
+- 确保目录包含 `index.md` 文件
+- 检查文件命名规范（小写+连字符）
+- 验证 Front Matter 格式正确
+
+### 多语言切换异常
+
+**解决方案**：
+- 检查 `language.js` 配置
+- 确保各语言目录结构一致
+- 验证路径映射正确
+
+### 图片无法显示
+
+**解决方案**：
+- 使用相对路径：`./images/pic.png`
+- 检查文件是否存在于 `public/` 目录
+- 验证文件名大小写匹配
+
+## 部署问题
+
+### GitHub Pages 部署失败
+
+**解决方案**：
+- 检查 GitHub Actions 工作流配置
+- 确保 `base` 路径设置正确
+- 验证仓库权限和分支设置
+
+### 静态资源 404
+
+**解决方案**：
+- 检查 `base` 配置是否匹配部署路径
+- 确保资源文件在 `public/` 目录
+- 验证构建输出完整性
+
+## 快速诊断
+
+::: tip 问题排查步骤
+1. **查看错误信息**：控制台/终端输出
+2. **检查文件结构**：确保符合规范
+3. **验证配置**：语法和路径正确性
+4. **清理重建**：删除缓存重新构建
+5. **对比工作版本**：Git 差异比较
+:::
+
+<Contributors />
