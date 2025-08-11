@@ -93,30 +93,30 @@ jobs:
           fi
       
       - name: Create Release
-         if: |
-           (github.event_name == 'push' && steps.changes.outputs.changed_files > 0 && steps.changes.outputs.skip_ci == 'false') ||
-           (github.event_name == 'workflow_dispatch' && github.event.inputs.force_release == 'true')
-         run: |
-           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_release }}" = "true" ]; then
-             echo "🚀 手动触发版本发布工作流"
-             gh workflow run release.yml --field release_type=patch
-           else
-             echo "🚀 触发版本发布工作流"
-             gh workflow run release.yml
-           fi
-         env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-       
-       - name: Generate Git History
-         if: |
-           (github.event_name == 'push' && steps.changes.outputs.doc_changes > 0 && steps.changes.outputs.skip_history == 'false') ||
-           (github.event_name == 'workflow_dispatch' && github.event.inputs.update_history == 'true')
-         run: |
-             if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.update_history }}" = "true" ]; then
-               echo "📊 手动触发 Git 历史数据生成..."
-             else
-               echo "📊 开始生成 Git 历史数据..."
-             fi
+        if: |
+          (github.event_name == 'push' && steps.changes.outputs.changed_files > 0 && steps.changes.outputs.skip_ci == 'false') ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.force_release == 'true')
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_release }}" = "true" ]; then
+            echo "🚀 手动触发版本发布工作流"
+            gh workflow run release.yml --field release_type=patch
+          else
+            echo "🚀 触发版本发布工作流"
+            gh workflow run release.yml
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Generate Git History
+        if: |
+          (github.event_name == 'push' && steps.changes.outputs.doc_changes > 0 && steps.changes.outputs.skip_history == 'false') ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.update_history == 'true')
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.update_history }}" = "true" ]; then
+            echo "📊 手动触发 Git 历史数据生成..."
+          else
+            echo "📊 开始生成 Git 历史数据..."
+          fi
            
            # 创建 git 历史数据生成脚本
            cat > generate-git-history.js << 'EOF'
