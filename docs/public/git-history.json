@@ -1,1556 +1,1656 @@
 {
-  "docs/de-DE/index.md": {
-    "history": [
-      {
-        "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:15:53 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:15:53 +0800"
+  "_meta": {
+    "totalCommits": 80,
+    "contributors": 3,
+    "firstCommit": "2025-06-06 19:51:21 +0800",
+    "lastCommit": "2025-08-11 23:30:39 +0800",
+    "generatedAt": "2025-08-11T15:30:53.831Z"
   },
-  "docs/en-US/DevelopmentGuide/index.md": {
-    "history": [
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:10:02 +0800",
-        "message": "language"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:03:14 +0800"
-  },
-  "docs/en-US/FAQ/index.md": {
-    "history": [
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:10:02 +0800",
-        "message": "language"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:03:14 +0800"
-  },
-  "docs/en-US/GameplayGuide/index.md": {
-    "history": [
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:10:02 +0800",
-        "message": "language"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:03:14 +0800"
-  },
-  "docs/en-US/InstallationTutorial/index.md": {
-    "history": [
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:10:02 +0800",
-        "message": "language"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:03:14 +0800"
-  },
-  "docs/en-US/index.md": {
-    "history": [
-      {
-        "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:20:18 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:10:02 +0800",
-        "message": "language"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:20:18 +0800"
-  },
-  "docs/es-ES/index.md": {
-    "history": [
-      {
-        "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:15:53 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:15:53 +0800"
-  },
-  "docs/examples/CONVENTIONAL_COMMITS.md": {
-    "history": [
-      {
-        "hash": "b365ba191e806fdb410233433134fa593ce691b5",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 23:16:59 +0800",
-        "message": "fix: 修复git历史"
-      }
-    ],
-    "lastUpdated": "2025-08-11 23:16:59 +0800"
-  },
-  "docs/fr-FR/index.md": {
-    "history": [
-      {
-        "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:15:53 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:15:53 +0800"
-  },
-  "docs/index.md": {
-    "history": [
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 19:57:50 +0800",
-        "message": "修改文件目录配置"
-      },
-      {
-        "hash": "dbe47b8840ba35356e60ea5ed3f35d858c438257",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 17:20:00 +0800",
-        "message": "移除提示"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      },
-      {
-        "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 09:33:43 +0800",
-        "message": "docs"
-      },
-      {
-        "hash": "e8bd05edd88cc85b84c3604ed95c73dda06be164",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 12:13:08 +0800",
-        "message": "修复部分内容"
-      },
-      {
-        "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 19:28:13 +0800",
-        "message": "fix: 修改一点点"
-      },
-      {
-        "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:10:02 +0800",
-        "message": "language"
-      },
-      {
-        "hash": "cc77f42427ec60ac1e8dfd02f88bb1cb5ed7dff1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:56:31 +0800",
-        "message": "fix: 修复路径"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      },
-      {
-        "hash": "3807e3be2d2ec08c29e609e4724a59713c071724",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-10 15:10:59 +0800",
-        "message": "清除默认的内容 后面再慢慢写"
-      },
-      {
-        "hash": "7a1b150cdabb417ff6a20740fbf5ab287e4d36fe",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-07 00:24:11 +0800",
-        "message": "Update index.md"
-      },
-      {
-        "hash": "a37160eec7af1bb26e507988bbadcd621851a668",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-06 23:55:10 +0800",
-        "message": "修改内容+ 添加忽略文件"
-      },
-      {
-        "hash": "4e92843538a176bf5bf603095c926d1a2e70697c",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-06 21:06:38 +0800",
-        "message": "修改内容和样子"
-      },
-      {
-        "hash": "75441fcc4abacde7e1fbc627422512c1d418f4bc",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-06 21:06:38 +0800",
-        "message": "修改内容和样子"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:03:14 +0800"
-  },
-  "docs/ja-JP/index.md": {
-    "history": [
-      {
-        "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:15:53 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:15:53 +0800"
-  },
-  "docs/ko-KR/index.md": {
-    "history": [
-      {
-        "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:15:53 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:15:53 +0800"
-  },
-  "docs/obsolete/configuration-old.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "d785912c4065ff2c189fe30b885271ae772460f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:29:01 +0800",
-        "message": "【完善更新】"
-      },
-      {
-        "hash": "9d7840e70b6bec1c3e1724d1e550edb2e1b3fd07",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 21:57:14 +0800",
-        "message": "添加了项目贡献者"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "f8cf75d9d8b6ff1e2fc32930c5b1faa64eb11a27",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:38:31 +0800",
-        "message": "docs: 预设"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/ru-RU/index.md": {
-    "history": [
-      {
-        "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:15:53 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:15:53 +0800"
-  },
-  "docs/zh-CN/DevelopmentGuide/configuration.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "270c42f1932d23e97289dcd085d55a0dce927cb3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:29:06 +0800",
-        "message": "更新 configuration.md"
-      },
-      {
-        "hash": "9d7840e70b6bec1c3e1724d1e550edb2e1b3fd07",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 21:57:14 +0800",
-        "message": "添加了项目贡献者"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "f8cf75d9d8b6ff1e2fc32930c5b1faa64eb11a27",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:38:31 +0800",
-        "message": "docs: 预设"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/DevelopmentGuide/development-details.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "f734387cc33882388222906580f0c45434d34119",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:50:12 +0800",
-        "message": "gengxin"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      },
-      {
-        "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 09:33:43 +0800",
-        "message": "docs"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "e8bd05edd88cc85b84c3604ed95c73dda06be164",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 12:13:08 +0800",
-        "message": "修复部分内容"
-      },
-      {
-        "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 00:56:27 +0800",
-        "message": "删除了多余内容 整改了doc"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/DevelopmentGuide/index.md": {
-    "history": [
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 00:56:27 +0800",
-        "message": "删除了多余内容 整改了doc"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-10 18:13:40 +0800"
-  },
-  "docs/zh-CN/DevelopmentGuide/project-structure.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "d66e0f347fa43a3db8480c954723cd8ae8516fbe",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:46:00 +0800",
-        "message": "更新 project-structure.md"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/DevelopmentGuide/troubleshooting.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "3ada61ee08f4c63517ace5d4b2e80abd83f1b0cf",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:44:45 +0800",
-        "message": "更新 troubleshooting.md"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/DevelopmentGuide/writing-docs.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "948f2ae42ba9df57b508421d47799964de7cc78b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:42:09 +0800",
-        "message": "更新 writing-docs.md"
-      },
-      {
-        "hash": "bd587e300327cf06e21ca9cab69016bfa4537ec9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:39:08 +0800",
-        "message": "【优化】文档编写"
-      },
-      {
-        "hash": "e328092a73e040967cab8531e268ccff80d5a394",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 20:33:48 +0800",
-        "message": "更新 writing-docs.md"
-      },
-      {
-        "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 09:33:43 +0800",
-        "message": "docs"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "f8cf75d9d8b6ff1e2fc32930c5b1faa64eb11a27",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:38:31 +0800",
-        "message": "docs: 预设"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/FAQ/faq-details.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 00:56:27 +0800",
-        "message": "删除了多余内容 整改了doc"
-      },
-      {
-        "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 19:28:13 +0800",
-        "message": "fix: 修改一点点"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "be6acccd4da86b8c2b5b5c321ec59f52fec5d93b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:43:03 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/FAQ/index.md": {
-    "history": [
-      {
-        "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 00:56:27 +0800",
-        "message": "删除了多余内容 整改了doc"
-      },
-      {
-        "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 19:28:13 +0800",
-        "message": "fix: 修改一点点"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "be6acccd4da86b8c2b5b5c321ec59f52fec5d93b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:43:03 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-10 00:56:27 +0800"
-  },
-  "docs/zh-CN/GameplayGuide/Command-list.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 19:57:50 +0800",
-        "message": "修改文件目录配置"
-      },
-      {
-        "hash": "770792039e53269f491bc3064f1f3bc10eb2b7a1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 16:36:49 +0800",
-        "message": "【修复】大小写错误"
-      },
-      {
-        "hash": "f6f16c6d128fe33bfe66ae4db4cef56b97b6922b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 16:32:36 +0800",
-        "message": "【修复】补全错误内容"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      },
-      {
-        "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 09:33:43 +0800",
-        "message": "docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/GameplayGuide/dummy-command.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 19:57:50 +0800",
-        "message": "修改文件目录配置"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/GameplayGuide/enclosure-order.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 19:57:50 +0800",
-        "message": "修改文件目录配置"
-      },
-      {
-        "hash": "df1c97e12c11c0dc9bc35c96619bf526943caf62",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 16:27:54 +0800",
-        "message": "【增加】完善教程"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/GameplayGuide/index.md": {
-    "history": [
-      {
-        "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 00:56:27 +0800",
-        "message": "删除了多余内容 整改了doc"
-      },
-      {
-        "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 19:28:13 +0800",
-        "message": "fix: 修改一点点"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "be6acccd4da86b8c2b5b5c321ec59f52fec5d93b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:43:03 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-10 00:56:27 +0800"
-  },
-  "docs/zh-CN/GameplayGuide/server-rules.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 19:57:50 +0800",
-        "message": "修改文件目录配置"
-      },
-      {
-        "hash": "df1c97e12c11c0dc9bc35c96619bf526943caf62",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 16:27:54 +0800",
-        "message": "【增加】完善教程"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/InstallationTutorial/hmcl-installation.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "4f99c53953ab0ddd946cdb5df7f0a7622af54888",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 13:27:08 +0800",
-        "message": "完善内容ing................."
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/InstallationTutorial/index.md": {
-    "history": [
-      {
-        "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 00:56:27 +0800",
-        "message": "删除了多余内容 整改了doc"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "b0a57524d76613465ab89c4b2dfeaa2281da244b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:12:30 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-10 00:56:27 +0800"
-  },
-  "docs/zh-CN/InstallationTutorial/installation-details.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "4f99c53953ab0ddd946cdb5df7f0a7622af54888",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 13:27:08 +0800",
-        "message": "完善内容ing................."
-      },
-      {
-        "hash": "e8bd05edd88cc85b84c3604ed95c73dda06be164",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 12:13:08 +0800",
-        "message": "修复部分内容"
-      },
-      {
-        "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 00:56:27 +0800",
-        "message": "删除了多余内容 整改了doc"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "b0a57524d76613465ab89c4b2dfeaa2281da244b",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:12:30 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/InstallationTutorial/pcl2-installation.md": {
-    "history": [
-      {
-        "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:50:18 +0800",
-        "message": "fix: 修复<GitHistoryInformation />"
-      },
-      {
-        "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 22:15:58 +0800",
-        "message": "添加<Contributors />"
-      },
-      {
-        "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 18:13:40 +0800",
-        "message": "完善了文档"
-      },
-      {
-        "hash": "4f99c53953ab0ddd946cdb5df7f0a7622af54888",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-10 13:27:08 +0800",
-        "message": "完善内容ing................."
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:50:18 +0800"
-  },
-  "docs/zh-CN/components/index.md": {
-    "history": [
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:52:17 +0800",
-        "message": "docs: docs"
-      },
-      {
-        "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:42:40 +0800",
-        "message": "docs: docs"
-      }
-    ],
-    "lastUpdated": "2025-08-09 16:57:25 +0800"
-  },
-  "docs/zh-CN/index.md": {
-    "history": [
-      {
-        "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 19:57:50 +0800",
-        "message": "修改文件目录配置"
-      },
-      {
-        "hash": "dbe47b8840ba35356e60ea5ed3f35d858c438257",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 17:20:00 +0800",
-        "message": "移除提示"
-      },
-      {
-        "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 15:59:16 +0800",
-        "message": "【新增】教程"
-      },
-      {
-        "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 09:33:43 +0800",
-        "message": "docs"
-      },
-      {
-        "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 19:28:13 +0800",
-        "message": "fix: 修改一点点"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      },
-      {
-        "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:10:02 +0800",
-        "message": "language"
-      },
-      {
-        "hash": "cc77f42427ec60ac1e8dfd02f88bb1cb5ed7dff1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 15:56:31 +0800",
-        "message": "fix: 修复路径"
-      },
-      {
-        "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 14:10:05 +0800",
-        "message": "Add development and usage guides to docs"
-      },
-      {
-        "hash": "3807e3be2d2ec08c29e609e4724a59713c071724",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-10 15:10:59 +0800",
-        "message": "清除默认的内容 后面再慢慢写"
-      },
-      {
-        "hash": "7a1b150cdabb417ff6a20740fbf5ab287e4d36fe",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-07 00:24:11 +0800",
-        "message": "Update index.md"
-      },
-      {
-        "hash": "a37160eec7af1bb26e507988bbadcd621851a668",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-06 23:55:10 +0800",
-        "message": "修改内容+ 添加忽略文件"
-      },
-      {
-        "hash": "4e92843538a176bf5bf603095c926d1a2e70697c",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-06 21:06:38 +0800",
-        "message": "修改内容和样子"
-      },
-      {
-        "hash": "75441fcc4abacde7e1fbc627422512c1d418f4bc",
-        "authorName": "MajorFoxs_OvO",
-        "authorEmail": "mckekejun@gmail.com",
-        "date": "2025-06-06 21:06:38 +0800",
-        "message": "修改内容和样子"
-      }
-    ],
-    "lastUpdated": "2025-08-11 19:57:50 +0800"
-  },
-  "docs/zh-HK/index.md": {
-    "history": [
-      {
-        "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:20:18 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:15:53 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:03:14 +0800",
-        "message": "fix: 修复"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:20:18 +0800"
-  },
-  "docs/zh-TW/index.md": {
-    "history": [
-      {
-        "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-11 22:20:18 +0800",
-        "message": "fix: 修复"
-      },
-      {
-        "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-        "authorName": "Re0XIAOPA",
-        "authorEmail": "mckekejun@outlook.com",
-        "date": "2025-08-09 16:57:25 +0800",
-        "message": "fix: 语言配置"
-      }
-    ],
-    "lastUpdated": "2025-08-11 22:20:18 +0800"
+  "files": {
+    "docs/de-DE/index.md": {
+      "history": [
+        {
+          "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:15:53 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:15:53 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/en-US/DevelopmentGuide/index.md": {
+      "history": [
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:10:02 +0800",
+          "message": "language"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:03:14 +0800",
+      "totalCommits": 2,
+      "contributors": 1
+    },
+    "docs/en-US/FAQ/index.md": {
+      "history": [
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:10:02 +0800",
+          "message": "language"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:03:14 +0800",
+      "totalCommits": 2,
+      "contributors": 1
+    },
+    "docs/en-US/GameplayGuide/index.md": {
+      "history": [
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:10:02 +0800",
+          "message": "language"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:03:14 +0800",
+      "totalCommits": 2,
+      "contributors": 1
+    },
+    "docs/en-US/InstallationTutorial/index.md": {
+      "history": [
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:10:02 +0800",
+          "message": "language"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:03:14 +0800",
+      "totalCommits": 2,
+      "contributors": 1
+    },
+    "docs/en-US/index.md": {
+      "history": [
+        {
+          "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:20:18 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:10:02 +0800",
+          "message": "language"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:20:18 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/es-ES/index.md": {
+      "history": [
+        {
+          "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:15:53 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:15:53 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/examples/CONVENTIONAL_COMMITS.md": {
+      "history": [
+        {
+          "hash": "7f303a8dfb596ba17bbdec7f4336e4486079c407",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 23:30:39 +0800",
+          "message": "ci: 添加自动部署流程（减少代码臃肿）"
+        },
+        {
+          "hash": "b365ba191e806fdb410233433134fa593ce691b5",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 23:16:59 +0800",
+          "message": "fix: 修复git历史"
+        }
+      ],
+      "lastUpdated": "2025-08-11 23:30:39 +0800",
+      "totalCommits": 2,
+      "contributors": 1
+    },
+    "docs/examples/RELEASE_TROUBLESHOOTING.md": {
+      "history": [
+        {
+          "hash": "7f303a8dfb596ba17bbdec7f4336e4486079c407",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 23:30:39 +0800",
+          "message": "ci: 添加自动部署流程（减少代码臃肿）"
+        }
+      ],
+      "lastUpdated": "2025-08-11 23:30:39 +0800",
+      "totalCommits": 1,
+      "contributors": 1
+    },
+    "docs/fr-FR/index.md": {
+      "history": [
+        {
+          "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:15:53 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:15:53 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/index.md": {
+      "history": [
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 19:57:50 +0800",
+          "message": "修改文件目录配置"
+        },
+        {
+          "hash": "dbe47b8840ba35356e60ea5ed3f35d858c438257",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 17:20:00 +0800",
+          "message": "移除提示"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        },
+        {
+          "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 09:33:43 +0800",
+          "message": "docs"
+        },
+        {
+          "hash": "e8bd05edd88cc85b84c3604ed95c73dda06be164",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 12:13:08 +0800",
+          "message": "修复部分内容"
+        },
+        {
+          "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 19:28:13 +0800",
+          "message": "fix: 修改一点点"
+        },
+        {
+          "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:10:02 +0800",
+          "message": "language"
+        },
+        {
+          "hash": "cc77f42427ec60ac1e8dfd02f88bb1cb5ed7dff1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:56:31 +0800",
+          "message": "fix: 修复路径"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        },
+        {
+          "hash": "3807e3be2d2ec08c29e609e4724a59713c071724",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-10 15:10:59 +0800",
+          "message": "清除默认的内容 后面再慢慢写"
+        },
+        {
+          "hash": "7a1b150cdabb417ff6a20740fbf5ab287e4d36fe",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-07 00:24:11 +0800",
+          "message": "Update index.md"
+        },
+        {
+          "hash": "a37160eec7af1bb26e507988bbadcd621851a668",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-06 23:55:10 +0800",
+          "message": "修改内容+ 添加忽略文件"
+        },
+        {
+          "hash": "4e92843538a176bf5bf603095c926d1a2e70697c",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-06 21:06:38 +0800",
+          "message": "修改内容和样子"
+        },
+        {
+          "hash": "75441fcc4abacde7e1fbc627422512c1d418f4bc",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-06 21:06:38 +0800",
+          "message": "修改内容和样子"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:03:14 +0800",
+      "totalCommits": 15,
+      "contributors": 2
+    },
+    "docs/ja-JP/index.md": {
+      "history": [
+        {
+          "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:15:53 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:15:53 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/ko-KR/index.md": {
+      "history": [
+        {
+          "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:15:53 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:15:53 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/obsolete/configuration-old.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "d785912c4065ff2c189fe30b885271ae772460f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:29:01 +0800",
+          "message": "【完善更新】"
+        },
+        {
+          "hash": "9d7840e70b6bec1c3e1724d1e550edb2e1b3fd07",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 21:57:14 +0800",
+          "message": "添加了项目贡献者"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "f8cf75d9d8b6ff1e2fc32930c5b1faa64eb11a27",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:38:31 +0800",
+          "message": "docs: 预设"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 9,
+      "contributors": 1
+    },
+    "docs/ru-RU/index.md": {
+      "history": [
+        {
+          "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:15:53 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:15:53 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/zh-CN/DevelopmentGuide/configuration.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "270c42f1932d23e97289dcd085d55a0dce927cb3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:29:06 +0800",
+          "message": "更新 configuration.md"
+        },
+        {
+          "hash": "9d7840e70b6bec1c3e1724d1e550edb2e1b3fd07",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 21:57:14 +0800",
+          "message": "添加了项目贡献者"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "f8cf75d9d8b6ff1e2fc32930c5b1faa64eb11a27",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:38:31 +0800",
+          "message": "docs: 预设"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 9,
+      "contributors": 1
+    },
+    "docs/zh-CN/DevelopmentGuide/development-details.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "f734387cc33882388222906580f0c45434d34119",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:50:12 +0800",
+          "message": "gengxin"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        },
+        {
+          "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 09:33:43 +0800",
+          "message": "docs"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "e8bd05edd88cc85b84c3604ed95c73dda06be164",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 12:13:08 +0800",
+          "message": "修复部分内容"
+        },
+        {
+          "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 00:56:27 +0800",
+          "message": "删除了多余内容 整改了doc"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 12,
+      "contributors": 1
+    },
+    "docs/zh-CN/DevelopmentGuide/index.md": {
+      "history": [
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 00:56:27 +0800",
+          "message": "删除了多余内容 整改了doc"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-10 18:13:40 +0800",
+      "totalCommits": 6,
+      "contributors": 1
+    },
+    "docs/zh-CN/DevelopmentGuide/project-structure.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "d66e0f347fa43a3db8480c954723cd8ae8516fbe",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:46:00 +0800",
+          "message": "更新 project-structure.md"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 8,
+      "contributors": 1
+    },
+    "docs/zh-CN/DevelopmentGuide/troubleshooting.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "3ada61ee08f4c63517ace5d4b2e80abd83f1b0cf",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:44:45 +0800",
+          "message": "更新 troubleshooting.md"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 8,
+      "contributors": 1
+    },
+    "docs/zh-CN/DevelopmentGuide/writing-docs.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "948f2ae42ba9df57b508421d47799964de7cc78b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:42:09 +0800",
+          "message": "更新 writing-docs.md"
+        },
+        {
+          "hash": "bd587e300327cf06e21ca9cab69016bfa4537ec9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:39:08 +0800",
+          "message": "【优化】文档编写"
+        },
+        {
+          "hash": "e328092a73e040967cab8531e268ccff80d5a394",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 20:33:48 +0800",
+          "message": "更新 writing-docs.md"
+        },
+        {
+          "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 09:33:43 +0800",
+          "message": "docs"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "f8cf75d9d8b6ff1e2fc32930c5b1faa64eb11a27",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:38:31 +0800",
+          "message": "docs: 预设"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 12,
+      "contributors": 1
+    },
+    "docs/zh-CN/FAQ/faq-details.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 00:56:27 +0800",
+          "message": "删除了多余内容 整改了doc"
+        },
+        {
+          "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 19:28:13 +0800",
+          "message": "fix: 修改一点点"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "be6acccd4da86b8c2b5b5c321ec59f52fec5d93b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:43:03 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 10,
+      "contributors": 1
+    },
+    "docs/zh-CN/FAQ/index.md": {
+      "history": [
+        {
+          "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 00:56:27 +0800",
+          "message": "删除了多余内容 整改了doc"
+        },
+        {
+          "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 19:28:13 +0800",
+          "message": "fix: 修改一点点"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "be6acccd4da86b8c2b5b5c321ec59f52fec5d93b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:43:03 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-10 00:56:27 +0800",
+      "totalCommits": 7,
+      "contributors": 1
+    },
+    "docs/zh-CN/GameplayGuide/Command-list.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 19:57:50 +0800",
+          "message": "修改文件目录配置"
+        },
+        {
+          "hash": "770792039e53269f491bc3064f1f3bc10eb2b7a1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 16:36:49 +0800",
+          "message": "【修复】大小写错误"
+        },
+        {
+          "hash": "f6f16c6d128fe33bfe66ae4db4cef56b97b6922b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 16:32:36 +0800",
+          "message": "【修复】补全错误内容"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        },
+        {
+          "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 09:33:43 +0800",
+          "message": "docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 6,
+      "contributors": 1
+    },
+    "docs/zh-CN/GameplayGuide/dummy-command.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 19:57:50 +0800",
+          "message": "修改文件目录配置"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/zh-CN/GameplayGuide/enclosure-order.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 19:57:50 +0800",
+          "message": "修改文件目录配置"
+        },
+        {
+          "hash": "df1c97e12c11c0dc9bc35c96619bf526943caf62",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 16:27:54 +0800",
+          "message": "【增加】完善教程"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 4,
+      "contributors": 1
+    },
+    "docs/zh-CN/GameplayGuide/index.md": {
+      "history": [
+        {
+          "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 00:56:27 +0800",
+          "message": "删除了多余内容 整改了doc"
+        },
+        {
+          "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 19:28:13 +0800",
+          "message": "fix: 修改一点点"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "be6acccd4da86b8c2b5b5c321ec59f52fec5d93b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:43:03 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-10 00:56:27 +0800",
+      "totalCommits": 7,
+      "contributors": 1
+    },
+    "docs/zh-CN/GameplayGuide/server-rules.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 19:57:50 +0800",
+          "message": "修改文件目录配置"
+        },
+        {
+          "hash": "df1c97e12c11c0dc9bc35c96619bf526943caf62",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 16:27:54 +0800",
+          "message": "【增加】完善教程"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 4,
+      "contributors": 1
+    },
+    "docs/zh-CN/InstallationTutorial/hmcl-installation.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "4f99c53953ab0ddd946cdb5df7f0a7622af54888",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 13:27:08 +0800",
+          "message": "完善内容ing................."
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 4,
+      "contributors": 1
+    },
+    "docs/zh-CN/InstallationTutorial/index.md": {
+      "history": [
+        {
+          "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 00:56:27 +0800",
+          "message": "删除了多余内容 整改了doc"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "b0a57524d76613465ab89c4b2dfeaa2281da244b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:12:30 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-10 00:56:27 +0800",
+      "totalCommits": 6,
+      "contributors": 1
+    },
+    "docs/zh-CN/InstallationTutorial/installation-details.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "4f99c53953ab0ddd946cdb5df7f0a7622af54888",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 13:27:08 +0800",
+          "message": "完善内容ing................."
+        },
+        {
+          "hash": "e8bd05edd88cc85b84c3604ed95c73dda06be164",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 12:13:08 +0800",
+          "message": "修复部分内容"
+        },
+        {
+          "hash": "ab8971690bb8af02a8ae6e423557c210abf6cd3b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 00:56:27 +0800",
+          "message": "删除了多余内容 整改了doc"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "b0a57524d76613465ab89c4b2dfeaa2281da244b",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:12:30 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 11,
+      "contributors": 1
+    },
+    "docs/zh-CN/InstallationTutorial/pcl2-installation.md": {
+      "history": [
+        {
+          "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:50:18 +0800",
+          "message": "fix: 修复<GitHistoryInformation />"
+        },
+        {
+          "hash": "5669c662ce9fc4bb9f664641c6589615e08dd940",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 22:15:58 +0800",
+          "message": "添加<Contributors />"
+        },
+        {
+          "hash": "0144343c6e4bbad0661537d5c956e9a58fcb1dd1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 18:13:40 +0800",
+          "message": "完善了文档"
+        },
+        {
+          "hash": "4f99c53953ab0ddd946cdb5df7f0a7622af54888",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-10 13:27:08 +0800",
+          "message": "完善内容ing................."
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:50:18 +0800",
+      "totalCommits": 4,
+      "contributors": 1
+    },
+    "docs/zh-CN/components/index.md": {
+      "history": [
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "cc876835e664a69b893b71a4ca964482d2d3f18c",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:52:17 +0800",
+          "message": "docs: docs"
+        },
+        {
+          "hash": "4f7d5f7093e7f74c93bba97ee972c9845c8dd4a8",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:42:40 +0800",
+          "message": "docs: docs"
+        }
+      ],
+      "lastUpdated": "2025-08-09 16:57:25 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/zh-CN/index.md": {
+      "history": [
+        {
+          "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 19:57:50 +0800",
+          "message": "修改文件目录配置"
+        },
+        {
+          "hash": "dbe47b8840ba35356e60ea5ed3f35d858c438257",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 17:20:00 +0800",
+          "message": "移除提示"
+        },
+        {
+          "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 15:59:16 +0800",
+          "message": "【新增】教程"
+        },
+        {
+          "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 09:33:43 +0800",
+          "message": "docs"
+        },
+        {
+          "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 19:28:13 +0800",
+          "message": "fix: 修改一点点"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        },
+        {
+          "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:10:02 +0800",
+          "message": "language"
+        },
+        {
+          "hash": "cc77f42427ec60ac1e8dfd02f88bb1cb5ed7dff1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 15:56:31 +0800",
+          "message": "fix: 修复路径"
+        },
+        {
+          "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 14:10:05 +0800",
+          "message": "Add development and usage guides to docs"
+        },
+        {
+          "hash": "3807e3be2d2ec08c29e609e4724a59713c071724",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-10 15:10:59 +0800",
+          "message": "清除默认的内容 后面再慢慢写"
+        },
+        {
+          "hash": "7a1b150cdabb417ff6a20740fbf5ab287e4d36fe",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-07 00:24:11 +0800",
+          "message": "Update index.md"
+        },
+        {
+          "hash": "a37160eec7af1bb26e507988bbadcd621851a668",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-06 23:55:10 +0800",
+          "message": "修改内容+ 添加忽略文件"
+        },
+        {
+          "hash": "4e92843538a176bf5bf603095c926d1a2e70697c",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-06 21:06:38 +0800",
+          "message": "修改内容和样子"
+        },
+        {
+          "hash": "75441fcc4abacde7e1fbc627422512c1d418f4bc",
+          "authorName": "MajorFoxs_OvO",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-06-06 21:06:38 +0800",
+          "message": "修改内容和样子"
+        }
+      ],
+      "lastUpdated": "2025-08-11 19:57:50 +0800",
+      "totalCommits": 14,
+      "contributors": 2
+    },
+    "docs/zh-HK/index.md": {
+      "history": [
+        {
+          "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:20:18 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:15:53 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:03:14 +0800",
+          "message": "fix: 修复"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:20:18 +0800",
+      "totalCommits": 3,
+      "contributors": 1
+    },
+    "docs/zh-TW/index.md": {
+      "history": [
+        {
+          "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-11 22:20:18 +0800",
+          "message": "fix: 修复"
+        },
+        {
+          "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-08-09 16:57:25 +0800",
+          "message": "fix: 语言配置"
+        }
+      ],
+      "lastUpdated": "2025-08-11 22:20:18 +0800",
+      "totalCommits": 2,
+      "contributors": 1
+    }
   }
 }
