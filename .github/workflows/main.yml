@@ -23,6 +23,8 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  pages: write
+  id-token: write
 
 jobs:
   # PR 时验证提交信息
@@ -63,12 +65,50 @@ jobs:
       pull-requests: write
     secrets: inherit
 
+  # 构建和部署到 GitHub Pages
+  build:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with VitePress
+        run: npm run docs:build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
   # 汇总报告
   summary:
     name: Workflow Summary
     runs-on: ubuntu-latest
     if: always()
-    needs: [validate-commits, create-release, update-git-history, force-release]
+    needs: [validate-commits, create-release, update-git-history, force-release, build, deploy]
     steps:
       - name: Generate workflow summary
         run: |
@@ -84,6 +124,8 @@ jobs:
           if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/main" ]; then
             echo "- 🏷️ 版本发布: ${{ needs.create-release.result }}" >> $GITHUB_STEP_SUMMARY
             echo "- 📊 Git 历史更新: ${{ needs.update-git-history.result }}" >> $GITHUB_STEP_SUMMARY
+            echo "- 🏗️ 站点构建: ${{ needs.build.result }}" >> $GITHUB_STEP_SUMMARY
+            echo "- 🚀 站点部署: ${{ needs.deploy.result }}" >> $GITHUB_STEP_SUMMARY
           fi
           
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then

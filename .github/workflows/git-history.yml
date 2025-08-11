@@ -2,8 +2,6 @@
 name: Generate Git History
 
 on:
-  push:
-    branches: [main]
   schedule:
     # 每天凌晨 2 点自动更新历史数据
     - cron: '0 2 * * *'
