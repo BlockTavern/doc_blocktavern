@@ -25,6 +25,7 @@ permissions:
   pull-requests: write
   pages: write
   id-token: write
+  actions: write
 
 jobs:
   # PR 时验证提交信息
@@ -46,6 +47,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+      actions: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
