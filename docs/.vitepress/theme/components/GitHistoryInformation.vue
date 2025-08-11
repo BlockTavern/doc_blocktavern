@@ -66,9 +66,9 @@
 import { ref, onMounted, computed } from 'vue'
 import { useData } from 'vitepress'
 import axios from 'axios'
-import { Clock, History, ChevronDown, AlertTriangle, ExternalLink } from 'lucide-vue-next'
+import { Clock, GitCommit, User, ExternalLink, ChevronDown, ChevronUp, Loader2, AlertCircle } from 'lucide-vue-next'
 
-const { page } = useData()
+const { page, site } = useData()
 
 // 响应式数据
 const fileHistory = ref([])
@@ -114,7 +114,9 @@ const fetchFileHistory = async () => {
     
     // 首先尝试从静态 JSON 文件中读取历史数据（用于生产环境）
     try {
-      const response = await fetch('/git-history.json')
+      const baseUrl = site.value.base || '/'
+      const gitHistoryUrl = baseUrl.endsWith('/') ? `${baseUrl}git-history.json` : `${baseUrl}/git-history.json`
+      const response = await fetch(gitHistoryUrl)
       if (response.ok) {
         const gitHistoryData = await response.json()
         
