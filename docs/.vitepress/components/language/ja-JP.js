@@ -6,16 +6,16 @@
 export const jaConfig = {
   label: "日本語",
   lang: "ja-JP",
-  link: "/ja/",
+  link: "/ja-JP/",
   title: "BlockTavern ドキュメント",
   description: "BlockTavern Minecraft サーバードキュメント",
   themeConfig: {
     nav: [
-      { text: "ホーム", link: "/ja/" },
-      { text: "インストール", link: "/ja/InstallationTutorial/" },
-      { text: "ゲームガイド", link: "/ja/GameplayGuide/" },
-      { text: "よくある質問", link: "/ja/FAQ/" },
-      { text: "開発ガイド", link: "/ja/DevelopmentGuide/" },
+      { text: "ホーム", link: "/ja-JP/" },
+      { text: "インストール", link: "/ja-JP/InstallationTutorial/" },
+      { text: "ゲームガイド", link: "/ja-JP/GameplayGuide/" },
+      { text: "よくある質問", link: "/ja-JP/FAQ/" },
+      { text: "開発ガイド", link: "/ja-JP/DevelopmentGuide/" },
     ],
     // Edit link configuration
     editLink: {

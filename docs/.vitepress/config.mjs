@@ -1,7 +1,7 @@
-import { 
-  siteConfig, 
-  themeBaseConfig, 
-  navConfig, 
+import {
+  siteConfig,
+  themeBaseConfig,
+  navConfig,
   socialLinksConfig,
   sidebarConfig,
   localesConfig,
@@ -29,10 +29,12 @@ export default {
   // 自定义 Markdown 配置
   markdown: mdItCustomAttrs.markdown,
   head: mdItCustomAttrs.head,
-  
+
   // 多语言配置（组件化）
   locales: localesConfig,
-  
+
+
+
   // 主题配置
   themeConfig: {
     ...themeBaseConfig,

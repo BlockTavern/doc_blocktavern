@@ -6,16 +6,16 @@
 export const deConfig = {
   label: "Deutsch",
   lang: "de-DE",
-  link: "/de/",
+  link: "/de-DE/",
   title: "BlockTavern Dokumentation",
   description: "BlockTavern Minecraft Server Dokumentation",
   themeConfig: {
     nav: [
-      { text: "Startseite", link: "/de/" },
-      { text: "Installation", link: "/de/InstallationTutorial/" },
-      { text: "Spielanleitung", link: "/de/GameplayGuide/" },
-      { text: "FAQ", link: "/de/FAQ/" },
-      { text: "Entwicklerhandbuch", link: "/de/DevelopmentGuide/" },
+      { text: "Startseite", link: "/de-DE/" },
+      { text: "Installation", link: "/de-DE/InstallationTutorial/" },
+      { text: "Spielanleitung", link: "/de-DE/GameplayGuide/" },
+      { text: "FAQ", link: "/de-DE/FAQ/" },
+      { text: "Entwicklerhandbuch", link: "/de-DE/DevelopmentGuide/" },
     ],
 
     // 编辑链接配置

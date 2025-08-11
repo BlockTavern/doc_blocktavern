@@ -6,16 +6,16 @@
 export const ruConfig = {
   label: "Русский",
   lang: "ru-RU",
-  link: "/ru/",
+  link: "/ru-RU/",
   title: "Документация BlockTavern",
   description: "Документация сервера Minecraft BlockTavern",
   themeConfig: {
     nav: [
-      { text: "Главная", link: "/ru/" },
-      { text: "Установка", link: "/ru/InstallationTutorial/" },
-      { text: "Руководство по игре", link: "/ru/GameplayGuide/" },
-      { text: "FAQ", link: "/ru/FAQ/" },
-      { text: "Руководство разработчика", link: "/ru/DevelopmentGuide/" },
+      { text: "Главная", link: "/ru-RU/" },
+      { text: "Установка", link: "/ru-RU/InstallationTutorial/" },
+      { text: "Руководство по игре", link: "/ru-RU/GameplayGuide/" },
+      { text: "FAQ", link: "/ru-RU/FAQ/" },
+      { text: "Руководство разработчика", link: "/ru-RU/DevelopmentGuide/" },
     ],
     // Edit link configuration
     editLink: {

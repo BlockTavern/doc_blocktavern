@@ -12,7 +12,7 @@ export const zhConfig = {
   themeConfig: {
     
     nav: [
-      { text: "首页", link: "/" },
+      { text: "首页", link: "/zh-CN/" },
       {
         text: "安装教程",
         link: "/zh-CN/InstallationTutorial/installation-details",

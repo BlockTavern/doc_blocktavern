@@ -6,16 +6,16 @@
 export const enConfig = {
   label: "English",
   lang: "en-US",
-  link: "/en/",
+  link: "/en-US/",
   title: "BlockTavern Docs",
   description: "BlockTavern Minecraft Server Documentation",
   themeConfig: {
     nav: [
-      { text: "Home", link: "/en/" },
-      { text: "Installation", link: "/en/InstallationTutorial/" },
-      { text: "Gameplay Guide", link: "/en/GameplayGuide/" },
-      { text: "FAQ", link: "/en/FAQ/" },
-      { text: "Development", link: "/en/DevelopmentGuide/" },
+      { text: "Home", link: "/en-US/" },
+      { text: "Installation", link: "/en-US/InstallationTutorial/" },
+      { text: "Gameplay Guide", link: "/en-US/GameplayGuide/" },
+      { text: "FAQ", link: "/en-US/FAQ/" },
+      { text: "Development", link: "/en-US/DevelopmentGuide/" },
     ],
     // Edit link configuration
     editLink: {

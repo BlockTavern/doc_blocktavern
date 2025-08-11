@@ -6,16 +6,16 @@
 export const koConfig = {
   label: "한국어",
   lang: "ko-KR",
-  link: "/ko/",
+  link: "/ko-KR/",
   title: "BlockTavern 문서",
   description: "BlockTavern Minecraft 서버 문서",
   themeConfig: {
     nav: [
-      { text: "홈", link: "/ko/" },
-      { text: "설치", link: "/ko/InstallationTutorial/" },
-      { text: "게임 가이드", link: "/ko/GameplayGuide/" },
-      { text: "FAQ", link: "/ko/FAQ/" },
-      { text: "개발 가이드", link: "/ko/DevelopmentGuide/" },
+      { text: "홈", link: "/ko-KR/" },
+      { text: "설치", link: "/ko-KR/InstallationTutorial/" },
+      { text: "게임 가이드", link: "/ko-KR/GameplayGuide/" },
+      { text: "FAQ", link: "/ko-KR/FAQ/" },
+      { text: "개발 가이드", link: "/ko-KR/DevelopmentGuide/" },
     ],
     // Edit link configuration
     editLink: {
