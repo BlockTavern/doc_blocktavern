@@ -112,35 +112,69 @@ const fetchFileHistory = async () => {
       return
     }
     
-    // 使用本地 Git API 而不是 GitHub API
-    const response = await axios.get('/api/git-history', {
-      params: {
-        file: filePath,
-        type: 'history'
-      }
-    })
-    
-    // 转换本地 Git 数据格式为组件期望的格式
-    const gitData = response.data
-    if (gitData.history && Array.isArray(gitData.history)) {
-      fileHistory.value = gitData.history.map(commit => ({
-        sha: commit.hash,
-        html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
-        commit: {
-          message: commit.message,
-          author: {
-            name: commit.authorName,
-            email: commit.authorEmail,
-            date: commit.date
-          }
+    // 首先尝试从静态 JSON 文件中读取历史数据（用于生产环境）
+    try {
+      const response = await fetch('/git-history.json')
+      if (response.ok) {
+        const gitHistoryData = await response.json()
+        const fileData = gitHistoryData[filePath]
+        
+        if (fileData && fileData.history && Array.isArray(fileData.history)) {
+          fileHistory.value = fileData.history.map(commit => ({
+            sha: commit.hash,
+            html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
+            commit: {
+              message: commit.message,
+              author: {
+                name: commit.authorName,
+                email: commit.authorEmail,
+                date: commit.date
+              }
+            }
+          }))
+          return
         }
-      }))
-    } else {
+      }
+    } catch (staticError) {
+      console.log('静态历史数据不可用，尝试本地 API:', staticError.message)
+    }
+    
+    // 如果静态数据不可用，回退到本地 Git API（用于开发环境）
+    try {
+      const response = await axios.get('/api/git-history', {
+        params: {
+          file: filePath,
+          type: 'history'
+        }
+      })
+      
+      // 转换本地 Git 数据格式为组件期望的格式
+      const gitData = response.data
+      if (gitData.history && Array.isArray(gitData.history)) {
+        fileHistory.value = gitData.history.map(commit => ({
+          sha: commit.hash,
+          html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
+          commit: {
+            message: commit.message,
+            author: {
+              name: commit.authorName,
+              email: commit.authorEmail,
+              date: commit.date
+            }
+          }
+        }))
+      } else {
+        fileHistory.value = []
+      }
+    } catch (apiError) {
+      console.error('本地 Git API 也不可用:', apiError)
+      historyError.value = '无法获取文件历史记录'
       fileHistory.value = []
     }
   } catch (error) {
     console.error('获取文件历史失败:', error)
-    historyError.value = error.response?.data?.error || error.message || '未知错误'
+    historyError.value = error.message || '未知错误'
+    fileHistory.value = []
   } finally {
     historyLoading.value = false
   }

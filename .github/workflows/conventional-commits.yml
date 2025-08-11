@@ -1,0 +1,400 @@
+# Conventional Commits 规范处理和变更日志生成工作流
+name: Conventional Commits & Changelog
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# 设置权限
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  # 验证提交信息格式
+  validate-commits:
+    name: Validate Commit Messages
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate Conventional Commits
+        uses: wagoid/commitlint-github-action@v5
+        with:
+          configFile: '.commitlintrc.json'
+
+  # 生成变更日志和版本标签
+  changelog-and-release:
+    name: Generate Changelog & Release
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    outputs:
+      new-release-published: ${{ steps.semantic-release.outputs.new-release-published }}
+      new-release-version: ${{ steps.semantic-release.outputs.new-release-version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          npm install -g semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github conventional-changelog-conventionalcommits
+
+      - name: Create semantic-release config
+        run: |
+          cat > .releaserc.json << 'EOF'
+          {
+            "branches": ["main"],
+            "plugins": [
+              [
+                "@semantic-release/commit-analyzer",
+                {
+                  "preset": "conventionalcommits",
+                  "releaseRules": [
+                    {"type": "feat", "release": "minor"},
+                    {"type": "fix", "release": "patch"},
+                    {"type": "perf", "release": "patch"},
+                    {"type": "docs", "release": false},
+                    {"type": "style", "release": false},
+                    {"type": "refactor", "release": "patch"},
+                    {"type": "test", "release": false},
+                    {"type": "build", "release": "patch"},
+                    {"type": "ci", "release": false},
+                    {"type": "chore", "release": false}
+                  ]
+                }
+              ],
+              [
+                "@semantic-release/release-notes-generator",
+                {
+                  "preset": "conventionalcommits",
+                  "presetConfig": {
+                    "types": [
+                      {"type": "feat", "section": "✨ 新功能", "hidden": false},
+                      {"type": "fix", "section": "🐛 Bug 修复", "hidden": false},
+                      {"type": "perf", "section": "⚡ 性能优化", "hidden": false},
+                      {"type": "refactor", "section": "♻️ 代码重构", "hidden": false},
+                      {"type": "docs", "section": "📚 文档更新", "hidden": false},
+                      {"type": "style", "section": "💄 代码格式", "hidden": true},
+                      {"type": "test", "section": "✅ 测试", "hidden": true},
+                      {"type": "build", "section": "📦 构建系统", "hidden": false},
+                      {"type": "ci", "section": "👷 CI/CD", "hidden": true},
+                      {"type": "chore", "section": "🔧 其他变更", "hidden": true}
+                    ]
+                  }
+                }
+              ],
+              [
+                "@semantic-release/changelog",
+                {
+                  "changelogFile": "CHANGELOG.md",
+                  "changelogTitle": "# 📋 变更日志\n\n本项目的所有重要变更都将记录在此文件中。\n\n格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，\n并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范。"
+                }
+              ],
+              [
+                "@semantic-release/git",
+                {
+                  "assets": ["CHANGELOG.md", "package.json"],
+                  "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                }
+              ],
+              "@semantic-release/github"
+            ]
+          }
+          EOF
+
+      - name: Create commitlint config
+        run: |
+          cat > .commitlintrc.json << 'EOF'
+          {
+            "extends": ["@commitlint/config-conventional"],
+            "rules": {
+              "type-enum": [
+                2,
+                "always",
+                [
+                  "feat",
+                  "fix",
+                  "docs",
+                  "style",
+                  "refactor",
+                  "perf",
+                  "test",
+                  "build",
+                  "ci",
+                  "chore"
+                ]
+              ],
+              "type-case": [2, "always", "lower-case"],
+              "type-empty": [2, "never"],
+              "scope-case": [2, "always", "lower-case"],
+              "subject-case": [2, "never", ["sentence-case", "start-case", "pascal-case", "upper-case"]],
+              "subject-empty": [2, "never"],
+              "subject-full-stop": [2, "never", "."],
+              "header-max-length": [2, "always", 100]
+            }
+          }
+          EOF
+
+      - name: Run semantic-release
+        id: semantic-release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # 生成 Git 历史数据文件（解决部署后无法获取本地历史的问题）
+  generate-git-history:
+    name: Generate Git History Data
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate Git History JSON
+        run: |
+          # 创建 git 历史数据生成脚本
+          cat > generate-git-history.js << 'EOF'
+          const { execSync } = require('child_process');
+          const fs = require('fs');
+          const path = require('path');
+          
+          // 获取所有文件的 git 历史
+          function getFileHistory(filePath) {
+            try {
+              const gitLog = execSync(
+                `git log --follow --pretty=format:"%H|%an|%ae|%ad|%s" --date=iso -- "${filePath}"`,
+                { encoding: 'utf8' }
+              );
+              
+              if (!gitLog.trim()) return [];
+              
+              return gitLog.trim().split('\n').map(line => {
+                const [hash, authorName, authorEmail, date, message] = line.split('|');
+                return {
+                  hash,
+                  authorName,
+                  authorEmail,
+                  date,
+                  message
+                };
+              });
+            } catch (error) {
+              console.error(`Error getting history for ${filePath}:`, error.message);
+              return [];
+            }
+          }
+          
+          // 获取所有 .md 文件
+          function getAllMarkdownFiles(dir, fileList = []) {
+            const files = fs.readdirSync(dir);
+            
+            files.forEach(file => {
+              const filePath = path.join(dir, file);
+              const stat = fs.statSync(filePath);
+              
+              if (stat.isDirectory() && !file.startsWith('.') && file !== 'node_modules') {
+                getAllMarkdownFiles(filePath, fileList);
+              } else if (file.endsWith('.md')) {
+                fileList.push(filePath);
+              }
+            });
+            
+            return fileList;
+          }
+          
+          // 生成历史数据
+          const docsDir = './docs';
+          const markdownFiles = getAllMarkdownFiles(docsDir);
+          const gitHistoryData = {};
+          
+          console.log(`Found ${markdownFiles.length} markdown files`);
+          
+          markdownFiles.forEach(filePath => {
+            const relativePath = path.relative('.', filePath).replace(/\\/g, '/');
+            const history = getFileHistory(relativePath);
+            
+            if (history.length > 0) {
+              gitHistoryData[relativePath] = {
+                history,
+                lastUpdated: history[0]?.date || null
+              };
+              console.log(`Generated history for ${relativePath}: ${history.length} commits`);
+            }
+          });
+          
+          // 保存到 JSON 文件
+          const outputPath = './docs/public/git-history.json';
+          fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+          fs.writeFileSync(outputPath, JSON.stringify(gitHistoryData, null, 2));
+          
+          console.log(`Git history data saved to ${outputPath}`);
+          console.log(`Total files with history: ${Object.keys(gitHistoryData).length}`);
+          EOF
+          
+          # 运行脚本生成历史数据
+          node generate-git-history.js
+
+      - name: Commit and push git history data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if [ -f "docs/public/git-history.json" ]; then
+            git add docs/public/git-history.json
+            if git diff --staged --quiet; then
+              echo "No changes to git history data"
+            else
+              git commit -m "chore: update git history data [skip ci]"
+              git push
+            fi
+          fi
+
+  # 美化提交信息（为不规范的提交添加类型前缀）
+  beautify-commits:
+    name: Beautify Commit Messages
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Beautify commit messages
+        run: |
+          # 创建提交信息美化脚本
+          cat > beautify-commits.js << 'EOF'
+          const { execSync } = require('child_process');
+          
+          // 获取最近的提交信息
+          function getRecentCommits(count = 10) {
+            try {
+              const gitLog = execSync(
+                `git log --oneline -n ${count} --pretty=format:"%H %s"`,
+                { encoding: 'utf8' }
+              );
+              
+              return gitLog.trim().split('\n').map(line => {
+                const [hash, ...messageParts] = line.split(' ');
+                return {
+                  hash,
+                  message: messageParts.join(' ')
+                };
+              });
+            } catch (error) {
+              console.error('Error getting commits:', error.message);
+              return [];
+            }
+          }
+          
+          // 检查提交信息是否符合 Conventional Commits 规范
+          function isConventionalCommit(message) {
+            const conventionalPattern = /^(feat|fix|docs|style|refactor|perf|test|build|ci|chore)(\(.+\))?!?:\s.+/;
+            return conventionalPattern.test(message);
+          }
+          
+          // 根据提交内容推断类型
+          function inferCommitType(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            if (lowerMessage.includes('add') || lowerMessage.includes('新增') || lowerMessage.includes('添加')) {
+              return 'feat';
+            }
+            if (lowerMessage.includes('fix') || lowerMessage.includes('修复') || lowerMessage.includes('解决')) {
+              return 'fix';
+            }
+            if (lowerMessage.includes('doc') || lowerMessage.includes('文档') || lowerMessage.includes('readme')) {
+              return 'docs';
+            }
+            if (lowerMessage.includes('style') || lowerMessage.includes('格式') || lowerMessage.includes('样式')) {
+              return 'style';
+            }
+            if (lowerMessage.includes('refactor') || lowerMessage.includes('重构') || lowerMessage.includes('优化代码')) {
+              return 'refactor';
+            }
+            if (lowerMessage.includes('perf') || lowerMessage.includes('性能') || lowerMessage.includes('优化')) {
+              return 'perf';
+            }
+            if (lowerMessage.includes('test') || lowerMessage.includes('测试')) {
+              return 'test';
+            }
+            if (lowerMessage.includes('build') || lowerMessage.includes('构建') || lowerMessage.includes('依赖')) {
+              return 'build';
+            }
+            if (lowerMessage.includes('ci') || lowerMessage.includes('workflow') || lowerMessage.includes('action')) {
+              return 'ci';
+            }
+            
+            return 'chore';
+          }
+          
+          // 美化提交信息
+          function beautifyCommitMessage(message) {
+            if (isConventionalCommit(message)) {
+              return message; // 已经符合规范
+            }
+            
+            const type = inferCommitType(message);
+            const cleanMessage = message.replace(/^(add|fix|update|modify|change)\s*/i, '').trim();
+            
+            return `${type}: ${cleanMessage}`;
+          }
+          
+          console.log('Analyzing recent commits for beautification opportunities...');
+          const commits = getRecentCommits(20);
+          
+          commits.forEach(commit => {
+            const beautified = beautifyCommitMessage(commit.message);
+            if (beautified !== commit.message) {
+              console.log(`\n📝 Commit: ${commit.hash.substring(0, 7)}`);
+              console.log(`   Original: ${commit.message}`);
+              console.log(`   Beautified: ${beautified}`);
+            }
+          });
+          
+          console.log('\n✨ Commit message analysis complete!');
+          console.log('\n💡 Tips for future commits:');
+          console.log('   feat: 新功能');
+          console.log('   fix: 修复 bug');
+          console.log('   docs: 文档更新');
+          console.log('   style: 代码格式调整');
+          console.log('   refactor: 代码重构');
+          console.log('   perf: 性能优化');
+          console.log('   test: 测试相关');
+          console.log('   build: 构建相关');
+          console.log('   ci: CI/CD 相关');
+          console.log('   chore: 其他变更');
+          EOF
+          
+          # 运行美化脚本
+          node beautify-commits.js
