@@ -117,10 +117,27 @@ const fetchFileHistory = async () => {
       const response = await fetch('/git-history.json')
       if (response.ok) {
         const gitHistoryData = await response.json()
-        const fileData = gitHistoryData[filePath]
+        
+        // 验证JSON数据结构
+        if (!gitHistoryData || typeof gitHistoryData !== 'object') {
+          throw new Error('无效的JSON数据格式')
+        }
+        
+        // 检查是否有files字段（新格式）或直接文件数据（旧格式）
+        const filesData = gitHistoryData.files || gitHistoryData
+        const fileData = filesData[filePath]
         
         if (fileData && fileData.history && Array.isArray(fileData.history)) {
-          fileHistory.value = fileData.history.map(commit => ({
+          // 验证历史记录数据
+          const validHistory = fileData.history.filter(commit => {
+            return commit.hash && commit.authorName && commit.date && commit.message
+          })
+          
+          if (validHistory.length === 0) {
+            throw new Error('没有有效的历史记录数据')
+          }
+          
+          fileHistory.value = validHistory.map(commit => ({
             sha: commit.hash,
             html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
             commit: {
@@ -132,8 +149,14 @@ const fetchFileHistory = async () => {
               }
             }
           }))
+          
+          console.log(`✅ 成功加载 ${validHistory.length} 条历史记录`)
           return
+        } else {
+          console.log(`⚠️ 文件 ${filePath} 没有历史记录数据`)
         }
+      } else {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
       }
     } catch (staticError) {
       console.log('静态历史数据不可用，尝试本地 API:', staticError.message)
@@ -145,13 +168,30 @@ const fetchFileHistory = async () => {
         params: {
           file: filePath,
           type: 'history'
-        }
+        },
+        timeout: 10000 // 10秒超时
       })
+      
+      // 验证响应数据
+      if (!response.data || typeof response.data !== 'object') {
+        throw new Error('API返回无效数据格式')
+      }
       
       // 转换本地 Git 数据格式为组件期望的格式
       const gitData = response.data
       if (gitData.history && Array.isArray(gitData.history)) {
-        fileHistory.value = gitData.history.map(commit => ({
+        // 验证历史记录数据
+        const validHistory = gitData.history.filter(commit => {
+          return commit.hash && commit.authorName && commit.date && commit.message
+        })
+        
+        if (validHistory.length === 0) {
+          console.warn('API返回的历史记录为空或无效')
+          fileHistory.value = []
+          return
+        }
+        
+        fileHistory.value = validHistory.map(commit => ({
           sha: commit.hash,
           html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
           commit: {
@@ -163,12 +203,26 @@ const fetchFileHistory = async () => {
             }
           }
         }))
+        
+        console.log(`✅ 从API成功加载 ${validHistory.length} 条历史记录`)
       } else {
+        console.warn('API返回数据中没有有效的history字段')
         fileHistory.value = []
       }
     } catch (apiError) {
       console.error('本地 Git API 也不可用:', apiError)
-      historyError.value = '无法获取文件历史记录'
+      
+      // 根据错误类型提供更具体的错误信息
+      if (apiError.code === 'ECONNABORTED') {
+        historyError.value = '请求超时，请稍后重试'
+      } else if (apiError.response) {
+        historyError.value = `API错误 (${apiError.response.status}): ${apiError.response.statusText}`
+      } else if (apiError.request) {
+        historyError.value = '网络连接失败，请检查网络状态'
+      } else {
+        historyError.value = `获取历史记录失败: ${apiError.message}`
+      }
+      
       fileHistory.value = []
     }
   } catch (error) {

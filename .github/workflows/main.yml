@@ -35,80 +35,374 @@ jobs:
       contents: read
       pull-requests: write
 
-  # Push 到 main 时创建发布版本
-  create-release:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    uses: ./.github/workflows/release.yml
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-    secrets: inherit
-
-  # 手动触发或 Push 到 main 时更新 Git 历史
-  update-git-history:
+  # 发布版本和更新 Git 历史（合并任务，支持手动触发）
+  release-and-history:
     if: |
       (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-      (github.event_name == 'workflow_dispatch' && github.event.inputs.update_history == 'true')
-    uses: ./.github/workflows/git-history.yml
-    permissions:
-      contents: write
-    secrets: inherit
-
-  # 手动强制发布
-  force-release:
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.force_release == 'true'
-    uses: ./.github/workflows/release.yml
+      (github.event_name == 'workflow_dispatch' && (github.event.inputs.force_release == 'true' || github.event.inputs.update_history == 'true'))
+    runs-on: ubuntu-latest
+    name: Release and History
     permissions:
       contents: write
       issues: write
       pull-requests: write
-    secrets: inherit
-
-  # 构建和部署到 GitHub Pages
-  build:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          # 检查是否有实际的代码变更（排除工作流文件和自动生成的文件）
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep -v '^.github/workflows/' | grep -v '^docs/public/git-history.json$' | wc -l)
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "📊 检测到 $CHANGED_FILES 个非工作流文件变更"
+          
+          # 检查是否有文档变更
+          DOC_CHANGES=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(md|vue|js|ts|json)$' | grep -v '^docs/public/git-history.json$' | wc -l)
+          echo "doc_changes=$DOC_CHANGES" >> $GITHUB_OUTPUT
+          echo "📝 检测到 $DOC_CHANGES 个文档相关文件变更"
+          
+          # 检查是否有配置文件变更
+          CONFIG_CHANGES=$(git diff --name-only HEAD~1 HEAD | grep -E '(package\.json|vitepress|config\.)' | wc -l)
+          echo "config_changes=$CONFIG_CHANGES" >> $GITHUB_OUTPUT
+          echo "⚙️ 检测到 $CONFIG_CHANGES 个配置文件变更"
+          
+          # 检查提交信息是否包含 [skip ci] 或 [skip history]
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          if echo "$COMMIT_MSG" | grep -q '\[skip ci\]'; then
+            echo "skip_ci=true" >> $GITHUB_OUTPUT
+            echo "⏭️ 检测到 [skip ci] 标记，将跳过CI任务"
+          else
+            echo "skip_ci=false" >> $GITHUB_OUTPUT
+          fi
+          
+          if echo "$COMMIT_MSG" | grep -q '\[skip history\]'; then
+            echo "skip_history=true" >> $GITHUB_OUTPUT
+            echo "⏭️ 检测到 [skip history] 标记，将跳过历史更新"
+          else
+            echo "skip_history=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create Release
+         if: |
+           (github.event_name == 'push' && steps.changes.outputs.changed_files > 0 && steps.changes.outputs.skip_ci == 'false') ||
+           (github.event_name == 'workflow_dispatch' && github.event.inputs.force_release == 'true')
+         run: |
+           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_release }}" = "true" ]; then
+             echo "🚀 手动触发版本发布工作流"
+             gh workflow run release.yml --field release_type=patch
+           else
+             echo "🚀 触发版本发布工作流"
+             gh workflow run release.yml
+           fi
+         env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       
+       - name: Generate Git History
+         if: |
+           (github.event_name == 'push' && steps.changes.outputs.doc_changes > 0 && steps.changes.outputs.skip_history == 'false') ||
+           (github.event_name == 'workflow_dispatch' && github.event.inputs.update_history == 'true')
+         run: |
+             if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.update_history }}" = "true" ]; then
+               echo "📊 手动触发 Git 历史数据生成..."
+             else
+               echo "📊 开始生成 Git 历史数据..."
+             fi
+           
+           # 创建 git 历史数据生成脚本
+           cat > generate-git-history.js << 'EOF'
+           const { execSync } = require('child_process');
+           const fs = require('fs');
+           const path = require('path');
+           
+           console.log('🚀 开始生成 Git 历史数据...');
+           
+           // 获取所有文件的 git 历史
+           function getFileHistory(filePath) {
+             try {
+               const gitLog = execSync(
+                 `git log --follow --pretty=format:"%H|%an|%ae|%ad|%s" --date=iso -- "${filePath}"`,
+                 { encoding: 'utf8' }
+               );
+               
+               if (!gitLog.trim()) return [];
+               
+               return gitLog.trim().split('\n').map(line => {
+                 const [hash, authorName, authorEmail, date, message] = line.split('|');
+                 return {
+                   hash,
+                   authorName,
+                   authorEmail,
+                   date,
+                   message
+                 };
+               });
+             } catch (error) {
+               console.error(`❌ 获取 ${filePath} 历史失败:`, error.message);
+               return [];
+             }
+           }
+           
+           // 获取所有 .md 文件
+           function getAllMarkdownFiles(dir, fileList = []) {
+             const files = fs.readdirSync(dir);
+             
+             files.forEach(file => {
+               const filePath = path.join(dir, file);
+               const stat = fs.statSync(filePath);
+               
+               if (stat.isDirectory() && !file.startsWith('.') && file !== 'node_modules') {
+                 getAllMarkdownFiles(filePath, fileList);
+               } else if (file.endsWith('.md')) {
+                 fileList.push(filePath);
+               }
+             });
+             
+             return fileList;
+           }
+           
+           // 获取仓库统计信息
+           function getRepoStats() {
+             try {
+               const totalCommits = execSync('git rev-list --all --count', { encoding: 'utf8' }).trim();
+               const contributors = execSync('git log --format="%an" | sort -u | wc -l', { encoding: 'utf8' }).trim();
+               const firstCommit = execSync('git log --reverse --format="%ad" --date=iso | head -1', { encoding: 'utf8' }).trim();
+               const lastCommit = execSync('git log -1 --format="%ad" --date=iso', { encoding: 'utf8' }).trim();
+               
+               return {
+                 totalCommits: parseInt(totalCommits),
+                 contributors: parseInt(contributors),
+                 firstCommit,
+                 lastCommit,
+                 generatedAt: new Date().toISOString()
+               };
+             } catch (error) {
+               console.error('❌ 获取仓库统计失败:', error.message);
+               return {
+                 totalCommits: 0,
+                 contributors: 0,
+                 firstCommit: null,
+                 lastCommit: null,
+                 generatedAt: new Date().toISOString()
+               };
+             }
+           }
+           
+           // 生成历史数据
+           const docsDir = './docs';
+           const markdownFiles = getAllMarkdownFiles(docsDir);
+           const gitHistoryData = {
+             _meta: getRepoStats(),
+             files: {}
+           };
+           
+           console.log(`📁 发现 ${markdownFiles.length} 个 Markdown 文件`);
+           
+           markdownFiles.forEach(file => {
+             const relativePath = path.relative('.', file).replace(/\\/g, '/');
+             const history = getFileHistory(file);
+             
+             if (history.length > 0) {
+               gitHistoryData.files[relativePath] = {
+                 history,
+                 lastUpdated: history[0].date,
+                 totalCommits: history.length,
+                 contributors: [...new Set(history.map(h => h.authorName))].length
+               };
+               console.log(`✅ ${relativePath}: ${history.length} 次提交`);
+             } else {
+               console.log(`⚠️ ${relativePath}: 无历史记录`);
+             }
+           });
+           
+           // 写入文件
+           const outputPath = './docs/public/git-history.json';
+           fs.writeFileSync(outputPath, JSON.stringify(gitHistoryData, null, 2));
+           
+           console.log(`✅ Git 历史数据已生成: ${outputPath}`);
+           console.log(`📊 统计: ${Object.keys(gitHistoryData.files).length} 个文件, ${gitHistoryData._meta.totalCommits} 次提交`);
+           
+           // 验证生成的JSON文件
+           try {
+             const jsonContent = fs.readFileSync(outputPath, 'utf8');
+             const parsedData = JSON.parse(jsonContent);
+             console.log('✅ JSON 文件格式验证通过');
+             
+             // 验证数据结构
+             if (!parsedData._meta || !parsedData.files) {
+               throw new Error('缺少必要的数据结构 (_meta 或 files)');
+             }
+             
+             // 验证元数据
+             const meta = parsedData._meta;
+             if (typeof meta.totalCommits !== 'number' || meta.totalCommits < 0) {
+               throw new Error('无效的 totalCommits 值');
+             }
+             
+             if (typeof meta.contributors !== 'number' || meta.contributors < 0) {
+               throw new Error('无效的 contributors 值');
+             }
+             
+             if (!meta.generatedAt || !Date.parse(meta.generatedAt)) {
+               throw new Error('无效的 generatedAt 时间戳');
+             }
+             
+             // 验证文件数据
+             const fileCount = Object.keys(parsedData.files).length;
+             console.log(`📊 验证 ${fileCount} 个文件的历史数据`);
+             
+             let validFiles = 0;
+             for (const [filePath, fileData] of Object.entries(parsedData.files)) {
+               if (!fileData.history || !Array.isArray(fileData.history)) {
+                 console.warn(`⚠️ 文件 ${filePath} 缺少有效的 history 数组`);
+                 continue;
+               }
+               
+               if (!fileData.lastUpdated || !fileData.totalCommits) {
+                 console.warn(`⚠️ 文件 ${filePath} 缺少必要字段`);
+                 continue;
+               }
+               
+               // 验证历史记录格式
+               for (const commit of fileData.history) {
+                 if (!commit.hash || !commit.authorName || !commit.date || !commit.message) {
+                   console.warn(`⚠️ 文件 ${filePath} 包含无效的提交记录`);
+                   break;
+                 }
+               }
+               
+               validFiles++;
+             }
+             
+             console.log(`✅ 数据结构验证通过: ${validFiles}/${fileCount} 个文件有效`);
+             
+             // 检查文件大小
+             const fileSizeKB = Math.round(jsonContent.length / 1024);
+             console.log(`📏 文件大小: ${fileSizeKB} KB`);
+             
+             if (fileSizeKB > 5000) {
+               console.warn('⚠️ 文件大小超过 5MB，可能影响加载性能');
+             }
+             
+           } catch (error) {
+             console.error('❌ JSON 文件验证失败:', error.message);
+             process.exit(1);
+           }
+           EOF
+           
+           # 执行脚本
+           node generate-git-history.js
+           
+           # 提交更新的历史文件
+           git config --local user.email "action@github.com"
+           git config --local user.name "GitHub Action"
+           
+           if [ -f "docs/public/git-history.json" ]; then
+             if git diff --quiet docs/public/git-history.json; then
+               echo "📝 Git 历史数据无变更"
+             else
+               git add docs/public/git-history.json
+               git commit -m "chore: 更新 Git 历史数据 [skip ci]"
+               
+               # 先拉取远程更新，避免冲突
+               git pull --rebase origin main || {
+                 echo "⚠️ 拉取远程更新失败，尝试强制推送"
+                 git push --force-with-lease origin main
+               } && git push origin main
+               
+               echo "✅ Git 历史数据已更新并推送"
+             fi
+           else
+             echo "❌ Git 历史文件生成失败"
+             exit 1
+           fi
+
+  # 构建和部署到 GitHub Pages（合并任务）
+  build-and-deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [release-and-history]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    name: Build and Deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Check for deployment changes
+        id: deploy_changes
+        run: |
+          # 检查是否有需要重新部署的变更
+          DEPLOY_CHANGES=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(md|vue|js|ts|json|css|scss)$|^docs/' | grep -v '^docs/public/git-history.json$' | wc -l)
+          echo "deploy_changes=$DEPLOY_CHANGES" >> $GITHUB_OUTPUT
+          echo "🔍 检测到 $DEPLOY_CHANGES 个需要重新部署的文件变更"
+          
+          # 检查提交信息是否包含 [skip deploy]
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          if echo "$COMMIT_MSG" | grep -q '\[skip deploy\]'; then
+            echo "skip_deploy=true" >> $GITHUB_OUTPUT
+            echo "⏭️ 检测到 [skip deploy] 标记，将跳过部署"
+          else
+            echo "skip_deploy=false" >> $GITHUB_OUTPUT
+          fi
+          
       - name: Setup Node
+        if: steps.deploy_changes.outputs.deploy_changes > 0 && steps.deploy_changes.outputs.skip_deploy == 'false'
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
+          
       - name: Setup Pages
+        if: steps.deploy_changes.outputs.deploy_changes > 0 && steps.deploy_changes.outputs.skip_deploy == 'false'
         uses: actions/configure-pages@v4
+        
       - name: Install dependencies
+        if: steps.deploy_changes.outputs.deploy_changes > 0 && steps.deploy_changes.outputs.skip_deploy == 'false'
         run: npm ci
+        
       - name: Build with VitePress
+        if: steps.deploy_changes.outputs.deploy_changes > 0 && steps.deploy_changes.outputs.skip_deploy == 'false'
         run: npm run docs:build
+        
       - name: Upload artifact
+        if: steps.deploy_changes.outputs.deploy_changes > 0 && steps.deploy_changes.outputs.skip_deploy == 'false'
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
-
-  deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
+          
       - name: Deploy to GitHub Pages
+        if: steps.deploy_changes.outputs.deploy_changes > 0 && steps.deploy_changes.outputs.skip_deploy == 'false'
         id: deployment
         uses: actions/deploy-pages@v4
+        
+      - name: Skip deployment notice
+        if: steps.deploy_changes.outputs.deploy_changes == 0 || steps.deploy_changes.outputs.skip_deploy == 'true'
+        run: |
+          if [ "${{ steps.deploy_changes.outputs.skip_deploy }}" = "true" ]; then
+            echo "⏭️ 部署已跳过：检测到 [skip deploy] 标记"
+          else
+            echo "⏭️ 部署已跳过：没有检测到需要重新部署的文件变更"
+          fi
 
   # 汇总报告
   summary:
     name: Workflow Summary
     runs-on: ubuntu-latest
     if: always()
-    needs: [validate-commits, create-release, update-git-history, force-release, build, deploy]
+    needs: [validate-commits, release-and-history, build-and-deploy]
     steps:
       - name: Generate workflow summary
         run: |
@@ -122,18 +416,26 @@ jobs:
           fi
           
           if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/main" ]; then
-            echo "- 🏷️ 版本发布: ${{ needs.create-release.result }}" >> $GITHUB_STEP_SUMMARY
-            echo "- 📊 Git 历史更新: ${{ needs.update-git-history.result }}" >> $GITHUB_STEP_SUMMARY
-            echo "- 🏗️ 站点构建: ${{ needs.build.result }}" >> $GITHUB_STEP_SUMMARY
-            echo "- 🚀 站点部署: ${{ needs.deploy.result }}" >> $GITHUB_STEP_SUMMARY
+            echo "- 🏷️ 版本发布和历史更新: ${{ needs.release-and-history.result }}" >> $GITHUB_STEP_SUMMARY
+            echo "- 🏗️ 站点构建和部署: ${{ needs.build-and-deploy.result }}" >> $GITHUB_STEP_SUMMARY
+            
+            # 显示智能跳过机制的执行情况
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 🧠 智能跳过机制" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "本次推送的智能分析结果：" >> $GITHUB_STEP_SUMMARY
+            echo "- 📊 文件变更检测：自动识别需要处理的文件类型" >> $GITHUB_STEP_SUMMARY
+            echo "- ⏭️ 跳过标记检测：支持 [skip ci]、[skip history]、[skip deploy] 标记" >> $GITHUB_STEP_SUMMARY
+            echo "- 🎯 条件执行：仅在有实际变更时执行相应任务" >> $GITHUB_STEP_SUMMARY
           fi
           
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "- 🏷️ 版本发布和历史更新 (手动触发): ${{ needs.release-and-history.result }}" >> $GITHUB_STEP_SUMMARY
             if [ "${{ github.event.inputs.force_release }}" = "true" ]; then
-              echo "- 🚀 强制发布: ${{ needs.force-release.result }}" >> $GITHUB_STEP_SUMMARY
+              echo "  - 🚀 强制发布版本已启用" >> $GITHUB_STEP_SUMMARY
             fi
             if [ "${{ github.event.inputs.update_history }}" = "true" ]; then
-              echo "- 📊 Git 历史更新: ${{ needs.update-git-history.result }}" >> $GITHUB_STEP_SUMMARY
+              echo "  - 📊 强制更新历史已启用" >> $GITHUB_STEP_SUMMARY
             fi
           fi
           
