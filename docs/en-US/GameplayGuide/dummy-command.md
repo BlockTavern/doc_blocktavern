@@ -14,9 +14,9 @@ BlockTavern has added dummy commands that allow players to simulate multiple fak
 | Command | Description |
 | --- | --- |
 | /player \<name\> spawn | Spawn dummy player |
-| ![player](/assets/gameplay/dummy-command/dummy-command01.png) |  |
+| ![player](/assets/GameplayGuide/dummy-command/dummy-command01.png) |  |
 | /player \<name\> kill | Remove dummy player |
-| ![player](/assets/gameplay/dummy-command/dummy-command02.png) |  |
+| ![player](/assets/GameplayGuide/dummy-command/dummy-command02.png) |  |
 
 
 <Contributors />

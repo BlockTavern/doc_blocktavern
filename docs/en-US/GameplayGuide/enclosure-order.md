@@ -22,21 +22,21 @@ Territory requires using a wooden hoe to select diagonal points, then use comman
 | Command | Description |
 | --- | --- |
 | /enclosure help | Territory help |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order01.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order01.png) |  |
 | /enclosure create \<name\> | Create territory |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order02.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order02.png) |  |
 | /enclosure tp | Teleport to territory |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order03.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order03.png) |  |
 | /enclosure list | Territory list |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order04.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order04.png) |  |
 | /enclosure set \<name\> | Set territory properties (can use GUI) |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order05.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order05.png) |  |
 | /enclosure gui \<name\> | GUI settings (requires client MOD download) |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order06.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order06.png) |  |
 | /enclosure info \<name\> | View territory information |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order07.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order07.png) |  |
 | /enclosure remove \<name\> | Delete territory |
-| ![enclosure](/assets/gameplay/enclosure-order/enclosure-order08.png) |  |
+| ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order08.png) |  |
 
 
 
