@@ -91,8 +91,22 @@ const getCurrentFilePath = () => {
   const filePath = page.value.filePath
   if (!filePath) return null
   
-  // 移除 docs/ 前缀，因为 GitHub API 中的路径是相对于仓库根目录的
-  return filePath.startsWith('docs/') ? filePath : `docs/${filePath}`
+  // 处理多语言路径
+  // 在VitePress多语言环境中，filePath可能不包含语言前缀
+  // 需要根据当前语言环境补全路径
+  let fullPath = filePath
+  
+  // 如果路径不以docs/开头，添加docs/前缀
+  if (!fullPath.startsWith('docs/')) {
+    // 检查是否需要添加语言前缀
+    const currentLang = page.value.lang || 'zh-CN'
+    if (currentLang !== 'zh-CN' && !fullPath.startsWith(currentLang + '/')) {
+      fullPath = `${currentLang}/${fullPath}`
+    }
+    fullPath = `docs/${fullPath}`
+  }
+  
+  return fullPath
 }
 
 // 切换历史记录展开状态
@@ -277,7 +291,7 @@ const getCommitDescription = (message) => {
   return match ? match[2] : message
 }
 
-// 组件挂载时获取数据
+// 组件挂载时获取历史记录
 onMounted(() => {
   fetchFileHistory()
 })

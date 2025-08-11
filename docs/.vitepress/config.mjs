@@ -15,7 +15,7 @@ import { GitHistoryInformation, GitHistoryInformationMarkdownSection } from './p
  * 配置已分离到 components 目录下的不同模块中便于维护
  */
 export default {
-  // GitHub Pages 部署配置
+  // GitHub Pages 部署配置。
   base: '/',
   
   // 站点基础配置
