@@ -5,6 +5,12 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范。
 
+## [1.0.3](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.2...v1.0.3) (2025-08-11)
+
+### 🐛 Bug 修复
+
+* 修复英文GameplayGuide文档的Git历史数据缺失问题 ([ee20ae5](https://github.com/Re0XIAOPA/doc_blocktavern/commit/ee20ae51ad41a2df8d94b2f9c697fd55a97a2a33))
+
 ## [1.0.2](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.1...v1.0.2) (2025-08-11)
 
 ### 🐛 Bug 修复
