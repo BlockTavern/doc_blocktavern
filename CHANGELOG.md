@@ -5,6 +5,12 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范。
 
+## [1.0.4](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.3...v1.0.4) (2025-08-11)
+
+### 🐛 Bug 修复
+
+* 修复多语言环境下GitHistoryInformation组件路径解析问题 ([706ce05](https://github.com/Re0XIAOPA/doc_blocktavern/commit/706ce05154e02802e48534b717974a6259793a35))
+
 ## [1.0.3](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.2...v1.0.3) (2025-08-11)
 
 ### 🐛 Bug 修复
