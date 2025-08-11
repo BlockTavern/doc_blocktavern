@@ -4,7 +4,7 @@
  */
 
 export const zhHKConfig = {
-  label: "繁體中文(香港)",
+  label: "繁體中文",
   lang: "zh-HK",
   link: "/zh-HK/",
   title: "BlockTavern 文檔",
