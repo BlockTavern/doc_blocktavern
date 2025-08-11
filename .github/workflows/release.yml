@@ -4,6 +4,13 @@ name: Release
 on:
   push:
     branches: [main]
+  workflow_call:
+    inputs:
+      release_type:
+        description: '发布类型'
+        required: false
+        default: 'auto'
+        type: string
   workflow_dispatch:
     inputs:
       release_type:
