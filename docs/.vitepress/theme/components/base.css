@@ -22,18 +22,31 @@ div[class*="language-"] {
 
 /* 表格美化 */
 .vp-doc table {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.vp-doc th {
+  font-weight: 600;
+  text-align: left;
+}
+
+.vp-doc th, .vp-doc td {
+  padding: 0.75rem 1rem;
 }
 
 /* 链接美化 */
 .vp-doc a {
+  color: var(--vp-c-link) !important;
+  /* 加个阴影 */
+  box-shadow: var(--vp-c-link) 0 -1px 0 inset !important;
   transition: color 0.3s ease;
 }
 
 .vp-doc a:hover {
   color: var(--vp-c-link-hover) !important;
+  box-shadow: var(--vp-c-link-hover) 0 -1px 0 inset !important;
   text-decoration: underline;
 }
 

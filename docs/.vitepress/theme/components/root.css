@@ -17,6 +17,11 @@
   --vp-c-text-3: rgba(0, 0, 0, 0.5);
   --vp-c-text-4: rgba(0, 0, 0, 0.3);
 
+  /* 链接颜色 */
+  --vp-c-link: #28a096;
+  --vp-c-link-soft: rgba(37, 99, 235, 0.7);
+
+
   /* 背景颜色 */
   --vp-c-bg: #ffffff;
   --vp-c-bg-soft: #f6f6f6;
@@ -46,6 +51,10 @@ html.dark {
   --vp-c-text-2: rgba(255, 255, 255, 0.7);
   --vp-c-text-3: rgba(255, 255, 255, 0.5);
   --vp-c-text-4: rgba(255, 255, 255, 0.3);
+
+  /* 链接颜色 */
+  --vp-c-link: #ff4d4d;
+  --vp-c-link-soft: rgba(255, 193, 7, 0.7);
 
   /* 背景颜色 */
   --vp-c-bg: #1a1a1a;
