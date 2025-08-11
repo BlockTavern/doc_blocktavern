@@ -25,7 +25,7 @@
 
 /* 统一设置侧边栏背景色变量 */
 :root {
-  --vp-sidebar-bg-color: transparent;
+  --vp-sidebar-bg-color: var(--vp-c-bg);
 }
 
 
