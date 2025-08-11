@@ -102,20 +102,35 @@ const fetchFileHistory = async () => {
       return
     }
     
-    const response = await axios.get(
-      `${GITHUB_API_BASE}/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commits`,
-      {
-        params: {
-          path: filePath,
-          per_page: 20
-        }
+    // 使用本地 Git API 而不是 GitHub API
+    const response = await axios.get('/api/git-history', {
+      params: {
+        file: filePath,
+        type: 'history'
       }
-    )
+    })
     
-    fileHistory.value = response.data
+    // 转换本地 Git 数据格式为组件期望的格式
+    const gitData = response.data
+    if (gitData.history && Array.isArray(gitData.history)) {
+      fileHistory.value = gitData.history.map(commit => ({
+        sha: commit.hash,
+        html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
+        commit: {
+          message: commit.message,
+          author: {
+            name: commit.authorName,
+            email: commit.authorEmail,
+            date: commit.date
+          }
+        }
+      }))
+    } else {
+      fileHistory.value = []
+    }
   } catch (error) {
     console.error('获取文件历史失败:', error)
-    historyError.value = error.response?.data?.message || error.message || '未知错误'
+    historyError.value = error.response?.data?.error || error.message || '未知错误'
   } finally {
     historyLoading.value = false
   }
