@@ -15,19 +15,19 @@ PCL2是一个Minecraft启动器，它可以帮助您方便地安装和管理Mine
 
 ## 图文教程
 
-![下载图片03](./installation-details/installation-details03.png)
+![下载图片03](/assets/InstallationTutorial/installation-details/installation-details03.png)
 
-![下载图片13](./installation-details/installation-details13.png)
+![下载图片13](/assets/InstallationTutorial/installation-details/installation-details13.png)
 
-![下载图片14](./installation-details/installation-details14.png)
+![下载图片14](/assets/InstallationTutorial/installation-details/installation-details14.png)
 
-![下载图片04](./installation-details/installation-details04.png)
+![下载图片04](/assets/InstallationTutorial/installation-details/installation-details04.png)
 
-![下载图片05](./installation-details/installation-details05.png)
+![下载图片05](/assets/InstallationTutorial/installation-details/installation-details05.png)
 
-![下载图片06](./installation-details/installation-details06.png)
+![下载图片06](/assets/InstallationTutorial/installation-details/installation-details06.png)
 
-![下载图片07](./installation-details/installation-details07.png)
+![下载图片07](/assets/InstallationTutorial/installation-details/installation-details07.png)
 
 <Contributors />
 

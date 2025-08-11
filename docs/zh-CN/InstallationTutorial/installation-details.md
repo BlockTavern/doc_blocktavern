@@ -42,11 +42,11 @@ order: 1
 
 下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
 
-![下载图片01](./installation-details/installation-details01.png)
+![下载图片01](/assets/InstallationTutorial/installation-details/installation-details01.png)
 
 你就会得到一个安装文件，接下来就可以安装它了。
 
-![下载图片02](./installation-details/installation-details02.png)
+![下载图片02](/assets/InstallationTutorial/installation-details/installation-details02.png)
 
 ## 获取帮助
 

@@ -1,6 +1,6 @@
 ---
-title: Development Guide
-description: BlockTavern Documentation Development Guide
+title: Contribution Guide
+description: Server Development Contribution Guide Directory
 order: 4
 ---
 

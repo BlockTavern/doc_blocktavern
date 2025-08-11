@@ -1,40 +1,41 @@
 ---
 layout: home
-title: BlockTavern Docs
-description: BlockTavern Minecraft Server Documentation
 
 hero:
-  name: BlockTavern
-  text: Minecraft Server Documentation
-  tagline: Welcome to BlockTavern - Your Ultimate Minecraft Experience
+  name: "BlockTavern"
+  text: ""
+  tagline: Here, every block has a story, every player is a legend
+  image:
+    src: /logo.png
+    alt: BlockTavern Logo
   actions:
     - theme: brand
-      text: Get Started
-      link: /en-US/InstallationTutorial/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/Re0XIAOPA/doc_blocktavern
+      text: Enter Tutorial
+      link: /en-US/InstallationTutorial/installation-details
+    - theme: alt  
+      text: Development Guide (Contribute Documentation)
+      link: /en-US/DevelopmentGuide/development-details
 
 features:
   - icon: 📦
     title: Installation Tutorial
     details: Install BlockTavern game and prepare to start your adventure
-    link: /en-US/InstallationTutorial/
+    link: /en-US/InstallationTutorial/installation-details
+
   - icon: 🎮
     title: Gameplay Guide
     details: Learn the basic rules and gameplay mechanics
-    link: /en-US/GameplayGuide/
+    link: /en-US/GameplayGuide/server-rules
+    
   - icon: ❓
     title: FAQ
     details: Quickly solve your problems
-    link: /en-US/FAQ/
+    link: /en-US/FAQ/faq-details
 ---
 
-## Contributing Overview
+### Contributing Overview
 
-Want to contribute to BlockTavern documentation? Here are the quick start steps:
-
-```bash
+```sh
 # Clone the repository
 git clone https://github.com/your-username/doc_blocktavern.git
 

@@ -1,6 +1,6 @@
 ---
 title: Installation Tutorial
-description: BlockTavern Server Installation Guide
+description: Server Installation Tutorial Directory
 order: 1
 ---
 

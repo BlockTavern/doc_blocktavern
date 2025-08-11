@@ -14,15 +14,15 @@ order: 3
 
 ## 图文教程
 
-![下载图片08](./installation-details/installation-details08.png)
+![下载图片08](/assets/InstallationTutorial/installation-details/installation-details08.png)
 
-![下载图片09](./installation-details/installation-details09.png)
+![下载图片09](/assets/InstallationTutorial/installation-details/installation-details09.png)
 
-![下载图片10](./installation-details/installation-details10.png)
+![下载图片10](/assets/InstallationTutorial/installation-details/installation-details10.png)
 
-![下载图片11](./installation-details/installation-details11.png)
+![下载图片11](/assets/InstallationTutorial/installation-details/installation-details11.png)
 
-![下载图片12](./installation-details/installation-details12.png)
+![下载图片12](/assets/InstallationTutorial/installation-details/installation-details12.png)
 
 <Contributors />
 <GitHistoryInformation />

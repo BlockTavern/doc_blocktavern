@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions
-description: BlockTavern Server FAQ
+description: Frequently Asked Questions Directory
 order: 3
 ---
 

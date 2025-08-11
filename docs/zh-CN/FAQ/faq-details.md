@@ -34,7 +34,7 @@ order: 1
 | 解决办法 | 视频内工具下载地址  | 
 | [B站视频 - 解决办法](https://www.bilibili.com/video/BV16tejetEUH/) | [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/18627/) | |
 
-![err](./faq-details/faq-details01.png)
+![err](/assets/FAQ/faq-details/faq-details01.png)
 
 
 <Contributors />

@@ -1,6 +1,6 @@
 ---
 title: Gameplay Guide
-description: BlockTavern Server Gameplay Guide
+description: Gameplay Guide Directory
 order: 2
 ---
 
