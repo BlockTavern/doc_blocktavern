@@ -6,24 +6,14 @@ order: 1
 
 # 快速开始
 
-欢迎来到 BlockTavern 文档站点开发指南！
-
-## 项目概述
-
+欢迎来到 BlockTavern 文档站点贡献指南！
 BlockTavern 文档站点基于 VitePress 构建，用于提供 Minecraft 服务器的完整文档。
-
-### 技术栈
-
-- **VitePress**: 静态站点生成器
-- **Markdown**: 文档编写格式
-- **JavaScript**: 配置文件
-- **GitHub Actions**: 自动化部署
 
 ## 环境要求
 
-- **Node.js**: 版本 16.0 或更高
-- **npm**: 版本 7.0 或更高
-- **Git**: 用于版本控制
+- **Node.js**
+- **npm** 或 **Yarn** 或 **pnpm** (推荐npm)
+- **Git**
 
 ## 开始开发
 

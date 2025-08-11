@@ -1,6 +1,7 @@
 ---
-layout: home
+# 此md只是一个毛坯 简体中文的index.md在docs\index.md 英文的index.md在docs\en\index.md
 
+layout: home
 hero:
   name: "BlockTavern"
   text: "非完善 仅参考"
@@ -72,4 +73,4 @@ git push origin main
    - 标题：简洁描述你的更改
    - 描述：详细解释你的更改动机和影响
 8. **提交 Pull Request**：点击 "Create Pull Request" 提交你的更改。
-9. **等待审核**：项目维护者会审核你的 Pull Request。
+9. **等待审核**：项目维护者会审核你的 Pull Request。aaa

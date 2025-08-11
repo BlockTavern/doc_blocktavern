@@ -8,6 +8,11 @@ order: 4
 
 本指南将帮助您了解如何编写和维护 BlockTavern 的文档。我们使用 VitePress 作为文档生成工具，以下是一些基本的编写规范和技巧。
 
+具体教程参阅《[VitePress Markdown 扩展](https://vitepress.dev/zh/guide/markdown)》和《[Markdown 语法](https://markdown.com.cn/basic-syntax/)》。
+
+一、[Markdown 教程](https://www.markdownlang.com/zh/ )  
+二、[Markdown 教程](https://markdown.com.cn/)
+
 ## Markdown 基础语法
 
 ```markdown
