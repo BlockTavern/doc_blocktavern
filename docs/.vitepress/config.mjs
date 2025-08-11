@@ -16,7 +16,7 @@ import { GitHistoryInformation, GitHistoryInformationMarkdownSection } from './p
  */
 export default {
   // GitHub Pages 部署配置
-  base: '/',
+  base: '/doc_blocktavern/',
   
   // 站点基础配置
   ...siteConfig,
