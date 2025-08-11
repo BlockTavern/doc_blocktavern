@@ -4,7 +4,7 @@
 layout: home
 hero:
   name: "BlockTavern"
-  text: "非完善 仅参考"
+  text: ""
   tagline: 在这里，每一个方块都有故事，每一个玩家都是传奇
   image:
     src: /logo.png
