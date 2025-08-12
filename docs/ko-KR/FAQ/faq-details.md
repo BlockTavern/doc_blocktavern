@@ -1,5 +1,5 @@
 ---
-title: 常见问题
+title: 자주 묻는 질문
 description: 常见问题详情目录
 order: 1
 ---

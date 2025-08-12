@@ -1,5 +1,5 @@
 ---
-title: 贡献指南
+title: Guide de contribution
 description: BlockTavern 文档贡献完整指南
 order: 1
 ---

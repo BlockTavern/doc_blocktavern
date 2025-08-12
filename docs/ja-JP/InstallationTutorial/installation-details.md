@@ -1,6 +1,6 @@
 ---
-title: 安装前准备
-description: 安装前准备：BlockTavern游戏
+title: インストール前の準備
+description: インストール前の準備：BlockTavernゲーム
 order: 1
 ---
 

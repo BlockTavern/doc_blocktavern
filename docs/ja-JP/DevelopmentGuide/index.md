@@ -1,5 +1,5 @@
 ---
-title: 贡献指南
-description: 服务器开发贡献指南目录
+title: 貢献ガイド
+description: サーバー開発貢献ガイドディレクトリ
 order: 4
 ---

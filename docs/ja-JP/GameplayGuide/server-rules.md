@@ -1,6 +1,6 @@
 ---
-title: 游玩规则
-description: 游玩规则
+title: ゲームルール
+description: ゲームルール
 order: 1
 ---
  

@@ -1,5 +1,5 @@
 ---
-title: 指令列表
+title: Список команд
 description: 指令列表
 order: 2
 ---

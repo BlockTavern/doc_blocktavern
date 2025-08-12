@@ -1,5 +1,5 @@
 ---
-title: 组件
-description: 组件相关内容
+title: 元件
+description: 元件相關內容
 order: 5
 ---

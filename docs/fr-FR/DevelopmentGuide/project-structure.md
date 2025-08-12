@@ -1,5 +1,5 @@
 ---
-title: 项目结构
+title: Structure du projet
 description: 服务器项目结构目录
 order: 2
 ---

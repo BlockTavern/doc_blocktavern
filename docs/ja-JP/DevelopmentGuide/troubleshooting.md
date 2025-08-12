@@ -1,6 +1,6 @@
 ---
-title: 故障排除
-description: 服务器故障排除目录
+title: トラブルシューティング
+description: サーバートラブルシューティングディレクトリ
 order: 5
 ---
 

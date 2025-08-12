@@ -1,5 +1,5 @@
 ---
-title: "领地指令"
+title: "領地コマンド"
 description: BlockTavern的领地指令
 order: 3
 ---

@@ -12,7 +12,7 @@ hero:
     - theme: brand
       text: 進入教學
       link: /zh-TW/InstallationTutorial/installation-details
-    - theme: alt  
+    - theme: alt
       text: 開發指南(貢獻文件)
       link: /zh-TW/DevelopmentGuide/development-details
 
@@ -26,7 +26,7 @@ features:
     title: 遊戲指南
     details: 了解遊戲的基本規則和玩法
     link: /zh-TW/GameplayGuide/server-rules
-    
+
   - icon: ❓
     title: 常見問題
     details: 快速解決你的問題

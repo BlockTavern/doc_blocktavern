@@ -1,6 +1,6 @@
 ---
-title: 配置说明
-description: VitePress 配置文件说明
+title: 設定説明
+description: VitePress 設定ファイル説明
 order: 3
 ---
 

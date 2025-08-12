@@ -1,6 +1,6 @@
 ---
-title: 文档编写
-description: BlockTavern 文档编写完整指南
+title: ドキュメント作成
+description: BlockTavern ドキュメント作成完全ガイド
 order: 4
 ---
 
@@ -165,7 +165,7 @@ $$
 
 ```yaml
 ---
-title: 页面标题 # 必需
+title: ページタイトル # 必需
 description: 页面描述 # 必需
 order: 1 # 可选，控制排序
 ---
@@ -175,7 +175,7 @@ order: 1 # 可选，控制排序
 
 ```markdown
 ---
-title: 页面标题
+title: ページタイトル
 description: 页面描述
 ---
 

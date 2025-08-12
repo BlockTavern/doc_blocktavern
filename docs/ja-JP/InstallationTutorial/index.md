@@ -1,5 +1,5 @@
 ---
-title: 安装教程
-description: 服务器安装教程目录
+title: インストールチュートリアル
+description: サーバーインストールチュートリアルディレクトリ
 order: 1
 ---

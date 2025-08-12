@@ -1,5 +1,5 @@
 ---
-title: 游玩规则
+title: Reglas del servidor
 description: 游玩规则
 order: 1
 ---

@@ -1,5 +1,5 @@
 ---
-title: 组件
-description: 组件相关内容
+title: コンポーネント
+description: コンポーネント関連コンテンツ
 order: 5
 ---

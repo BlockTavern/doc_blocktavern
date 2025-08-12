@@ -1,5 +1,5 @@
 ---
-title: 配置说明
+title: Konfiguration
 description: VitePress 配置文件说明
 order: 3
 ---

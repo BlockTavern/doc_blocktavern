@@ -1,6 +1,6 @@
 ---
-title: 常见问题
-description: 常见问题详情目录
+title: よくある質問
+description: よくある質問詳細ディレクトリ
 order: 1
 ---
 

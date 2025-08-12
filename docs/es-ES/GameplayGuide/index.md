@@ -1,5 +1,5 @@
 ---
-title: 游戏指南
+title: Guía de juego
 description: 游戏指南目录
 order: 2
 ---

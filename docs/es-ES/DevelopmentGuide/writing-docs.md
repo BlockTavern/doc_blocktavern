@@ -1,5 +1,5 @@
 ---
-title: 文档编写
+title: Redacción de documentación
 description: BlockTavern 文档编写完整指南
 order: 4
 ---

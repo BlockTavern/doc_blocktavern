@@ -1,5 +1,5 @@
 ---
-title: HMCL安装
+title: HMCLインストール
 description: 详细的HMCL启动器安装和配置教程
 order: 3
 ---

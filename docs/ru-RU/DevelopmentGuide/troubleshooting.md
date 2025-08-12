@@ -1,5 +1,5 @@
 ---
-title: 故障排除
+title: Устранение неполадок
 description: 服务器故障排除目录
 order: 5
 ---

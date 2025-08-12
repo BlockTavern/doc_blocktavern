@@ -1,6 +1,6 @@
 ---
-title: 贡献指南
-description: BlockTavern 文档贡献完整指南
+title: 貢献ガイド
+description: BlockTavern ドキュメント貢献完全ガイド
 order: 1
 ---
 

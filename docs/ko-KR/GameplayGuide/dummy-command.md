@@ -1,5 +1,5 @@
 ---
-title: 假人指令
+title: 더미 명령어
 description: 假人指令
 order: 4
 ---

@@ -1,5 +1,5 @@
 ---
-title: PCL2安装
+title: PCL2インストール
 description: 详细的PCL2启动器安装和配置教程
 order: 2
 ---

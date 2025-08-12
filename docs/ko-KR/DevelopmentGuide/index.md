@@ -1,5 +1,5 @@
 ---
-title: 贡献指南
-description: 服务器开发贡献指南目录
+title: 기여 가이드
+description: 서버 개발 기여 가이드 디렉토리
 order: 4
 ---

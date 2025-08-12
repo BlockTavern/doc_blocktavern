@@ -1,6 +1,6 @@
 ---
-title: 假人指令
-description: 假人指令
+title: ダミーコマンド
+description: ダミーコマンド
 order: 4
 ---
 

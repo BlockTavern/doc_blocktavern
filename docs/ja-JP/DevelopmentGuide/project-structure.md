@@ -1,6 +1,6 @@
 ---
-title: 项目结构
-description: 服务器项目结构目录
+title: プロジェクト構造
+description: サーバープロジェクト構造ディレクトリ
 order: 2
 ---
 

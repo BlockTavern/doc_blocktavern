@@ -21,47 +21,47 @@ features:
     title: 简体中文
     details: 中文用户推荐选择
     link: /zh-CN/
-  
+
   - icon: 🇺🇸
     title: English
     details: Recommended for English users
     link: /en-US/
-    
+
   - icon: 🇹🇼
     title: 繁體中文 (台灣)
     details: 台灣地區用戶推薦
     link: /zh-TW/
-    
+
   - icon: 🇭🇰
     title: 繁體中文 (香港)
     details: 香港地區用戶推薦
     link: /zh-HK/
-    
+
   - icon: 🇯🇵
     title: 日本語
     details: 日本のユーザーにおすすめ
     link: /ja-JP/
-    
+
   - icon: 🇰🇷
     title: 한국어
     details: 한국 사용자에게 권장
     link: /ko-KR/
-    
+
   - icon: 🇫🇷
     title: Français
     details: Recommandé pour les utilisateurs français
     link: /fr-FR/
-    
+
   - icon: 🇩🇪
     title: Deutsch
     details: Empfohlen für deutsche Benutzer
     link: /de-DE/
-    
+
   - icon: 🇪🇸
     title: Español
     details: Recomendado para usuarios españoles
     link: /es-ES/
-    
+
   - icon: 🇷🇺
     title: Русский
     details: Рекомендуется для русских пользователей

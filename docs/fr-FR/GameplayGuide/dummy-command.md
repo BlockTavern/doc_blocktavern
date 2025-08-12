@@ -1,5 +1,5 @@
 ---
-title: 假人指令
+title: Commandes factices
 description: 假人指令
 order: 4
 ---

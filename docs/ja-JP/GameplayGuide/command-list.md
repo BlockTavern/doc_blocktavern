@@ -1,6 +1,6 @@
 ---
-title: 指令列表
-description: 指令列表
+title: コマンドリスト
+description: コマンドリスト
 order: 2
 ---
 

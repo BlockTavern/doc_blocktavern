@@ -1,5 +1,5 @@
 ---
-title: 安装前准备
+title: 설치 전 준비
 description: 安装前准备：BlockTavern游戏
 order: 1
 ---

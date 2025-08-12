@@ -1,5 +1,4 @@
 ---
-
 layout: home
 
 hero:
@@ -10,30 +9,28 @@ image:
 src: /logo.png
 alt: BlockTavern Logo
 actions:
-- theme: brand
-  text: Entrar al Tutorial
-  link: /es-ES/InstallationTutorial/installation-details
-- theme: alt\
-  text: Guía de Desarrollo (Contribuir Documentación)
-  link: /es-ES/DevelopmentGuide/development-details
+  - theme: brand
+    text: Entrar al Tutorial
+    link: /es-ES/InstallationTutorial/installation-details
+  - theme: alt\
+    text: Guía de Desarrollo (Contribuir Documentación)
+    link: /es-ES/DevelopmentGuide/development-details
 
 features:
+  - icon: 📦
+    title: Tutorial de Instalación
+    details: Instala el juego BlockTavern y prepárate para comenzar tu aventura
+    link: /es-ES/InstallationTutorial/installation-details
 
-- icon: 📦
-  title: Tutorial de Instalación
-  details: Instala el juego BlockTavern y prepárate para comenzar tu aventura
-  link: /es-ES/InstallationTutorial/installation-details
+  - icon: 🎮
+    title: Guía de Juego
+    details: Aprende las reglas básicas y mecánicas del juego
+    link: /es-ES/GameplayGuide/server-rules
 
-- icon: 🎮
-  title: Guía de Juego
-  details: Aprende las reglas básicas y mecánicas del juego
-  link: /es-ES/GameplayGuide/server-rules
-
-- icon: ❓
-  title: Preguntas Frecuentes
-  details: Resuelve tus problemas rápidamente
-  link: /es-ES/FAQ/faq-details
-
+  - icon: ❓
+    title: Preguntas Frecuentes
+    details: Resuelve tus problemas rápidamente
+    link: /es-ES/FAQ/faq-details
 ---
 
 ### Resumen de Contribución

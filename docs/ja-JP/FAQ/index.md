@@ -1,5 +1,5 @@
 ---
-title: 常见问题
-description: 常见问题目录
+title: よくある質問
+description: よくある質問ディレクトリ
 order: 3
 ---

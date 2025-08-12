@@ -1,5 +1,5 @@
 ---
-title: 游玩规则
+title: Spielregeln
 description: 游玩规则
 order: 1
 ---

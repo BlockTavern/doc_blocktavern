@@ -1,5 +1,5 @@
 ---
-title: 指令列表
+title: 명령어 목록
 description: 指令列表
 order: 2
 ---
