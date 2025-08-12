@@ -5,6 +5,12 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范。
 
+## [1.0.11](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.10...v1.0.11) (2025-08-12)
+
+### 🐛 Bug 修复
+
+* 修复重复的符号引起的文档错误 ([dac7639](https://github.com/Re0XIAOPA/doc_blocktavern/commit/dac76397b7f69ebf3848a39c0a21a980230b0a77))
+
 ## [1.0.10](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.9...v1.0.10) (2025-08-12)
 
 ### 🐛 Bug 修复
