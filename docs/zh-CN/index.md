@@ -65,8 +65,8 @@ git push origin main
 ### 贡献流程
 
 1. **Fork 仓库**：点击仓库右上角的 "Fork" 按钮，创建一个副本到你的 GitHub 账号。
-2. **克隆仓库**：使用 `git clone` 命令克隆你的 fork 到本地。 
-3. **进行更改**：在你的本地仓库进行你的文档更改。 
+2. **克隆仓库**：使用 `git clone` 命令克隆你的 fork 到本地。
+3. **进行更改**：在你的本地仓库进行你的文档更改。
 4. **提交更改**：使用 `git commit` 提交你的更改。
 5. **推送更改**：使用 `git push` 推送你的更改到你的 fork。
 6. **创建 Pull Request**：在原仓库中，点击 "Pull Requests" 标签，然后点击 "New Pull Request"。

@@ -10,31 +10,31 @@ image:
 src: /logo.png
 alt: BlockTavern Logo
 actions:
-\- theme: brand
-text: Entrar al Tutorial
-link: /es-ES/InstallationTutorial/installation-details
-\- theme: alt\
-text: Guía de Desarrollo (Contribuir Documentación)
-link: /es-ES/DevelopmentGuide/development-details
+- theme: brand
+  text: Entrar al Tutorial
+  link: /es-ES/InstallationTutorial/installation-details
+- theme: alt\
+  text: Guía de Desarrollo (Contribuir Documentación)
+  link: /es-ES/DevelopmentGuide/development-details
 
 features:
 
-* icon: 📦
+- icon: 📦
   title: Tutorial de Instalación
   details: Instala el juego BlockTavern y prepárate para comenzar tu aventura
   link: /es-ES/InstallationTutorial/installation-details
 
-* icon: 🎮
+- icon: 🎮
   title: Guía de Juego
   details: Aprende las reglas básicas y mecánicas del juego
   link: /es-ES/GameplayGuide/server-rules
 
-* icon: ❓
+- icon: ❓
   title: Preguntas Frecuentes
   details: Resuelve tus problemas rápidamente
   link: /es-ES/FAQ/faq-details
 
-***
+---
 
 ### Resumen de Contribución
 
@@ -75,9 +75,10 @@ Asegúrate de que tu versión de Node.js >= 16.0 y que ya hayas hecho fork del r
 6. **Crear Pull Request**: En el repositorio original, haz clic en la pestaña "Pull Requests", luego haz clic en "New Pull Request".
 7. **Completar Información del Pull Request**:
 
-   * Título: Describe tus cambios de manera concisa
+   - Título: Describe tus cambios de manera concisa
 
-   * Descripción: Explica en detalle la motivación e impacto de tus cambios
+   - Descripción: Explica en detalle la motivación e impacto de tus cambios
+
 8. **Enviar Pull Request**: Haz clic en "Create Pull Request" para enviar tus cambios.
-9. **Esperar Revisión**: Los mantenedores del proyecto revisarán tu Pull Request.
 
+9. **Esperar Revisión**: Los mantenedores del proyecto revisarán tu Pull Request.
