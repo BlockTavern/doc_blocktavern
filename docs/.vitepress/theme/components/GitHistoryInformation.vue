@@ -2,60 +2,67 @@
   <div class="changelog-wrapper">
     <h2 class="changelog-title">{{ texts.title }}</h2>
     <div class="changelog">
-    <div class="changelog-header" @click="toggleExpanded">
-      <div class="last-edited">
-        <svg class="clock-icon" viewBox="0 0 16 16" width="16" height="16">
-          <path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"></path>
-        </svg>
-        <span v-if="lastCommit">{{ texts.lastEdited }} {{ formatRelativeTime(lastCommit.commit.author.date) }}</span>
-        <span v-else>{{ texts.loading }}</span>
+      <div class="changelog-header" @click="toggleExpanded">
+        <div class="last-edited">
+          <svg class="clock-icon" viewBox="0 0 16 16" width="16" height="16">
+            <path fill="currentColor"
+              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z">
+            </path>
+          </svg>
+          <span v-if="lastCommit">{{ texts.lastEdited }} {{ formatRelativeTime(lastCommit.commit.author.date) }}</span>
+          <span v-else>{{ texts.loading }}</span>
+        </div>
+        <div class="view-history">
+          <svg class="list-icon" viewBox="0 0 16 16" width="16" height="16">
+            <path fill="currentColor" d="M2 4h8v1H2V4zm0 3h8v1H2V7zm0 3h8v1H2v-1z" />
+          </svg>
+          <span class="view-history-link">
+            {{ isExpanded ? texts.collapse : texts.viewFullHistory }}
+          </span>
+          <svg class="chevron-icon" :class="{ 'rotated': isExpanded }" viewBox="0 0 16 16" width="16" height="16">
+            <path fill="currentColor"
+              d="M4.427 9.573l3.396-3.396a.25.25 0 01.354 0l3.396 3.396a.25.25 0 01-.177.427H4.604a.25.25 0 01-.177-.427z" />
+          </svg>
+        </div>
       </div>
-      <div class="view-history">
-        <svg class="list-icon" viewBox="0 0 16 16" width="16" height="16">
-          <path fill="currentColor" d="M2 4h8v1H2V4zm0 3h8v1H2V7zm0 3h8v1H2v-1z"/>
-        </svg>
-        <span class="view-history-link">
-          {{ isExpanded ? texts.collapse : texts.viewFullHistory }}
-        </span>
-        <svg class="chevron-icon" :class="{ 'rotated': isExpanded }" viewBox="0 0 16 16" width="16" height="16">
-          <path fill="currentColor" d="M4.427 9.573l3.396-3.396a.25.25 0 01.354 0l3.396 3.396a.25.25 0 01-.177.427H4.604a.25.25 0 01-.177-.427z"/>
-        </svg>
-      </div>
-    </div>
-    
-    <div v-if="historyLoading" class="loading">{{ texts.loading }}</div>
-    <div v-else-if="historyError" class="error">{{ historyError }}</div>
-    <div v-else class="changelog-content" :class="{ 'expanded': isExpanded }">
-      <div v-for="(commit, index) in displayedCommits" :key="commit.sha" class="changelog-entry" :class="{ 'visible-entry': isExpanded }" :style="{ 'transition-delay': isExpanded ? `${index * 20}ms` : `${(displayedCommits.length - 1 - index) * 15}ms` }">
-        <!-- 提交条目 -->
-        <div class="commit-entry" :class="{ 'version-entry': isVersionCommit(commit) }">
-          <div class="commit-indicator">
-            <svg v-if="isVersionCommit(commit)" class="version-icon" viewBox="0 0 16 16" fill="currentColor">
-              <path d="M8 2.5L13 7.5H3L8 2.5Z"/>
-            </svg>
-            <div v-else class="commit-dot"></div>
-          </div>
-          <div class="commit-content">
-            <a class="commit-hash" :href="commit.html_url" target="_blank">
-              {{ commit.sha.substring(0, 7) }}
-            </a>
-            <span class="commit-separator">-</span>
-            <span class="commit-type" :class="`type-${getCommitType(commit.commit.message)}`">
-              {{ getCommitType(commit.commit.message) }}
-            </span>
-            <span v-if="getCommitScope(commit.commit.message)" class="commit-scope">
-              ({{ getCommitScope(commit.commit.message) }})
-            </span>
-            <span class="commit-message">{{ getCommitDescription(commit.commit.message) }}</span>
-            <a v-if="getCommitPR(commit.commit.message)" class="commit-pr" :href="`https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/pull/${getCommitPR(commit.commit.message).substring(1)}`" target="_blank">
-              ({{ getCommitPR(commit.commit.message) }})
-            </a>
-            <span class="commit-time">{{ formatCommitTime(commit.commit.author.date) }}</span>
+
+      <div v-if="historyLoading" class="loading">{{ texts.loading }}</div>
+      <div v-else-if="historyError" class="error">{{ historyError }}</div>
+      <div v-else class="changelog-content" :class="{ 'expanded': isExpanded }">
+        <div v-for="(commit, index) in displayedCommits" :key="commit.sha" class="changelog-entry"
+          :class="{ 'visible-entry': isExpanded }"
+          :style="{ 'transition-delay': isExpanded ? `${index * 20}ms` : `${(displayedCommits.length - 1 - index) * 15}ms` }">
+          <!-- 提交条目 -->
+          <div class="commit-entry" :class="{ 'version-entry': isVersionCommit(commit) }">
+            <div class="commit-indicator">
+              <svg v-if="isVersionCommit(commit)" class="version-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 2.5L13 7.5H3L8 2.5Z" />
+              </svg>
+              <div v-else class="commit-dot"></div>
+            </div>
+            <div class="commit-content">
+              <a class="commit-hash" :href="commit.html_url" target="_blank">
+                {{ commit.sha.substring(0, 7) }}
+              </a>
+              <span class="commit-separator">-</span>
+              <span class="commit-type" :class="`type-${getCommitType(commit.commit.message)}`">
+                {{ getCommitType(commit.commit.message) }}
+              </span>
+              <span v-if="getCommitScope(commit.commit.message)" class="commit-scope">
+                ({{ getCommitScope(commit.commit.message) }})
+              </span>
+              <span class="commit-message">{{ getCommitDescription(commit.commit.message) }}</span>
+              <a v-if="getCommitPR(commit.commit.message)" class="commit-pr"
+                :href="`https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/pull/${getCommitPR(commit.commit.message).substring(1)}`"
+                target="_blank">
+                ({{ getCommitPR(commit.commit.message) }})
+              </a>
+              <span class="commit-time">{{ formatCommitTime(commit.commit.author.date) }}</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -405,7 +412,7 @@ const displayedCommits = computed(() => {
 let isToggling = false
 const toggleExpanded = () => {
   if (isToggling) return
-  
+
   isToggling = true
   requestAnimationFrame(() => {
     isExpanded.value = !isExpanded.value
@@ -434,9 +441,39 @@ const getCommitPR = (message) => {
   return prMatch ? `#${prMatch[1]}` : null
 }
 
+// 安全的日期解析函数，兼容iOS Safari
+const parseDate = (dateString) => {
+  if (!dateString) return null
+  
+  // 尝试直接解析
+  let date = new Date(dateString)
+  
+  // 如果解析失败，尝试处理ISO格式的日期字符串
+  if (isNaN(date.getTime())) {
+    // 将空格替换为T，确保ISO格式兼容性
+    const isoString = dateString.replace(' ', 'T')
+    date = new Date(isoString)
+  }
+  
+  // 如果仍然失败，尝试手动解析常见格式
+  if (isNaN(date.getTime())) {
+    // 处理 "YYYY-MM-DD HH:mm:ss +ZZZZ" 格式
+    const match = dateString.match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2})\s*([+-]\d{4})?/)
+    if (match) {
+      const [, year, month, day, hour, minute, second, timezone] = match
+      const isoString = `${year}-${month}-${day}T${hour}:${minute}:${second}${timezone || 'Z'}`
+      date = new Date(isoString)
+    }
+  }
+  
+  return isNaN(date.getTime()) ? null : date
+}
+
 // 格式化提交时间
 const formatCommitTime = (dateString) => {
-  const date = new Date(dateString)
+  const date = parseDate(dateString)
+  if (!date) return texts.value.errors.unknown
+  
   const now = new Date()
   const diffTime = Math.abs(now - date)
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
@@ -462,7 +499,9 @@ const formatCommitTime = (dateString) => {
 
 // 格式化相对时间
 const formatRelativeTime = (dateString) => {
-  const date = new Date(dateString)
+  const date = parseDate(dateString)
+  if (!date) return texts.value.errors.unknown
+  
   const now = new Date()
   const diffTime = Math.abs(now - date)
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
@@ -490,12 +529,12 @@ const formatRelativeTime = (dateString) => {
 const getCurrentFilePath = () => {
   const filePath = page.value.filePath
   if (!filePath) return null
-  
+
   // 处理多语言路径
   // 在VitePress多语言环境中，filePath可能不包含语言前缀
   // 需要根据当前语言环境补全路径
   let fullPath = filePath
-  
+
   // 如果路径不以docs/开头，添加docs/前缀
   if (!fullPath.startsWith('docs/')) {
     // 检查是否需要添加语言前缀
@@ -505,7 +544,7 @@ const getCurrentFilePath = () => {
     }
     fullPath = `docs/${fullPath}`
   }
-  
+
   return fullPath
 }
 
@@ -516,13 +555,13 @@ const fetchFileHistory = async () => {
   try {
     historyLoading.value = true
     historyError.value = null
-    
+
     const filePath = getCurrentFilePath()
     if (!filePath) {
       historyError.value = texts.value.errors.noFilePath
       return
     }
-    
+
     // 首先尝试从静态 JSON 文件中读取历史数据（用于生产环境）
     try {
       const baseUrl = site.value.base || '/'
@@ -530,26 +569,26 @@ const fetchFileHistory = async () => {
       const response = await fetch(gitHistoryUrl)
       if (response.ok) {
         const gitHistoryData = await response.json()
-        
+
         // 验证JSON数据结构
         if (!gitHistoryData || typeof gitHistoryData !== 'object') {
           throw new Error('无效的JSON数据格式')
         }
-        
+
         // 检查是否有files字段（新格式）或直接文件数据（旧格式）
         const filesData = gitHistoryData.files || gitHistoryData
         const fileData = filesData[filePath]
-        
+
         if (fileData && fileData.history && Array.isArray(fileData.history)) {
           // 验证历史记录数据
           const validHistory = fileData.history.filter(commit => {
             return commit.hash && commit.authorName && commit.date && commit.message
           })
-          
+
           if (validHistory.length === 0) {
             throw new Error('没有有效的历史记录数据')
           }
-          
+
           fileHistory.value = validHistory.map(commit => ({
             sha: commit.hash,
             html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
@@ -562,7 +601,7 @@ const fetchFileHistory = async () => {
               }
             }
           }))
-          
+
           console.log(`✅ 成功加载 ${validHistory.length} 条历史记录`)
           return
         } else {
@@ -574,7 +613,7 @@ const fetchFileHistory = async () => {
     } catch (staticError) {
       console.log('静态历史数据不可用，尝试本地 API:', staticError.message)
     }
-    
+
     // 如果静态数据不可用，回退到本地 Git API（用于开发环境）
     try {
       const response = await axios.get('/api/git-history', {
@@ -584,12 +623,12 @@ const fetchFileHistory = async () => {
         },
         timeout: 10000 // 10秒超时
       })
-      
+
       // 验证响应数据
       if (!response.data || typeof response.data !== 'object') {
         throw new Error('API返回无效数据格式')
       }
-      
+
       // 转换本地 Git 数据格式为组件期望的格式
       const gitData = response.data
       if (gitData.history && Array.isArray(gitData.history)) {
@@ -597,13 +636,13 @@ const fetchFileHistory = async () => {
         const validHistory = gitData.history.filter(commit => {
           return commit.hash && commit.authorName && commit.date && commit.message
         })
-        
+
         if (validHistory.length === 0) {
           console.warn('API返回的历史记录为空或无效')
           fileHistory.value = []
           return
         }
-        
+
         fileHistory.value = validHistory.map(commit => ({
           sha: commit.hash,
           html_url: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/commit/${commit.hash}`,
@@ -616,7 +655,7 @@ const fetchFileHistory = async () => {
             }
           }
         }))
-        
+
         console.log(`✅ 从API成功加载 ${validHistory.length} 条历史记录`)
       } else {
         console.warn('API返回数据中没有有效的history字段')
@@ -624,7 +663,7 @@ const fetchFileHistory = async () => {
       }
     } catch (apiError) {
       console.error('本地 Git API 也不可用:', apiError)
-      
+
       // 根据错误类型提供更具体的错误信息
       if (apiError.code === 'ECONNABORTED') {
         historyError.value = '请求超时，请稍后重试'
@@ -635,7 +674,7 @@ const fetchFileHistory = async () => {
       } else {
         historyError.value = `获取历史记录失败: ${apiError.message}`
       }
-      
+
       fileHistory.value = []
     }
   } catch (error) {
@@ -653,7 +692,7 @@ const formatDate = (dateString) => {
   const now = new Date()
   const diffTime = Math.abs(now - date)
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-  
+
   if (diffDays === 1) {
     return '1 天前'
   } else if (diffDays < 7) {
@@ -728,13 +767,18 @@ onMounted(() => {
 
 @media (max-width: 480px) {
   .changelog-header {
-    align-items: flex-start;
     gap: 8px;
+    align-items: flex-start;
   }
-  
+
+  .view-history {
+    align-self: flex-end;
+  }
+
   .view-history-link {
     display: none;
   }
+  
 }
 
 .changelog-header:hover {
@@ -779,6 +823,8 @@ onMounted(() => {
 .view-history {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 24px;
   gap: 4px;
   font-size: 13px;
   color: var(--vp-c-text-2);
@@ -791,6 +837,9 @@ onMounted(() => {
 
 .list-icon {
   color: var(--vp-c-text-3);
+  display: block;
+  width: 24px;
+  height: 240x;
   transition: color 0.2s ease;
 }
 
@@ -1036,19 +1085,19 @@ onMounted(() => {
     gap: 8px;
     align-items: flex-start;
   }
-  
+
   .view-history {
     align-self: flex-end;
   }
-  
+
   .changelog-content {
     padding: 0 12px;
   }
-  
+
   .changelog-entry {
     gap: 8px;
   }
-  
+
   .commit-message {
     font-size: 13px;
   }
