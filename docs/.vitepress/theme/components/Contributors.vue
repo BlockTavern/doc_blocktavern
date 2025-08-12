@@ -76,7 +76,43 @@ const i18nTexts = {
 // 获取当前语言的文本
 const getCurrentTexts = () => {
   const { page } = useData()
-  const currentLang = page.value.lang || 'zh-CN'
+  // 获取当前路径来判断语言
+  const currentPath = page.value.relativePath || ''
+  let currentLang = page.value.lang || 'zh-CN'
+  
+  // 从路径中提取语言代码
+  if (currentPath.startsWith('en-US/')) {
+    currentLang = 'en-US'
+  } else if (currentPath.startsWith('zh-TW/')) {
+    currentLang = 'zh-TW'
+  } else if (currentPath.startsWith('zh-HK/')) {
+    currentLang = 'zh-HK'
+  } else if (currentPath.startsWith('ja-JP/')) {
+    currentLang = 'ja-JP'
+  } else if (currentPath.startsWith('ko-KR/')) {
+    currentLang = 'ko-KR'
+  } else if (currentPath.startsWith('fr-FR/')) {
+    currentLang = 'fr-FR'
+  } else if (currentPath.startsWith('de-DE/')) {
+    currentLang = 'de-DE'
+  } else if (currentPath.startsWith('es-ES/')) {
+    currentLang = 'es-ES'
+  } else if (currentPath.startsWith('ru-RU/')) {
+    currentLang = 'ru-RU'
+  } else if (currentPath.startsWith('zh-CN/') || !currentPath.includes('/')) {
+    currentLang = 'zh-CN'
+  }
+  
+  // 调试信息（开发环境下）
+  if (process.env.NODE_ENV === 'development') {
+    console.log('Contributors Language Debug:', {
+      'page.lang': page.value.lang,
+      'relativePath': currentPath,
+      'detected': currentLang,
+      'available': Object.keys(i18nTexts)
+    })
+  }
+  
   return i18nTexts[currentLang] || i18nTexts['zh-CN']
 }
 
