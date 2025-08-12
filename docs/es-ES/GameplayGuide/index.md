@@ -1,5 +1,5 @@
 ---
 title: Guía de juego
-description: 游戏指南目录
+description: Directorio de guías de juego
 order: 2
 ---

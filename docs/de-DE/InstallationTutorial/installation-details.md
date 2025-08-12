@@ -1,61 +1,61 @@
 ---
 title: Vorbereitung vor der Installation
-description: 安装前准备：BlockTavern游戏
+description: "Vorbereitung vor der Installation: BlockTavern-Spiel"
 order: 1
 ---
 
-# 安装前准备
+# Vorbereitung vor der Installation
 
-欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。
+Willkommen bei BlockTavern! Dieses Tutorial hilft Ihnen dabei, Minecraft korrekt zu installieren und zu konfigurieren, um erfolgreich unserem Server beizutreten.
 
-在开始安装之前，请确保您具备以下条件：
+Bevor Sie mit der Installation beginnen, stellen Sie bitte sicher, dass Sie folgende Voraussetzungen erfüllen:
 - Java 17+
-- Minecraft任意游戏启动器（不推荐官启）
+- Beliebiger Minecraft-Launcher (offizieller Launcher nicht empfohlen)
 
-## 安装Java
+## Java installieren
 
-**1. Java 17 或更高版本**
+**1. Java 17 oder höher**
 
-   | 站点 | JDK版本 | 下载链接 | 备注 |
+   | Website | JDK-Version | Download-Link | Bemerkungen |
    | --- | --- | --- | --- |
-   | Zoho workdrive | 17 | [下载](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | 无需登录下载
-   | 小飞机网盘 | 17 | [下载](https://share.feijipan.com/s/sxOQO9u7) | 无需登录下载 |
-   | 123云盘 | 17 | [下载](https://www.123684.com/s/92S0Vv-iVGld) | [备用链接](https://www.123912.com/s/92S0Vv-iVGld)  需要登录下载|
-   | [Oracle](https://www.oracle.com/cn/) | 17 | [下载](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登录下载 |
-   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下载](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 无需登录但速度稍慢 |
+   | Zoho workdrive | 17 | [Download](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | Kein Login erforderlich |
+   | 小飞机网盘 | 17 | [Download](https://share.feijipan.com/s/sxOQO9u7) | Kein Login erforderlich |
+   | 123云盘 | 17 | [Download](https://www.123684.com/s/92S0Vv-iVGld) | [Backup-Link](https://www.123912.com/s/92S0Vv-iVGld) Login erforderlich |
+   | [Oracle](https://www.oracle.com/cn/) | 17 | [Download](https://www.oracle.com/java/technologies/downloads/#java17-windows) | Login erforderlich |
+   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [Download](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | Kein Login erforderlich, aber etwas langsamer |
 
 
-## 安装游戏启动器
+## Spiel-Launcher installieren
 
-**2. 下载启动器**
+**2. Launcher herunterladen**
 
-| 启动器 | 链接 | 备注 |
+| Launcher | Link | Bemerkungen |
 | --- | --- | --- |
-| 官方启动器 | [下载](https://www.minecraft.net/zh-hans/download) | 不推荐 |
-| PCL2启动器 | [下载](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推荐 |
-| HMCL启动器 | [下载](https://hmcl.huangyuhui.net/download/) | 推荐 |
-| Modrinth启动器 | [下载](https://modrinth.com/app) | 需正版登录 |
+| Offizieller Launcher | [Download](https://www.minecraft.net/zh-hans/download) | Nicht empfohlen |
+| PCL2-Launcher | [Download](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | Empfohlen |
+| HMCL-Launcher | [Download](https://hmcl.huangyuhui.net/download/) | Empfohlen |
+| Modrinth-Launcher | [Download](https://modrinth.com/app) | Benötigt Original-Login |
 
-## 下载游戏
+## Spiel herunterladen
 
-**3. 下载在线游戏安装包**
+**3. Online-Spiel-Installationspaket herunterladen**
 
-下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
+Laden Sie unser neuestes Installationspaket herunter: [Zum Download](https://www.blocktavern.cn/download)
 
-![下载图片01](/assets/InstallationTutorial/installation-details/installation-details01.png)
+![Download-Bild 01](/assets/InstallationTutorial/installation-details/installation-details01.png)
 
-你就会得到一个安装文件，接下来就可以安装它了。
+Sie erhalten eine Installationsdatei, die Sie nun installieren können.
 
-![下载图片02](/assets/InstallationTutorial/installation-details/installation-details02.png)
+![Download-Bild 02](/assets/InstallationTutorial/installation-details/installation-details02.png)
 
-## 获取帮助
+## Hilfe erhalten
 
-如果您在安装过程中遇到问题：
+Wenn Sie während der Installation auf Probleme stoßen:
 
-1. 查看 [常见问题FAQ](/zh-CN/FAQ/faq-details)
-2. 联系服务器管理员
-3. 在社区论坛发帖求助
-4. 加入官方QQ群或Discord
+1. Schauen Sie in die [Häufig gestellten Fragen FAQ](/de-DE/FAQ/faq-details)
+2. Kontaktieren Sie die Server-Administratoren
+3. Posten Sie im Community-Forum um Hilfe
+4. Treten Sie der offiziellen QQ-Gruppe oder Discord bei
 
 
 <Contributors />

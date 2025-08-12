@@ -1,41 +1,41 @@
 ---
 title: "領地コマンド"
-description: BlockTavern的领地指令
+description: BlockTavernの領地コマンド
 order: 3
 ---
 
-# 领地指令
-BlockTavern 加入了 Enclosure 领地，玩家可以使用木锄头来为自己建立保护罩，以防止其他玩家破坏。玩家可以在领地内设置一些基本的属性，例如名称，访问权限等。
+# 領地コマンド
+BlockTavernにはEnclosure領地が追加されており、プレイヤーは木のクワを使用して自分の保護エリアを作成し、他のプレイヤーによる破壊を防ぐことができます。プレイヤーは領地内で名前、アクセス権限などの基本的な属性を設定できます。
 
-::: tip 提示
-如果你没有GUI显示，那么你需要下载此 Enclosure MOD：[点击下载](/assets/GameplayGuide/enclosure-order/[领地]enclosure-fabric-0.4.5+1.21.jar) 
-放至mods文件夹并重启动游戏。
+::: tip ヒント
+GUIが表示されない場合は、このEnclosure MODをダウンロードする必要があります：[ダウンロード](/assets/GameplayGuide/enclosure-order/[領地]enclosure-fabric-0.4.5+1.21.jar) 
+modsフォルダに配置してゲームを再起動してください。
 :::
 
-## 指令
+## コマンド
 
-::: info 提示
-领地需要使用 木锄 选择对角点，然后使用指令创建领地。![木锄](/assets/GameplayGuide/enclosure-order/wooden_hoe.png "木锄")
+::: info ヒント
+領地には木のクワを使用して対角点を選択し、コマンドで領地を作成する必要があります。![木のクワ](/assets/GameplayGuide/enclosure-order/wooden_hoe.png "木のクワ")
 :::
 
 
-| 指令 | 描述 |
+| コマンド | 説明 |
 | --- | --- |
-| /enclosure help | 领地帮助 |
+| /enclosure help | 領地ヘルプ |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order01.png) |  |
-| /enclosure create \<name\> | 创建领地 |
+| /enclosure create \<name\> | 領地作成 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order02.png) |  |
-| /enclosure tp | 传送至领地 |
+| /enclosure tp | 領地にテレポート |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order03.png) |  |
-| /enclosure list | 领地列表 |
+| /enclosure list | 領地リスト |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order04.png) |  |
-| /enclosure set \<name\> | 设置领地属性(可以使用GUI) |
+| /enclosure set \<name\> | 領地属性設定（GUIを使用可能） |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order05.png) |  |
-| /enclosure gui \<name\> | GUI设置(需要客户端下载MOD) |
+| /enclosure gui \<name\> | GUI設定（クライアントでMODダウンロードが必要） |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order06.png) |  |
-| /enclosure info \<name\> | 查看领地信息 |
+| /enclosure info \<name\> | 領地情報確認 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order07.png) |  |
-| /enclosure remove \<name\> | 删除领地 |
+| /enclosure remove \<name\> | 領地削除 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order08.png) |  |
 
 

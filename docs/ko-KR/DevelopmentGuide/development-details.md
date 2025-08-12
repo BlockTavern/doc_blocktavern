@@ -1,103 +1,103 @@
 ---
 title: 기여 가이드
-description: BlockTavern 文档贡献完整指南
+description: BlockTavern 문서 기여 완전 가이드
 order: 1
 ---
 
-# 贡献指南
+# 기여 가이드
 
-欢迎参与 BlockTavern 文档项目！本指南将帮助您快速上手并提交高质量的贡献。
+BlockTavern 문서 프로젝트에 참여해 주셔서 감사합니다! 이 가이드는 빠르게 시작하고 고품질의 기여를 제출하는 데 도움이 될 것입니다.
 
-## 环境准备
+## 환경 준비
 
-### 系统要求
+### 시스템 요구사항
 
 - **Node.js** 18+ 
-- **Git** 最新版本
-- **GitHub** 账号
+- **Git** 최신 버전
+- **GitHub** 계정
 
-### 开发工具推荐
+### 개발 도구 권장사항
 
-- **VS Code** + Markdown 扩展
-- **GitHub Desktop**（可选）
+- **VS Code** + Markdown 확장
+- **GitHub Desktop** (선택사항)
 
-::: tip 图片优化
-使用本地图片前请压缩文件大小，或使用稳定的图床服务，以提升加载速度。
+::: tip 이미지 최적화
+로컬 이미지를 사용하기 전에 파일 크기를 압축하거나 안정적인 이미지 호스팅 서비스를 사용하여 로딩 속도를 향상시키세요.
 :::
 
-## 快速开始
+## 빠른 시작
 
-### 1. Fork 项目
+### 1. 프로젝트 Fork
 
-1. 访问项目仓库：[doc_blocktavern](https://github.com/Re0XIAOPA/doc_blocktavern)
-2. 点击右上角 **Fork** 按钮
-3. 等待 Fork 完成
+1. 프로젝트 저장소 방문: [doc_blocktavern](https://github.com/Re0XIAOPA/doc_blocktavern)
+2. 우측 상단의 **Fork** 버튼 클릭
+3. Fork 완료 대기
 
-### 2. 本地开发
+### 2. 로컬 개발
 
 ```bash
-# 克隆你的 Fork
+# Fork한 저장소 클론
 git clone https://github.com/YOUR_USERNAME/doc_blocktavern.git
 cd doc_blocktavern
 
-# 安装依赖
+# 의존성 설치
 npm install
 
-# 启动开发服务器
+# 개발 서버 시작
 npm run docs:dev
 ```
 
-访问 `http://localhost:5173` 预览文档站点。
+`http://localhost:5173`에 접속하여 문서 사이트를 미리 볼 수 있습니다.
 
-### 3. 创建分支
+### 3. 브랜치 생성
 
 ```bash
-# 创建功能分支
+# 기능 브랜치 생성
 git checkout -b feature/your-feature-name
 
-# 或修复分支
+# 또는 수정 브랜치
 git checkout -b fix/your-fix-name
 ```
 
-## 贡献流程
+## 기여 프로세스
 
-### 1. 编写内容
+### 1. 콘텐츠 작성
 
-- 在 `docs/zh-CN/` 目录下编辑或创建文档
-- 遵循 [文档编写规范](./writing-docs.md)
-- 实时预览：保存后浏览器自动刷新
+- `docs/zh-CN/` 디렉토리에서 문서 편집 또는 생성
+- [문서 작성 규범](./writing-docs.md) 준수
+- 실시간 미리보기: 저장 후 브라우저 자동 새로고침
 
-### 2. 提交更改
+### 2. 변경사항 커밋
 
 ```bash
-# 添加更改的文件
+# 변경된 파일 추가
 git add .
 
-# 提交更改（使用规范的提交信息）
-git commit -m "docs: 添加新功能说明"
+# 변경사항 커밋 (표준 커밋 메시지 사용)
+git commit -m "docs: 새 기능 설명 추가"
 
-# 推送到你的 Fork
+# Fork로 푸시
 git push origin feature/your-feature-name
 ```
 
-### 3. 创建 Pull Request
+### 3. Pull Request 생성
 
-1. 访问你的 Fork 仓库页面
-2. 点击 **Compare & pull request** 按钮
-3. 填写 PR 信息：
-   - **标题**：简洁描述更改内容
-   - **描述**：详细说明更改原因和影响
-4. 点击 **Create pull request**
+1. Fork한 저장소 페이지 방문
+2. **Compare & pull request** 버튼 클릭
+3. PR 정보 작성:
+   - **제목**: 변경 내용을 간결하게 설명
+   - **설명**: 변경 이유와 영향을 자세히 설명
+4. **Create pull request** 클릭
 
-### 4. 等待审核
+### 4. 검토 대기
 
-- 项目维护者会审核你的 PR
-- 可能会要求修改或补充
-- 审核通过后会合并到主分支
+- 프로젝트 관리자가 PR을 검토합니다
+- 수정이나 보완을 요청할 수 있습니다
+- 검토 통과 후 메인 브랜치에 병합됩니다
 
-## 提交规范
+## 커밋 규범
 
-### 提交信息格式
+### 커밋 메시지 형식
 
 ```
 <type>(<scope>): <description>
@@ -107,73 +107,73 @@ git push origin feature/your-feature-name
 [optional footer]
 ```
 
-**类型（type）**：
-- `docs`: 文档更新
-- `feat`: 新功能
-- `fix`: 修复问题
-- `style`: 格式调整
-- `refactor`: 重构
+**타입(type)**:
+- `docs`: 문서 업데이트
+- `feat`: 새 기능
+- `fix`: 문제 수정
+- `style`: 형식 조정
+- `refactor`: 리팩토링
 
-**示例**：
+**예시**:
 ```bash
-git commit -m "docs(guide): 添加安装教程"
-git commit -m "fix(config): 修复侧边栏配置错误"
-git commit -m "feat(search): 添加搜索功能"
+git commit -m "docs(guide): 설치 튜토리얼 추가"
+git commit -m "fix(config): 사이드바 설정 오류 수정"
+git commit -m "feat(search): 검색 기능 추가"
 ```
 
-### 分支命名规范
+### 브랜치 명명 규범
 
-- `feature/功能名称`: 新功能开发
-- `fix/问题描述`: 问题修复
-- `docs/文档类型`: 文档更新
-- `refactor/重构内容`: 代码重构
+- `feature/기능명`: 새 기능 개발
+- `fix/문제설명`: 문제 수정
+- `docs/문서유형`: 문서 업데이트
+- `refactor/리팩토링내용`: 코드 리팩토링
 
-## 贡献类型
+## 기여 유형
 
-### 文档贡献
+### 문서 기여
 
-- **新增文档**：创建新的指南或教程
-- **完善内容**：补充现有文档的详细信息
-- **修复错误**：纠正文档中的错误信息
-- **翻译工作**：将中文文档翻译为其他语言
+- **새 문서 추가**: 새로운 가이드나 튜토리얼 생성
+- **내용 완성**: 기존 문서의 세부 정보 보완
+- **오류 수정**: 문서의 잘못된 정보 수정
+- **번역 작업**: 중국어 문서를 다른 언어로 번역
 
-### 技术贡献
+### 기술 기여
 
-- **配置优化**：改进 VitePress 配置
-- **样式美化**：优化文档站点样式
-- **功能增强**：添加新的文档功能
-- **性能优化**：提升站点加载速度
+- **설정 최적화**: VitePress 설정 개선
+- **스타일 개선**: 문서 사이트 스타일 최적화
+- **기능 향상**: 새로운 문서 기능 추가
+- **성능 최적화**: 사이트 로딩 속도 향상
 
-## 质量标准
+## 품질 기준
 
-### 文档质量
+### 문서 품질
 
-- [ ] 内容准确无误
-- [ ] 语言表达清晰
-- [ ] 结构层次合理
-- [ ] 代码示例可运行
-- [ ] 链接有效可访问
-- [ ] 图片清晰适当
+- [ ] 내용이 정확하고 오류가 없음
+- [ ] 언어 표현이 명확함
+- [ ] 구조와 계층이 합리적임
+- [ ] 코드 예제가 실행 가능함
+- [ ] 링크가 유효하고 접근 가능함
+- [ ] 이미지가 선명하고 적절함
 
-### 技术质量
+### 기술 품질
 
-- [ ] 代码风格一致
-- [ ] 配置语法正确
-- [ ] 构建测试通过
-- [ ] 兼容性良好
+- [ ] 코드 스타일이 일관됨
+- [ ] 설정 구문이 올바름
+- [ ] 빌드 테스트 통과
+- [ ] 호환성이 양호함
 
-## 获得帮助
+## 도움 받기
 
-遇到问题时可以：
+문제가 발생했을 때:
 
-1. **查看现有文档**：[项目结构](./project-structure.md)、[配置说明](./configuration.md)
-2. **提交 Issue**：在 GitHub 仓库中创建问题报告
-3. **联系维护者**：通过 GitHub 或社区渠道
-4. **参考资源**：[VitePress 官方文档](https://vitepress.dev/)
+1. **기존 문서 확인**: [프로젝트 구조](./project-structure.md), [설정 설명](./configuration.md)
+2. **Issue 제출**: GitHub 저장소에서 문제 보고서 생성
+3. **관리자 연락**: GitHub 또는 커뮤니티 채널을 통해
+4. **참고 자료**: [VitePress 공식 문서](https://vitepress.dev/)
 
 ---
 
-感谢您的贡献！每一份贡献都让 BlockTavern 文档变得更好。
+기여해 주셔서 감사합니다! 모든 기여는 BlockTavern 문서를 더 좋게 만듭니다.
 
 <Contributors />
 

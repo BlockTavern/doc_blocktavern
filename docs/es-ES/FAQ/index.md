@@ -1,5 +1,5 @@
 ---
 title: Preguntas frecuentes
-description: 常见问题目录
+description: Directorio de preguntas frecuentes
 order: 3
 ---

@@ -1,89 +1,89 @@
 ---
 title: Dokumentation schreiben
-description: BlockTavern 文档编写完整指南
+description: Vollständiger Leitfaden zum Schreiben von BlockTavern-Dokumentation
 order: 4
 ---
 
-# 文档编写指南
+# Leitfaden zum Schreiben von Dokumentation
 
-本指南将详细介绍如何为 BlockTavern 项目编写和维护高质量的文档。我们使用 VitePress 作为文档生成工具，支持多语言、自动侧边栏生成等现代化功能。
+Dieser Leitfaden erklärt detailliert, wie Sie hochwertige Dokumentation für das BlockTavern-Projekt schreiben und pflegen. Wir verwenden VitePress als Dokumentationsgenerator-Tool, das moderne Funktionen wie Mehrsprachigkeit und automatische Seitenleistengenerierung unterstützt.
 
-## 1. 快速开始
+## 1. Schnellstart
 
-创建新文档只需三步：
+Ein neues Dokument zu erstellen erfordert nur drei Schritte:
 
-1. 在对应语言目录下创建 `.md` 文件
-2. 添加 Front Matter 配置
-3. 编写内容并保存
-4. 文档末尾添加 `<Contributors />` 贡献者组件 `<GitHistoryInformation />` Git历史组件
+1. Erstellen Sie eine `.md`-Datei im entsprechenden Sprachverzeichnis
+2. Fügen Sie Front Matter-Konfiguration hinzu
+3. Schreiben Sie den Inhalt und speichern Sie
+4. Fügen Sie am Ende des Dokuments die `<Contributors />`-Komponente für Mitwirkende und die `<GitHistoryInformation />`-Git-Verlaufskomponente hinzu
 
-::: tip 开发环境
-使用 `npm run docs:dev` 启动本地预览，支持热重载。
+::: tip Entwicklungsumgebung
+Verwenden Sie `npm run docs:dev`, um die lokale Vorschau zu starten, unterstützt Hot-Reload.
 :::
 
-## 2. 基础语法
+## 2. Grundlegende Syntax
 
-### 2.1 常用格式
+### 2.1 Häufig verwendete Formate
 
 ```markdown
-# 页面标题 (H1)
+# Seitentitel (H1)
 
-## 主要章节 (H2)
+## Hauptabschnitt (H2)
 
-### 子章节 (H3)
+### Unterabschnitt (H3)
 
-**粗体** _斜体_ `行内代码`
+**Fett** _Kursiv_ `Inline-Code`
 
-- 无序列表
-- [链接文本](./other-page.md)
-- ![图片](./images/screenshot.png)
+- Ungeordnete Liste
+- [Link-Text](./other-page.md)
+- ![Bild](./images/screenshot.png)
 ```
 
-### 2.2 代码块
+### 2.2 Codeblöcke
 
 ````markdown
 ```javascript
 const config = {
   title: "BlockTavern Docs",
-  description: "文档站点",
+  description: "Dokumentationsseite",
 };
 ```
 
-<!-- 带行号的代码块 -->
+<!-- Codeblock mit Zeilennummern -->
 
 ```javascript{1,3-5}
 const config = {
   title: 'BlockTavern Docs', // [!code highlight]
-  description: '文档站点',
+  description: 'Dokumentationsseite',
   version: '1.0.0',
   author: 'BlockTavern Team'
 }
 ```
 ````
 
-## 3. VitePress 扩展功能
+## 3. VitePress-Erweiterungsfunktionen
 
-### 3.1 信息提示框
+### 3.1 Informationsboxen
 
 ```markdown
-::: tip 提示
-重要的建议或技巧
+::: tip Tipp
+Wichtige Empfehlungen oder Tipps
 :::
 
-::: warning 警告
-需要注意的事项
+::: warning Warnung
+Dinge, die beachtet werden müssen
 :::
 
-::: danger 危险
-可能的风险或错误
+::: danger Gefahr
+Mögliche Risiken oder Fehler
 :::
 
-::: details 点击展开详情
-可折叠的详细内容
+::: details Klicken Sie hier für Details
+Einklappbare detaillierte Inhalte
 :::
 ```
 
-### 3.2 代码组
+### 3.2 Codegruppen
 
 ````markdown
 ::: code-group
@@ -103,199 +103,199 @@ export default {
 :::
 ````
 
-### 3.3 代码高亮
+### 3.3 Code-Hervorhebung
 
 ````markdown
 ```javascript{2,4-6}
 const config = {
-  title: 'BlockTavern Docs', // 这行会被高亮
-  description: '文档站点',
-  theme: 'default',         // 这些行会被高亮
-  version: '1.0.0',         // 这些行会被高亮
-  author: 'Team'            // 这些行会被高亮
+  title: 'BlockTavern Docs', // Diese Zeile wird hervorgehoben
+  description: 'Dokumentationsseite',
+  theme: 'default',         // Diese Zeilen werden hervorgehoben
+  version: '1.0.0',         // Diese Zeilen werden hervorgehoben
+  author: 'Team'            // Diese Zeilen werden hervorgehoben
 }
 ```
 
-<!-- 代码差异显示 -->
+<!-- Code-Unterschiede anzeigen -->
 
 ```javascript
 const config = {
   title: "BlockTavern Docs",
-  description: "文档站点", // [!code --]
-  description: "Minecraft 服务器文档", // [!code ++]
+  description: "Dokumentationsseite", // [!code --]
+  description: "Minecraft-Server-Dokumentation", // [!code ++]
   version: "1.0.0", // [!code highlight]
 };
 ```
 ````
 
-### 3.4 表格
+### 3.4 Tabellen
 
 ```markdown
-| 功能       | 描述             | 状态      |
-| ---------- | ---------------- | --------- |
-| 多语言支持 | 支持中英文切换   | ✅ 已完成 |
-| 自动侧边栏 | 根据文件结构生成 | ✅ 已完成 |
-| 搜索功能   | 本地搜索         | ✅ 已完成 |
-| 主题切换   | 明暗主题         | ✅ 已完成 |
+| Funktion          | Beschreibung                    | Status        |
+| ----------------- | ------------------------------- | ------------- |
+| Mehrsprachigkeit  | Unterstützt Deutsch-Englisch    | ✅ Abgeschlossen |
+| Auto-Seitenleiste | Generiert basierend auf Struktur| ✅ Abgeschlossen |
+| Suchfunktion      | Lokale Suche                    | ✅ Abgeschlossen |
+| Theme-Wechsel     | Hell-/Dunkel-Theme              | ✅ Abgeschlossen |
 ```
 
-### 3.5 数学公式
+### 3.5 Mathematische Formeln
 
 ```markdown
-<!-- 行内公式 -->
+<!-- Inline-Formel -->
 
-当 $a \ne 0$ 时，方程 $ax^2 + bx + c = 0$ 有两个解。
+Wenn $a \ne 0$, hat die Gleichung $ax^2 + bx + c = 0$ zwei Lösungen.
 
-<!-- 块级公式 -->
+<!-- Block-Formel -->
 
 $$
 x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
 $$
 ```
 
-## 4. 编写规范
+## 4. Schreibrichtlinien
 
-### 4.1 文件命名
+### 4.1 Dateibenennung
 
-- 使用小写字母和连字符：`installation-guide.md`
-- 避免中文、空格、下划线：~~`安装指南.md`~~
-- 每个目录需要 `index.md` 作为首页
+- Verwenden Sie Kleinbuchstaben und Bindestriche: `installation-guide.md`
+- Vermeiden Sie Chinesisch, Leerzeichen, Unterstriche: ~~`安装指南.md`~~
+- Jedes Verzeichnis benötigt `index.md` als Startseite
 
 ### 4.2 Front Matter
 
 ```yaml
 ---
-title: 页面标题 # 必需
-description: 页面描述 # 必需
-order: 1 # 可选，控制排序
+title: Seitentitel # Erforderlich
+description: Seitenbeschreibung # Erforderlich
+order: 1 # Optional, steuert die Sortierung
 ---
 ```
 
-### 4.3 页面结构
+### 4.3 Seitenstruktur
 
 ```markdown
 ---
-title: 页面标题
-description: 页面描述
+title: Seitentitel
+description: Seitenbeschreibung
 ---
 
-# 页面标题
+# Seitentitel
 
-简要介绍页面内容。
+Kurze Einführung in den Seiteninhalt.
 
-## 主要章节
+## Hauptabschnitt
 
-### 子章节
+### Unterabschnitt
 
-具体内容...
+Spezifischer Inhalt...
 
 <Contributors />
 ```
 
-**要点：**
-- 每页只有一个 H1 标题
-- 使用数字编号的 H2 章节
-- 标题层次不要跳级
-- 页面末尾添加 `<Contributors />` 组件显示贡献者
+**Wichtige Punkte:**
+- Jede Seite hat nur einen H1-Titel
+- Verwenden Sie nummerierte H2-Abschnitte
+- Überspringen Sie keine Titel-Ebenen
+- Fügen Sie am Ende der Seite die `<Contributors />`-Komponente hinzu, um Mitwirkende anzuzeigen
 
-## 5. 侧边栏配置
+## 5. Seitenleisten-Konfiguration
 
-::: tip 自动生成
-项目使用 `vitepress-sidebar` 插件，根据文件结构自动生成侧边栏。
+::: tip Automatische Generierung
+Das Projekt verwendet das `vitepress-sidebar`-Plugin, um die Seitenleiste automatisch basierend auf der Dateistruktur zu generieren.
 :::
 
-### 5.1 组织原则
+### 5.1 Organisationsprinzipien
 
-- 目录结构 = 侧边栏结构
-- 每个目录需要 `index.md` 文件
-- 使用 `order` 字段控制排序
-- 文件夹使用 PascalCase 命名
+- Verzeichnisstruktur = Seitenleistenstruktur
+- Jedes Verzeichnis benötigt eine `index.md`-Datei
+- Verwenden Sie das `order`-Feld zur Sortierungssteuerung
+- Ordner verwenden PascalCase-Benennung
 
-## 6. 写作指南
+## 6. Schreibleitfaden
 
-### 6.1 写作原则
+### 6.1 Schreibprinzipien
 
-- 语言简洁明了，避免冗长句子
-- 结构清晰，从简单到复杂
-- 提供实际的代码示例
-- 使用提示框突出重点
+- Sprache prägnant und klar, vermeiden Sie lange Sätze
+- Klare Struktur, von einfach zu komplex
+- Bieten Sie praktische Codebeispiele
+- Verwenden Sie Hinweisboxen, um wichtige Punkte hervorzuheben
 
-### 6.2 步骤说明格式
+### 6.2 Format für Schrittanleitungen
 
 ````markdown
-## 安装步骤
+## Installationsschritte
 
-1. **下载项目**
+1. **Projekt herunterladen**
    ```bash
    git clone https://github.com/project.git
    ```
 ````
 
-2. **安装依赖**
+2. **Abhängigkeiten installieren**
 
 ```bash
 npm install
 ```
 
-::: tip 提示
-遇到问题请检查 Node.js 版本。
+::: tip Tipp
+Bei Problemen überprüfen Sie die Node.js-Version.
 :::
 
 ````
 
-### 6.3 图片和媒体
+### 6.3 Bilder und Medien
 
-- 图片放在 `docs/public/images/` 目录
-- 使用描述性文件名和 alt 文本
-- 控制文件大小
+- Bilder in das Verzeichnis `docs/public/images/` legen
+- Verwenden Sie beschreibende Dateinamen und Alt-Text
+- Dateigröße kontrollieren
 
 ```markdown
-![配置界面](./images/config.png "配置界面截图")
+![Konfigurationsoberfläche](./images/config.png "Screenshot der Konfigurationsoberfläche")
 ````
 
-## 7. 多语言支持
+## 7. Mehrsprachige Unterstützung
 
-项目支持多语言文档：
+Das Projekt unterstützt mehrsprachige Dokumentation:
 
-- 中文（默认）：`docs/zh-CN/`
-- 英文：`docs/en/`
-- 其他语言：`docs/ja/`、`docs/ko/` 等
+- Chinesisch (Standard): `docs/zh-CN/`
+- Englisch: `docs/en/`
+- Andere Sprachen: `docs/ja/`, `docs/ko/` usw.
 
-**翻译流程：**
+**Übersetzungsworkflow:**
 
-1. 复制中文文档到对应语言目录
-2. 翻译 Front Matter 和正文内容
-3. 检查链接和格式
-4. 测试显示效果
+1. Chinesische Dokumentation in das entsprechende Sprachverzeichnis kopieren
+2. Front Matter und Textinhalt übersetzen
+3. Links und Formatierung überprüfen
+4. Anzeigeeffekt testen
 
-## 8. 提交检查
+## 8. Commit-Überprüfung
 
-提交前请确认：
+Vor dem Commit bitte bestätigen:
 
-- [ ] Front Matter 信息完整
-- [ ] 标题层次合理
-- [ ] 代码示例正确
-- [ ] 链接可正常访问
-- [ ] 图片显示正常
-- [ ] 语法拼写正确
+- [ ] Front Matter-Informationen vollständig
+- [ ] Titel-Hierarchie angemessen
+- [ ] Codebeispiele korrekt
+- [ ] Links normal zugänglich
+- [ ] Bilder werden normal angezeigt
+- [ ] Grammatik und Rechtschreibung korrekt
 
-## 9. 参考资源
+## 9. Referenzressourcen
 
-**官方文档：**
+**Offizielle Dokumentation:**
 
-- [VitePress 文档](https://vitepress.dev/)
-- [Markdown 语法](https://markdown.com.cn/)
-- [vitepress-sidebar 插件](https://vitepress-sidebar.jooy2.com/)
+- [VitePress-Dokumentation](https://vitepress.dev/)
+- [Markdown-Syntax](https://markdown.com.cn/)
+- [vitepress-sidebar-Plugin](https://vitepress-sidebar.jooy2.com/)
 
-**推荐工具：**
+**Empfohlene Tools:**
 
-- VS Code + Markdown 扩展
-- [表格生成器](https://tablesgenerator.com/markdown_tables)
-- [图片压缩](https://tinypng.com/)
+- VS Code + Markdown-Erweiterungen
+- [Tabellengenerator](https://tablesgenerator.com/markdown_tables)
+- [Bildkomprimierung](https://tinypng.com/)
 
 ---
 
-遵循本指南可以创建高质量的文档。如有疑问，请联系项目维护者。
+Durch Befolgen dieses Leitfadens können Sie hochwertige Dokumentation erstellen. Bei Fragen wenden Sie sich bitte an die Projektbetreuer.
 
 <Contributors />
 

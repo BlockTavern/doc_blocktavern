@@ -1,5 +1,5 @@
 ---
 title: Guía de contribución
-description: 服务器开发贡献指南目录
+description: Directorio de guías de contribución al desarrollo del servidor
 order: 4
 ---

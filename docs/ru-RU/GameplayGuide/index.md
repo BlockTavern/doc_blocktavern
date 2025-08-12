@@ -1,5 +1,5 @@
 ---
 title: Руководство по игре
-description: 游戏指南目录
+description: Каталог руководств по игре
 order: 2
 ---

@@ -1,61 +1,61 @@
 ---
-title: 安装前准备
-description: 安装前准备：BlockTavern游戏
+title: Подготовка к установке
+description: "Подготовка к установке: игра BlockTavern"
 order: 1
 ---
 
-# 安装前准备
+# Подготовка к установке
 
-欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。
+Добро пожаловать в BlockTavern! Это руководство поможет вам правильно установить и настроить Minecraft для успешного подключения к нашему серверу.
 
-在开始安装之前，请确保您具备以下条件：
+Перед началом установки убедитесь, что у вас есть:
 - Java 17+
-- Minecraft任意游戏启动器（不推荐官启）
+- Любой лаунчер Minecraft (официальный не рекомендуется)
 
-## 安装Java
+## Установка Java
 
-**1. Java 17 或更高版本**
+**1. Java 17 или выше**
 
-   | 站点 | JDK版本 | 下载链接 | 备注 |
+   | Сайт | Версия JDK | Ссылка для скачивания | Примечания |
    | --- | --- | --- | --- |
-   | Zoho workdrive | 17 | [下载](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | 无需登录下载
-   | 小飞机网盘 | 17 | [下载](https://share.feijipan.com/s/sxOQO9u7) | 无需登录下载 |
-   | 123云盘 | 17 | [下载](https://www.123684.com/s/92S0Vv-iVGld) | [备用链接](https://www.123912.com/s/92S0Vv-iVGld)  需要登录下载|
-   | [Oracle](https://www.oracle.com/cn/) | 17 | [下载](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登录下载 |
-   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下载](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 无需登录但速度稍慢 |
+   | Zoho workdrive | 17 | [Скачать](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | Скачивание без регистрации
+   | 小飞机网盘 | 17 | [Скачать](https://share.feijipan.com/s/sxOQO9u7) | Скачивание без регистрации |
+   | 123云盘 | 17 | [Скачать](https://www.123684.com/s/92S0Vv-iVGld) | [Резервная ссылка](https://www.123912.com/s/92S0Vv-iVGld)  Требуется регистрация|
+   | [Oracle](https://www.oracle.com/cn/) | 17 | [Скачать](https://www.oracle.com/java/technologies/downloads/#java17-windows) | Требуется регистрация |
+   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [Скачать](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | Без регистрации, но медленнее |
 
 
-## 安装游戏启动器
+## Установка игрового лаунчера
 
-**2. 下载启动器**
+**2. Скачивание лаунчера**
 
-| 启动器 | 链接 | 备注 |
+| Лаунчер | Ссылка | Примечания |
 | --- | --- | --- |
-| 官方启动器 | [下载](https://www.minecraft.net/zh-hans/download) | 不推荐 |
-| PCL2启动器 | [下载](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推荐 |
-| HMCL启动器 | [下载](https://hmcl.huangyuhui.net/download/) | 推荐 |
-| Modrinth启动器 | [下载](https://modrinth.com/app) | 需正版登录 |
+| Официальный лаунчер | [Скачать](https://www.minecraft.net/zh-hans/download) | Не рекомендуется |
+| PCL2 лаунчер | [Скачать](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | Рекомендуется |
+| HMCL лаунчер | [Скачать](https://hmcl.huangyuhui.net/download/) | Рекомендуется |
+| Modrinth лаунчер | [Скачать](https://modrinth.com/app) | Требуется лицензионный аккаунт |
 
-## 下载游戏
+## Скачивание игры
 
-**3. 下载在线游戏安装包**
+**3. Скачивание онлайн-пакета установки игры**
 
-下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
+Скачайте наш последний пакет установки: [Перейти к скачиванию](https://www.blocktavern.cn/download)
 
-![下载图片01](/assets/InstallationTutorial/installation-details/installation-details01.png)
+![Изображение скачивания 01](/assets/InstallationTutorial/installation-details/installation-details01.png)
 
-你就会得到一个安装文件，接下来就可以安装它了。
+Вы получите файл установки, который затем можно будет установить.
 
-![下载图片02](/assets/InstallationTutorial/installation-details/installation-details02.png)
+![Изображение скачивания 02](/assets/InstallationTutorial/installation-details/installation-details02.png)
 
-## 获取帮助
+## Получение помощи
 
-如果您在安装过程中遇到问题：
+Если у вас возникли проблемы во время установки:
 
-1. 查看 [常见问题FAQ](/zh-CN/FAQ/faq-details)
-2. 联系服务器管理员
-3. 在社区论坛发帖求助
-4. 加入官方QQ群或Discord
+1. Посмотрите [Часто задаваемые вопросы FAQ](/ru-RU/FAQ/faq-details)
+2. Свяжитесь с администраторами сервера
+3. Создайте пост на форуме сообщества
+4. Присоединитесь к официальной группе QQ или Discord
 
 
 <Contributors />

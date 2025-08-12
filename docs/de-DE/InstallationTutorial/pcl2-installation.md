@@ -1,33 +1,33 @@
 ---
-title: PCL2安装
-description: 详细的PCL2启动器安装和配置教程
+title: PCL2-Installation
+description: Detaillierte PCL2-Launcher-Installations- und Konfigurationsanleitung
 order: 2
 ---
 
-# PCL2启动器安装
+# PCL2-Launcher-Installation
 
-PCL2是一个Minecraft启动器，它可以帮助您方便地安装和管理Minecraft游戏。我们将介绍PCL2的下载和安装过程，以便连接到BlockTavern服务器。
+PCL2 ist ein Minecraft-Launcher, der Ihnen dabei hilft, Minecraft bequem zu installieren und zu verwalten. Wir werden den Download- und Installationsprozess von PCL2 vorstellen, um eine Verbindung zum BlockTavern-Server herzustellen.
 
-::: tip PCL2下载地址
+::: tip PCL2-Download-Adresse
 [https://afdian.com/p/0164034c016c11ebafcb52540025c377](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
 :::
 
 
-## 图文教程
+## Bildanleitung
 
-![下载图片03](/assets/InstallationTutorial/installation-details/installation-details03.png)
+![Download-Bild 03](/assets/InstallationTutorial/installation-details/installation-details03.png)
 
-![下载图片13](/assets/InstallationTutorial/installation-details/installation-details13.png)
+![Download-Bild 13](/assets/InstallationTutorial/installation-details/installation-details13.png)
 
-![下载图片14](/assets/InstallationTutorial/installation-details/installation-details14.png)
+![Download-Bild 14](/assets/InstallationTutorial/installation-details/installation-details14.png)
 
-![下载图片04](/assets/InstallationTutorial/installation-details/installation-details04.png)
+![Download-Bild 04](/assets/InstallationTutorial/installation-details/installation-details04.png)
 
-![下载图片05](/assets/InstallationTutorial/installation-details/installation-details05.png)
+![Download-Bild 05](/assets/InstallationTutorial/installation-details/installation-details05.png)
 
-![下载图片06](/assets/InstallationTutorial/installation-details/installation-details06.png)
+![Download-Bild 06](/assets/InstallationTutorial/installation-details/installation-details06.png)
 
-![下载图片07](/assets/InstallationTutorial/installation-details/installation-details07.png)
+![Download-Bild 07](/assets/InstallationTutorial/installation-details/installation-details07.png)
 
 <Contributors />
 

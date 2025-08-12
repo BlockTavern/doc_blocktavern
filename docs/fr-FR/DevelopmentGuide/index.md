@@ -1,5 +1,5 @@
 ---
 title: Guide de contribution
-description: 服务器开发贡献指南目录
+description: Répertoire des guides de contribution au développement du serveur
 order: 4
 ---

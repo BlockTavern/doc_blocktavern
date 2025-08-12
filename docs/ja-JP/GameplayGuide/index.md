@@ -1,5 +1,5 @@
 ---
 title: ゲームガイド
-description: ゲームガイドディレクトリ
+description: ゲームガイド目次
 order: 2
 ---

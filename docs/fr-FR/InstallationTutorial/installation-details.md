@@ -1,61 +1,61 @@
 ---
 title: Préparation avant installation
-description: 安装前准备：BlockTavern游戏
+description: "Préparation avant installation : Jeu BlockTavern"
 order: 1
 ---
 
-# 安装前准备
+# Préparation avant installation
 
-欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。
+Bienvenue sur BlockTavern ! Ce tutoriel vous aidera à installer et configurer correctement Minecraft pour rejoindre notre serveur en toute simplicité.
 
-在开始安装之前，请确保您具备以下条件：
+Avant de commencer l'installation, assurez-vous de disposer des éléments suivants :
 - Java 17+
-- Minecraft任意游戏启动器（不推荐官启）
+- N'importe quel lanceur de jeu Minecraft (le lanceur officiel n'est pas recommandé)
 
-## 安装Java
+## Installation de Java
 
-**1. Java 17 或更高版本**
+**1. Java 17 ou version supérieure**
 
-   | 站点 | JDK版本 | 下载链接 | 备注 |
+   | Site | Version JDK | Lien de téléchargement | Remarques |
    | --- | --- | --- | --- |
-   | Zoho workdrive | 17 | [下载](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | 无需登录下载
-   | 小飞机网盘 | 17 | [下载](https://share.feijipan.com/s/sxOQO9u7) | 无需登录下载 |
-   | 123云盘 | 17 | [下载](https://www.123684.com/s/92S0Vv-iVGld) | [备用链接](https://www.123912.com/s/92S0Vv-iVGld)  需要登录下载|
-   | [Oracle](https://www.oracle.com/cn/) | 17 | [下载](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登录下载 |
-   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下载](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 无需登录但速度稍慢 |
+   | Zoho workdrive | 17 | [Télécharger](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | Téléchargement sans connexion |
+   | 小飞机网盘 | 17 | [Télécharger](https://share.feijipan.com/s/sxOQO9u7) | Téléchargement sans connexion |
+   | 123云盘 | 17 | [Télécharger](https://www.123684.com/s/92S0Vv-iVGld) | [Lien de secours](https://www.123912.com/s/92S0Vv-iVGld) Connexion requise pour télécharger |
+   | [Oracle](https://www.oracle.com/cn/) | 17 | [Télécharger](https://www.oracle.com/java/technologies/downloads/#java17-windows) | Connexion requise pour télécharger |
+   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [Télécharger](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | Pas de connexion requise mais vitesse plus lente |
 
 
-## 安装游戏启动器
+## Installation du lanceur de jeu
 
-**2. 下载启动器**
+**2. Télécharger le lanceur**
 
-| 启动器 | 链接 | 备注 |
+| Lanceur | Lien | Remarques |
 | --- | --- | --- |
-| 官方启动器 | [下载](https://www.minecraft.net/zh-hans/download) | 不推荐 |
-| PCL2启动器 | [下载](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推荐 |
-| HMCL启动器 | [下载](https://hmcl.huangyuhui.net/download/) | 推荐 |
-| Modrinth启动器 | [下载](https://modrinth.com/app) | 需正版登录 |
+| Lanceur officiel | [Télécharger](https://www.minecraft.net/zh-hans/download) | Non recommandé |
+| Lanceur PCL2 | [Télécharger](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | Recommandé |
+| Lanceur HMCL | [Télécharger](https://hmcl.huangyuhui.net/download/) | Recommandé |
+| Lanceur Modrinth | [Télécharger](https://modrinth.com/app) | Connexion version originale requise |
 
-## 下载游戏
+## Téléchargement du jeu
 
-**3. 下载在线游戏安装包**
+**3. Télécharger le pack d'installation de jeu en ligne**
 
-下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
+Téléchargez notre dernier pack d'installation : [Aller au téléchargement](https://www.blocktavern.cn/download)
 
-![下载图片01](/assets/InstallationTutorial/installation-details/installation-details01.png)
+![Image de téléchargement 01](/assets/InstallationTutorial/installation-details/installation-details01.png)
 
-你就会得到一个安装文件，接下来就可以安装它了。
+Vous obtiendrez un fichier d'installation, vous pourrez ensuite l'installer.
 
-![下载图片02](/assets/InstallationTutorial/installation-details/installation-details02.png)
+![Image de téléchargement 02](/assets/InstallationTutorial/installation-details/installation-details02.png)
 
-## 获取帮助
+## Obtenir de l'aide
 
-如果您在安装过程中遇到问题：
+Si vous rencontrez des problèmes pendant l'installation :
 
-1. 查看 [常见问题FAQ](/zh-CN/FAQ/faq-details)
-2. 联系服务器管理员
-3. 在社区论坛发帖求助
-4. 加入官方QQ群或Discord
+1. Consultez la [FAQ des questions fréquentes](/fr-FR/FAQ/faq-details)
+2. Contactez l'administrateur du serveur
+3. Postez une demande d'aide sur le forum communautaire
+4. Rejoignez le groupe QQ officiel ou Discord
 
 
 <Contributors />

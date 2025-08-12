@@ -1,5 +1,5 @@
 ---
 title: Composants
-description: Contenu lié aux composants
+description: Contenu relatif aux composants
 order: 5
 ---

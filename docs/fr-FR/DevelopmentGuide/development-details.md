@@ -1,103 +1,103 @@
 ---
 title: Guide de contribution
-description: BlockTavern 文档贡献完整指南
+description: Guide complet de contribution à la documentation BlockTavern
 order: 1
 ---
 
-# 贡献指南
+# Guide de contribution
 
-欢迎参与 BlockTavern 文档项目！本指南将帮助您快速上手并提交高质量的贡献。
+Bienvenue dans le projet de documentation BlockTavern ! Ce guide vous aidera à démarrer rapidement et à soumettre des contributions de haute qualité.
 
-## 环境准备
+## Préparation de l'environnement
 
-### 系统要求
+### Exigences système
 
 - **Node.js** 18+ 
-- **Git** 最新版本
-- **GitHub** 账号
+- **Git** dernière version
+- Compte **GitHub**
 
-### 开发工具推荐
+### Outils de développement recommandés
 
-- **VS Code** + Markdown 扩展
-- **GitHub Desktop**（可选）
+- **VS Code** + extensions Markdown
+- **GitHub Desktop** (optionnel)
 
-::: tip 图片优化
-使用本地图片前请压缩文件大小，或使用稳定的图床服务，以提升加载速度。
+::: tip Optimisation des images
+Veuillez compresser la taille des fichiers avant d'utiliser des images locales, ou utilisez un service d'hébergement d'images stable pour améliorer la vitesse de chargement.
 :::
 
-## 快速开始
+## Démarrage rapide
 
-### 1. Fork 项目
+### 1. Fork du projet
 
-1. 访问项目仓库：[doc_blocktavern](https://github.com/Re0XIAOPA/doc_blocktavern)
-2. 点击右上角 **Fork** 按钮
-3. 等待 Fork 完成
+1. Visitez le dépôt du projet : [doc_blocktavern](https://github.com/Re0XIAOPA/doc_blocktavern)
+2. Cliquez sur le bouton **Fork** en haut à droite
+3. Attendez que le Fork soit terminé
 
-### 2. 本地开发
+### 2. Développement local
 
 ```bash
-# 克隆你的 Fork
+# Cloner votre Fork
 git clone https://github.com/YOUR_USERNAME/doc_blocktavern.git
 cd doc_blocktavern
 
-# 安装依赖
+# Installer les dépendances
 npm install
 
-# 启动开发服务器
+# Démarrer le serveur de développement
 npm run docs:dev
 ```
 
-访问 `http://localhost:5173` 预览文档站点。
+Visitez `http://localhost:5173` pour prévisualiser le site de documentation.
 
-### 3. 创建分支
+### 3. Créer une branche
 
 ```bash
-# 创建功能分支
+# Créer une branche de fonctionnalité
 git checkout -b feature/your-feature-name
 
-# 或修复分支
+# Ou une branche de correction
 git checkout -b fix/your-fix-name
 ```
 
-## 贡献流程
+## Processus de contribution
 
-### 1. 编写内容
+### 1. Rédaction du contenu
 
-- 在 `docs/zh-CN/` 目录下编辑或创建文档
-- 遵循 [文档编写规范](./writing-docs.md)
-- 实时预览：保存后浏览器自动刷新
+- Éditez ou créez des documents dans le répertoire `docs/zh-CN/`
+- Suivez les [normes de rédaction de documentation](./writing-docs.md)
+- Aperçu en temps réel : le navigateur se rafraîchit automatiquement après sauvegarde
 
-### 2. 提交更改
+### 2. Soumettre les modifications
 
 ```bash
-# 添加更改的文件
+# Ajouter les fichiers modifiés
 git add .
 
-# 提交更改（使用规范的提交信息）
-git commit -m "docs: 添加新功能说明"
+# Valider les modifications (en utilisant un message de commit standardisé)
+git commit -m "docs: ajouter la description de nouvelle fonctionnalité"
 
-# 推送到你的 Fork
+# Pousser vers votre Fork
 git push origin feature/your-feature-name
 ```
 
-### 3. 创建 Pull Request
+### 3. Créer une Pull Request
 
-1. 访问你的 Fork 仓库页面
-2. 点击 **Compare & pull request** 按钮
-3. 填写 PR 信息：
-   - **标题**：简洁描述更改内容
-   - **描述**：详细说明更改原因和影响
-4. 点击 **Create pull request**
+1. Visitez la page de votre dépôt Fork
+2. Cliquez sur le bouton **Compare & pull request**
+3. Remplissez les informations PR :
+   - **Titre** : Description concise du contenu modifié
+   - **Description** : Explication détaillée des raisons et impacts des modifications
+4. Cliquez sur **Create pull request**
 
-### 4. 等待审核
+### 4. Attendre la révision
 
-- 项目维护者会审核你的 PR
-- 可能会要求修改或补充
-- 审核通过后会合并到主分支
+- Les mainteneurs du projet réviseront votre PR
+- Ils peuvent demander des modifications ou des compléments
+- Après approbation de la révision, elle sera fusionnée dans la branche principale
 
-## 提交规范
+## Normes de soumission
 
-### 提交信息格式
+### Format des messages de commit
 
 ```
 <type>(<scope>): <description>
@@ -107,73 +107,73 @@ git push origin feature/your-feature-name
 [optional footer]
 ```
 
-**类型（type）**：
-- `docs`: 文档更新
-- `feat`: 新功能
-- `fix`: 修复问题
-- `style`: 格式调整
-- `refactor`: 重构
+**Types (type)** :
+- `docs` : Mise à jour de documentation
+- `feat` : Nouvelle fonctionnalité
+- `fix` : Correction de problème
+- `style` : Ajustement de format
+- `refactor` : Refactorisation
 
-**示例**：
+**Exemples** :
 ```bash
-git commit -m "docs(guide): 添加安装教程"
-git commit -m "fix(config): 修复侧边栏配置错误"
-git commit -m "feat(search): 添加搜索功能"
+git commit -m "docs(guide): ajouter tutoriel d'installation"
+git commit -m "fix(config): corriger erreur de configuration de barre latérale"
+git commit -m "feat(search): ajouter fonctionnalité de recherche"
 ```
 
-### 分支命名规范
+### Normes de nommage des branches
 
-- `feature/功能名称`: 新功能开发
-- `fix/问题描述`: 问题修复
-- `docs/文档类型`: 文档更新
-- `refactor/重构内容`: 代码重构
+- `feature/nom-fonctionnalité` : Développement de nouvelle fonctionnalité
+- `fix/description-problème` : Correction de problème
+- `docs/type-documentation` : Mise à jour de documentation
+- `refactor/contenu-refactorisation` : Refactorisation de code
 
-## 贡献类型
+## Types de contributions
 
-### 文档贡献
+### Contributions documentaires
 
-- **新增文档**：创建新的指南或教程
-- **完善内容**：补充现有文档的详细信息
-- **修复错误**：纠正文档中的错误信息
-- **翻译工作**：将中文文档翻译为其他语言
+- **Nouvelle documentation** : Créer de nouveaux guides ou tutoriels
+- **Amélioration du contenu** : Compléter les informations détaillées de la documentation existante
+- **Correction d'erreurs** : Corriger les informations erronées dans la documentation
+- **Travail de traduction** : Traduire la documentation chinoise vers d'autres langues
 
-### 技术贡献
+### Contributions techniques
 
-- **配置优化**：改进 VitePress 配置
-- **样式美化**：优化文档站点样式
-- **功能增强**：添加新的文档功能
-- **性能优化**：提升站点加载速度
+- **Optimisation de configuration** : Améliorer la configuration VitePress
+- **Embellissement de style** : Optimiser le style du site de documentation
+- **Amélioration de fonctionnalités** : Ajouter de nouvelles fonctionnalités de documentation
+- **Optimisation de performance** : Améliorer la vitesse de chargement du site
 
-## 质量标准
+## Normes de qualité
 
-### 文档质量
+### Qualité documentaire
 
-- [ ] 内容准确无误
-- [ ] 语言表达清晰
-- [ ] 结构层次合理
-- [ ] 代码示例可运行
-- [ ] 链接有效可访问
-- [ ] 图片清晰适当
+- [ ] Contenu précis et sans erreur
+- [ ] Expression linguistique claire
+- [ ] Structure hiérarchique raisonnable
+- [ ] Exemples de code exécutables
+- [ ] Liens valides et accessibles
+- [ ] Images claires et appropriées
 
-### 技术质量
+### Qualité technique
 
-- [ ] 代码风格一致
-- [ ] 配置语法正确
-- [ ] 构建测试通过
-- [ ] 兼容性良好
+- [ ] Style de code cohérent
+- [ ] Syntaxe de configuration correcte
+- [ ] Tests de construction réussis
+- [ ] Bonne compatibilité
 
-## 获得帮助
+## Obtenir de l'aide
 
-遇到问题时可以：
+En cas de problème, vous pouvez :
 
-1. **查看现有文档**：[项目结构](./project-structure.md)、[配置说明](./configuration.md)
-2. **提交 Issue**：在 GitHub 仓库中创建问题报告
-3. **联系维护者**：通过 GitHub 或社区渠道
-4. **参考资源**：[VitePress 官方文档](https://vitepress.dev/)
+1. **Consulter la documentation existante** : [Structure du projet](./project-structure.md), [Description de configuration](./configuration.md)
+2. **Soumettre une Issue** : Créer un rapport de problème dans le dépôt GitHub
+3. **Contacter les mainteneurs** : Via GitHub ou les canaux communautaires
+4. **Ressources de référence** : [Documentation officielle VitePress](https://vitepress.dev/)
 
 ---
 
-感谢您的贡献！每一份贡献都让 BlockTavern 文档变得更好。
+Merci pour votre contribution ! Chaque contribution rend la documentation BlockTavern meilleure.
 
 <Contributors />
 

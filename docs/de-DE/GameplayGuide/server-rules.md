@@ -1,9 +1,9 @@
 ---
 title: Spielregeln
-description: 游玩规则
+description: Spielregeln
 order: 1
 ---
  
-# 服务器规范
+# Serverrichtlinien
 
 <GitHistoryInformation />

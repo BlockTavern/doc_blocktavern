@@ -7,7 +7,7 @@ order: 4
 
 # 假人指令
 
-BlockTavern 加入了假人指令，玩家可以模拟出多个假的玩家，进行一些游戏测试。
+BlockTavern 加入了假人指令，玩家可以模擬出多個假的玩家，進行一些遊戲測試。
 
 ## 指令列表
 
@@ -15,7 +15,7 @@ BlockTavern 加入了假人指令，玩家可以模拟出多个假的玩家，�
 | --- | --- |
 | /player \<name\> spawn | 生成假人 |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command01.png) |  |
-| /player \<name\> kill | 删除假人 |
+| /player \<name\> kill | 刪除假人 |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command02.png) |  |
 
 

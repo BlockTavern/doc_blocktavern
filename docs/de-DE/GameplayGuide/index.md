@@ -1,5 +1,5 @@
 ---
-title: Spielleitfaden
-description: 游戏指南目录
+title: Spielanleitung
+description: Verzeichnis der Spielanleitungen
 order: 2
 ---

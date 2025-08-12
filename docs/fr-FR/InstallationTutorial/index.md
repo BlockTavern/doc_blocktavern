@@ -1,5 +1,5 @@
 ---
 title: Tutoriel d'installation
-description: 服务器安装教程目录
+description: Répertoire des tutoriels d'installation du serveur
 order: 1
 ---

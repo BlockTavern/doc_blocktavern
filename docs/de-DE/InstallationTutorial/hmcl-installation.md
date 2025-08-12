@@ -1,28 +1,28 @@
 ---
-title: HMCL安装
-description: 详细的HMCL启动器安装和配置教程
+title: HMCL-Installation
+description: Detaillierte HMCL-Launcher-Installations- und Konfigurationsanleitung
 order: 3
 ---
 
-# HMCL启动器安装
+# HMCL-Launcher-Installation
 
-本指南将详细介绍如何安装和配置HMCL启动器，以便连接到BlockTavern服务器。我们将涵盖客户端安装过程。
+Diese Anleitung erklärt detailliert, wie Sie den HMCL-Launcher installieren und konfigurieren, um eine Verbindung zum BlockTavern-Server herzustellen. Wir werden den Client-Installationsprozess abdecken.
 
-::: tip HMCL下载地址
+::: tip HMCL-Download-Adresse
 [https://hmcl.huangyuhui.net/download](https://hmcl.huangyuhui.net/download)
 :::
 
-## 图文教程
+## Bildanleitung
 
-![下载图片08](/assets/InstallationTutorial/installation-details/installation-details08.png)
+![Download-Bild 08](/assets/InstallationTutorial/installation-details/installation-details08.png)
 
-![下载图片09](/assets/InstallationTutorial/installation-details/installation-details09.png)
+![Download-Bild 09](/assets/InstallationTutorial/installation-details/installation-details09.png)
 
-![下载图片10](/assets/InstallationTutorial/installation-details/installation-details10.png)
+![Download-Bild 10](/assets/InstallationTutorial/installation-details/installation-details10.png)
 
-![下载图片11](/assets/InstallationTutorial/installation-details/installation-details11.png)
+![Download-Bild 11](/assets/InstallationTutorial/installation-details/installation-details11.png)
 
-![下载图片12](/assets/InstallationTutorial/installation-details/installation-details12.png)
+![Download-Bild 12](/assets/InstallationTutorial/installation-details/installation-details12.png)
 
 <Contributors />
 <GitHistoryInformation />

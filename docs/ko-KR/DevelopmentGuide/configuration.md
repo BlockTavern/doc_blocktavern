@@ -1,32 +1,32 @@
 ---
 title: 설정 설명
-description: VitePress 配置文件说明
+description: VitePress 설정 파일 설명
 order: 3
 ---
 
-# 配置说明
+# 설정 설명
 
-本指南将详细介绍项目的 VitePress 配置文件结构以及如何进行自定义配置。
+이 가이드는 프로젝트의 VitePress 설정 파일 구조와 사용자 정의 설정 방법을 자세히 설명합니다.
 
-## 1. 配置文件概述
+## 1. 설정 파일 개요
 
-项目采用模块化配置管理，将不同类型的配置分离到 `docs/.vitepress/components/` 目录下的不同文件中，便于维护和扩展。主要配置文件包括：
+프로젝트는 모듈화된 설정 관리를 채택하여 다양한 유형의 설정을 `docs/.vitepress/components/` 디렉토리 하위의 다른 파일로 분리하여 유지보수와 확장을 용이하게 합니다. 주요 설정 파일은 다음과 같습니다:
 
--   `docs/.vitepress/config.mjs`: VitePress 主配置文件
--   `docs/.vitepress/components/index.js`: 配置组件统一导出文件
--   `docs/.vitepress/components/site.js`: 站点基础配置
--   `docs/.vitepress/components/nav.js`: 主导航配置（已弃用，请使用语言配置）
--   `docs/.vitepress/components/sidebar.js`: 侧边栏配置（使用 vitepress-sidebar 插件自动生成）
--   `docs/.vitepress/components/language.js`: 多语言配置主文件
--   `docs/.vitepress/components/language/`: 各语言具体配置文件夹
--   `docs/.vitepress/components/social.js`: 社交链接配置
--   `docs/.vitepress/components/editLink.js`: 编辑链接配置
+-   `docs/.vitepress/config.mjs`: VitePress 메인 설정 파일
+-   `docs/.vitepress/components/index.js`: 설정 컴포넌트 통합 내보내기 파일
+-   `docs/.vitepress/components/site.js`: 사이트 기본 설정
+-   `docs/.vitepress/components/nav.js`: 메인 네비게이션 설정 (폐기됨, 언어 설정 사용)
+-   `docs/.vitepress/components/sidebar.js`: 사이드바 설정 (vitepress-sidebar 플러그인 자동 생성 사용)
+-   `docs/.vitepress/components/language.js`: 다국어 설정 메인 파일
+-   `docs/.vitepress/components/language/`: 각 언어별 구체적인 설정 파일 폴더
+-   `docs/.vitepress/components/social.js`: 소셜 링크 설정
+-   `docs/.vitepress/components/editLink.js`: 편집 링크 설정
 
-## 2. 站点配置 (`docs/.vitepress/components/site.js`)
+## 2. 사이트 설정 (`docs/.vitepress/components/site.js`)
 
-站点配置文件定义了网站的基本信息和主题基础设置。该文件包含两个主要配置对象：
+사이트 설정 파일은 웹사이트의 기본 정보와 테마 기본 설정을 정의합니다. 이 파일에는 두 개의 주요 설정 객체가 포함되어 있습니다:
 
-### 2.1 站点基础配置 (siteConfig)
+### 2.1 사이트 기본 설정 (siteConfig)
 
 ```javascript
 export const siteConfig = {
@@ -40,9 +40,9 @@ export const siteConfig = {
 }
 ```
 
-**注意**: 该配置可以忽略，请前往语言配置进行详细配置。
+**참고**: 이 설정은 무시할 수 있으며, 자세한 설정은 언어 설정으로 이동하세요.
 
-### 2.2 主题基础配置 (themeBaseConfig)
+### 2.2 테마 기본 설정 (themeBaseConfig)
 
 ```javascript
 export const themeBaseConfig = {
@@ -75,15 +75,15 @@ export const themeBaseConfig = {
 }
 ```
 
-**如何修改：**
+**수정 방법:**
 
-直接编辑 `docs/.vitepress/components/site.js` 文件中的对应字段即可。修改后通常需要重新启动开发服务器或重新构建项目。
+`docs/.vitepress/components/site.js` 파일의 해당 필드를 직접 편집하면 됩니다. 수정 후 일반적으로 개발 서버를 다시 시작하거나 프로젝트를 다시 빌드해야 합니다.
 
-## 3. 多语言配置
+## 3. 다국어 설정
 
-项目支持多语言配置，主要通过以下文件进行管理：
+프로젝트는 다국어 설정을 지원하며, 주로 다음 파일을 통해 관리됩니다:
 
-### 3.1 多语言主配置 (`docs/.vitepress/components/language.js`)
+### 3.1 다국어 메인 설정 (`docs/.vitepress/components/language.js`)
 
 ```javascript
 // 导入各个语言的配置
@@ -99,7 +99,7 @@ export const localesConfig = {
 }
 ```
 
-### 3.2 中文配置 (`docs/.vitepress/components/language/zh-CN.js`)
+### 3.2 중국어 설정 (`docs/.vitepress/components/language/zh-CN.js`)
 
 ```javascript
 export const zhConfig = {
@@ -130,15 +130,15 @@ export const zhConfig = {
 }
 ```
 
-**如何修改：**
+**수정 방법:**
 
-1. 修改导航配置：编辑 `nav` 数组中的链接和文本
-2. 添加新语言：在 `language` 文件夹中创建新的语言配置文件
-3. 启用多语言：在 `language.js` 中取消注释相应的语言配置
+1. 네비게이션 설정 수정: `nav` 배열의 링크와 텍스트 편집
+2. 새 언어 추가: `language` 폴더에 새로운 언어 설정 파일 생성
+3. 다국어 활성화: `language.js`에서 해당 언어 설정의 주석 해제
 
-## 4. 侧边栏配置 (`docs/.vitepress/components/sidebar.js`)
+## 4. 사이드바 설정 (`docs/.vitepress/components/sidebar.js`)
 
-项目使用 `vitepress-sidebar` 插件自动生成侧边栏，无需手动维护侧边栏结构。
+프로젝트는 `vitepress-sidebar` 플러그인을 사용하여 사이드바를 자동 생성하므로 수동으로 사이드바 구조를 유지할 필요가 없습니다.
 
 ```javascript
 import { generateSidebar } from "vitepress-sidebar";
@@ -166,23 +166,23 @@ export function generateSidebarConfig() {
 }
 ```
 
-### 配置说明
+### 설정 설명
 
-- `documentRootPath`: 文档根目录
-- `useTitleFromFileHeading`: 从文件标题获取侧边栏标题
-- `useTitleFromFrontmatter`: 从 frontmatter 获取标题
-- `collapsed`: 默认折叠状态
-- `collapseDepth`: 折叠深度
+- `documentRootPath`: 문서 루트 디렉토리
+- `useTitleFromFileHeading`: 파일 제목에서 사이드바 제목 가져오기
+- `useTitleFromFrontmatter`: frontmatter에서 제목 가져오기
+- `collapsed`: 기본 접힘 상태
+- `collapseDepth`: 접힘 깊이
 
-**优势**: 自动根据文件结构生成侧边栏，无需手动维护，支持多语言。
+**장점**: 파일 구조에 따라 자동으로 사이드바를 생성하므로 수동 유지보수가 불필요하며 다국어를 지원합니다.
 
-**如何修改：**
+**수정 방법:**
 
-根据需要调整 `generateSidebar` 函数的配置参数，详细配置选项请参考 `vitepress-sidebar` 插件文档。
+필요에 따라 `generateSidebar` 함수의 설정 매개변수를 조정하세요. 자세한 설정 옵션은 `vitepress-sidebar` 플러그인 문서를 참조하세요.
 
-## 5. 社交链接配置 (`docs/.vitepress/components/social.js`)
+## 5. 소셜 링크 설정 (`docs/.vitepress/components/social.js`)
 
-社交链接配置文件定义了页面上显示的社交媒体链接。
+소셜 링크 설정 파일은 페이지에 표시되는 소셜 미디어 링크를 정의합니다.
 
 ```javascript
 export const socialLinksConfig = [
@@ -190,14 +190,14 @@ export const socialLinksConfig = [
     icon: 'github', 
     link: 'https://github.com/Re0XIAOPA/doc_blocktavern' 
   }
-  // 可以根据需要添加更多社交链接
+  // 필요에 따라 더 많은 소셜 링크를 추가할 수 있습니다
   // { icon: 'discord', link: 'https://discord.gg/your-server' },
   // { icon: 'twitter', link: 'https://twitter.com/your-account' },
   // { icon: 'youtube', link: 'https://youtube.com/your-channel' }
 ]
 ```
 
-### 支持的图标类型
+### 지원되는 아이콘 유형
 
 - `github`: GitHub
 - `discord`: Discord
@@ -206,9 +206,9 @@ export const socialLinksConfig = [
 - `linkedin`: LinkedIn
 - `facebook`: Facebook
 
-## 6. 编辑链接配置 (`docs/.vitepress/components/editLink.js`)
+## 6. 편집 링크 설정 (`docs/.vitepress/components/editLink.js`)
 
-编辑链接配置允许用户直接跳转到 GitHub 编辑页面。
+편집 링크 설정을 통해 사용자가 GitHub 편집 페이지로 직접 이동할 수 있습니다.
 
 ```javascript
 export const editLink = {
@@ -229,16 +229,16 @@ export const editLink = {
 };
 ```
 
-### 配置说明
+### 설정 설명
 
-- `pattern`: GitHub 编辑链接模板，`:path` 会被替换为当前页面路径
-- `text`: 编辑链接显示的文本
-- `lastUpdated`: 显示最后更新时间
-- `contributors`: 显示贡献者信息
+- `pattern`: GitHub 편집 링크 템플릿, `:path`는 현재 페이지 경로로 대체됩니다
+- `text`: 편집 링크에 표시되는 텍스트
+- `lastUpdated`: 마지막 업데이트 시간 표시
+- `contributors`: 기여자 정보 표시
 
-## 7. 主配置文件 (`docs/.vitepress/config.mjs`)
+## 7. 메인 설정 파일 (`docs/.vitepress/config.mjs`)
 
-主配置文件是 VitePress 的入口配置，它整合了所有模块化配置。
+메인 설정 파일은 VitePress의 진입점 설정으로, 모든 모듈화된 설정을 통합합니다.
 
 ```javascript
 import { defineConfig } from 'vitepress'
@@ -269,52 +269,52 @@ export default defineConfig({
 })
 ```
 
-## 8. 环境变量
+## 8. 환경 변수
 
-项目使用环境变量来管理不同环境下的配置。主要环境变量包括：
+프로젝트는 환경 변수를 사용하여 다양한 환경에서의 설정을 관리합니다. 주요 환경 변수는 다음과 같습니다:
 
 ```bash
-# 开发环境
+# 개발 환경
 NODE_ENV=development
 
-# 生产环境
+# 프로덕션 환경
 NODE_ENV=production
 
-# 基础路径（如果部署在子目录）
+# 기본 경로 (하위 디렉토리에 배포하는 경우)
 BASE_URL=/docs/
 ```
 
-**在配置中使用环境变量：**
+**설정에서 환경 변수 사용:**
 
 ```javascript
 export const siteConfig = {
   base: process.env.BASE_URL || '/',
-  // 其他配置...
+  // 기타 설정...
 }
 ```
 
-## 9. 常见问题与故障排除
+## 9. 일반적인 문제 및 문제 해결
 
-### 9.1 配置相关问题
+### 9.1 설정 관련 문제
 
-- **配置不生效**: 确保修改了正确的配置文件，并重启开发服务器
-- **侧边栏不显示**: 检查文件结构是否符合 `vitepress-sidebar` 插件要求
-- **多语言切换问题**: 验证 `language.js` 中的路径配置是否正确
+- **설정이 적용되지 않음**: 올바른 설정 파일을 수정했는지 확인하고 개발 서버를 재시작하세요
+- **사이드바가 표시되지 않음**: 파일 구조가 `vitepress-sidebar` 플러그인 요구사항에 맞는지 확인하세요
+- **다국어 전환 문제**: `language.js`의 경로 설정이 올바른지 확인하세요
 
-### 9.2 构建相关问题
+### 9.2 빌드 관련 문제
 
-- **构建失败**: 检查所有配置文件的 ES6 模块语法是否正确
-- **路径错误**: 确保所有文件路径使用正确的相对路径或绝对路径
+- **빌드 실패**: 모든 설정 파일의 ES6 모듈 문법이 올바른지 확인하세요
+- **경로 오류**: 모든 파일 경로가 올바른 상대 경로 또는 절대 경로를 사용하는지 확인하세요
 
-### 9.3 开发建议
+### 9.3 개발 권장사항
 
-1. **模块化配置**: 保持配置文件的模块化结构，便于维护
-2. **文档结构**: 遵循既定的文档目录结构，确保侧边栏自动生成正常工作
-3. **多语言支持**: 新增语言时，确保在 `language.js` 中正确配置
+1. **모듈화된 설정**: 설정 파일의 모듈화된 구조를 유지하여 유지보수를 용이하게 하세요
+2. **문서 구조**: 기존 문서 디렉토리 구조를 따라 사이드바 자동 생성이 정상적으로 작동하도록 하세요
+3. **다국어 지원**: 새 언어를 추가할 때 `language.js`에서 올바르게 설정되었는지 확인하세요
 
 ---
 
-通过以上配置说明，你应该能够根据项目需求对各个配置文件进行相应的修改和定制。如果遇到具体问题，建议查阅 [VitePress 官方文档](https://vitepress.dev/) 或 [vitepress-sidebar 插件文档](https://vitepress-sidebar.cdget.com/)。
+위의 설정 설명을 통해 프로젝트 요구사항에 따라 각 설정 파일을 적절히 수정하고 사용자 정의할 수 있어야 합니다. 구체적인 문제가 발생하면 [VitePress 공식 문서](https://vitepress.dev/) 또는 [vitepress-sidebar 플러그인 문서](https://vitepress-sidebar.cdget.com/)를 참조하는 것을 권장합니다.
 
 <Contributors />
 

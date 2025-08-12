@@ -1,33 +1,33 @@
 ---
-title: PCL2安装
-description: 详细的PCL2启动器安装和配置教程
+title: Installation PCL2
+description: Tutoriel détaillé d'installation et de configuration du lanceur PCL2
 order: 2
 ---
 
-# PCL2启动器安装
+# Installation du lanceur PCL2
 
-PCL2是一个Minecraft启动器，它可以帮助您方便地安装和管理Minecraft游戏。我们将介绍PCL2的下载和安装过程，以便连接到BlockTavern服务器。
+PCL2 est un lanceur Minecraft qui peut vous aider à installer et gérer facilement le jeu Minecraft. Nous présenterons le processus de téléchargement et d'installation de PCL2 pour se connecter au serveur BlockTavern.
 
-::: tip PCL2下载地址
+::: tip Adresse de téléchargement PCL2
 [https://afdian.com/p/0164034c016c11ebafcb52540025c377](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
 :::
 
 
-## 图文教程
+## Tutoriel illustré
 
-![下载图片03](/assets/InstallationTutorial/installation-details/installation-details03.png)
+![Image de téléchargement 03](/assets/InstallationTutorial/installation-details/installation-details03.png)
 
-![下载图片13](/assets/InstallationTutorial/installation-details/installation-details13.png)
+![Image de téléchargement 13](/assets/InstallationTutorial/installation-details/installation-details13.png)
 
-![下载图片14](/assets/InstallationTutorial/installation-details/installation-details14.png)
+![Image de téléchargement 14](/assets/InstallationTutorial/installation-details/installation-details14.png)
 
-![下载图片04](/assets/InstallationTutorial/installation-details/installation-details04.png)
+![Image de téléchargement 04](/assets/InstallationTutorial/installation-details/installation-details04.png)
 
-![下载图片05](/assets/InstallationTutorial/installation-details/installation-details05.png)
+![Image de téléchargement 05](/assets/InstallationTutorial/installation-details/installation-details05.png)
 
-![下载图片06](/assets/InstallationTutorial/installation-details/installation-details06.png)
+![Image de téléchargement 06](/assets/InstallationTutorial/installation-details/installation-details06.png)
 
-![下载图片07](/assets/InstallationTutorial/installation-details/installation-details07.png)
+![Image de téléchargement 07](/assets/InstallationTutorial/installation-details/installation-details07.png)
 
 <Contributors />
 

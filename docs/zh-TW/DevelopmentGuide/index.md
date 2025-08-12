@@ -1,5 +1,5 @@
 ---
-title: 贡献指南
-description: 服务器开发贡献指南目录
+title: 貢獻指南
+description: 伺服器開發貢獻指南目錄
 order: 4
 ---

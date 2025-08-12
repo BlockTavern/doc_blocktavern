@@ -4,58 +4,58 @@ description: インストール前の準備：BlockTavernゲーム
 order: 1
 ---
 
-# 安装前准备
+# インストール前の準備
 
-欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。
+BlockTavernへようこそ！このチュートリアルでは、私たちのサーバーにスムーズに参加するために、Minecraftを正しくインストールして設定する方法をご案内します。
 
-在开始安装之前，请确保您具备以下条件：
+インストールを開始する前に、以下の条件を満たしていることを確認してください：
 - Java 17+
-- Minecraft任意游戏启动器（不推荐官启）
+- Minecraft任意のゲームランチャー（公式ランチャーは非推奨）
 
-## 安装Java
+## Javaのインストール
 
-**1. Java 17 或更高版本**
+**1. Java 17 またはそれ以上のバージョン**
 
-   | 站点 | JDK版本 | 下载链接 | 备注 |
+   | サイト | JDKバージョン | ダウンロードリンク | 備考 |
    | --- | --- | --- | --- |
-   | Zoho workdrive | 17 | [下载](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | 无需登录下载
-   | 小飞机网盘 | 17 | [下载](https://share.feijipan.com/s/sxOQO9u7) | 无需登录下载 |
-   | 123云盘 | 17 | [下载](https://www.123684.com/s/92S0Vv-iVGld) | [备用链接](https://www.123912.com/s/92S0Vv-iVGld)  需要登录下载|
-   | [Oracle](https://www.oracle.com/cn/) | 17 | [下载](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登录下载 |
-   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下载](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 无需登录但速度稍慢 |
+   | Zoho workdrive | 17 | [ダウンロード](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | ログイン不要でダウンロード
+   | 小飛機網盤 | 17 | [ダウンロード](https://share.feijipan.com/s/sxOQO9u7) | ログイン不要でダウンロード |
+   | 123雲盤 | 17 | [ダウンロード](https://www.123684.com/s/92S0Vv-iVGld) | [バックアップリンク](https://www.123912.com/s/92S0Vv-iVGld)  ログインが必要|
+   | [Oracle](https://www.oracle.com/cn/) | 17 | [ダウンロード](https://www.oracle.com/java/technologies/downloads/#java17-windows) | ログインが必要 |
+   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [ダウンロード](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | ログイン不要だが速度がやや遅い |
 
 
-## 安装游戏启动器
+## ゲームランチャーのインストール
 
-**2. 下载启动器**
+**2. ランチャーのダウンロード**
 
-| 启动器 | 链接 | 备注 |
+| ランチャー | リンク | 備考 |
 | --- | --- | --- |
-| 官方启动器 | [下载](https://www.minecraft.net/zh-hans/download) | 不推荐 |
-| PCL2启动器 | [下载](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推荐 |
-| HMCL启动器 | [下载](https://hmcl.huangyuhui.net/download/) | 推荐 |
-| Modrinth启动器 | [下载](https://modrinth.com/app) | 需正版登录 |
+| 公式ランチャー | [ダウンロード](https://www.minecraft.net/zh-hans/download) | 非推奨 |
+| PCL2ランチャー | [ダウンロード](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推奨 |
+| HMCLランチャー | [ダウンロード](https://hmcl.huangyuhui.net/download/) | 推奨 |
+| Modrinthランチャー | [ダウンロード](https://modrinth.com/app) | 正版ログインが必要 |
 
-## 下载游戏
+## ゲームのダウンロード
 
-**3. 下载在线游戏安装包**
+**3. オンラインゲームインストールパッケージのダウンロード**
 
-下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
+最新版インストールパッケージをダウンロード：[ダウンロードページへ](https://www.blocktavern.cn/download)
 
-![下载图片01](/assets/InstallationTutorial/installation-details/installation-details01.png)
+![ダウンロード画像01](/assets/InstallationTutorial/installation-details/installation-details01.png)
 
-你就会得到一个安装文件，接下来就可以安装它了。
+インストールファイルを取得したら、次にインストールできます。
 
-![下载图片02](/assets/InstallationTutorial/installation-details/installation-details02.png)
+![ダウンロード画像02](/assets/InstallationTutorial/installation-details/installation-details02.png)
 
-## 获取帮助
+## ヘルプの取得
 
-如果您在安装过程中遇到问题：
+インストール中に問題が発生した場合：
 
-1. 查看 [常见问题FAQ](/zh-CN/FAQ/faq-details)
-2. 联系服务器管理员
-3. 在社区论坛发帖求助
-4. 加入官方QQ群或Discord
+1. [よくある質問FAQ](/ja-JP/FAQ/faq-details) を確認
+2. サーバー管理者に連絡
+3. コミュニティフォーラムで質問投稿
+4. 公式QQグループまたはDiscordに参加
 
 
 <Contributors />

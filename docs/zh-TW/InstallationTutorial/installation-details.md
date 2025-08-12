@@ -1,60 +1,60 @@
 ---
-title: 安装前准备
-description: 安装前准备：BlockTavern游戏
+title: 安裝前準備
+description: 安裝前準備：BlockTavern遊戲
 order: 1
 ---
 
-# 安装前准备
+# 安裝前準備
 
-欢迎来到BlockTavern！本教程将帮助您正确安装和配置Minecraft，以便顺利加入我们的服务器。
+歡迎來到BlockTavern！本教程將幫助您正確安裝和配置Minecraft，以便順利加入我們的伺服器。
 
-在开始安装之前，请确保您具备以下条件：
+在開始安裝之前，請確保您具備以下條件：
 - Java 17+
-- Minecraft任意游戏启动器（不推荐官启）
+- Minecraft任意遊戲啟動器（不推薦官啟）
 
-## 安装Java
+## 安裝Java
 
 **1. Java 17 或更高版本**
 
-   | 站点 | JDK版本 | 下载链接 | 备注 |
+   | 站點 | JDK版本 | 下載連結 | 備註 |
    | --- | --- | --- | --- |
-   | Zoho workdrive | 17 | [下载](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | 无需登录下载
-   | 小飞机网盘 | 17 | [下载](https://share.feijipan.com/s/sxOQO9u7) | 无需登录下载 |
-   | 123云盘 | 17 | [下载](https://www.123684.com/s/92S0Vv-iVGld) | [备用链接](https://www.123912.com/s/92S0Vv-iVGld)  需要登录下载|
-   | [Oracle](https://www.oracle.com/cn/) | 17 | [下载](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登录下载 |
-   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下载](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 无需登录但速度稍慢 |
+   | Zoho workdrive | 17 | [下載](https://workdrive.zohopublic.com.cn/file/w86hse521f910525543b9aee2a0b5fbd5af4d) | 無需登入下載
+   | 小飛機網盤 | 17 | [下載](https://share.feijipan.com/s/sxOQO9u7) | 無需登入下載 |
+   | 123雲盤 | 17 | [下載](https://www.123684.com/s/92S0Vv-iVGld) | [備用連結](https://www.123912.com/s/92S0Vv-iVGld)  需要登入下載|
+   | [Oracle](https://www.oracle.com/cn/) | 17 | [下載](https://www.oracle.com/java/technologies/downloads/#java17-windows) | 需要登入下載 |
+   | [Adoptium](https://adoptium.net/zh-CN/) | 17 | [下載](https://adoptium.net/zh-CN/temurin/releases?version=17&os=any&arch=any) | 無需登入但速度稍慢 |
 
 
-## 安装游戏启动器
+## 安裝遊戲啟動器
 
-**2. 下载启动器**
+**2. 下載啟動器**
 
-| 启动器 | 链接 | 备注 |
+| 啟動器 | 連結 | 備註 |
 | --- | --- | --- |
-| 官方启动器 | [下载](https://www.minecraft.net/zh-hans/download) | 不推荐 |
-| PCL2启动器 | [下载](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推荐 |
-| HMCL启动器 | [下载](https://hmcl.huangyuhui.net/download/) | 推荐 |
-| Modrinth启动器 | [下载](https://modrinth.com/app) | 需正版登录 |
+| 官方啟動器 | [下載](https://www.minecraft.net/zh-hans/download) | 不推薦 |
+| PCL2啟動器 | [下載](https://afdian.com/p/0164034c016c11ebafcb52540025c377) | 推薦 |
+| HMCL啟動器 | [下載](https://hmcl.huangyuhui.net/download/) | 推薦 |
+| Modrinth啟動器 | [下載](https://modrinth.com/app) | 需正版登入 |
 
-## 下载游戏
+## 下載遊戲
 
-**3. 下载在线游戏安装包**
+**3. 下載線上遊戲安裝包**
 
-下载我们的最新版安装包：[前往下载](https://www.blocktavern.cn/download)
+下載我們的最新版安裝包：[前往下載](https://www.blocktavern.cn/download)
 
-![下载图片01](/assets/InstallationTutorial/installation-details/installation-details01.png)
+![下載圖片01](/assets/InstallationTutorial/installation-details/installation-details01.png)
 
-你就会得到一个安装文件，接下来就可以安装它了。
+你就會得到一個安裝檔案，接下來就可以安裝它了。
 
-![下载图片02](/assets/InstallationTutorial/installation-details/installation-details02.png)
+![下載圖片02](/assets/InstallationTutorial/installation-details/installation-details02.png)
 
-## 获取帮助
+## 獲取幫助
 
-如果您在安装过程中遇到问题：
+如果您在安裝過程中遇到問題：
 
-1. 查看 [常见问题FAQ](/zh-CN/FAQ/faq-details)
-2. 联系服务器管理员
-3. 在社区论坛发帖求助
+1. 查看 [常見問題FAQ](/zh-TW/FAQ/faq-details)
+2. 聯繫伺服器管理員
+3. 在社群論壇發帖求助
 4. 加入官方QQ群或Discord
 
 

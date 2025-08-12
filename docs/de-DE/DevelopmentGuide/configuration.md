@@ -1,32 +1,32 @@
 ---
 title: Konfiguration
-description: VitePress 配置文件说明
+description: VitePress-Konfigurationsdatei-Erklärung
 order: 3
 ---
 
-# 配置说明
+# Konfigurationserklärung
 
-本指南将详细介绍项目的 VitePress 配置文件结构以及如何进行自定义配置。
+Diese Anleitung erklärt detailliert die VitePress-Konfigurationsdateistruktur des Projekts und wie Sie benutzerdefinierte Konfigurationen vornehmen können。
 
-## 1. 配置文件概述
+## 1. Konfigurationsdatei-Übersicht
 
-项目采用模块化配置管理，将不同类型的配置分离到 `docs/.vitepress/components/` 目录下的不同文件中，便于维护和扩展。主要配置文件包括：
+Das Projekt verwendet modulare Konfigurationsverwaltung und trennt verschiedene Arten von Konfigurationen in verschiedene Dateien im Verzeichnis `docs/.vitepress/components/`, um Wartung und Erweiterung zu erleichtern。 Die wichtigsten Konfigurationsdateien umfassen:
 
--   `docs/.vitepress/config.mjs`: VitePress 主配置文件
--   `docs/.vitepress/components/index.js`: 配置组件统一导出文件
--   `docs/.vitepress/components/site.js`: 站点基础配置
--   `docs/.vitepress/components/nav.js`: 主导航配置（已弃用，请使用语言配置）
--   `docs/.vitepress/components/sidebar.js`: 侧边栏配置（使用 vitepress-sidebar 插件自动生成）
--   `docs/.vitepress/components/language.js`: 多语言配置主文件
--   `docs/.vitepress/components/language/`: 各语言具体配置文件夹
--   `docs/.vitepress/components/social.js`: 社交链接配置
--   `docs/.vitepress/components/editLink.js`: 编辑链接配置
+-   `docs/.vitepress/config.mjs`: VitePress-Hauptkonfigurationsdatei
+-   `docs/.vitepress/components/index.js`: Einheitliche Exportdatei für Konfigurationskomponenten
+-   `docs/.vitepress/components/site.js`: Website-Grundkonfiguration
+-   `docs/.vitepress/components/nav.js`: Hauptnavigationskonfiguration (veraltet, bitte verwenden Sie Sprachkonfiguration)
+-   `docs/.vitepress/components/sidebar.js`: Seitenleistenkonfiguration (automatisch generiert mit vitepress-sidebar Plugin)
+-   `docs/.vitepress/components/language.js`: Mehrsprachige Konfigurationshauptdatei
+-   `docs/.vitepress/components/language/`: Spezifische Konfigurationsordner für jede Sprache
+-   `docs/.vitepress/components/social.js`: Social-Media-Link-Konfiguration
+-   `docs/.vitepress/components/editLink.js`: Bearbeitungslink-Konfiguration
 
-## 2. 站点配置 (`docs/.vitepress/components/site.js`)
+## 2. Website-Konfiguration (`docs/.vitepress/components/site.js`)
 
-站点配置文件定义了网站的基本信息和主题基础设置。该文件包含两个主要配置对象：
+Die Website-Konfigurationsdatei definiert die grundlegenden Informationen der Website und die Grundeinstellungen des Themes。 Diese Datei enthält zwei Hauptkonfigurationsobjekte:
 
-### 2.1 站点基础配置 (siteConfig)
+### 2.1 Website-Grundkonfiguration (siteConfig)
 
 ```javascript
 export const siteConfig = {
@@ -40,9 +40,9 @@ export const siteConfig = {
 }
 ```
 
-**注意**: 该配置可以忽略，请前往语言配置进行详细配置。
+**Hinweis**: Diese Konfiguration kann ignoriert werden, bitte gehen Sie zur Sprachkonfiguration für detaillierte Konfiguration。
 
-### 2.2 主题基础配置 (themeBaseConfig)
+### 2.2 Theme-Grundkonfiguration (themeBaseConfig)
 
 ```javascript
 export const themeBaseConfig = {
@@ -75,15 +75,15 @@ export const themeBaseConfig = {
 }
 ```
 
-**如何修改：**
+**Wie zu ändern:**
 
-直接编辑 `docs/.vitepress/components/site.js` 文件中的对应字段即可。修改后通常需要重新启动开发服务器或重新构建项目。
+Bearbeiten Sie einfach die entsprechenden Felder in der Datei `docs/.vitepress/components/site.js`。 Nach Änderungen müssen Sie normalerweise den Entwicklungsserver neu starten oder das Projekt neu erstellen。
 
-## 3. 多语言配置
+## 3. Mehrsprachige Konfiguration
 
-项目支持多语言配置，主要通过以下文件进行管理：
+Das Projekt unterstützt mehrsprachige Konfiguration, die hauptsächlich über die folgenden Dateien verwaltet wird:
 
-### 3.1 多语言主配置 (`docs/.vitepress/components/language.js`)
+### 3.1 Mehrsprachige Hauptkonfiguration (`docs/.vitepress/components/language.js`)
 
 ```javascript
 // 导入各个语言的配置
@@ -99,7 +99,7 @@ export const localesConfig = {
 }
 ```
 
-### 3.2 中文配置 (`docs/.vitepress/components/language/zh-CN.js`)
+### 3.2 Chinesische Konfiguration (`docs/.vitepress/components/language/zh-CN.js`)
 
 ```javascript
 export const zhConfig = {
@@ -130,15 +130,15 @@ export const zhConfig = {
 }
 ```
 
-**如何修改：**
+**Wie zu ändern:**
 
-1. 修改导航配置：编辑 `nav` 数组中的链接和文本
-2. 添加新语言：在 `language` 文件夹中创建新的语言配置文件
-3. 启用多语言：在 `language.js` 中取消注释相应的语言配置
+1. Navigationskonfiguration ändern: Bearbeiten Sie die Links und Texte im `nav`-Array
+2. Neue Sprache hinzufügen: Erstellen Sie eine neue Sprachkonfigurationsdatei im `language`-Ordner
+3. Mehrsprachigkeit aktivieren: Kommentieren Sie die entsprechende Sprachkonfiguration in `language.js` aus
 
-## 4. 侧边栏配置 (`docs/.vitepress/components/sidebar.js`)
+## 4. Seitenleisten-Konfiguration (`docs/.vitepress/components/sidebar.js`)
 
-项目使用 `vitepress-sidebar` 插件自动生成侧边栏，无需手动维护侧边栏结构。
+Das Projekt verwendet das `vitepress-sidebar`-Plugin zur automatischen Generierung der Seitenleiste, ohne dass die Seitenleistenstruktur manuell gepflegt werden muss。
 
 ```javascript
 import { generateSidebar } from "vitepress-sidebar";
@@ -166,23 +166,23 @@ export function generateSidebarConfig() {
 }
 ```
 
-### 配置说明
+### Konfigurationserklärung
 
-- `documentRootPath`: 文档根目录
-- `useTitleFromFileHeading`: 从文件标题获取侧边栏标题
-- `useTitleFromFrontmatter`: 从 frontmatter 获取标题
-- `collapsed`: 默认折叠状态
-- `collapseDepth`: 折叠深度
+- `documentRootPath`: Dokumenten-Stammverzeichnis
+- `useTitleFromFileHeading`: Seitenleistentitel aus Dateititel abrufen
+- `useTitleFromFrontmatter`: Titel aus frontmatter abrufen
+- `collapsed`: Standard-Einklappzustand
+- `collapseDepth`: Einklapptiefe
 
-**优势**: 自动根据文件结构生成侧边栏，无需手动维护，支持多语言。
+**Vorteile**: Automatische Generierung der Seitenleiste basierend auf der Dateistruktur, keine manuelle Wartung erforderlich, unterstützt Mehrsprachigkeit。
 
-**如何修改：**
+**Wie zu ändern:**
 
-根据需要调整 `generateSidebar` 函数的配置参数，详细配置选项请参考 `vitepress-sidebar` 插件文档。
+Passen Sie die Konfigurationsparameter der `generateSidebar`-Funktion nach Bedarf an, detaillierte Konfigurationsoptionen finden Sie in der `vitepress-sidebar`-Plugin-Dokumentation。
 
-## 5. 社交链接配置 (`docs/.vitepress/components/social.js`)
+## 5. Social-Media-Link-Konfiguration (`docs/.vitepress/components/social.js`)
 
-社交链接配置文件定义了页面上显示的社交媒体链接。
+Die Social-Media-Link-Konfigurationsdatei definiert die auf der Seite angezeigten Social-Media-Links。
 
 ```javascript
 export const socialLinksConfig = [
@@ -197,7 +197,7 @@ export const socialLinksConfig = [
 ]
 ```
 
-### 支持的图标类型
+### Unterstützte Icon-Typen
 
 - `github`: GitHub
 - `discord`: Discord
@@ -206,9 +206,9 @@ export const socialLinksConfig = [
 - `linkedin`: LinkedIn
 - `facebook`: Facebook
 
-## 6. 编辑链接配置 (`docs/.vitepress/components/editLink.js`)
+## 6. Bearbeitungslink-Konfiguration (`docs/.vitepress/components/editLink.js`)
 
-编辑链接配置允许用户直接跳转到 GitHub 编辑页面。
+Die Bearbeitungslink-Konfiguration ermöglicht es Benutzern, direkt zur GitHub-Bearbeitungsseite zu springen。
 
 ```javascript
 export const editLink = {
@@ -229,16 +229,16 @@ export const editLink = {
 };
 ```
 
-### 配置说明
+### Konfigurationserklärung
 
-- `pattern`: GitHub 编辑链接模板，`:path` 会被替换为当前页面路径
-- `text`: 编辑链接显示的文本
-- `lastUpdated`: 显示最后更新时间
-- `contributors`: 显示贡献者信息
+- `pattern`: GitHub-Bearbeitungslink-Vorlage, `:path` wird durch den aktuellen Seitenpfad ersetzt
+- `text`: Anzeigetext des Bearbeitungslinks
+- `lastUpdated`: Anzeige der letzten Aktualisierungszeit
+- `contributors`: Anzeige der Mitwirkenden-Informationen
 
-## 7. 主配置文件 (`docs/.vitepress/config.mjs`)
+## 7. Haupt-Konfigurationsdatei (`docs/.vitepress/config.mjs`)
 
-主配置文件是 VitePress 的入口配置，它整合了所有模块化配置。
+Die Haupt-Konfigurationsdatei ist die Eingangskonfiguration von VitePress, die alle modularen Konfigurationen integriert。
 
 ```javascript
 import { defineConfig } from 'vitepress'
@@ -269,22 +269,22 @@ export default defineConfig({
 })
 ```
 
-## 8. 环境变量
+## 8. Umgebungsvariablen
 
-项目使用环境变量来管理不同环境下的配置。主要环境变量包括：
+Das Projekt verwendet Umgebungsvariablen zur Verwaltung von Konfigurationen in verschiedenen Umgebungen。Die wichtigsten Umgebungsvariablen umfassen：
 
 ```bash
-# 开发环境
+# Entwicklungsumgebung
 NODE_ENV=development
 
-# 生产环境
+# Produktionsumgebung
 NODE_ENV=production
 
-# 基础路径（如果部署在子目录）
+# Basispfad (bei Bereitstellung in Unterverzeichnis)
 BASE_URL=/docs/
 ```
 
-**在配置中使用环境变量：**
+**Verwendung von Umgebungsvariablen in der Konfiguration:**
 
 ```javascript
 export const siteConfig = {
@@ -293,28 +293,28 @@ export const siteConfig = {
 }
 ```
 
-## 9. 常见问题与故障排除
+## 9. Häufige Probleme und Fehlerbehebung
 
-### 9.1 配置相关问题
+### 9.1 Konfigurationsbezogene Probleme
 
-- **配置不生效**: 确保修改了正确的配置文件，并重启开发服务器
-- **侧边栏不显示**: 检查文件结构是否符合 `vitepress-sidebar` 插件要求
-- **多语言切换问题**: 验证 `language.js` 中的路径配置是否正确
+- **Konfiguration wird nicht wirksam**: Stellen Sie sicher, dass die richtige Konfigurationsdatei geändert wurde und starten Sie den Entwicklungsserver neu
+- **Seitenleiste wird nicht angezeigt**: Überprüfen Sie, ob die Dateistruktur den Anforderungen des `vitepress-sidebar`-Plugins entspricht
+- **Mehrsprachige Umschaltprobleme**: Überprüfen Sie, ob die Pfadkonfiguration in `language.js` korrekt ist
 
-### 9.2 构建相关问题
+### 9.2 Build-bezogene Probleme
 
-- **构建失败**: 检查所有配置文件的 ES6 模块语法是否正确
-- **路径错误**: 确保所有文件路径使用正确的相对路径或绝对路径
+- **Build-Fehler**: Überprüfen Sie, ob die ES6-Modulsyntax in allen Konfigurationsdateien korrekt ist
+- **Pfadfehler**: Stellen Sie sicher, dass alle Dateipfade korrekte relative oder absolute Pfade verwenden
 
-### 9.3 开发建议
+### 9.3 Entwicklungsempfehlungen
 
-1. **模块化配置**: 保持配置文件的模块化结构，便于维护
-2. **文档结构**: 遵循既定的文档目录结构，确保侧边栏自动生成正常工作
-3. **多语言支持**: 新增语言时，确保在 `language.js` 中正确配置
+1. **Modulare Konfiguration**: Behalten Sie die modulare Struktur der Konfigurationsdateien bei, um die Wartung zu erleichtern
+2. **Dokumentstruktur**: Befolgen Sie die etablierte Dokumentverzeichnisstruktur, um sicherzustellen, dass die automatische Seitenleistengenerierung ordnungsgemäß funktioniert
+3. **Mehrsprachige Unterstützung**: Stellen Sie beim Hinzufügen neuer Sprachen sicher, dass diese in `language.js` korrekt konfiguriert sind
 
 ---
 
-通过以上配置说明，你应该能够根据项目需求对各个配置文件进行相应的修改和定制。如果遇到具体问题，建议查阅 [VitePress 官方文档](https://vitepress.dev/) 或 [vitepress-sidebar 插件文档](https://vitepress-sidebar.cdget.com/)。
+Mit den obigen Konfigurationserklärungen sollten Sie in der Lage sein, die verschiedenen Konfigurationsdateien entsprechend den Projektanforderungen zu ändern und anzupassen。Bei spezifischen Problemen wird empfohlen, die [offizielle VitePress-Dokumentation](https://vitepress.dev/) oder die [vitepress-sidebar Plugin-Dokumentation](https://vitepress-sidebar.cdget.com/) zu konsultieren。
 
 <Contributors />
 

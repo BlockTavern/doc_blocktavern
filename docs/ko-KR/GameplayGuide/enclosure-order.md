@@ -1,41 +1,41 @@
 ---
-title: "领地指令"
-description: BlockTavern的领地指令
+title: "영역 명령어"
+description: BlockTavern의 영역 명령어
 order: 3
 ---
 
-# 领地指令
-BlockTavern 加入了 Enclosure 领地，玩家可以使用木锄头来为自己建立保护罩，以防止其他玩家破坏。玩家可以在领地内设置一些基本的属性，例如名称，访问权限等。
+# 영역 명령어
+BlockTavern에는 Enclosure 영역이 추가되어 플레이어가 나무 괭이를 사용하여 자신만의 보호막을 설정하고 다른 플레이어의 파괴를 방지할 수 있습니다. 플레이어는 영역 내에서 이름, 접근 권한 등과 같은 기본 속성을 설정할 수 있습니다.
 
-::: tip 提示
-如果你没有GUI显示，那么你需要下载此 Enclosure MOD：[点击下载](/assets/GameplayGuide/enclosure-order/[领地]enclosure-fabric-0.4.5+1.21.jar) 
-放至mods文件夹并重启动游戏。
+::: tip 팁
+GUI가 표시되지 않는다면 Enclosure MOD를 다운로드해야 합니다: [다운로드하기](/assets/GameplayGuide/enclosure-order/[领地]enclosure-fabric-0.4.5+1.21.jar) 
+mods 폴더에 넣고 게임을 재시작하세요.
 :::
 
-## 指令
+## 명령어
 
-::: info 提示
-领地需要使用 木锄 选择对角点，然后使用指令创建领地。![木锄](/assets/GameplayGuide/enclosure-order/wooden_hoe.png "木锄")
+::: info 정보
+영역을 만들려면 나무 괭이를 사용하여 대각선 점을 선택한 다음 명령어를 사용하여 영역을 생성해야 합니다. ![나무 괭이](/assets/GameplayGuide/enclosure-order/wooden_hoe.png "나무 괭이")
 :::
 
 
-| 指令 | 描述 |
+| 명령어 | 설명 |
 | --- | --- |
-| /enclosure help | 领地帮助 |
+| /enclosure help | 영역 도움말 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order01.png) |  |
-| /enclosure create \<name\> | 创建领地 |
+| /enclosure create \<name\> | 영역 생성 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order02.png) |  |
-| /enclosure tp | 传送至领地 |
+| /enclosure tp | 영역으로 순간이동 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order03.png) |  |
-| /enclosure list | 领地列表 |
+| /enclosure list | 영역 목록 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order04.png) |  |
-| /enclosure set \<name\> | 设置领地属性(可以使用GUI) |
+| /enclosure set \<name\> | 영역 속성 설정 (GUI 사용 가능) |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order05.png) |  |
-| /enclosure gui \<name\> | GUI设置(需要客户端下载MOD) |
+| /enclosure gui \<name\> | GUI 설정 (클라이언트 MOD 다운로드 필요) |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order06.png) |  |
-| /enclosure info \<name\> | 查看领地信息 |
+| /enclosure info \<name\> | 영역 정보 확인 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order07.png) |  |
-| /enclosure remove \<name\> | 删除领地 |
+| /enclosure remove \<name\> | 영역 삭제 |
 | ![enclosure](/assets/GameplayGuide/enclosure-order/enclosure-order08.png) |  |
 
 

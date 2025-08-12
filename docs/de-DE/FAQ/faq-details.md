@@ -1,41 +1,43 @@
 ---
 title: Häufig gestellte Fragen
-description: 常见问题详情目录
+description: Verzeichnis der häufig gestellten Fragen Details
 order: 1
 ---
 
-# 常见问题 FAQ
+# Häufig gestellte Fragen FAQ
 
-欢迎来到BlockTavern的常见问题页面！这里收集了玩家们最常遇到的问题和解答。
+Willkommen auf der FAQ-Seite von BlockTavern! Hier sind die häufigsten Fragen und Antworten der Spieler gesammelt.
 
-## 如何加入服务器？
-请参考我们的 [安装教程](/zh-CN/InstallationTutorial/installation-details)。
+## Wie trete ich dem Server bei？
 
+Bitte beachten Sie unsere [Installationsanleitung](/de-DE/InstallationTutorial/installation-details)。
 
-### 服务器地址是什么？
-服务器地址已经打包在游戏内。
+### Wie lautet die Serveradresse？
 
-### 服务器支持哪些版本？
-目前仅支持Java版1.21系列版本。
+Die Serveradresse ist bereits im Spiel enthalten。
 
-### 可以建造什么？
-在遵守服务器规则的前提下，您可以自由建造。详情请查看 [建造规范](/zh-CN/GameplayGuide/server-rules)。
+### Welche Versionen unterstützt der Server？
 
-### 连接不上服务器、延迟高？
-检查自身网络卡顿，是否开启了VPN等。（服务器是优选线路）  
-自身网络无问题，建议联系服务器管理员
+Derzeit werden nur Java Edition 1.21 Serienversionen unterstützt。
 
+### Was kann ich bauen？
 
-## 无法验证身份服务器
+Unter Einhaltung der Serverregeln können Sie frei bauen。 Details finden Sie in den [Baurichtlinien](/de-DE/GameplayGuide/server-rules)。
 
-| 问题  | 错误信息 |  
-| ----- | --- |
-| 无法验证您的帐户 | 登录失败:暂时无法连接到身份验证服务器，请稍后再试 | 
-| 解决办法 | 视频内工具下载地址  | 
-| [B站视频 - 解决办法](https://www.bilibili.com/video/BV16tejetEUH/) | [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/18627/) | |
+### Kann nicht mit dem Server verbinden, hohe Latenz？
+
+Überprüfen Sie Ihre eigenen Netzwerkprobleme, ob VPN aktiviert ist usw。 (Der Server verwendet optimierte Routen)  
+Wenn Ihr Netzwerk in Ordnung ist, wenden Sie sich an den Serveradministrator
+
+## Authentifizierungsserver kann nicht verifiziert werden
+
+| Problem                                                                 | Fehlermeldung                                                                                                                               |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| Ihr Konto kann nicht verifiziert werden                                 | Anmeldung fehlgeschlagen: Kann vorübergehend keine Verbindung zum Authentifizierungsserver herstellen, bitte versuchen Sie es später erneut |
+| Lösung                                                                  | Tool-Download-Adresse im Video                                                                                                              |
+| [Bilibili Video - Lösung](https://www.bilibili.com/video/BV16tejetEUH/) | [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/18627/)                                                                              |     |
 
 ![err](/assets/FAQ/faq-details/faq-details01.png)
-
 
 <Contributors />
 

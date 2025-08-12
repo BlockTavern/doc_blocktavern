@@ -1,101 +1,101 @@
 ---
-title: 贡献指南
-description: BlockTavern 文档贡献完整指南
+title: 貢獻指南
+description: BlockTavern 文檔貢獻完整指南
 order: 1
 ---
 
-# 贡献指南
+# 貢獻指南
 
-欢迎参与 BlockTavern 文档项目！本指南将帮助您快速上手并提交高质量的贡献。
+歡迎參與 BlockTavern 文檔項目！本指南將幫助您快速上手並提交高質量的貢獻。
 
-## 环境准备
+## 環境準備
 
-### 系统要求
+### 系統要求
 
 - **Node.js** 18+ 
 - **Git** 最新版本
-- **GitHub** 账号
+- **GitHub** 帳號
 
-### 开发工具推荐
+### 開發工具推薦
 
-- **VS Code** + Markdown 扩展
-- **GitHub Desktop**（可选）
+- **VS Code** + Markdown 擴展
+- **GitHub Desktop**（可選）
 
-::: tip 图片优化
-使用本地图片前请压缩文件大小，或使用稳定的图床服务，以提升加载速度。
+::: tip 圖片優化
+使用本地圖片前請壓縮檔案大小，或使用穩定的圖床服務，以提升載入速度。
 :::
 
-## 快速开始
+## 快速開始
 
-### 1. Fork 项目
+### 1. Fork 項目
 
-1. 访问项目仓库：[doc_blocktavern](https://github.com/Re0XIAOPA/doc_blocktavern)
-2. 点击右上角 **Fork** 按钮
+1. 訪問項目倉庫：[doc_blocktavern](https://github.com/Re0XIAOPA/doc_blocktavern)
+2. 點擊右上角 **Fork** 按鈕
 3. 等待 Fork 完成
 
-### 2. 本地开发
+### 2. 本地開發
 
 ```bash
 # 克隆你的 Fork
 git clone https://github.com/YOUR_USERNAME/doc_blocktavern.git
 cd doc_blocktavern
 
-# 安装依赖
+# 安裝依賴
 npm install
 
-# 启动开发服务器
+# 啟動開發伺服器
 npm run docs:dev
 ```
 
-访问 `http://localhost:5173` 预览文档站点。
+訪問 `http://localhost:5173` 預覽文檔站點。
 
-### 3. 创建分支
+### 3. 創建分支
 
 ```bash
-# 创建功能分支
+# 創建功能分支
 git checkout -b feature/your-feature-name
 
-# 或修复分支
+# 或修復分支
 git checkout -b fix/your-fix-name
 ```
 
-## 贡献流程
+## 貢獻流程
 
-### 1. 编写内容
+### 1. 編寫內容
 
-- 在 `docs/zh-CN/` 目录下编辑或创建文档
-- 遵循 [文档编写规范](./writing-docs.md)
-- 实时预览：保存后浏览器自动刷新
+- 在 `docs/zh-CN/` 目錄下編輯或創建文檔
+- 遵循 [文檔編寫規範](./writing-docs.md)
+- 即時預覽：保存後瀏覽器自動刷新
 
 ### 2. 提交更改
 
 ```bash
-# 添加更改的文件
+# 添加更改的檔案
 git add .
 
-# 提交更改（使用规范的提交信息）
-git commit -m "docs: 添加新功能说明"
+# 提交更改（使用規範的提交信息）
+git commit -m "docs: 添加新功能說明"
 
 # 推送到你的 Fork
 git push origin feature/your-feature-name
 ```
 
-### 3. 创建 Pull Request
+### 3. 創建 Pull Request
 
-1. 访问你的 Fork 仓库页面
-2. 点击 **Compare & pull request** 按钮
-3. 填写 PR 信息：
-   - **标题**：简洁描述更改内容
-   - **描述**：详细说明更改原因和影响
-4. 点击 **Create pull request**
+1. 訪問你的 Fork 倉庫頁面
+2. 點擊 **Compare & pull request** 按鈕
+3. 填寫 PR 信息：
+   - **標題**：簡潔描述更改內容
+   - **描述**：詳細說明更改原因和影響
+4. 點擊 **Create pull request**
 
-### 4. 等待审核
+### 4. 等待審核
 
-- 项目维护者会审核你的 PR
-- 可能会要求修改或补充
-- 审核通过后会合并到主分支
+- 項目維護者會審核你的 PR
+- 可能會要求修改或補充
+- 審核通過後會合併到主分支
 
-## 提交规范
+## 提交規範
 
 ### 提交信息格式
 
@@ -107,73 +107,73 @@ git push origin feature/your-feature-name
 [optional footer]
 ```
 
-**类型（type）**：
-- `docs`: 文档更新
+**類型（type）**：
+- `docs`: 文檔更新
 - `feat`: 新功能
-- `fix`: 修复问题
-- `style`: 格式调整
-- `refactor`: 重构
+- `fix`: 修復問題
+- `style`: 格式調整
+- `refactor`: 重構
 
 **示例**：
 ```bash
-git commit -m "docs(guide): 添加安装教程"
-git commit -m "fix(config): 修复侧边栏配置错误"
-git commit -m "feat(search): 添加搜索功能"
+git commit -m "docs(guide): 添加安裝教程"
+git commit -m "fix(config): 修復側邊欄配置錯誤"
+git commit -m "feat(search): 添加搜尋功能"
 ```
 
-### 分支命名规范
+### 分支命名規範
 
-- `feature/功能名称`: 新功能开发
-- `fix/问题描述`: 问题修复
-- `docs/文档类型`: 文档更新
-- `refactor/重构内容`: 代码重构
+- `feature/功能名稱`: 新功能開發
+- `fix/問題描述`: 問題修復
+- `docs/文檔類型`: 文檔更新
+- `refactor/重構內容`: 程式碼重構
 
-## 贡献类型
+## 貢獻類型
 
-### 文档贡献
+### 文檔貢獻
 
-- **新增文档**：创建新的指南或教程
-- **完善内容**：补充现有文档的详细信息
-- **修复错误**：纠正文档中的错误信息
-- **翻译工作**：将中文文档翻译为其他语言
+- **新增文檔**：創建新的指南或教程
+- **完善內容**：補充現有文檔的詳細信息
+- **修復錯誤**：糾正文檔中的錯誤信息
+- **翻譯工作**：將中文文檔翻譯為其他語言
 
-### 技术贡献
+### 技術貢獻
 
-- **配置优化**：改进 VitePress 配置
-- **样式美化**：优化文档站点样式
-- **功能增强**：添加新的文档功能
-- **性能优化**：提升站点加载速度
+- **配置優化**：改進 VitePress 配置
+- **樣式美化**：優化文檔站點樣式
+- **功能增強**：添加新的文檔功能
+- **性能優化**：提升站點載入速度
 
-## 质量标准
+## 質量標準
 
-### 文档质量
+### 文檔質量
 
-- [ ] 内容准确无误
-- [ ] 语言表达清晰
-- [ ] 结构层次合理
-- [ ] 代码示例可运行
-- [ ] 链接有效可访问
-- [ ] 图片清晰适当
+- [ ] 內容準確無誤
+- [ ] 語言表達清晰
+- [ ] 結構層次合理
+- [ ] 程式碼示例可運行
+- [ ] 連結有效可訪問
+- [ ] 圖片清晰適當
 
-### 技术质量
+### 技術質量
 
-- [ ] 代码风格一致
-- [ ] 配置语法正确
-- [ ] 构建测试通过
+- [ ] 程式碼風格一致
+- [ ] 配置語法正確
+- [ ] 構建測試通過
 - [ ] 兼容性良好
 
-## 获得帮助
+## 獲得幫助
 
-遇到问题时可以：
+遇到問題時可以：
 
-1. **查看现有文档**：[项目结构](./project-structure.md)、[配置说明](./configuration.md)
-2. **提交 Issue**：在 GitHub 仓库中创建问题报告
-3. **联系维护者**：通过 GitHub 或社区渠道
-4. **参考资源**：[VitePress 官方文档](https://vitepress.dev/)
+1. **查看現有文檔**：[項目結構](./project-structure.md)、[配置說明](./configuration.md)
+2. **提交 Issue**：在 GitHub 倉庫中創建問題報告
+3. **聯繫維護者**：通過 GitHub 或社群渠道
+4. **參考資源**：[VitePress 官方文檔](https://vitepress.dev/)
 
 ---
 
-感谢您的贡献！每一份贡献都让 BlockTavern 文档变得更好。
+感謝您的貢獻！每一份貢獻都讓 BlockTavern 文檔變得更好。
 
 <Contributors />
 

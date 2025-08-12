@@ -1,5 +1,5 @@
 ---
 title: Installationsanleitung
-description: 服务器安装教程目录
+description: Verzeichnis der Server-Installationsanleitungen
 order: 1
 ---

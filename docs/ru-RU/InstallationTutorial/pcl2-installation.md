@@ -1,33 +1,33 @@
 ---
-title: PCL2安装
-description: 详细的PCL2启动器安装和配置教程
+title: Установка PCL2
+description: Подробное руководство по установке и настройке лаунчера PCL2
 order: 2
 ---
 
-# PCL2启动器安装
+# Установка лаунчера PCL2
 
-PCL2是一个Minecraft启动器，它可以帮助您方便地安装和管理Minecraft游戏。我们将介绍PCL2的下载和安装过程，以便连接到BlockTavern服务器。
+PCL2 - это лаунчер Minecraft, который поможет вам удобно устанавливать и управлять игрой Minecraft. Мы расскажем о процессе скачивания и установки PCL2 для подключения к серверу BlockTavern.
 
-::: tip PCL2下载地址
+::: tip Адрес для скачивания PCL2
 [https://afdian.com/p/0164034c016c11ebafcb52540025c377](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
 :::
 
 
-## 图文教程
+## Пошаговое руководство с изображениями
 
-![下载图片03](/assets/InstallationTutorial/installation-details/installation-details03.png)
+![Изображение скачивания 03](/assets/InstallationTutorial/installation-details/installation-details03.png)
 
-![下载图片13](/assets/InstallationTutorial/installation-details/installation-details13.png)
+![Изображение скачивания 13](/assets/InstallationTutorial/installation-details/installation-details13.png)
 
-![下载图片14](/assets/InstallationTutorial/installation-details/installation-details14.png)
+![Изображение скачивания 14](/assets/InstallationTutorial/installation-details/installation-details14.png)
 
-![下载图片04](/assets/InstallationTutorial/installation-details/installation-details04.png)
+![Изображение скачивания 04](/assets/InstallationTutorial/installation-details/installation-details04.png)
 
-![下载图片05](/assets/InstallationTutorial/installation-details/installation-details05.png)
+![Изображение скачивания 05](/assets/InstallationTutorial/installation-details/installation-details05.png)
 
-![下载图片06](/assets/InstallationTutorial/installation-details/installation-details06.png)
+![Изображение скачивания 06](/assets/InstallationTutorial/installation-details/installation-details06.png)
 
-![下载图片07](/assets/InstallationTutorial/installation-details/installation-details07.png)
+![Изображение скачивания 07](/assets/InstallationTutorial/installation-details/installation-details07.png)
 
 <Contributors />
 

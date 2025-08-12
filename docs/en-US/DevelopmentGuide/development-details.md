@@ -1,179 +1,143 @@
 ---
 title: Contribution Guide
-description: Complete guide for contributing to BlockTavern documentation
-order: 1
+description: Detailed contribution guide for BlockTavern documentation
+order: 2
 ---
 
 # Contribution Guide
 
-Welcome to participate in the BlockTavern documentation project! This guide will help you get started quickly and submit high-quality contributions.
+Welcome to the BlockTavern documentation contribution guide! This document will help you understand how to contribute to our documentation project.
 
 ## Environment Setup
 
 ### System Requirements
+- Node.js 18+ 
+- Git
+- Text editor (VS Code recommended)
 
-- **Node.js** 18+ 
-- **Git** latest version
-- **GitHub** account
-
-### Recommended Development Tools
-
-- **VS Code** + Markdown extensions
-- **GitHub Desktop** (optional)
-
-::: tip Image Optimization
-Please compress file sizes before using local images, or use stable image hosting services to improve loading speed.
-:::
+### Recommended Tools
+- **VS Code Extensions**:
+  - Markdown All in One
+  - VitePress snippets
+  - GitLens
+- **Image Optimization**: Use tools like TinyPNG to compress images before adding them
 
 ## Quick Start
 
-### 1. Fork the Project
-
-1. Visit the project repository: [doc_blocktavern](https://github.com/Re0XIAOPA/doc_blocktavern)
-2. Click the **Fork** button in the top right corner
-3. Wait for the Fork to complete
+### 1. Fork the Repository
+```bash
+# Clone your fork
+git clone https://github.com/your-username/doc_blocktavern.git
+cd doc_blocktavern
+```
 
 ### 2. Local Development
-
 ```bash
-# Clone your Fork
-git clone https://github.com/YOUR_USERNAME/doc_blocktavern.git
-cd doc_blocktavern
-
 # Install dependencies
 npm install
 
 # Start development server
-npm run docs:dev
+npm run dev
 ```
 
-Visit `http://localhost:5173` to preview the documentation site.
-
-### 3. Create Branch
-
+### 3. Create Feature Branch
 ```bash
-# Create feature branch
+# Create and switch to new branch
 git checkout -b feature/your-feature-name
-
-# Or fix branch
-git checkout -b fix/your-fix-name
 ```
 
-## Contribution Process
+## Contribution Flow
 
-### 1. Write Content
+### 1. Content Creation
+- Follow the [Writing Guide](/en-US/DevelopmentGuide/writing-docs) for documentation standards
+- Use proper Markdown syntax and VitePress extensions
+- Add appropriate front matter to each file
 
-- Edit or create documents in the `docs/en-US/` directory
-- Follow [Documentation Writing Standards](./writing-docs.md)
-- Real-time preview: browser automatically refreshes after saving
-
-### 2. Commit Changes
-
+### 2. Committing Changes
 ```bash
-# Add changed files
+# Add changes
 git add .
 
-# Commit changes (use standard commit messages)
-git commit -m "docs: add new feature description"
+# Commit with descriptive message
+git commit -m "docs: add new installation guide"
 
-# Push to your Fork
+# Push to your fork
 git push origin feature/your-feature-name
 ```
 
 ### 3. Create Pull Request
+- Go to the original repository
+- Click "New Pull Request"
+- Provide clear description of changes
+- Wait for review and feedback
 
-1. Visit your Fork repository page
-2. Click the **Compare & pull request** button
-3. Fill in PR information:
-   - **Title**: Concisely describe the changes
-   - **Description**: Explain in detail the reasons and impact of changes
-4. Click **Create pull request**
+## Commit Specifications
 
-### 4. Wait for Review
-
-- Project maintainers will review your PR
-- May request modifications or additions
-- Will be merged to main branch after review approval
-
-## Commit Standards
-
-### Commit Message Format
-
+### Message Format
 ```
-<type>(<scope>): <description>
+type(scope): description
 
 [optional body]
 
 [optional footer]
 ```
 
-**Types**:
-- `docs`: Documentation updates
+### Types
+- `docs`: Documentation changes
 - `feat`: New features
 - `fix`: Bug fixes
-- `style`: Format adjustments
-- `refactor`: Refactoring
+- `style`: Code style changes
+- `refactor`: Code refactoring
+- `test`: Test additions or modifications
 
-**Examples**:
+### Examples
 ```bash
-git commit -m "docs(guide): add installation tutorial"
-git commit -m "fix(config): fix sidebar configuration error"
-git commit -m "feat(search): add search functionality"
+git commit -m "docs: add FAQ section for installation issues"
+git commit -m "feat: implement new sidebar navigation"
+git commit -m "fix: correct broken links in gameplay guide"
 ```
 
-### Branch Naming Standards
-
-- `feature/feature-name`: New feature development
-- `fix/issue-description`: Issue fixes
-- `docs/document-type`: Documentation updates
-- `refactor/refactor-content`: Code refactoring
+### Branch Naming
+- `feature/description` - New features
+- `docs/description` - Documentation updates
+- `fix/description` - Bug fixes
 
 ## Contribution Types
 
-### Documentation Contributions
-
-- **New Documentation**: Create new guides or tutorials
-- **Content Enhancement**: Supplement detailed information for existing documents
-- **Error Fixes**: Correct incorrect information in documents
-- **Translation Work**: Translate Chinese documents to other languages
+### Document Contributions
+- **Content Writing**: Create new guides, tutorials, or reference materials
+- **Translation**: Translate existing content to other languages
+- **Proofreading**: Review and improve existing documentation
+- **Image Creation**: Design diagrams, screenshots, or illustrations
 
 ### Technical Contributions
-
-- **Configuration Optimization**: Improve VitePress configuration
-- **Style Enhancement**: Optimize documentation site styles
-- **Feature Enhancement**: Add new documentation features
-- **Performance Optimization**: Improve site loading speed
+- **Site Development**: Improve VitePress configuration and features
+- **Automation**: Create scripts for content management
+- **Performance**: Optimize site loading and navigation
+- **Accessibility**: Improve site accessibility features
 
 ## Quality Standards
 
-### Documentation Quality
-
-- [ ] Content is accurate and error-free
-- [ ] Language expression is clear
-- [ ] Structure hierarchy is reasonable
-- [ ] Code examples are runnable
-- [ ] Links are valid and accessible
-- [ ] Images are clear and appropriate
+### Document Quality
+- **Clarity**: Use clear, concise language
+- **Accuracy**: Ensure all information is correct and up-to-date
+- **Completeness**: Provide comprehensive coverage of topics
+- **Consistency**: Follow established style and formatting guidelines
 
 ### Technical Quality
-
-- [ ] Code style is consistent
-- [ ] Configuration syntax is correct
-- [ ] Build tests pass
-- [ ] Good compatibility
+- **Code Standards**: Follow JavaScript/TypeScript best practices
+- **Testing**: Test changes thoroughly before submission
+- **Performance**: Ensure changes don't negatively impact site performance
+- **Compatibility**: Maintain compatibility across different browsers and devices
 
 ## Getting Help
 
-When encountering problems, you can:
+If you need assistance:
 
-1. **Check Existing Documentation**: [Project Structure](./project-structure.md), [Configuration Instructions](./configuration.md)
-2. **Submit Issue**: Create issue reports in the GitHub repository
-3. **Contact Maintainers**: Through GitHub or community channels
-4. **Reference Resources**: [VitePress Official Documentation](https://vitepress.dev/)
-
----
-
-Thank you for your contribution! Every contribution makes BlockTavern documentation better.
+1. **Check Documentation**: Review existing guides and examples
+2. **Search Issues**: Look for similar problems in GitHub issues
+3. **Ask Questions**: Create a new issue with the "question" label
+4. **Join Community**: Connect with other contributors in our Discord server
 
 <Contributors />
 

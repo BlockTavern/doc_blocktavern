@@ -1,9 +1,9 @@
 ---
-title: 游玩规则
-description: 游玩规则
+title: Правила игры
+description: Правила игры
 order: 1
 ---
  
-# 服务器规范
+# Правила сервера
 
 <GitHistoryInformation />

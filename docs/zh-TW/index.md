@@ -10,20 +10,20 @@ hero:
     alt: BlockTavern Logo
   actions:
     - theme: brand
-      text: 進入教學
+      text: 進入教程
       link: /zh-TW/InstallationTutorial/installation-details
     - theme: alt
-      text: 開發指南(貢獻文件)
+      text: 開發指南(貢獻文檔)
       link: /zh-TW/DevelopmentGuide/development-details
 
 features:
   - icon: 📦
-    title: 安裝教學
+    title: 安裝教程
     details: 安裝BlockTavern遊戲，準備開始你的冒險
     link: /zh-TW/InstallationTutorial/installation-details
 
   - icon: 🎮
-    title: 遊戲指南
+    title: 遊玩指南
     details: 了解遊戲的基本規則和玩法
     link: /zh-TW/GameplayGuide/server-rules
 
@@ -36,42 +36,42 @@ features:
 ### 貢獻概要
 
 ```sh
-# 複製儲存庫
+# 克隆倉庫
 git clone https://github.com/your-username/doc_blocktavern.git
 
-# 切換到專案目錄
+# 切換到項目目錄
 cd doc_blocktavern
 
-# 安裝相依性
+# 安裝依賴
 npm install
 
-# 啟動開發伺服器
+# 啟動開發服務器
 npm run docs:dev
 
-# 新增所有變更
+# 添加所有更改
 git add .
 
 # 提交內容
-git commit -m "docs: 更新文件內容"
+git commit -m "docs: 更新文檔內容"
 
-# 推送變更
+# 推送更改
 git push origin main
 ```
 
 ::: warning 注意
-請確保你的 Node.js 版本 >= 16.0，並且已經 fork 了原始儲存庫。
+請確保你的 Node.js 版本 >= 16.0，並且已經 fork 了原倉庫。
 :::
 
 ### 貢獻流程
 
-1. **Fork 儲存庫**：點選儲存庫右上角的 "Fork" 按鈕，建立一個副本到你的 GitHub 帳號。
-2. **複製儲存庫**：使用 `git clone` 指令複製你的 fork 到本機。
-3. **進行變更**：在你的本機儲存庫進行你的文件變更。
-4. **提交變更**：使用 `git commit` 提交你的變更。
-5. **推送變更**：使用 `git push` 推送你的變更到你的 fork。
-6. **建立 Pull Request**：在原始儲存庫中，點選 "Pull Requests" 標籤，然後點選 "New Pull Request"。
-7. **填寫 Pull Request 資訊**：
-   - 標題：簡潔描述你的變更
-   - 描述：詳細說明你的變更動機和影響
-8. **提交 Pull Request**：點選 "Create Pull Request" 提交你的變更。
-9. **等待審核**：專案維護者會審核你的 Pull Request。
+1. **Fork 倉庫**：點擊倉庫右上角的 "Fork" 按鈕，創建一個副本到你的 GitHub 賬號。
+2. **克隆倉庫**：使用 `git clone` 命令克隆你的 fork 到本地。
+3. **進行更改**：在你的本地倉庫進行你的文檔更改。
+4. **提交更改**：使用 `git commit` 提交你的更改。
+5. **推送更改**：使用 `git push` 推送你的更改到你的 fork。
+6. **創建 Pull Request**：在原倉庫中，點擊 "Pull Requests" 標籤，然後點擊 "New Pull Request"。
+7. **填寫 Pull Request 信息**：
+   - 標題：簡潔描述你的更改
+   - 描述：詳細解釋你的更改動機和影響
+8. **提交 Pull Request**：點擊 "Create Pull Request" 提交你的更改。
+9. **等待審核**：項目維護者會審核你的 Pull Request。

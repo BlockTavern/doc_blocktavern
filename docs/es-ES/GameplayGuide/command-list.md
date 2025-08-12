@@ -1,48 +1,48 @@
 ---
 title: Lista de comandos
-description: 指令列表
+description: Lista de comandos
 order: 2
 ---
 
-# 基本指令
+# Comandos básicos
 
-## warp - 服务器公共地标
+## warp - Puntos de referencia públicos del servidor
 
-| 指令 | 描述 |
+| Comando | Descripción |
 | --- | --- |
-| /warp | 服务器公共地标 |
+| /warp | Puntos de referencia públicos del servidor |
 | ![warp](/assets/GameplayGuide/command-list/command-list01.png) | |
 
-## back - 返回上一次的位置
+## back - Regresar a la ubicación anterior
 
-| 指令 | 描述 |
+| Comando | Descripción |
 | --- | --- |
-| /back | 返回上一次的位置 | 
-| ![back](/assets/GameplayGuide/command-list/command-list02.png) | 当前位置 |
-| ![back](/assets/GameplayGuide/command-list/command-list03.png) | 上次位置 |
+| /back | Regresar a la ubicación anterior | 
+| ![back](/assets/GameplayGuide/command-list/command-list02.png) | Ubicación actual |
+| ![back](/assets/GameplayGuide/command-list/command-list03.png) | Ubicación anterior |
 
 
 
 
-## tpa - 申请传送至其他玩家
-| 指令 | 描述 |
+## tpa - Solicitar teletransporte a otro jugador
+| Comando | Descripción |
 | --- | --- |
-| /tpa \[玩家名\] | 申请传送至其他玩家 |
-| ![tpa](/assets/GameplayGuide/command-list/command-list04.png) | 申请传送 |
-| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | 接受/拒绝 |
+| /tpa \[nombre_jugador\] | Solicitar teletransporte a otro jugador |
+| ![tpa](/assets/GameplayGuide/command-list/command-list04.png) | Solicitar teletransporte |
+| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | Aceptar/Rechazar |
 
 
 
-## Home - 家指令
-| 指令 | 描述 |
+## Home - Comandos de hogar
+| Comando | Descripción |
 | --- | --- |
-| /home set | 设置家 |
+| /home set | Establecer hogar |
 | ![homeset](/assets/GameplayGuide/command-list/command-list06.png) | |
-| /home tp | 传送回家 |
+| /home tp | Teletransportarse a casa |
 | ![hometp](/assets/GameplayGuide/command-list/command-list07.png) | |
-| /home unset | 删除家 |
+| /home unset | Eliminar hogar |
 | ![homeunset](/assets/GameplayGuide/command-list/command-list08.png) | |
-| /home list | 家列表 |
+| /home list | Lista de hogares |
 | ![homelist](/assets/GameplayGuide/command-list/command-list09.png) | |
 
 

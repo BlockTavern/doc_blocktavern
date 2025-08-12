@@ -1,5 +1,5 @@
 ---
 title: Häufig gestellte Fragen
-description: 常见问题目录
+description: Verzeichnis der häufig gestellten Fragen
 order: 3
 ---

@@ -1,5 +1,5 @@
 ---
-title: 常见问题
-description: 常见问题目录
+title: 常見問題
+description: 常見問題目錄
 order: 3
 ---

@@ -36,7 +36,7 @@ features:
 ### 貢獻概要
 
 ```sh
-# 克隆倉庫
+# 複製儲存庫
 git clone https://github.com/your-username/doc_blocktavern.git
 
 # 切換到項目目錄
@@ -45,7 +45,7 @@ cd doc_blocktavern
 # 安裝依賴
 npm install
 
-# 啟動開發服務器
+# 啟動開發伺服器
 npm run docs:dev
 
 # 添加所有更改
@@ -59,17 +59,17 @@ git push origin main
 ```
 
 ::: warning 注意
-請確保你的 Node.js 版本 >= 16.0，並且已經 fork 了原倉庫。
+請確保你的 Node.js 版本 >= 16.0，並且已經 fork 了原儲存庫。
 :::
 
 ### 貢獻流程
 
-1. **Fork 倉庫**：點擊倉庫右上角的 "Fork" 按鈕，創建一個副本到你的 GitHub 賬號。
-2. **克隆倉庫**：使用 `git clone` 命令克隆你的 fork 到本地。
-3. **進行更改**：在你的本地倉庫進行你的文檔更改。
+1. **Fork 儲存庫**：點擊儲存庫右上角的 "Fork" 按鈕，創建一個副本到你的 GitHub 帳號。
+2. **複製儲存庫**：使用 `git clone` 命令複製你的 fork 到本地。
+3. **進行更改**：在你的本地儲存庫進行你的文檔更改。
 4. **提交更改**：使用 `git commit` 提交你的更改。
 5. **推送更改**：使用 `git push` 推送你的更改到你的 fork。
-6. **創建 Pull Request**：在原倉庫中，點擊 "Pull Requests" 標籤，然後點擊 "New Pull Request"。
+6. **創建 Pull Request**：在原儲存庫中，點擊 "Pull Requests" 標籤，然後點擊 "New Pull Request"。
 7. **填寫 Pull Request 信息**：
    - 標題：簡潔描述你的更改
    - 描述：詳細解釋你的更改動機和影響

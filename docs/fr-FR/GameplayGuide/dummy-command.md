@@ -1,21 +1,21 @@
 ---
 title: Commandes factices
-description: 假人指令
+description: Commandes factices
 order: 4
 ---
 
 
-# 假人指令
+# Commandes factices
 
-BlockTavern 加入了假人指令，玩家可以模拟出多个假的玩家，进行一些游戏测试。
+BlockTavern a intégré des commandes factices, permettant aux joueurs de simuler plusieurs faux joueurs pour effectuer des tests de jeu.
 
-## 指令列表
+## Liste des commandes
 
-| 指令 | 描述 |
+| Commande | Description |
 | --- | --- |
-| /player \<name\> spawn | 生成假人 |
+| /player \<name\> spawn | Générer un joueur factice |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command01.png) |  |
-| /player \<name\> kill | 删除假人 |
+| /player \<name\> kill | Supprimer un joueur factice |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command02.png) |  |
 
 

@@ -1,19 +1,19 @@
 ---
-title: PCL2安装
-description: 详细的PCL2启动器安装和配置教程
+title: PCL2 설치
+description: 상세한 PCL2 런처 설치 및 구성 튜토리얼
 order: 2
 ---
 
-# PCL2启动器安装
+# PCL2 런처 설치
 
-PCL2是一个Minecraft启动器，它可以帮助您方便地安装和管理Minecraft游戏。我们将介绍PCL2的下载和安装过程，以便连接到BlockTavern服务器。
+PCL2는 Minecraft 런처로, Minecraft 게임을 편리하게 설치하고 관리할 수 있도록 도와줍니다. BlockTavern 서버에 연결하기 위해 PCL2의 다운로드 및 설치 과정을 소개하겠습니다.
 
-::: tip PCL2下载地址
+::: tip PCL2 다운로드 주소
 [https://afdian.com/p/0164034c016c11ebafcb52540025c377](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
 :::
 
 
-## 图文教程
+## 그림 튜토리얼
 
 ![下载图片03](/assets/InstallationTutorial/installation-details/installation-details03.png)
 

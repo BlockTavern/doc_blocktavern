@@ -1,5 +1,5 @@
 ---
-title: Beitragsleitfaden
-description: 服务器开发贡献指南目录
+title: Beitragshandbuch
+description: Verzeichnis der Server-Entwicklungs-Beitragshandbücher
 order: 4
 ---

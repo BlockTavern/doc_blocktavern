@@ -5,113 +5,113 @@ order: 2
 ---
 
 
-# 项目结构
+# プロジェクト構造
 
-BlockTavern 文档项目采用 VitePress 构建，支持多语言国际化。
+BlockTavern ドキュメントプロジェクトは VitePress で構築され、多言語国際化をサポートしています。
 
-## 目录结构
+## ディレクトリ構造
 
 ```
 doc_blocktavern/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # GitHub Actions 自动部署
+│       └── deploy.yml          # GitHub Actions 自動デプロイ
 ├── docs/
 │   ├── .vitepress/
-│   │   ├── components/         # 模块化配置目录
-│   │   │   ├── index.js        # 配置统一导出
-│   │   │   ├── site.js         # 站点基础配置
-│   │   │   ├── language.js     # 多语言主配置
-│   │   │   ├── language/       # 各语言配置文件
-│   │   │   │   ├── zh-CN.js    # 中文配置
-│   │   │   │   ├── en-US.js    # 英文配置
-│   │   │   │   └── ...         # 其他语言
-│   │   │   ├── nav.js          # 导航配置
-│   │   │   ├── sidebar.js      # 侧边栏配置
-│   │   │   ├── social.js       # 社交链接
-│   │   │   ├── editLink.js     # 编辑链接
-│   │   │   └── mdItCustomAttrs.js # Markdown 扩展
-│   │   ├── config.mjs          # VitePress 主配置
-│   │   ├── theme/              # 主题定制
-│   │   ├── plugins/            # 插件目录
-│   │   └── cache/              # 构建缓存
-│   ├── zh-CN/                  # 中文文档
-│   │   ├── DevelopmentGuide/   # 开发指南
-│   │   ├── FAQ/                # 常见问题
-│   │   ├── GameplayGuide/      # 游戏指南
-│   │   ├── InstallationTutorial/ # 安装教程
-│   │   └── index.md            # 中文首页
-│   ├── en/                     # 英文文档
-│   ├── fr/                     # 法文文档
-│   ├── de/                     # 德文文档
-│   ├── es/                     # 西班牙文文档
-│   ├── ja/                     # 日文文档
-│   ├── ko/                     # 韩文文档
-│   ├── ru/                     # 俄文文档
-│   ├── zh-TW/                  # 繁体中文文档
-│   ├── public/                 # 静态资源
-│   │   └── logo.png            # 站点图标
-│   └── obsolete/               # 废弃文件
-├── package.json                # 项目依赖
-├── package-lock.json           # 依赖锁定
-└── README.md                   # 项目说明
+│   │   ├── components/         # モジュール化設定ディレクトリ
+│   │   │   ├── index.js        # 設定統一エクスポート
+│   │   │   ├── site.js         # サイト基本設定
+│   │   │   ├── language.js     # 多言語メイン設定
+│   │   │   ├── language/       # 各言語設定ファイル
+│   │   │   │   ├── zh-CN.js    # 中国語設定
+│   │   │   │   ├── en-US.js    # 英語設定
+│   │   │   │   └── ...         # その他の言語
+│   │   │   ├── nav.js          # ナビゲーション設定
+│   │   │   ├── sidebar.js      # サイドバー設定
+│   │   │   ├── social.js       # ソーシャルリンク
+│   │   │   ├── editLink.js     # 編集リンク
+│   │   │   └── mdItCustomAttrs.js # Markdown 拡張
+│   │   ├── config.mjs          # VitePress メイン設定
+│   │   ├── theme/              # テーマカスタマイズ
+│   │   ├── plugins/            # プラグインディレクトリ
+│   │   └── cache/              # ビルドキャッシュ
+│   ├── zh-CN/                  # 中国語ドキュメント
+│   │   ├── DevelopmentGuide/   # 開発ガイド
+│   │   ├── FAQ/                # よくある質問
+│   │   ├── GameplayGuide/      # ゲームガイド
+│   │   ├── InstallationTutorial/ # インストールチュートリアル
+│   │   └── index.md            # 中国語ホームページ
+│   ├── en/                     # 英語ドキュメント
+│   ├── fr/                     # フランス語ドキュメント
+│   ├── de/                     # ドイツ語ドキュメント
+│   ├── es/                     # スペイン語ドキュメント
+│   ├── ja/                     # 日本語ドキュメント
+│   ├── ko/                     # 韓国語ドキュメント
+│   ├── ru/                     # ロシア語ドキュメント
+│   ├── zh-TW/                  # 繁体字中国語ドキュメント
+│   ├── public/                 # 静的リソース
+│   │   └── logo.png            # サイトアイコン
+│   └── obsolete/               # 廃止ファイル
+├── package.json                # プロジェクト依存関係
+├── package-lock.json           # 依存関係ロック
+└── README.md                   # プロジェクト説明
 ```
 
-## 核心目录说明
+## コアディレクトリ説明
 
-### `.vitepress/` 配置目录
+### `.vitepress/` 設定ディレクトリ
 
-**主要文件**：
-- `config.mjs`: VitePress 主配置入口
-- `components/`: 模块化配置管理
-- `theme/`: 自定义主题样式
-- `plugins/`: 功能插件扩展
-- `cache/`: 构建缓存文件
+**主要ファイル**：
+- `config.mjs`: VitePress メイン設定エントリ
+- `components/`: モジュール化設定管理
+- `theme/`: カスタムテーマスタイル
+- `plugins/`: 機能プラグイン拡張
+- `cache/`: ビルドキャッシュファイル
 
-**配置组件** (`components/`)：
-- `site.js`: 站点基础信息
-- `language.js`: 多语言主配置
-- `language/`: 各语言具体配置
-- `sidebar.js`: 自动侧边栏生成
-- `nav.js`: 顶部导航菜单
-- `social.js`: 社交媒体链接
-- `editLink.js`: 编辑页面链接
+**設定コンポーネント** (`components/`)：
+- `site.js`: サイト基本情報
+- `language.js`: 多言語メイン設定
+- `language/`: 各言語具体的設定
+- `sidebar.js`: 自動サイドバー生成
+- `nav.js`: トップナビゲーションメニュー
+- `social.js`: ソーシャルメディアリンク
+- `editLink.js`: ページ編集リンク
 
-### 多语言文档结构
+### 多言語ドキュメント構造
 
-**支持语言**：
-- `zh-CN/`: 简体中文（主要语言）
-- `en/`: 英文
-- `zh-TW/`: 繁体中文
-- `fr/`, `de/`, `es/`, `ja/`, `ko/`, `ru/`: 其他语言
+**サポート言語**：
+- `zh-CN/`: 簡体字中国語（主要言語）
+- `en/`: 英語
+- `zh-TW/`: 繁体字中国語
+- `fr/`, `de/`, `es/`, `ja/`, `ko/`, `ru/`: その他の言語
 
-**文档模块**：
-- `DevelopmentGuide/`: 开发指南
-- `FAQ/`: 常见问题
-- `GameplayGuide/`: 游戏指南
-- `InstallationTutorial/`: 安装教程
+**ドキュメントモジュール**：
+- `DevelopmentGuide/`: 開発ガイド
+- `FAQ/`: よくある質問
+- `GameplayGuide/`: ゲームガイド
+- `InstallationTutorial/`: インストールチュートリアル
 
-### 资源目录
+### リソースディレクトリ
 
-- `public/`: 全局静态资源（图标、图片等）
-- `zh-CN/public/`: 中文专用资源
-- `obsolete/`: 已废弃的文档文件
+- `public/`: グローバル静的リソース（アイコン、画像など）
+- `zh-CN/public/`: 中国語専用リソース
+- `obsolete/`: 廃止されたドキュメントファイル
 
-## 文件命名规范
+## ファイル命名規則
 
-::: tip 命名约定
-- 文件名使用小写字母和连字符：`installation-guide.md`
-- 目录名采用 PascalCase：`DevelopmentGuide/`
-- 每个目录必须包含 `index.md` 作为首页
-- 图片资源放在对应的子目录中
+::: tip 命名規約
+- ファイル名は小文字とハイフンを使用：`installation-guide.md`
+- ディレクトリ名は PascalCase を採用：`DevelopmentGuide/`
+- 各ディレクトリには `index.md` をホームページとして含める必要があります
+- 画像リソースは対応するサブディレクトリに配置
 :::
 
-## 自动化功能
+## 自動化機能
 
-- **侧边栏自动生成**：基于文件结构和 Front Matter
-- **多语言路由**：自动处理语言切换
-- **GitHub Actions 部署**：代码推送自动构建发布
-- **本地搜索**：内置全文搜索功能
+- **サイドバー自動生成**：ファイル構造と Front Matter に基づく
+- **多言語ルーティング**：言語切り替えの自動処理
+- **GitHub Actions デプロイ**：コードプッシュ時の自動ビルド・公開
+- **ローカル検索**：内蔵全文検索機能
 
 <Contributors />
 

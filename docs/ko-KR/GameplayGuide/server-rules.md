@@ -1,9 +1,9 @@
 ---
 title: 게임 규칙
-description: 游玩规则
+description: 게임 규칙
 order: 1
 ---
  
-# 服务器规范
+# 서버 규범
 
 <GitHistoryInformation />

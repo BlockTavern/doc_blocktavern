@@ -1,18 +1,18 @@
 ---
-title: HMCL安装
-description: 详细的HMCL启动器安装和配置教程
+title: HMCL 설치
+description: 상세한 HMCL 런처 설치 및 구성 튜토리얼
 order: 3
 ---
 
-# HMCL启动器安装
+# HMCL 런처 설치
 
-本指南将详细介绍如何安装和配置HMCL启动器，以便连接到BlockTavern服务器。我们将涵盖客户端安装过程。
+이 가이드는 BlockTavern 서버에 연결하기 위해 HMCL 런처를 설치하고 구성하는 방법을 자세히 설명합니다. 클라이언트 설치 과정을 다룹니다.
 
-::: tip HMCL下载地址
+::: tip HMCL 다운로드 주소
 [https://hmcl.huangyuhui.net/download](https://hmcl.huangyuhui.net/download)
 :::
 
-## 图文教程
+## 그림 튜토리얼
 
 ![下载图片08](/assets/InstallationTutorial/installation-details/installation-details08.png)
 

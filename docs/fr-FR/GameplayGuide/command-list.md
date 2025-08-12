@@ -1,48 +1,48 @@
 ---
 title: Liste des commandes
-description: 指令列表
+description: Liste des commandes
 order: 2
 ---
 
-# 基本指令
+# Commandes de base
 
-## warp - 服务器公共地标
+## warp - Points de repère publics du serveur
 
-| 指令 | 描述 |
+| Commande | Description |
 | --- | --- |
-| /warp | 服务器公共地标 |
+| /warp | Points de repère publics du serveur |
 | ![warp](/assets/GameplayGuide/command-list/command-list01.png) | |
 
-## back - 返回上一次的位置
+## back - Retourner à la position précédente
 
-| 指令 | 描述 |
+| Commande | Description |
 | --- | --- |
-| /back | 返回上一次的位置 | 
-| ![back](/assets/GameplayGuide/command-list/command-list02.png) | 当前位置 |
-| ![back](/assets/GameplayGuide/command-list/command-list03.png) | 上次位置 |
+| /back | Retourner à la position précédente | 
+| ![back](/assets/GameplayGuide/command-list/command-list02.png) | Position actuelle |
+| ![back](/assets/GameplayGuide/command-list/command-list03.png) | Position précédente |
 
 
 
 
-## tpa - 申请传送至其他玩家
-| 指令 | 描述 |
+## tpa - Demander une téléportation vers un autre joueur
+| Commande | Description |
 | --- | --- |
-| /tpa \[玩家名\] | 申请传送至其他玩家 |
-| ![tpa](/assets/GameplayGuide/command-list/command-list04.png) | 申请传送 |
-| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | 接受/拒绝 |
+| /tpa \[nom du joueur\] | Demander une téléportation vers un autre joueur |
+| ![tpa](/assets/GameplayGuide/command-list/command-list04.png) | Demande de téléportation |
+| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | Accepter/Refuser |
 
 
 
-## Home - 家指令
-| 指令 | 描述 |
+## Home - Commandes de maison
+| Commande | Description |
 | --- | --- |
-| /home set | 设置家 |
+| /home set | Définir une maison |
 | ![homeset](/assets/GameplayGuide/command-list/command-list06.png) | |
-| /home tp | 传送回家 |
+| /home tp | Se téléporter à la maison |
 | ![hometp](/assets/GameplayGuide/command-list/command-list07.png) | |
-| /home unset | 删除家 |
+| /home unset | Supprimer une maison |
 | ![homeunset](/assets/GameplayGuide/command-list/command-list08.png) | |
-| /home list | 家列表 |
+| /home list | Liste des maisons |
 | ![homelist](/assets/GameplayGuide/command-list/command-list09.png) | |
 
 

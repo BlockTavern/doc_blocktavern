@@ -1,50 +1,46 @@
 ---
 title: Befehlsliste
-description: 指令列表
+description: Befehlsliste
 order: 2
 ---
 
-# 基本指令
+# Grundlegende Befehle
 
-## warp - 服务器公共地标
+## warp - Server öffentliche Wahrzeichen
 
-| 指令 | 描述 |
-| --- | --- |
-| /warp | 服务器公共地标 |
-| ![warp](/assets/GameplayGuide/command-list/command-list01.png) | |
+| Befehl                                                         | Beschreibung                   |
+| -------------------------------------------------------------- | ------------------------------ |
+| /warp                                                          | Server öffentliche Wahrzeichen |
+| ![warp](/assets/GameplayGuide/command-list/command-list01.png) |                                |
 
-## back - 返回上一次的位置
+## back - Zur letzten Position zurückkehren
 
-| 指令 | 描述 |
-| --- | --- |
-| /back | 返回上一次的位置 | 
-| ![back](/assets/GameplayGuide/command-list/command-list02.png) | 当前位置 |
-| ![back](/assets/GameplayGuide/command-list/command-list03.png) | 上次位置 |
+| Befehl                                                         | Beschreibung                      |
+| -------------------------------------------------------------- | --------------------------------- |
+| /back                                                          | Zur letzten Position zurückkehren |
+| ![back](/assets/GameplayGuide/command-list/command-list02.png) | Aktuelle Position                 |
+| ![back](/assets/GameplayGuide/command-list/command-list03.png) | Letzte Position                   |
 
+## tpa - Teleportation zu anderen Spielern beantragen
 
+| Befehl                                                             | Beschreibung                                 |
+| ------------------------------------------------------------------ | -------------------------------------------- |
+| /tpa \[Spielername\]                                               | Teleportation zu anderen Spielern beantragen |
+| ![tpa](/assets/GameplayGuide/command-list/command-list04.png)      | Teleportation beantragen                     |
+| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | Akzeptieren/Ablehnen                         |
 
+## Home - Zuhause-Befehle
 
-## tpa - 申请传送至其他玩家
-| 指令 | 描述 |
-| --- | --- |
-| /tpa \[玩家名\] | 申请传送至其他玩家 |
-| ![tpa](/assets/GameplayGuide/command-list/command-list04.png) | 申请传送 |
-| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | 接受/拒绝 |
-
-
-
-## Home - 家指令
-| 指令 | 描述 |
-| --- | --- |
-| /home set | 设置家 |
-| ![homeset](/assets/GameplayGuide/command-list/command-list06.png) | |
-| /home tp | 传送回家 |
-| ![hometp](/assets/GameplayGuide/command-list/command-list07.png) | |
-| /home unset | 删除家 |
-| ![homeunset](/assets/GameplayGuide/command-list/command-list08.png) | |
-| /home list | 家列表 |
-| ![homelist](/assets/GameplayGuide/command-list/command-list09.png) | |
-
+| Befehl                                                              | Beschreibung             |
+| ------------------------------------------------------------------- | ------------------------ |
+| /home set                                                           | Zuhause setzen           |
+| ![homeset](/assets/GameplayGuide/command-list/command-list06.png)   |                          |
+| /home tp                                                            | Nach Hause teleportieren |
+| ![hometp](/assets/GameplayGuide/command-list/command-list07.png)    |                          |
+| /home unset                                                         | Zuhause löschen          |
+| ![homeunset](/assets/GameplayGuide/command-list/command-list08.png) |                          |
+| /home list                                                          | Zuhause-Liste            |
+| ![homelist](/assets/GameplayGuide/command-list/command-list09.png)  |                          |
 
 <Contributors />
 

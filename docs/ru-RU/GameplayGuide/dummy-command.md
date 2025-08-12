@@ -1,21 +1,21 @@
 ---
-title: 假人指令
-description: 假人指令
+title: Команды фиктивных игроков
+description: Команды фиктивных игроков
 order: 4
 ---
 
 
-# 假人指令
+# Команды фиктивных игроков
 
-BlockTavern 加入了假人指令，玩家可以模拟出多个假的玩家，进行一些游戏测试。
+BlockTavern добавил команды фиктивных игроков, позволяющие игрокам симулировать нескольких поддельных игроков для проведения игровых тестов.
 
-## 指令列表
+## Список команд
 
-| 指令 | 描述 |
+| Команда | Описание |
 | --- | --- |
-| /player \<name\> spawn | 生成假人 |
+| /player \<name\> spawn | Создать фиктивного игрока |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command01.png) |  |
-| /player \<name\> kill | 删除假人 |
+| /player \<name\> kill | Удалить фиктивного игрока |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command02.png) |  |
 
 

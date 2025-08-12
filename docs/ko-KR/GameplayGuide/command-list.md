@@ -1,48 +1,48 @@
 ---
 title: 명령어 목록
-description: 指令列表
+description: 명령어 목록
 order: 2
 ---
 
-# 基本指令
+# 기본 명령어
 
-## warp - 服务器公共地标
+## warp - 서버 공용 랜드마크
 
-| 指令 | 描述 |
+| 명령어 | 설명 |
 | --- | --- |
-| /warp | 服务器公共地标 |
+| /warp | 서버 공용 랜드마크 |
 | ![warp](/assets/GameplayGuide/command-list/command-list01.png) | |
 
-## back - 返回上一次的位置
+## back - 이전 위치로 돌아가기
 
-| 指令 | 描述 |
+| 명령어 | 설명 |
 | --- | --- |
-| /back | 返回上一次的位置 | 
-| ![back](/assets/GameplayGuide/command-list/command-list02.png) | 当前位置 |
-| ![back](/assets/GameplayGuide/command-list/command-list03.png) | 上次位置 |
+| /back | 이전 위치로 돌아가기 | 
+| ![back](/assets/GameplayGuide/command-list/command-list02.png) | 현재 위치 |
+| ![back](/assets/GameplayGuide/command-list/command-list03.png) | 이전 위치 |
 
 
 
 
-## tpa - 申请传送至其他玩家
-| 指令 | 描述 |
+## tpa - 다른 플레이어에게 텔레포트 신청
+| 명령어 | 설명 |
 | --- | --- |
-| /tpa \[玩家名\] | 申请传送至其他玩家 |
-| ![tpa](/assets/GameplayGuide/command-list/command-list04.png) | 申请传送 |
-| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | 接受/拒绝 |
+| /tpa \[플레이어명\] | 다른 플레이어에게 텔레포트 신청 |
+| ![tpa](/assets/GameplayGuide/command-list/command-list04.png) | 텔레포트 신청 |
+| ![tpareply](/assets/GameplayGuide/command-list/command-list05.png) | 수락/거절 |
 
 
 
-## Home - 家指令
-| 指令 | 描述 |
+## Home - 집 명령어
+| 명령어 | 설명 |
 | --- | --- |
-| /home set | 设置家 |
+| /home set | 집 설정 |
 | ![homeset](/assets/GameplayGuide/command-list/command-list06.png) | |
-| /home tp | 传送回家 |
+| /home tp | 집으로 텔레포트 |
 | ![hometp](/assets/GameplayGuide/command-list/command-list07.png) | |
-| /home unset | 删除家 |
+| /home unset | 집 삭제 |
 | ![homeunset](/assets/GameplayGuide/command-list/command-list08.png) | |
-| /home list | 家列表 |
+| /home list | 집 목록 |
 | ![homelist](/assets/GameplayGuide/command-list/command-list09.png) | |
 
 

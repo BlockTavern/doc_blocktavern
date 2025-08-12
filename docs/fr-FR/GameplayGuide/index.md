@@ -1,5 +1,5 @@
 ---
 title: Guide de jeu
-description: 游戏指南目录
+description: Répertoire des guides de jeu
 order: 2
 ---

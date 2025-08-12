@@ -1,21 +1,21 @@
 ---
 title: Comandos ficticios
-description: 假人指令
+description: Comandos ficticios
 order: 4
 ---
 
 
-# 假人指令
+# Comandos ficticios
 
-BlockTavern 加入了假人指令，玩家可以模拟出多个假的玩家，进行一些游戏测试。
+BlockTavern ha agregado comandos ficticios, los jugadores pueden simular múltiples jugadores falsos para realizar algunas pruebas de juego.
 
-## 指令列表
+## Lista de comandos
 
-| 指令 | 描述 |
+| Comando | Descripción |
 | --- | --- |
-| /player \<name\> spawn | 生成假人 |
+| /player \<name\> spawn | Generar jugador ficticio |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command01.png) |  |
-| /player \<name\> kill | 删除假人 |
+| /player \<name\> kill | Eliminar jugador ficticio |
 | ![player](/assets/GameplayGuide/dummy-command/dummy-command02.png) |  |
 
 

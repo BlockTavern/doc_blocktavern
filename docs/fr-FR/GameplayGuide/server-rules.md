@@ -1,9 +1,9 @@
 ---
 title: Règles de jeu
-description: 游玩规则
+description: Règles de jeu
 order: 1
 ---
  
-# 服务器规范
+# Règles du serveur
 
 <GitHistoryInformation />
