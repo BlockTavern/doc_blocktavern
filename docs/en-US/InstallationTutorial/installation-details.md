@@ -1,6 +1,6 @@
 ---
 title: Pre-installation Preparation
-description: Pre-installation preparation: BlockTavern game
+description: Pre-installation preparation for BlockTavern game
 order: 1
 ---
 
