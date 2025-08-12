@@ -5,6 +5,16 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范。
 
+## [1.0.9](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.8...v1.0.9) (2025-08-12)
+
+### 🐛 Bug 修复
+
+* 修复所有翻译&关闭八个语言 ([fd41cee](https://github.com/Re0XIAOPA/doc_blocktavern/commit/fd41cee70d1949380f19a3ef56c533099b99a416))
+
+### 📚 文档更新
+
+* docs ([53cfc17](https://github.com/Re0XIAOPA/doc_blocktavern/commit/53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16))
+
 ## [1.0.8](https://github.com/Re0XIAOPA/doc_blocktavern/compare/v1.0.7...v1.0.8) (2025-08-12)
 
 ### 🐛 Bug 修复
