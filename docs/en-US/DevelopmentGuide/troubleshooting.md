@@ -1,344 +1,145 @@
 ---
-title: Troubleshooting Guide
-description: Common issues and solutions for VitePress documentation development
-order: 3
+title: Troubleshooting
+description: Server troubleshooting directory
+order: 5
 ---
 
-# Troubleshooting Guide
+# Troubleshooting
 
-This guide covers common issues you might encounter while developing or maintaining the VitePress documentation site, along with their solutions.
+Quickly resolve common issues in BlockTavern documentation development.
 
-## 1. Development Environment Issues
+## Development Issues
 
-### Node.js Version Compatibility
+### Server Startup Failure
 
-**Problem**: Build fails with Node.js version errors
-
-**Solution**:
 ```bash
-# Check current Node.js version
-node --version
-
-# Install Node.js 18+ if needed
-# Use nvm (recommended)
-nvm install 18
-nvm use 18
-
-# Or download from official website
-# https://nodejs.org/
+npm run docs:dev
 ```
-
-### Dependency Installation Issues
-
-**Problem**: `npm install` fails or shows dependency conflicts
 
 **Solutions**:
-```bash
-# Clear npm cache
-npm cache clean --force
+- Check Node.js version (recommended 18+)
+- Reinstall dependencies: `rm -rf node_modules && npm install`
+- Check port occupation: `netstat -ano | findstr :5173`
 
-# Delete node_modules and package-lock.json
-rm -rf node_modules package-lock.json
-
-# Reinstall dependencies
-npm install
-
-# If issues persist, try using exact versions
-npm ci
-```
-
-### Port Already in Use
-
-**Problem**: Development server can't start due to port conflicts
-
-**Solution**:
-```bash
-# Find process using port 5173
-lsof -i :5173
-
-# Kill the process
-kill -9 <PID>
-
-# Or use a different port
-npm run dev -- --port 3000
-```
-
-## 2. Build and Deployment Issues
-
-### Build Failures
-
-**Problem**: `npm run build` fails with various errors
-
-**Common Solutions**:
-
-1. **Check for syntax errors in Markdown files**:
-   ```bash
-   # Use markdownlint to check syntax
-   npx markdownlint docs/**/*.md
-   ```
-
-2. **Verify front matter format**:
-   ```yaml
-   ---
-   title: Your Title
-   description: Your description
-   order: 1
-   ---
-   ```
-
-3. **Check for broken internal links**:
-   ```bash
-   # Use markdown-link-check
-   npx markdown-link-check docs/**/*.md
-   ```
-
-### Memory Issues During Build
-
-**Problem**: Build process runs out of memory
-
-**Solution**:
-```bash
-# Increase Node.js memory limit
-node --max-old-space-size=4096 node_modules/.bin/vitepress build docs
-
-# Or set environment variable
-export NODE_OPTIONS="--max-old-space-size=4096"
-npm run build
-```
-
-## 3. Content and Formatting Issues
-
-### Markdown Rendering Problems
-
-**Problem**: Markdown content not rendering correctly
-
-**Common Causes and Solutions**:
-
-1. **Incorrect heading hierarchy**:
-   ```markdown
-   # H1 - Only one per page
-   ## H2 - Main sections
-   ### H3 - Subsections
-   # Don't skip levels!
-   ```
-
-2. **Malformed code blocks**:
-   ```markdown
-   \`\`\`javascript
-   // Ensure proper language specification
-   console.log('Hello World');
-   \`\`\`
-   ```
-
-3. **Broken image links**:
-   ```markdown
-   ![Alt text](/assets/images/example.png)
-   # Ensure image exists in public/assets/images/
-   ```
-
-### VitePress Extensions Not Working
-
-**Problem**: Custom containers or other VitePress features not rendering
-
-**Solution**:
-```markdown
-::: tip
-Make sure there's a space after the colon
-:::
-
-::: warning
-Check for proper closing syntax
-:::
-```
-
-## 4. Debugging Techniques
-
-### Browser Developer Tools
-
-1. **Console Errors**: Check browser console for JavaScript errors
-2. **Network Tab**: Verify all resources are loading correctly
-3. **Elements Tab**: Inspect HTML structure and CSS styles
-
-### VitePress Debug Mode
+### Build Failure
 
 ```bash
-# Enable debug mode
-DEBUG=vitepress:* npm run dev
-
-# Or for build
-DEBUG=vitepress:* npm run build
+npm run docs:build
 ```
 
-### Build Debugging
+**Solutions**:
+- Check Markdown syntax errors
+- Verify all internal links are valid
+- Check configuration file syntax
 
+### Page Anomalies
+
+**Common Symptoms**: Content display errors, style anomalies
+
+**Solutions**:
+- Clear browser cache (Ctrl+F5)
+- Check Front Matter format
+- Verify image path correctness
+
+### Search Failure
+
+**Solutions**:
+- Rebuild the project
+- Check browser console errors
+- Verify search configuration
+
+## Debugging Techniques
+
+### Development Debugging
+
+**Browser Developer Tools** (F12):
+- Console to view error messages
+- Network panel to check resource loading
+- Elements panel to debug styles
+
+**VitePress Debug Mode**:
 ```bash
-# Verbose build output
-npm run build -- --debug
+# Windows
+set DEBUG=vitepress:* && npm run docs:dev
 
-# Check build output directory
-ls -la docs/.vitepress/dist/
+# Linux/Mac
+DEBUG=vitepress:* npm run docs:dev
+```
+
+**Build Debugging**:
+```bash
+npm run docs:build -- --debug
 ```
 
 ### Production Debugging
 
-1. **Serve built files locally**:
-   ```bash
-   npm run preview
-   ```
-
-2. **Check file paths and routing**:
-   ```bash
-   # Verify all files are generated
-   find docs/.vitepress/dist -name "*.html"
-   ```
-
-### File Inspection
-
+**Local Preview**:
 ```bash
-# Check file encoding
-file -I docs/path/to/file.md
-
-# Verify line endings
-cat -A docs/path/to/file.md | head
+npm run docs:build
+npm run docs:preview
 ```
+
+**File Inspection**:
+- Build output: `docs/.vitepress/dist/`
+- Static resources: `docs/.vitepress/dist/assets/`
+- Page files: Check HTML structure
 
 ### Common Tools
 
-- **markdown-link-check**: Verify internal and external links
-- **markdownlint**: Check Markdown syntax and style
-- **Lighthouse**: Analyze site performance and accessibility
+- **Link Checking**: Use `markdown-link-check` to verify links
+- **Syntax Checking**: Use `markdownlint` to check formatting
+- **Performance Analysis**: Browser Lighthouse tool
 
-## 5. Configuration Issues
+## Configuration Issues
 
 ### Sidebar Not Displaying
 
-**Problem**: Sidebar navigation not showing or incomplete
+**Cause**: File structure does not comply with auto-generation rules
 
 **Solutions**:
+- Ensure directories contain `index.md` files
+- Check file naming conventions (lowercase + hyphens)
+- Verify Front Matter format is correct
 
-1. **Check directory structure**:
-   ```
-   docs/
-   ├── en-US/
-   │   ├── index.md
-   │   ├── Guide/
-   │   │   ├── index.md
-   │   │   └── getting-started.md
-   ```
-
-2. **Verify front matter**:
-   ```yaml
-   ---
-   title: Page Title
-   order: 1
-   ---
-   ```
-
-3. **Check vitepress-sidebar configuration**:
-   ```javascript
-   // Ensure correct paths in config
-   generateSidebar({
-     documentRootPath: '/docs',
-     scanStartPath: null,
-     // ...
-   })
-   ```
-
-### Multilingual Switching Issues
-
-**Problem**: Language switching not working properly
+### Multilingual Switching Anomalies
 
 **Solutions**:
+- Check `language.js` configuration
+- Ensure consistent directory structure across languages
+- Verify path mapping is correct
 
-1. **Verify locale configuration**:
-   ```javascript
-   locales: {
-     root: { label: '简体中文', lang: 'zh-CN' },
-     'en-US': { label: 'English', lang: 'en-US' }
-   }
-   ```
-
-2. **Check directory structure matches locale keys**
-
-3. **Update internal links for each language**:
-   ```markdown
-   [Link](/en-US/guide/getting-started)
-   [链接](/zh-CN/guide/getting-started)
-   ```
-
-### Image Display Issues
-
-**Problem**: Images not loading or displaying incorrectly
+### Images Cannot Display
 
 **Solutions**:
+- Use relative paths: `./images/pic.png`
+- Check if files exist in `public/` directory
+- Verify filename case matching
 
-1. **Use correct paths**:
-   ```markdown
-   ![Image](/assets/images/example.png)
-   # File should be in docs/public/assets/images/example.png
-   ```
+## Deployment Issues
 
-2. **Check file permissions and case sensitivity**
-
-3. **Optimize image sizes**:
-   ```bash
-   # Use tools like imagemin
-   npx imagemin docs/public/assets/images/*.png --out-dir=docs/public/assets/images/optimized/
-   ```
-
-## 6. Deployment Issues
-
-### GitHub Pages Deployment Failures
-
-**Problem**: Site not deploying to GitHub Pages
+### GitHub Pages Deployment Failure
 
 **Solutions**:
+- Check GitHub Actions workflow configuration
+- Ensure `base` path is set correctly
+- Verify repository permissions and branch settings
 
-1. **Check base URL configuration**:
-   ```javascript
-   export default {
-     base: '/repository-name/',
-     // ...
-   }
-   ```
-
-2. **Verify GitHub Actions workflow**:
-   ```yaml
-   # .github/workflows/deploy.yml
-   name: Deploy VitePress site to Pages
-   # Check workflow syntax and permissions
-   ```
-
-3. **Check repository settings**:
-   - Enable GitHub Pages
-   - Set correct source branch
-   - Verify custom domain settings
-
-### Static Resource 404 Errors
-
-**Problem**: CSS, JS, or image files returning 404 errors
+### Static Resources 404
 
 **Solutions**:
+- Check if `base` configuration matches deployment path
+- Ensure resource files are in `public/` directory
+- Verify build output completeness
 
-1. **Verify base URL in production**
-2. **Check file paths in build output**
-3. **Ensure proper asset handling**:
-   ```javascript
-   // In config
-   assetsDir: 'assets',
-   // Verify assets are copied correctly
-   ```
+## Quick Diagnosis
 
-## 7. Quick Diagnosis
-
-When encountering issues, follow this checklist:
-
-1. **Check console for errors**
-2. **Verify file paths and naming**
-3. **Test in clean environment**
-4. **Check recent changes in git history**
-5. **Compare with working examples**
-6. **Search existing issues and documentation**
+::: tip Problem Troubleshooting Steps
+1. **View Error Messages**: Console/terminal output
+2. **Check File Structure**: Ensure compliance with specifications
+3. **Verify Configuration**: Syntax and path correctness
+4. **Clean and Rebuild**: Delete cache and rebuild
+5. **Compare Working Version**: Git difference comparison
+:::
 
 <Contributors />
 

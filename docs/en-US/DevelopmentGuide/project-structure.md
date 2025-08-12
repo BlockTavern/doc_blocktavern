@@ -1,13 +1,13 @@
 ---
 title: Project Structure
-description: Server Project Structure Directory
+description: Server project structure directory
 order: 2
 ---
 
 
 # Project Structure
 
-BlockTavern documentation project is built with VitePress and supports multi-language internationalization.
+The BlockTavern documentation project is built with VitePress and supports multilingual internationalization.
 
 ## Directory Structure
 
@@ -22,7 +22,7 @@ doc_blocktavern/
 │   │   │   ├── index.js        # Configuration unified export
 │   │   │   ├── site.js         # Site basic configuration
 │   │   │   ├── language.js     # Multi-language main configuration
-│   │   │   ├── language/       # Language configuration files
+│   │   │   ├── language/       # Configuration files for each language
 │   │   │   │   ├── zh-CN.js    # Chinese configuration
 │   │   │   │   ├── en-US.js    # English configuration
 │   │   │   │   └── ...         # Other languages
@@ -65,7 +65,7 @@ doc_blocktavern/
 - `config.mjs`: VitePress main configuration entry
 - `components/`: Modular configuration management
 - `theme/`: Custom theme styles
-- `plugins/`: Feature plugin extensions
+- `plugins/`: Functional plugin extensions
 - `cache/`: Build cache files
 
 **Configuration Components** (`components/`):
@@ -77,10 +77,10 @@ doc_blocktavern/
 - `social.js`: Social media links
 - `editLink.js`: Edit page links
 
-### Multi-language Documentation Structure
+### Multilingual Documentation Structure
 
 **Supported Languages**:
-- `zh-CN/`: Simplified Chinese (main language)
+- `zh-CN/`: Simplified Chinese (primary language)
 - `en/`: English
 - `zh-TW/`: Traditional Chinese
 - `fr/`, `de/`, `es/`, `ja/`, `ko/`, `ru/`: Other languages
@@ -108,10 +108,10 @@ doc_blocktavern/
 
 ## Automation Features
 
-- **Automatic Sidebar Generation**: Based on file structure and Front Matter
-- **Multi-language Routing**: Automatic handling of language switching
-- **GitHub Actions Deployment**: Automatic build and publish on code push
-- **Local Search**: Built-in full-text search functionality
+- **Automatic sidebar generation**: Based on file structure and Front Matter
+- **Multilingual routing**: Automatic handling of language switching
+- **GitHub Actions deployment**: Automatic build and publish on code push
+- **Local search**: Built-in full-text search functionality
 
 <Contributors />
 

@@ -19,7 +19,7 @@ hero:
 features:
   - icon: 📦
     title: Installation Tutorial
-    details: Install BlockTavern game and prepare to start your adventure
+    details: Install the BlockTavern game and prepare to start your adventure
     link: /en-US/InstallationTutorial/installation-details
 
   - icon: 🎮
@@ -36,16 +36,16 @@ features:
 ### Contribution Overview
 
 ```sh
-# Clone repository
+# Clone the repository
 git clone https://github.com/your-username/doc_blocktavern.git
 
-# Switch to project directory
+# Switch to the project directory
 cd doc_blocktavern
 
 # Install dependencies
 npm install
 
-# Start development server
+# Start the development server
 npm run docs:dev
 
 # Add all changes
@@ -59,13 +59,13 @@ git push origin main
 ```
 
 ::: warning Note
-Please ensure your Node.js version >= 16.0, and you have already forked the original repository.
+Please ensure your Node.js version >= 16.0 and you have already forked the original repository.
 :::
 
 ### Contribution Process
 
 1. **Fork Repository**: Click the "Fork" button in the upper right corner of the repository to create a copy to your GitHub account.
-2. **Clone Repository**: Use the `git clone` command to clone your fork to local machine.
+2. **Clone Repository**: Use the `git clone` command to clone your fork to local.
 3. **Make Changes**: Make your documentation changes in your local repository.
 4. **Commit Changes**: Use `git commit` to commit your changes.
 5. **Push Changes**: Use `git push` to push your changes to your fork.

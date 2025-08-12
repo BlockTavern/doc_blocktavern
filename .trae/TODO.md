@@ -1,9 +1,9 @@
 # TODO:
 
-- [x] tw-1: 修復zh-TW/FAQ/faq-details.md的簡體中文標題和內容 (priority: High)
-- [x] tw-2: 修復zh-TW/DevelopmentGuide/development-details.md的簡體中文標題和描述 (priority: High)
-- [x] tw-3: 檢查並修復zh-TW/DevelopmentGuide/writing-docs.md的混合簡繁體內容 (priority: High)
-- [x] hk-1: 檢查並修復zh-HK/DevelopmentGuide/writing-docs.md的混合簡繁體內容 (priority: High)
-- [x] tw-4: 全面檢查zh-TW目錄下其他文件的翻譯完整性 (priority: Medium)
-- [x] hk-2: 全面檢查zh-HK目錄下所有文件的翻譯完整性 (priority: Medium)
-- [x] verify-1: 驗證所有修復後的繁體中文文件格式和鏈接正確性 (priority: Low)
+- [x] en-1: 重新翻译en-US/index.md，确保与zh-CN/index.md内容完全对应 (priority: High)
+- [x] en-2: 重新翻译en-US/DevelopmentGuide/目录下的5个文件，确保与zh-CN版本内容一致 (priority: High)
+- [x] en-3: 重新翻译en-US/FAQ/目录下的2个文件，确保与zh-CN版本内容一致 (priority: High)
+- [x] en-4: 重新翻译en-US/GameplayGuide/目录下的5个文件，确保与zh-CN版本内容一致 (priority: High)
+- [x] en-5: 重新翻译en-US/InstallationTutorial/目录下的4个文件，确保与zh-CN版本内容一致 (priority: High)
+- [x] en-6: 验证所有重新翻译的英文文件的YAML front matter和内部链接正确性 (priority: Medium)
+- [x] en-7: 进行最终质量检查，确保英文版本与简体中文版本结构和内容完全对应 (priority: Low)

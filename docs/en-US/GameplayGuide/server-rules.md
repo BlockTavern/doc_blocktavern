@@ -1,11 +1,9 @@
 ---
-title: Gameplay Rules
-description: Official rules and guidelines for playing on BlockTavern server
-order: 4
+title: Game Rules
+description: Game Rules
+order: 1
 ---
-
-# Gameplay Rules
-
-## Server Rules
+ 
+# Server Rules
 
 <GitHistoryInformation />
