@@ -1,64 +1,61 @@
 <template>
-  <div class="git-history-information">
-    <!-- 统一的头部区域 -->
-    <div class="history-header" @click="toggleHistory">
-      <div class="header-left">
-        <Clock class="icon" :size="16" />
-        <span class="last-updated-text">最后编辑时间:</span>
-        <time v-if="lastCommit" :datetime="lastCommit.commit.author.date" class="last-updated-time">
-          {{ formatDate(lastCommit.commit.author.date) }}
-        </time>
-        <span v-else class="last-updated-time">未知</span>
+  <div class="changelog-wrapper">
+    <h2 class="changelog-title">{{ texts.title }}</h2>
+    <div class="changelog">
+    <div class="changelog-header" @click="toggleExpanded">
+      <div class="last-edited">
+        <svg class="clock-icon" viewBox="0 0 16 16" width="16" height="16">
+          <path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"></path>
+        </svg>
+        <span v-if="lastCommit">{{ texts.lastEdited }} {{ formatRelativeTime(lastCommit.commit.author.date) }}</span>
+        <span v-else>{{ texts.loading }}</span>
       </div>
-      <div class="header-right">
-        <History class="icon" :size="16" />
-        <span class="history-title">查看完整历史记录</span>
-        <ChevronDown class="toggle-icon" :size="14" :class="{ 'expanded': isHistoryExpanded }" />
+      <div class="view-history">
+        <svg class="list-icon" viewBox="0 0 16 16" width="16" height="16">
+          <path fill="currentColor" d="M2 4h8v1H2V4zm0 3h8v1H2V7zm0 3h8v1H2v-1z"/>
+        </svg>
+        <span class="view-history-link">
+          {{ isExpanded ? texts.collapse : texts.viewFullHistory }}
+        </span>
+        <svg class="chevron-icon" :class="{ 'rotated': isExpanded }" viewBox="0 0 16 16" width="16" height="16">
+          <path fill="currentColor" d="M4.427 9.573l3.396-3.396a.25.25 0 01.354 0l3.396 3.396a.25.25 0 01-.177.427H4.604a.25.25 0 01-.177-.427z"/>
+        </svg>
       </div>
     </div>
-
-    <!-- 文件历史部分 -->
-    <div class="file-history-section">
-      
-      <div class="history-content" :class="{ 'expanded': isHistoryExpanded }">
-        <div v-if="historyLoading" class="loading">
-          <span class="loading-spinner"></span>
-          加载文件历史中...
-        </div>
-        <div v-else-if="historyError" class="error">
-          <AlertTriangle class="icon" :size="16" />
-          加载文件历史失败: {{ historyError }}
-        </div>
-        <div v-else class="history-list">
-          <div v-for="commit in fileHistory" :key="commit.sha" class="history-item">
-            <div class="commit-info">
-              <div class="commit-left">
-                <ExternalLink class="commit-icon" :size="14" />
-                <a 
-                  :href="commit.html_url" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  class="commit-sha"
-                >
-                  {{ commit.sha.substring(0, 7) }}
-                </a>
-                <span class="commit-separator">-</span>
-                <span class="commit-type">{{ getCommitType(commit.commit.message) }}</span>
-                <span class="commit-scope" v-if="getCommitScope(commit.commit.message)">
-                  ({{ getCommitScope(commit.commit.message) }})
-                </span>
-                <span class="commit-separator">:</span>
-                <span class="commit-description">{{ getCommitDescription(commit.commit.message) }}</span>
-              </div>
-              <div class="commit-right">
-                <span class="commit-number">(#{{ commit.sha.substring(0, 3) }})</span>
-                <span class="commit-date">{{ formatDate(commit.commit.author.date) }}</span>
-              </div>
-            </div>
+    
+    <div v-if="historyLoading" class="loading">{{ texts.loading }}</div>
+    <div v-else-if="historyError" class="error">{{ historyError }}</div>
+    <div v-else class="changelog-content" :class="{ 'expanded': isExpanded }">
+      <div v-for="(commit, index) in displayedCommits" :key="commit.sha" class="changelog-entry" :class="{ 'visible-entry': isExpanded }" :style="{ 'transition-delay': isExpanded ? `${index * 20}ms` : `${(displayedCommits.length - 1 - index) * 15}ms` }">
+        <!-- 提交条目 -->
+        <div class="commit-entry" :class="{ 'version-entry': isVersionCommit(commit) }">
+          <div class="commit-indicator">
+            <svg v-if="isVersionCommit(commit)" class="version-icon" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 2.5L13 7.5H3L8 2.5Z"/>
+            </svg>
+            <div v-else class="commit-dot"></div>
+          </div>
+          <div class="commit-content">
+            <a class="commit-hash" :href="commit.html_url" target="_blank">
+              {{ commit.sha.substring(0, 7) }}
+            </a>
+            <span class="commit-separator">-</span>
+            <span class="commit-type" :class="`type-${getCommitType(commit.commit.message)}`">
+              {{ getCommitType(commit.commit.message) }}
+            </span>
+            <span v-if="getCommitScope(commit.commit.message)" class="commit-scope">
+              ({{ getCommitScope(commit.commit.message) }})
+            </span>
+            <span class="commit-message">{{ getCommitDescription(commit.commit.message) }}</span>
+            <a v-if="getCommitPR(commit.commit.message)" class="commit-pr" :href="`https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/pull/${getCommitPR(commit.commit.message).substring(1)}`" target="_blank">
+              ({{ getCommitPR(commit.commit.message) }})
+            </a>
+            <span class="commit-time">{{ formatCommitTime(commit.commit.author.date) }}</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -70,21 +67,424 @@ import { Clock, GitCommit, User, ExternalLink, ChevronDown, ChevronUp, Loader2, 
 
 const { page, site } = useData()
 
+// 多语言文本配置
+const i18nTexts = {
+  'zh-CN': {
+    title: '# 更新日志',
+    lastEdited: '最后编辑',
+    viewFullHistory: '查看完整历史',
+    collapse: '收起',
+    loading: '加载中...',
+    timeFormat: {
+      dayAgo: '{n} 天前',
+      daysAgo: '{n} 天前',
+      weekAgo: '{n} 周前',
+      weeksAgo: '{n} 周前',
+      monthAgo: '{n} 个月前',
+      monthsAgo: '{n} 个月前',
+      yearAgo: '超过 {n} 年前',
+      yearsAgo: '超过 {n} 年前',
+      onDayAgo: '于 {n} 天前',
+      onDaysAgo: '于 {n} 天前',
+      onWeekAgo: '于 {n} 周前',
+      onWeeksAgo: '于 {n} 周前',
+      onMonthAgo: '于 {n} 个月前',
+      onMonthsAgo: '于 {n} 个月前',
+      onYearAgo: '于超过 {n} 年前',
+      onYearsAgo: '于超过 {n} 年前'
+    },
+    errors: {
+      noFilePath: '无法获取当前文件路径',
+      fetchFailed: '获取文件历史失败',
+      unknown: '未知错误'
+    }
+  },
+  'zh-TW': {
+    title: '# 更新日誌',
+    lastEdited: '最後編輯',
+    viewFullHistory: '查看完整歷史',
+    collapse: '收起',
+    loading: '載入中...',
+    timeFormat: {
+      dayAgo: '{n} 天前',
+      daysAgo: '{n} 天前',
+      weekAgo: '{n} 週前',
+      weeksAgo: '{n} 週前',
+      monthAgo: '{n} 個月前',
+      monthsAgo: '{n} 個月前',
+      yearAgo: '超過 {n} 年前',
+      yearsAgo: '超過 {n} 年前',
+      onDayAgo: '於 {n} 天前',
+      onDaysAgo: '於 {n} 天前',
+      onWeekAgo: '於 {n} 週前',
+      onWeeksAgo: '於 {n} 週前',
+      onMonthAgo: '於 {n} 個月前',
+      onMonthsAgo: '於 {n} 個月前',
+      onYearAgo: '於超過 {n} 年前',
+      onYearsAgo: '於超過 {n} 年前'
+    },
+    errors: {
+      noFilePath: '無法取得目前檔案路徑',
+      fetchFailed: '取得檔案歷史失敗',
+      unknown: '未知錯誤'
+    }
+  },
+  'zh-HK': {
+    title: '# 更新日誌',
+    lastEdited: '最後編輯',
+    viewFullHistory: '查看完整歷史',
+    collapse: '收起',
+    loading: '載入中...',
+    timeFormat: {
+      dayAgo: '{n} 日前',
+      daysAgo: '{n} 日前',
+      weekAgo: '{n} 星期前',
+      weeksAgo: '{n} 星期前',
+      monthAgo: '{n} 個月前',
+      monthsAgo: '{n} 個月前',
+      yearAgo: '超過 {n} 年前',
+      yearsAgo: '超過 {n} 年前',
+      onDayAgo: '於 {n} 日前',
+      onDaysAgo: '於 {n} 日前',
+      onWeekAgo: '於 {n} 星期前',
+      onWeeksAgo: '於 {n} 星期前',
+      onMonthAgo: '於 {n} 個月前',
+      onMonthsAgo: '於 {n} 個月前',
+      onYearAgo: '於超過 {n} 年前',
+      onYearsAgo: '於超過 {n} 年前'
+    },
+    errors: {
+      noFilePath: '無法取得目前檔案路徑',
+      fetchFailed: '取得檔案歷史失敗',
+      unknown: '未知錯誤'
+    }
+  },
+  'en-US': {
+    title: '# Changelog',
+    lastEdited: 'Last edited',
+    viewFullHistory: 'View full history',
+    collapse: 'Collapse',
+    loading: 'Loading...',
+    timeFormat: {
+      dayAgo: '{n} day ago',
+      daysAgo: '{n} days ago',
+      weekAgo: '{n} week ago',
+      weeksAgo: '{n} weeks ago',
+      monthAgo: '{n} month ago',
+      monthsAgo: '{n} months ago',
+      yearAgo: 'over {n} year ago',
+      yearsAgo: 'over {n} years ago',
+      onDayAgo: 'on {n} day ago',
+      onDaysAgo: 'on {n} days ago',
+      onWeekAgo: 'on {n} week ago',
+      onWeeksAgo: 'on {n} weeks ago',
+      onMonthAgo: 'on {n} month ago',
+      onMonthsAgo: 'on {n} months ago',
+      onYearAgo: 'on over {n} year ago',
+      onYearsAgo: 'on over {n} years ago'
+    },
+    errors: {
+      noFilePath: 'Unable to get current file path',
+      fetchFailed: 'Failed to fetch file history',
+      unknown: 'Unknown error'
+    }
+  },
+  'ja-JP': {
+    title: '# 変更履歴',
+    lastEdited: '最終編集',
+    viewFullHistory: '完全な履歴を表示',
+    collapse: '折りたたむ',
+    loading: '読み込み中...',
+    timeFormat: {
+      dayAgo: '{n}日前',
+      daysAgo: '{n}日前',
+      weekAgo: '{n}週間前',
+      weeksAgo: '{n}週間前',
+      monthAgo: '{n}ヶ月前',
+      monthsAgo: '{n}ヶ月前',
+      yearAgo: '{n}年以上前',
+      yearsAgo: '{n}年以上前',
+      onDayAgo: '{n}日前に',
+      onDaysAgo: '{n}日前に',
+      onWeekAgo: '{n}週間前に',
+      onWeeksAgo: '{n}週間前に',
+      onMonthAgo: '{n}ヶ月前に',
+      onMonthsAgo: '{n}ヶ月前に',
+      onYearAgo: '{n}年以上前に',
+      onYearsAgo: '{n}年以上前に'
+    },
+    errors: {
+      noFilePath: '現在のファイルパスを取得できません',
+      fetchFailed: 'ファイル履歴の取得に失敗しました',
+      unknown: '不明なエラー'
+    }
+  },
+  'ko-KR': {
+    title: '# 변경 기록',
+    lastEdited: '마지막 편집',
+    viewFullHistory: '전체 기록 보기',
+    collapse: '접기',
+    loading: '로딩 중...',
+    timeFormat: {
+      dayAgo: '{n}일 전',
+      daysAgo: '{n}일 전',
+      weekAgo: '{n}주 전',
+      weeksAgo: '{n}주 전',
+      monthAgo: '{n}개월 전',
+      monthsAgo: '{n}개월 전',
+      yearAgo: '{n}년 이상 전',
+      yearsAgo: '{n}년 이상 전',
+      onDayAgo: '{n}일 전에',
+      onDaysAgo: '{n}일 전에',
+      onWeekAgo: '{n}주 전에',
+      onWeeksAgo: '{n}주 전에',
+      onMonthAgo: '{n}개월 전에',
+      onMonthsAgo: '{n}개월 전에',
+      onYearAgo: '{n}년 이상 전에',
+      onYearsAgo: '{n}년 이상 전에'
+    },
+    errors: {
+      noFilePath: '현재 파일 경로를 가져올 수 없습니다',
+      fetchFailed: '파일 기록 가져오기 실패',
+      unknown: '알 수 없는 오류'
+    }
+  },
+  'fr-FR': {
+    title: '# Journal des modifications',
+    lastEdited: 'Dernière modification',
+    viewFullHistory: 'Voir l\'historique complet',
+    collapse: 'Réduire',
+    loading: 'Chargement...',
+    timeFormat: {
+      dayAgo: 'il y a {n} jour',
+      daysAgo: 'il y a {n} jours',
+      weekAgo: 'il y a {n} semaine',
+      weeksAgo: 'il y a {n} semaines',
+      monthAgo: 'il y a {n} mois',
+      monthsAgo: 'il y a {n} mois',
+      yearAgo: 'il y a plus de {n} an',
+      yearsAgo: 'il y a plus de {n} ans',
+      onDayAgo: 'il y a {n} jour',
+      onDaysAgo: 'il y a {n} jours',
+      onWeekAgo: 'il y a {n} semaine',
+      onWeeksAgo: 'il y a {n} semaines',
+      onMonthAgo: 'il y a {n} mois',
+      onMonthsAgo: 'il y a {n} mois',
+      onYearAgo: 'il y a plus de {n} an',
+      onYearsAgo: 'il y a plus de {n} ans'
+    },
+    errors: {
+      noFilePath: 'Impossible d\'obtenir le chemin du fichier actuel',
+      fetchFailed: 'Échec de la récupération de l\'historique du fichier',
+      unknown: 'Erreur inconnue'
+    }
+  },
+  'de-DE': {
+    title: '# Änderungsprotokoll',
+    lastEdited: 'Zuletzt bearbeitet',
+    viewFullHistory: 'Vollständige Historie anzeigen',
+    collapse: 'Einklappen',
+    loading: 'Wird geladen...',
+    timeFormat: {
+      dayAgo: 'vor {n} Tag',
+      daysAgo: 'vor {n} Tagen',
+      weekAgo: 'vor {n} Woche',
+      weeksAgo: 'vor {n} Wochen',
+      monthAgo: 'vor {n} Monat',
+      monthsAgo: 'vor {n} Monaten',
+      yearAgo: 'vor über {n} Jahr',
+      yearsAgo: 'vor über {n} Jahren',
+      onDayAgo: 'vor {n} Tag',
+      onDaysAgo: 'vor {n} Tagen',
+      onWeekAgo: 'vor {n} Woche',
+      onWeeksAgo: 'vor {n} Wochen',
+      onMonthAgo: 'vor {n} Monat',
+      onMonthsAgo: 'vor {n} Monaten',
+      onYearAgo: 'vor über {n} Jahr',
+      onYearsAgo: 'vor über {n} Jahren'
+    },
+    errors: {
+      noFilePath: 'Aktueller Dateipfad kann nicht abgerufen werden',
+      fetchFailed: 'Fehler beim Abrufen der Dateihistorie',
+      unknown: 'Unbekannter Fehler'
+    }
+  },
+  'es-ES': {
+    title: '# Registro de cambios',
+    lastEdited: 'Última edición',
+    viewFullHistory: 'Ver historial completo',
+    collapse: 'Contraer',
+    loading: 'Cargando...',
+    timeFormat: {
+      dayAgo: 'hace {n} día',
+      daysAgo: 'hace {n} días',
+      weekAgo: 'hace {n} semana',
+      weeksAgo: 'hace {n} semanas',
+      monthAgo: 'hace {n} mes',
+      monthsAgo: 'hace {n} meses',
+      yearAgo: 'hace más de {n} año',
+      yearsAgo: 'hace más de {n} años',
+      onDayAgo: 'hace {n} día',
+      onDaysAgo: 'hace {n} días',
+      onWeekAgo: 'hace {n} semana',
+      onWeeksAgo: 'hace {n} semanas',
+      onMonthAgo: 'hace {n} mes',
+      onMonthsAgo: 'hace {n} meses',
+      onYearAgo: 'hace más de {n} año',
+      onYearsAgo: 'hace más de {n} años'
+    },
+    errors: {
+      noFilePath: 'No se puede obtener la ruta del archivo actual',
+      fetchFailed: 'Error al obtener el historial del archivo',
+      unknown: 'Error desconocido'
+    }
+  },
+  'ru-RU': {
+    title: '# Журнал изменений',
+    lastEdited: 'Последнее редактирование',
+    viewFullHistory: 'Посмотреть полную историю',
+    collapse: 'Свернуть',
+    loading: 'Загрузка...',
+    timeFormat: {
+      dayAgo: '{n} день назад',
+      daysAgo: '{n} дней назад',
+      weekAgo: '{n} неделю назад',
+      weeksAgo: '{n} недель назад',
+      monthAgo: '{n} месяц назад',
+      monthsAgo: '{n} месяцев назад',
+      yearAgo: 'более {n} года назад',
+      yearsAgo: 'более {n} лет назад',
+      onDayAgo: '{n} день назад',
+      onDaysAgo: '{n} дней назад',
+      onWeekAgo: '{n} неделю назад',
+      onWeeksAgo: '{n} недель назад',
+      onMonthAgo: '{n} месяц назад',
+      onMonthsAgo: '{n} месяцев назад',
+      onYearAgo: 'более {n} года назад',
+      onYearsAgo: 'более {n} лет назад'
+    },
+    errors: {
+      noFilePath: 'Невозможно получить путь к текущему файлу',
+      fetchFailed: 'Не удалось получить историю файла',
+      unknown: 'Неизвестная ошибка'
+    }
+  }
+}
+
+// 获取当前语言的文本
+const getCurrentTexts = () => {
+  const currentLang = page.value.lang || 'zh-CN'
+  return i18nTexts[currentLang] || i18nTexts['zh-CN']
+}
+
+const texts = computed(() => getCurrentTexts())
+
 // 响应式数据
 const fileHistory = ref([])
 const historyLoading = ref(true)
 const historyError = ref(null)
-const isHistoryExpanded = ref(false)
+const isExpanded = ref(false)
+const displayLimit = ref(5)
 
 // 配置
 const GITHUB_REPO_OWNER = 'Re0XIAOPA'
 const GITHUB_REPO_NAME = 'doc_blocktavern'
 const GITHUB_API_BASE = 'https://api.github.com'
 
-// 计算属性
+// 最后一次提交
 const lastCommit = computed(() => {
   return fileHistory.value.length > 0 ? fileHistory.value[0] : null
 })
+
+// 显示的提交记录 - 始终显示所有数据，通过CSS控制可见性
+const displayedCommits = computed(() => {
+  return fileHistory.value
+})
+
+// 切换展开状态 - 优化性能
+let isToggling = false
+const toggleExpanded = () => {
+  if (isToggling) return
+  
+  isToggling = true
+  requestAnimationFrame(() => {
+    isExpanded.value = !isExpanded.value
+    setTimeout(() => {
+      isToggling = false
+    }, 50)
+  })
+}
+
+// 检查是否为版本提交
+const isVersionCommit = (commit) => {
+  const message = commit.commit.message.toLowerCase()
+  return message.includes('release') || message.includes('version') || /v\d+\.\d+\.\d+/.test(message)
+}
+
+// 从提交信息中获取版本号
+const getVersionFromCommit = (commit) => {
+  const message = commit.commit.message
+  const versionMatch = message.match(/v?(\d+\.\d+\.\d+[^\s]*)/)
+  return versionMatch ? `v${versionMatch[1]}` : 'Release'
+}
+
+// 获取提交信息中的PR号
+const getCommitPR = (message) => {
+  const prMatch = message.match(/\(#(\d+)\)/)
+  return prMatch ? `#${prMatch[1]}` : null
+}
+
+// 格式化提交时间
+const formatCommitTime = (dateString) => {
+  const date = new Date(dateString)
+  const now = new Date()
+  const diffTime = Math.abs(now - date)
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+  
+  if (diffDays === 1) {
+    return texts.value.timeFormat.onDayAgo.replace('{n}', '1')
+  } else if (diffDays < 7) {
+    return texts.value.timeFormat.onDaysAgo.replace('{n}', diffDays)
+  } else if (diffDays < 30) {
+    const weeks = Math.floor(diffDays / 7)
+    const format = weeks > 1 ? texts.value.timeFormat.onWeeksAgo : texts.value.timeFormat.onWeekAgo
+    return format.replace('{n}', weeks)
+  } else if (diffDays < 365) {
+    const months = Math.floor(diffDays / 30)
+    const format = months > 1 ? texts.value.timeFormat.onMonthsAgo : texts.value.timeFormat.onMonthAgo
+    return format.replace('{n}', months)
+  } else {
+    const years = Math.floor(diffDays / 365)
+    const format = years > 1 ? texts.value.timeFormat.onYearsAgo : texts.value.timeFormat.onYearAgo
+    return format.replace('{n}', years)
+  }
+}
+
+// 格式化相对时间
+const formatRelativeTime = (dateString) => {
+  const date = new Date(dateString)
+  const now = new Date()
+  const diffTime = Math.abs(now - date)
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+  
+  if (diffDays === 1) {
+    return texts.value.timeFormat.dayAgo.replace('{n}', '1')
+  } else if (diffDays < 7) {
+    return texts.value.timeFormat.daysAgo.replace('{n}', diffDays)
+  } else if (diffDays < 30) {
+    const weeks = Math.floor(diffDays / 7)
+    const format = weeks > 1 ? texts.value.timeFormat.weeksAgo : texts.value.timeFormat.weekAgo
+    return format.replace('{n}', weeks)
+  } else if (diffDays < 365) {
+    const months = Math.floor(diffDays / 30)
+    const format = months > 1 ? texts.value.timeFormat.monthsAgo : texts.value.timeFormat.monthAgo
+    return format.replace('{n}', months)
+  } else {
+    const years = Math.floor(diffDays / 365)
+    const format = years > 1 ? texts.value.timeFormat.yearsAgo : texts.value.timeFormat.yearAgo
+    return format.replace('{n}', years)
+  }
+}
 
 // 获取当前文件路径
 const getCurrentFilePath = () => {
@@ -109,10 +509,7 @@ const getCurrentFilePath = () => {
   return fullPath
 }
 
-// 切换历史记录展开状态
-const toggleHistory = () => {
-  isHistoryExpanded.value = !isHistoryExpanded.value
-}
+
 
 // 获取文件历史
 const fetchFileHistory = async () => {
@@ -122,7 +519,7 @@ const fetchFileHistory = async () => {
     
     const filePath = getCurrentFilePath()
     if (!filePath) {
-      historyError.value = '无法获取当前文件路径'
+      historyError.value = texts.value.errors.noFilePath
       return
     }
     
@@ -242,8 +639,8 @@ const fetchFileHistory = async () => {
       fileHistory.value = []
     }
   } catch (error) {
-    console.error('获取文件历史失败:', error)
-    historyError.value = error.message || '未知错误'
+    console.error(texts.value.errors.fetchFailed + ':', error)
+    historyError.value = error.message || texts.value.errors.unknown
     fileHistory.value = []
   } finally {
     historyLoading.value = false
@@ -298,260 +695,362 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.git-history-information {
-  margin: 2rem 0;
-  border-radius: 8px;
-  background-color: var(--vp-c-bg-soft);
-  overflow: hidden;
+.changelog-wrapper {
+  margin: 1rem 0;
 }
 
-.icon {
+.changelog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin: 0 0 1rem 0;
+  padding: 0;
+  border: none;
+}
+
+.changelog {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--vp-c-bg);
+}
+
+.changelog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: var(--vp-c-bg-soft);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+@media (max-width: 480px) {
+  .changelog-header {
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .view-history-link {
+    display: none;
+  }
+}
+
+.changelog-header:hover {
+  background-color: var(--vp-c-bg-alt);
+}
+
+.changelog-header:hover .last-edited {
+  color: var(--vp-c-link);
+}
+
+.changelog-header:hover .clock-icon {
+  color: var(--vp-c-link);
+}
+
+.changelog-header:hover .view-history {
+  color: var(--vp-c-link);
+}
+
+.changelog-header:hover .list-icon {
+  color: var(--vp-c-link);
+}
+
+.changelog-header:hover .chevron-icon {
+  color: var(--vp-c-link);
+}
+
+.last-edited {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
   color: var(--vp-c-text-2);
-  flex-shrink: 0;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.clock-icon {
+  color: var(--vp-c-text-3);
+  transition: color 0.2s ease;
+}
+
+.view-history {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-left: auto;
+}
+
+
+
+.list-icon {
+  color: var(--vp-c-text-3);
+  transition: color 0.2s ease;
+}
+
+.view-history-link {
+  font-weight: bold;
+}
+
+.chevron-icon {
+  color: var(--vp-c-text-3);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
 }
 
 .loading {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  padding: 24px;
   color: var(--vp-c-text-2);
-  font-size: 0.9rem;
-  padding: 1rem;
-}
-
-.loading-spinner {
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--vp-c-divider);
-  border-top: 2px solid var(--vp-c-brand-1);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  font-size: 14px;
 }
 
 .error {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  padding: 24px;
   color: var(--vp-c-danger-1);
-  font-size: 0.9rem;
-  padding: 1rem;
+  font-size: 14px;
 }
 
-/* 统一头部样式 */
-.history-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 1rem;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 0.2s ease;
-  border-bottom: 1px solid var(--vp-c-divider);
-  background-color: var(--vp-c-bg);
+.changelog-content {
+  max-height: 0;
+  padding: 0 12px;
+  overflow: hidden;
+  opacity: 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
 }
 
-.history-header:hover {
-  background-color: var(--vp-c-bg-soft);
+.changelog-content.expanded {
+  max-height: 1500px;
+  padding: 12px;
+  opacity: 1;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-}
-
-.last-updated-text {
-  color: var(--vp-c-text-2);
-}
-
-.last-updated-time {
-  color: var(--vp-c-text-1);
-  font-weight: 500;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* 文件历史样式 */
-.file-history-section {
-  background-color: var(--vp-c-bg);
-}
-
-.history-title {
-  flex: 1;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-1);
-  font-weight: 500;
-}
-
-.toggle-icon {
-  color: var(--vp-c-text-2);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: center;
-  flex-shrink: 0;
-}
-
-.toggle-icon.expanded {
-  transform: rotate(180deg);
-}
-
-.history-content {
+.changelog-entry {
+  margin-bottom: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: all 0.2s ease;
+  pointer-events: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.history-content.expanded {
-  max-height: 1000px;
+.changelog-entry.visible-entry {
+  max-height: 80px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-bottom: 6px;
+  pointer-events: auto;
 }
 
-.history-list {
-  padding: 0;
+.changelog-entry:last-child {
+  margin-bottom: 0;
 }
 
-.history-item {
-  border-bottom: 1px solid var(--vp-c-divider);
-  transition: background-color 0.2s ease;
-}
-
-.history-item:last-child {
-  border-bottom: none;
-}
-
-.history-item:hover {
-  background-color: var(--vp-c-bg-soft);
-}
-
-.commit-info {
+.commit-entry {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 1rem;
-  font-size: 0.85rem;
-  gap: 1rem;
-}
-
-.commit-left {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex: 1;
+  gap: 8px;
+  padding: 2px 0;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
   min-width: 0;
 }
 
-.commit-icon {
-  color: var(--vp-c-text-3);
+.version-entry {
+  margin: 8px 0;
+}
+
+.commit-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
 }
 
-.commit-sha {
-  font-family: var(--vp-font-family-mono);
-  color: var(--vp-c-brand-1);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.8rem;
+.commit-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--vp-c-text-3);
 }
 
-.commit-sha:hover {
+.version-icon {
+  width: 12px;
+  height: 12px;
+  color: var(--vp-c-brand-1);
+}
+
+.commit-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+}
+
+.commit-hash {
+  font-family: var(--vp-font-family-mono);
+  font-size: 14px;
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.commit-hash:hover {
   text-decoration: underline;
 }
 
 .commit-separator {
   color: var(--vp-c-text-3);
-  font-weight: normal;
+  font-size: 14px;
+  flex-shrink: 0;
 }
 
 .commit-type {
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* 不同提交类型的颜色 */
+.type-feat {
+  background-color: #10b981;
+  color: white;
+}
+
+.type-fix {
+  background-color: #ef4444;
+  color: white;
+}
+
+.type-docs {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.type-style {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.type-refactor {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.type-test {
+  background-color: #06b6d4;
+  color: white;
+}
+
+.type-chore {
+  background-color: #6b7280;
+  color: white;
+}
+
+.type-ci {
+  background-color: #84cc16;
+  color: white;
+}
+
+.type-perf {
+  background-color: #f97316;
+  color: white;
+}
+
+.type-build {
+  background-color: #64748b;
+  color: white;
 }
 
 .commit-scope {
+  font-size: 12px;
   color: var(--vp-c-text-2);
-  font-size: 0.85rem;
+  font-weight: 500;
+  flex-shrink: 0;
 }
 
-.commit-description {
+.commit-message {
   color: var(--vp-c-text-1);
+  font-size: 14px;
+  flex: 1;
+  min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 0;
-  flex: 1;
 }
 
-.commit-right {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--vp-c-text-2);
-  font-size: 0.8rem;
+.commit-pr {
+  font-size: 14px;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
   flex-shrink: 0;
-  white-space: nowrap;
 }
 
-.commit-number {
-  font-family: var(--vp-font-family-mono);
-  color: var(--vp-c-text-3);
+.commit-pr:hover {
+  text-decoration: underline;
 }
 
-.commit-date {
+.commit-time {
+  font-size: 12px;
   color: var(--vp-c-text-2);
+  flex-shrink: 0;
+  margin-left: auto;
 }
+
+
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .git-history-information {
-    margin: 1rem 0;
-  }
-  
-  .history-header {
-    flex-direction: column;
+  .changelog-header {
+    gap: 8px;
     align-items: flex-start;
-    gap: 0.5rem;
-    padding: 0.75rem;
   }
   
-  .header-left,
-  .header-right {
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  .commit-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    padding: 0.75rem;
-  }
-  
-  .commit-left {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .commit-description {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: unset;
-    width: 100%;
-    margin-top: 0.25rem;
-  }
-  
-  .commit-right {
+  .view-history {
     align-self: flex-end;
-    margin-top: 0.25rem;
+  }
+  
+  .changelog-content {
+    padding: 0 12px;
+  }
+  
+  .changelog-entry {
+    gap: 8px;
+  }
+  
+  .commit-message {
+    font-size: 13px;
   }
 }
 </style>
