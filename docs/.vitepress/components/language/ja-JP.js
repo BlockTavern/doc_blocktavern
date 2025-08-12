@@ -12,10 +12,13 @@ export const jaConfig = {
   themeConfig: {
     nav: [
       { text: "ホーム", link: "/ja-JP/" },
-      { text: "インストール", link: "/ja-JP/InstallationTutorial/" },
-      { text: "ゲームガイド", link: "/ja-JP/GameplayGuide/" },
-      { text: "よくある質問", link: "/ja-JP/FAQ/" },
-      { text: "開発ガイド", link: "/ja-JP/DevelopmentGuide/" },
+      {
+        text: "インストール",
+        link: "/ja-JP/InstallationTutorial/installation-details",
+      },
+      { text: "ゲームガイド", link: "/ja-JP/GameplayGuide/command-list" },
+      { text: "よくある質問", link: "/ja-JP/FAQ/faq-details" },
+      { text: "開発ガイド", link: "/ja-JP/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

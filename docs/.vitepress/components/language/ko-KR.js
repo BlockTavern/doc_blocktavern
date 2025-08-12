@@ -12,10 +12,13 @@ export const koConfig = {
   themeConfig: {
     nav: [
       { text: "홈", link: "/ko-KR/" },
-      { text: "설치", link: "/ko-KR/InstallationTutorial/" },
-      { text: "게임 가이드", link: "/ko-KR/GameplayGuide/" },
-      { text: "FAQ", link: "/ko-KR/FAQ/" },
-      { text: "개발 가이드", link: "/ko-KR/DevelopmentGuide/" },
+      {
+        text: "설치",
+        link: "/ko-KR/InstallationTutorial/installation-details",
+      },
+      { text: "게임 가이드", link: "/ko-KR/GameplayGuide/command-list" },
+      { text: "FAQ", link: "/ko-KR/FAQ/faq-details" },
+      { text: "개발 가이드", link: "/ko-KR/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

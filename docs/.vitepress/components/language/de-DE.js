@@ -12,10 +12,13 @@ export const deConfig = {
   themeConfig: {
     nav: [
       { text: "Startseite", link: "/de-DE/" },
-      { text: "Installation", link: "/de-DE/InstallationTutorial/" },
-      { text: "Spielanleitung", link: "/de-DE/GameplayGuide/" },
-      { text: "FAQ", link: "/de-DE/FAQ/" },
-      { text: "Entwicklerhandbuch", link: "/de-DE/DevelopmentGuide/" },
+      {
+        text: "Installation",
+        link: "/de-DE/InstallationTutorial/installation-details",
+      },
+      { text: "Spielanleitung", link: "/de-DE/GameplayGuide/command-list" },
+      { text: "FAQ", link: "/de-DE/FAQ/faq-details" },
+      { text: "Entwicklerhandbuch", link: "/de-DE/DevelopmentGuide/development-details" },
     ],
 
     // 编辑链接配置

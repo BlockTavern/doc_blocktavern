@@ -12,10 +12,13 @@ export const frConfig = {
   themeConfig: {
     nav: [
       { text: "Accueil", link: "/fr-FR/" },
-      { text: "Installation", link: "/fr-FR/InstallationTutorial/" },
-      { text: "Guide de jeu", link: "/fr-FR/GameplayGuide/" },
-      { text: "FAQ", link: "/fr-FR/FAQ/" },
-      { text: "Guide développeur", link: "/fr-FR/DevelopmentGuide/" },
+      {
+        text: "Installation",
+        link: "/fr-FR/InstallationTutorial/installation-details",
+      },
+      { text: "Guide de jeu", link: "/fr-FR/GameplayGuide/command-list" },
+      { text: "FAQ", link: "/fr-FR/FAQ/faq-details" },
+      { text: "Guide développeur", link: "/fr-FR/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

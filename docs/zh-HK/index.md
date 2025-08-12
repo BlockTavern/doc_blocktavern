@@ -10,43 +10,32 @@ hero:
     alt: BlockTavern Logo
   actions:
     - theme: brand
-      text: 進入教學
-      link: /zh-HK/InstallationTutorial/
+      text: 進入教程
+      link: /zh-HK/InstallationTutorial/installation-details
     - theme: alt  
-      text: 開發指南
-      link: /zh-HK/DevelopmentGuide/
+      text: 開發指南(貢獻文檔)
+      link: /zh-HK/DevelopmentGuide/development-details
 
 features:
   - icon: 📦
-    title: 安裝教學
+    title: 安裝教程
     details: 安裝BlockTavern遊戲，準備開始你的冒險
-    link: /zh-HK/InstallationTutorial/
+    link: /zh-HK/InstallationTutorial/installation-details
 
   - icon: 🎮
     title: 遊玩指南
     details: 了解遊戲的基本規則和玩法
-    link: /zh-HK/GameplayGuide/
+    link: /zh-HK/GameplayGuide/server-rules
     
   - icon: ❓
     title: 常見問題
     details: 快速解決你的問題
-    link: /zh-HK/FAQ/
+    link: /zh-HK/FAQ/faq-details
 ---
 
-## 關於 BlockTavern
+### 貢獻概要
 
-BlockTavern 是一個充滿創意和冒險的 Minecraft 伺服器。在這裡，你可以：
-
-- 🏗️ **建造夢想**：使用無限的創意建造你的理想世界
-- 🤝 **社群互動**：與來自世界各地的玩家一起遊玩
-- 🎯 **挑戰任務**：參與各種有趣的任務和活動
-- 🛡️ **安全環境**：享受公平、友善的遊戲環境
-
-## 貢獻概要
-
-想要為 BlockTavern 文檔做出貢獻嗎？以下是快速開始的步驟：
-
-```bash
+```sh
 # 克隆倉庫
 git clone https://github.com/your-username/doc_blocktavern.git
 
@@ -56,10 +45,10 @@ cd doc_blocktavern
 # 安裝依賴
 npm install
 
-# 啟動開發伺服器
+# 啟動開發服務器
 npm run docs:dev
 
-# 新增所有更改
+# 添加所有更改
 git add .
 
 # 提交內容
@@ -75,13 +64,13 @@ git push origin main
 
 ### 貢獻流程
 
-1. **Fork 倉庫**：點擊倉庫右上角的 "Fork" 按鈕，建立一個副本到你的 GitHub 帳號。
-2. **克隆倉庫**：使用 `git clone` 指令克隆你的 fork 到本地。 
-3. **進行更改**：在你的本地倉庫進行你的文檔更改。 
+1. **Fork 倉庫**：點擊倉庫右上角的 "Fork" 按鈕，創建一個副本到你的 GitHub 賬號。
+2. **克隆倉庫**：使用 `git clone` 命令克隆你的 fork 到本地。
+3. **進行更改**：在你的本地倉庫進行你的文檔更改。
 4. **提交更改**：使用 `git commit` 提交你的更改。
 5. **推送更改**：使用 `git push` 推送你的更改到你的 fork。
-6. **建立 Pull Request**：在原倉庫中，點擊 "Pull Requests" 標籤，然後點擊 "New Pull Request"。
-7. **填寫 Pull Request 資訊**：
+6. **創建 Pull Request**：在原倉庫中，點擊 "Pull Requests" 標籤，然後點擊 "New Pull Request"。
+7. **填寫 Pull Request 信息**：
    - 標題：簡潔描述你的更改
    - 描述：詳細解釋你的更改動機和影響
 8. **提交 Pull Request**：點擊 "Create Pull Request" 提交你的更改。

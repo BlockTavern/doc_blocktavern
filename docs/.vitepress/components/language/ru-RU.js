@@ -12,10 +12,13 @@ export const ruConfig = {
   themeConfig: {
     nav: [
       { text: "Главная", link: "/ru-RU/" },
-      { text: "Установка", link: "/ru-RU/InstallationTutorial/" },
-      { text: "Руководство по игре", link: "/ru-RU/GameplayGuide/" },
-      { text: "FAQ", link: "/ru-RU/FAQ/" },
-      { text: "Руководство разработчика", link: "/ru-RU/DevelopmentGuide/" },
+      {
+        text: "Установка",
+        link: "/ru-RU/InstallationTutorial/installation-details",
+      },
+      { text: "Руководство по игре", link: "/ru-RU/GameplayGuide/command-list" },
+      { text: "FAQ", link: "/ru-RU/FAQ/faq-details" },
+      { text: "Руководство разработчика", link: "/ru-RU/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

@@ -12,10 +12,13 @@ export const zhTWConfig = {
   themeConfig: {
     nav: [
       { text: "首頁", link: "/zh-TW/" },
-      { text: "安裝教程", link: "/zh-TW/InstallationTutorial/" },
-      { text: "遊戲指南", link: "/zh-TW/GameplayGuide/" },
-      { text: "常見問題", link: "/zh-TW/FAQ/" },
-      { text: "開發指南", link: "/zh-TW/DevelopmentGuide/" },
+      {
+        text: "安裝教程",
+        link: "/zh-TW/InstallationTutorial/installation-details",
+      },
+      { text: "遊戲指南", link: "/zh-TW/GameplayGuide/command-list" },
+      { text: "常見問題", link: "/zh-TW/FAQ/faq-details" },
+      { text: "開發指南", link: "/zh-TW/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {
