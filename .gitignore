@@ -2,6 +2,10 @@
 node_modules/
 .nuxt/
 dist/
+build
+.trae
+.log
+.vercel
 
 # VitePress 生成的静态文件目录
 .out/
