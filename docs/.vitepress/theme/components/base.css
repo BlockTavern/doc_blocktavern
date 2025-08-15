@@ -48,6 +48,11 @@ div[class*="language-"] {
   text-decoration: underline;
 }
 
+/* 编辑链接悬停效果 */
+.edit-link-button:hover {
+  color: var(--vp-c-link) !important;
+}
+
 /* 特殊容器美化 */
 .custom-container.tip {
   border-left: 4px solid #42b883;

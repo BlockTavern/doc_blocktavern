@@ -29,6 +29,9 @@
       <div v-if="historyLoading" class="loading">{{ texts.loading }}</div>
       <div v-else-if="historyError" class="error">{{ historyError }}</div>
       <div v-else class="changelog-content" :class="{ 'expanded': isExpanded }">
+        <div v-if="displayedCommits.length === 0 && isExpanded" class="no-history">
+          {{ texts.noHistory }}
+        </div>
         <div v-for="(commit, index) in displayedCommits" :key="commit.sha" class="changelog-entry"
           :class="{ 'visible-entry': isExpanded }"
           :style="{ 'transition-delay': isExpanded ? `${index * 20}ms` : `${(displayedCommits.length - 1 - index) * 15}ms` }">
@@ -70,7 +73,6 @@
 import { ref, onMounted, computed } from 'vue'
 import { useData } from 'vitepress'
 import axios from 'axios'
-import { Clock, GitCommit, User, ExternalLink, ChevronDown, ChevronUp, Loader2, AlertCircle } from 'lucide-vue-next'
 
 const { page, site } = useData()
 
@@ -82,6 +84,7 @@ const i18nTexts = {
     viewFullHistory: '查看完整历史',
     collapse: '收起',
     loading: '加载中...',
+    noHistory: '暂无日志',
     timeFormat: {
       dayAgo: '{n} 天前',
       daysAgo: '{n} 天前',
@@ -112,6 +115,7 @@ const i18nTexts = {
     viewFullHistory: '查看完整歷史',
     collapse: '收起',
     loading: '載入中...',
+    noHistory: '暫無日誌',
     timeFormat: {
       dayAgo: '{n} 天前',
       daysAgo: '{n} 天前',
@@ -142,6 +146,7 @@ const i18nTexts = {
     viewFullHistory: '查看完整歷史',
     collapse: '收起',
     loading: '載入中...',
+    noHistory: '暫無日誌',
     timeFormat: {
       dayAgo: '{n} 日前',
       daysAgo: '{n} 日前',
@@ -172,6 +177,7 @@ const i18nTexts = {
     viewFullHistory: 'View full history',
     collapse: 'Collapse',
     loading: 'Loading...',
+    noHistory: 'No history available',
     timeFormat: {
       dayAgo: '{n} day ago',
       daysAgo: '{n} days ago',
@@ -202,6 +208,7 @@ const i18nTexts = {
     viewFullHistory: '完全な履歴を表示',
     collapse: '折りたたむ',
     loading: '読み込み中...',
+    noHistory: '履歴がありません',
     timeFormat: {
       dayAgo: '{n}日前',
       daysAgo: '{n}日前',
@@ -232,6 +239,7 @@ const i18nTexts = {
     viewFullHistory: '전체 기록 보기',
     collapse: '접기',
     loading: '로딩 중...',
+    noHistory: '기록이 없습니다',
     timeFormat: {
       dayAgo: '{n}일 전',
       daysAgo: '{n}일 전',
@@ -262,6 +270,7 @@ const i18nTexts = {
     viewFullHistory: 'Voir l\'historique complet',
     collapse: 'Réduire',
     loading: 'Chargement...',
+    noHistory: 'Aucun historique disponible',
     timeFormat: {
       dayAgo: 'il y a {n} jour',
       daysAgo: 'il y a {n} jours',
@@ -292,6 +301,7 @@ const i18nTexts = {
     viewFullHistory: 'Vollständige Historie anzeigen',
     collapse: 'Einklappen',
     loading: 'Wird geladen...',
+    noHistory: 'Keine Historie verfügbar',
     timeFormat: {
       dayAgo: 'vor {n} Tag',
       daysAgo: 'vor {n} Tagen',
@@ -322,6 +332,7 @@ const i18nTexts = {
     viewFullHistory: 'Ver historial completo',
     collapse: 'Contraer',
     loading: 'Cargando...',
+    noHistory: 'No hay historial disponible',
     timeFormat: {
       dayAgo: 'hace {n} día',
       daysAgo: 'hace {n} días',
@@ -352,6 +363,7 @@ const i18nTexts = {
     viewFullHistory: 'Посмотреть полную историю',
     collapse: 'Свернуть',
     loading: 'Загрузка...',
+    noHistory: 'История недоступна',
     timeFormat: {
       dayAgo: '{n} день назад',
       daysAgo: '{n} дней назад',
@@ -908,6 +920,17 @@ onMounted(() => {
   padding: 24px;
   color: var(--vp-c-danger-1);
   font-size: 14px;
+}
+
+.no-history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  font-style: italic;
+  transition: all 0.25s ease;
 }
 
 .changelog-content {
