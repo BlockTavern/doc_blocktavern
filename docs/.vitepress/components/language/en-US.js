@@ -12,10 +12,10 @@ export const enConfig = {
   themeConfig: {
     nav: [
       { text: "Home", link: "/en-US/" },
-      { text: "Installation", link: "/en-US/InstallationTutorial/" },
-      { text: "Gameplay Guide", link: "/en-US/GameplayGuide/" },
-      { text: "FAQ", link: "/en-US/FAQ/" },
-      { text: "Development", link: "/en-US/DevelopmentGuide/" },
+      { text: "Installation", link: "/en-US/InstallationTutorial/installation-details" },
+      { text: "Gameplay Guide", link: "/en-US/GameplayGuide/command-list" },
+      { text: "FAQ", link: "/en-US/FAQ/faq-details" },
+      { text: "Development", link: "/en-US/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {
