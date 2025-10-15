@@ -6,9 +6,11 @@ const defaultConfig = {
   useTitleFromFrontmatter: true,
   useFolderTitleFromIndexFile: true,
   useFolderLinkFromIndexFile: false,
+  // 连字符转空格
   hyphenToSpace: true,
   underscoreToSpace: true,
-  capitalizeFirst: true,
+  // 首字母大写
+  capitalizeFirst: false,
   collapsed: true,
   collapseDepth: 2,
   sortMenusByName: false,
