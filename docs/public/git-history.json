@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "totalCommits": 195,
+    "totalCommits": 199,
     "contributors": 4,
     "firstCommit": "2025-06-06 19:51:21 +0800",
-    "lastCommit": "2025-10-14 02:56:19 +0000",
-    "generatedAt": "2025-10-15T02:59:54.467Z"
+    "lastCommit": "2025-10-15 21:05:53 +0800",
+    "generatedAt": "2025-10-16T02:58:38.905Z"
   },
   "files": {
     "docs/de-DE/DevelopmentGuide/configuration.md": {
@@ -1403,6 +1403,13 @@
     "docs/de-DE/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -1445,8 +1452,8 @@
           "message": "fix: 语言配置"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 7,
       "contributors": 1
     },
     "docs/en-US/DevelopmentGuide/configuration.md": {
@@ -2026,6 +2033,13 @@
     "docs/en-US/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -2068,8 +2082,8 @@
           "message": "language"
         }
       ],
-      "lastUpdated": "2025-08-12 19:59:38 +0800",
-      "totalCommits": 6,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 7,
       "contributors": 1
     },
     "docs/es-ES/DevelopmentGuide/configuration.md": {
@@ -3440,6 +3454,13 @@
     "docs/es-ES/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -3489,8 +3510,8 @@
           "message": "fix: 语言配置"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 8,
       "contributors": 1
     },
     "docs/examples/CONVENTIONAL_COMMITS.md": {
@@ -4938,6 +4959,13 @@
     "docs/fr-FR/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -4980,8 +5008,8 @@
           "message": "fix: 语言配置"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 7,
       "contributors": 1
     },
     "docs/index.md": {
@@ -6534,6 +6562,13 @@
     "docs/ja-JP/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -6583,8 +6618,8 @@
           "message": "fix: 语言配置"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 8,
       "contributors": 1
     },
     "docs/ko-KR/DevelopmentGuide/configuration.md": {
@@ -7976,6 +8011,13 @@
     "docs/ko-KR/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -8011,8 +8053,8 @@
           "message": "fix: 语言配置"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 5,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 6,
       "contributors": 1
     },
     "docs/obsolete/configuration-old.md": {
@@ -9411,6 +9453,13 @@
     "docs/ru-RU/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -9453,8 +9502,8 @@
           "message": "fix: 语言配置"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 7,
       "contributors": 1
     },
     "docs/zh-CN/DevelopmentGuide/configuration.md": {
@@ -10503,6 +10552,13 @@
     "docs/zh-CN/index.md": {
       "history": [
         {
+          "hash": "a7b99a104a70331614223687fde11ac5722eec6f",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@gmail.com",
+          "date": "2025-10-15 20:41:11 +0800",
+          "message": "删除贡献概要多余信息"
+        },
+        {
           "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -10615,8 +10671,8 @@
           "message": "修改内容和样子"
         }
       ],
-      "lastUpdated": "2025-08-12 16:21:15 +0800",
-      "totalCommits": 16,
+      "lastUpdated": "2025-10-15 20:41:11 +0800",
+      "totalCommits": 17,
       "contributors": 2
     },
     "docs/zh-HK/DevelopmentGuide/configuration.md": {
@@ -11924,6 +11980,13 @@
     "docs/zh-HK/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -11966,8 +12029,8 @@
           "message": "fix: 修复"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 7,
       "contributors": 1
     },
     "docs/zh-TW/DevelopmentGuide/configuration.md": {
@@ -13247,6 +13310,13 @@
     "docs/zh-TW/index.md": {
       "history": [
         {
+          "hash": "37911d71efcc962d94697890569d0bb786ff215e",
+          "authorName": "Re0XIAOPA",
+          "authorEmail": "mckekejun@outlook.com",
+          "date": "2025-10-15 20:55:25 +0800",
+          "message": "删除其他语言贡献概要多余信息"
+        },
+        {
           "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
           "authorName": "Re0XIAOPA",
           "authorEmail": "mckekejun@outlook.com",
@@ -13282,8 +13352,8 @@
           "message": "fix: 语言配置"
         }
       ],
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 5,
+      "lastUpdated": "2025-10-15 20:55:25 +0800",
+      "totalCommits": 6,
       "contributors": 1
     }
   }
