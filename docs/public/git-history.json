@@ -1,16 +1,23 @@
 {
   "_meta": {
-    "totalCommits": 304,
-    "contributors": 4,
-    "firstCommit": "2025-06-06 19:51:21 +0800",
-    "lastCommit": "2026-01-27 21:19:50 +0800",
-    "generatedAt": "2026-01-27T13:20:05.962Z"
+    "totalCommits": 305,
+    "contributors": 1,
+    "firstCommit": "2026-01-27T13:46:06.393Z",
+    "lastCommit": "2026-01-27T13:46:06.394Z",
+    "generatedAt": "2026-01-27T13:46:06.394Z"
   },
   "files": {
     "docs/de-DE/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 12,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 12
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -18,7 +25,14 @@
     "docs/de-DE/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -26,7 +40,14 @@
     "docs/de-DE/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -34,7 +55,14 @@
     "docs/de-DE/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -42,7 +70,14 @@
     "docs/de-DE/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -50,7 +85,14 @@
     "docs/de-DE/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -58,7 +100,14 @@
     "docs/de-DE/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -66,7 +115,14 @@
     "docs/de-DE/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -74,7 +130,14 @@
     "docs/de-DE/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -82,7 +145,14 @@
     "docs/de-DE/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -90,7 +160,14 @@
     "docs/de-DE/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -98,7 +175,14 @@
     "docs/de-DE/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -106,47 +190,14 @@
     "docs/de-DE/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/de-DE/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/de-DE/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 9,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/de-DE/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 15,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/de-DE/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/de-DE/components/index.md": {
-      "lastUpdated": "2025-08-12 16:21:15 +0800",
-      "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -154,16 +205,90 @@
     "docs/de-DE/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/de-DE/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/de-DE/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 9,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/de-DE/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 15,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/de-DE/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/en-US/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 3,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -171,7 +296,14 @@
     "docs/en-US/DevelopmentGuide/deployment.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 1,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 1
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -179,7 +311,14 @@
     "docs/en-US/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 3,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -187,7 +326,14 @@
     "docs/en-US/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -195,7 +341,14 @@
     "docs/en-US/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 2,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 2
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -203,7 +356,14 @@
     "docs/en-US/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 3,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -211,7 +371,14 @@
     "docs/en-US/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 2,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 2
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -219,7 +386,14 @@
     "docs/en-US/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 3,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -227,7 +401,14 @@
     "docs/en-US/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -235,7 +416,14 @@
     "docs/en-US/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 3,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -243,7 +431,14 @@
     "docs/en-US/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 4,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -251,7 +446,14 @@
     "docs/en-US/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 4,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -259,7 +461,14 @@
     "docs/en-US/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -267,47 +476,14 @@
     "docs/en-US/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:59:38 +0800",
       "totalCommits": 3,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/en-US/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:59:38 +0800",
-      "totalCommits": 3,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/en-US/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:59:38 +0800",
-      "totalCommits": 5,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/en-US/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 20:09:47 +0800",
-      "totalCommits": 4,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/en-US/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:59:38 +0800",
-      "totalCommits": 3,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/en-US/components/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 2,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -315,16 +491,90 @@
     "docs/en-US/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/en-US/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:59:38 +0800",
+      "totalCommits": 3,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/en-US/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:59:38 +0800",
+      "totalCommits": 5,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/en-US/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 20:09:47 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/en-US/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:59:38 +0800",
+      "totalCommits": 3,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/es-ES/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -332,7 +582,14 @@
     "docs/es-ES/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -340,7 +597,14 @@
     "docs/es-ES/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -348,7 +612,14 @@
     "docs/es-ES/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -356,7 +627,14 @@
     "docs/es-ES/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -364,7 +642,14 @@
     "docs/es-ES/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -372,7 +657,14 @@
     "docs/es-ES/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -380,7 +672,14 @@
     "docs/es-ES/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -388,7 +687,14 @@
     "docs/es-ES/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -396,7 +702,14 @@
     "docs/es-ES/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -404,7 +717,14 @@
     "docs/es-ES/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -412,7 +732,14 @@
     "docs/es-ES/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -420,47 +747,14 @@
     "docs/es-ES/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/es-ES/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/es-ES/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 9,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/es-ES/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 15,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/es-ES/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/es-ES/components/index.md": {
-      "lastUpdated": "2025-08-12 16:21:15 +0800",
-      "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -468,16 +762,90 @@
     "docs/es-ES/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/es-ES/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/es-ES/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 9,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/es-ES/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 15,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/es-ES/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/examples/CONVENTIONAL_COMMITS.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 4,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -485,7 +853,14 @@
     "docs/examples/RELEASE_TROUBLESHOOTING.md": {
       "lastUpdated": "2025-08-12 00:29:51 +0800",
       "totalCommits": 2,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 2
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -493,7 +868,14 @@
     "docs/fr-FR/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -501,7 +883,14 @@
     "docs/fr-FR/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -509,7 +898,14 @@
     "docs/fr-FR/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -517,7 +913,14 @@
     "docs/fr-FR/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -525,7 +928,14 @@
     "docs/fr-FR/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -533,7 +943,14 @@
     "docs/fr-FR/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -541,7 +958,14 @@
     "docs/fr-FR/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -549,7 +973,14 @@
     "docs/fr-FR/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -557,7 +988,14 @@
     "docs/fr-FR/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -565,7 +1003,14 @@
     "docs/fr-FR/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -573,7 +1018,14 @@
     "docs/fr-FR/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -581,7 +1033,14 @@
     "docs/fr-FR/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -589,47 +1048,14 @@
     "docs/fr-FR/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/fr-FR/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/fr-FR/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 9,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/fr-FR/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 15,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/fr-FR/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/fr-FR/components/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -637,16 +1063,96 @@
     "docs/fr-FR/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/fr-FR/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/fr-FR/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 9,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/fr-FR/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 15,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/fr-FR/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/index.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 17,
-      "contributors": 2,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 12
+        },
+        {
+          "name": "MajorFoxs_OvO",
+          "email": "mckekejun@gmail.com",
+          "avatar": "https://github.com/MajorFoxs_OvO.png",
+          "contributions": 5
+        }
+      ],
       "months": [
         "2025-08",
         "2025-06"
@@ -655,7 +1161,14 @@
     "docs/ja-JP/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 12,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 12
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -663,7 +1176,14 @@
     "docs/ja-JP/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -671,7 +1191,14 @@
     "docs/ja-JP/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -679,7 +1206,14 @@
     "docs/ja-JP/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -687,7 +1221,14 @@
     "docs/ja-JP/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -695,7 +1236,14 @@
     "docs/ja-JP/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -703,7 +1251,14 @@
     "docs/ja-JP/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -711,7 +1266,14 @@
     "docs/ja-JP/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -719,7 +1281,14 @@
     "docs/ja-JP/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -727,7 +1296,14 @@
     "docs/ja-JP/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -735,7 +1311,14 @@
     "docs/ja-JP/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -743,7 +1326,14 @@
     "docs/ja-JP/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -751,47 +1341,14 @@
     "docs/ja-JP/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ja-JP/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 8,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ja-JP/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 9,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ja-JP/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 15,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ja-JP/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 8,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ja-JP/components/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -799,16 +1356,90 @@
     "docs/ja-JP/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/ja-JP/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 8,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ja-JP/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 9,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ja-JP/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 15,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ja-JP/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 8,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/ko-KR/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 12,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 12
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -816,7 +1447,14 @@
     "docs/ko-KR/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -824,7 +1462,14 @@
     "docs/ko-KR/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -832,7 +1477,14 @@
     "docs/ko-KR/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -840,7 +1492,14 @@
     "docs/ko-KR/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -848,7 +1507,14 @@
     "docs/ko-KR/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -856,7 +1522,14 @@
     "docs/ko-KR/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -864,7 +1537,14 @@
     "docs/ko-KR/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -872,7 +1552,14 @@
     "docs/ko-KR/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -880,7 +1567,14 @@
     "docs/ko-KR/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -888,7 +1582,14 @@
     "docs/ko-KR/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -896,7 +1597,14 @@
     "docs/ko-KR/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -904,47 +1612,14 @@
     "docs/ko-KR/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ko-KR/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ko-KR/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 16:21:15 +0800",
-      "totalCommits": 8,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ko-KR/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 15,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ko-KR/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ko-KR/components/index.md": {
-      "lastUpdated": "2025-08-12 16:21:15 +0800",
-      "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -952,16 +1627,90 @@
     "docs/ko-KR/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/ko-KR/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ko-KR/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 16:21:15 +0800",
+      "totalCommits": 8,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ko-KR/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 15,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ko-KR/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/obsolete/configuration-old.md": {
       "lastUpdated": "2025-08-11 22:50:18 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -969,7 +1718,14 @@
     "docs/ru-RU/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -977,7 +1733,14 @@
     "docs/ru-RU/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 15,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 15
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -985,7 +1748,14 @@
     "docs/ru-RU/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -993,7 +1763,14 @@
     "docs/ru-RU/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1001,7 +1778,14 @@
     "docs/ru-RU/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1009,7 +1793,14 @@
     "docs/ru-RU/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1017,7 +1808,14 @@
     "docs/ru-RU/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 13,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 13
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1025,7 +1823,14 @@
     "docs/ru-RU/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1033,7 +1838,14 @@
     "docs/ru-RU/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 16:21:15 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1041,7 +1853,14 @@
     "docs/ru-RU/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1049,7 +1868,14 @@
     "docs/ru-RU/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1057,7 +1883,14 @@
     "docs/ru-RU/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1065,47 +1898,14 @@
     "docs/ru-RU/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 6,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ru-RU/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ru-RU/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 8,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ru-RU/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 14,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ru-RU/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/ru-RU/components/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1113,16 +1913,90 @@
     "docs/ru-RU/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/ru-RU/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ru-RU/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 8,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ru-RU/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 14,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/ru-RU/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/zh-CN/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-11 22:50:18 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1130,7 +2004,14 @@
     "docs/zh-CN/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-11 22:50:18 +0800",
       "totalCommits": 12,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 12
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1138,7 +2019,14 @@
     "docs/zh-CN/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-10 18:13:40 +0800",
       "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1146,7 +2034,14 @@
     "docs/zh-CN/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-11 22:50:18 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1154,7 +2049,14 @@
     "docs/zh-CN/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-11 22:50:18 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1162,7 +2064,14 @@
     "docs/zh-CN/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-11 22:50:18 +0800",
       "totalCommits": 12,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 12
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1170,7 +2079,14 @@
     "docs/zh-CN/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 01:05:38 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1178,15 +2094,14 @@
     "docs/zh-CN/FAQ/index.md": {
       "lastUpdated": "2025-08-10 00:56:27 +0800",
       "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-CN/GameplayGuide/Command-list.md": {
-      "lastUpdated": "2025-08-12 01:05:38 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1194,7 +2109,14 @@
     "docs/zh-CN/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 01:05:38 +0800",
       "totalCommits": 4,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1202,7 +2124,14 @@
     "docs/zh-CN/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 01:05:38 +0800",
       "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1210,7 +2139,14 @@
     "docs/zh-CN/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-10 00:56:27 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1218,47 +2154,14 @@
     "docs/zh-CN/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-11 22:50:18 +0800",
       "totalCommits": 4,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-CN/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 01:05:38 +0800",
-      "totalCommits": 5,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-CN/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-10 00:56:27 +0800",
-      "totalCommits": 6,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-CN/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 01:05:38 +0800",
-      "totalCommits": 12,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-CN/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 01:05:38 +0800",
-      "totalCommits": 5,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-CN/components/index.md": {
-      "lastUpdated": "2025-08-09 16:57:25 +0800",
-      "totalCommits": 3,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1266,17 +2169,103 @@
     "docs/zh-CN/index.md": {
       "lastUpdated": "2025-10-15 20:41:11 +0800",
       "totalCommits": 17,
-      "contributors": 2,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        },
+        {
+          "name": "MajorFoxs_OvO",
+          "email": "mckekejun@gmail.com",
+          "avatar": "https://github.com/MajorFoxs_OvO.png",
+          "contributions": 5
+        },
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@gmail.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 1
+        }
+      ],
       "months": [
         "2025-10",
         "2025-08",
         "2025-06"
       ]
     },
+    "docs/zh-CN/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 01:05:38 +0800",
+      "totalCommits": 5,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-CN/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-10 00:56:27 +0800",
+      "totalCommits": 6,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-CN/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 01:05:38 +0800",
+      "totalCommits": 12,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 12
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-CN/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 01:05:38 +0800",
+      "totalCommits": 5,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
     "docs/zh-HK/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1284,7 +2273,14 @@
     "docs/zh-HK/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1292,7 +2288,14 @@
     "docs/zh-HK/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1300,7 +2303,14 @@
     "docs/zh-HK/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1308,7 +2318,14 @@
     "docs/zh-HK/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1316,7 +2333,14 @@
     "docs/zh-HK/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1324,7 +2348,14 @@
     "docs/zh-HK/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 13,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 13
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1332,7 +2363,14 @@
     "docs/zh-HK/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1340,7 +2378,14 @@
     "docs/zh-HK/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1348,7 +2393,14 @@
     "docs/zh-HK/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1356,7 +2408,14 @@
     "docs/zh-HK/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1364,7 +2423,14 @@
     "docs/zh-HK/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1372,47 +2438,14 @@
     "docs/zh-HK/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 6,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-HK/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-HK/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 8,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-HK/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 14,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-HK/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-HK/components/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1420,16 +2453,90 @@
     "docs/zh-HK/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 7,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/zh-HK/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-HK/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 8,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-HK/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 14,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-HK/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     },
     "docs/zh-TW/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 11,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 11
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1437,7 +2544,14 @@
     "docs/zh-TW/DevelopmentGuide/development-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1445,7 +2559,14 @@
     "docs/zh-TW/DevelopmentGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1453,7 +2574,14 @@
     "docs/zh-TW/DevelopmentGuide/project-structure.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1461,7 +2589,14 @@
     "docs/zh-TW/DevelopmentGuide/troubleshooting.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 10,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 10
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1469,7 +2604,14 @@
     "docs/zh-TW/DevelopmentGuide/writing-docs.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 14,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1477,7 +2619,14 @@
     "docs/zh-TW/FAQ/faq-details.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 13,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 13
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1485,7 +2634,14 @@
     "docs/zh-TW/FAQ/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1493,7 +2649,14 @@
     "docs/zh-TW/GameplayGuide/command-list.md": {
       "lastUpdated": "2025-08-12 15:44:02 +0800",
       "totalCommits": 8,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1501,7 +2664,14 @@
     "docs/zh-TW/GameplayGuide/dummy-command.md": {
       "lastUpdated": "2025-08-12 15:44:02 +0800",
       "totalCommits": 5,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1509,7 +2679,14 @@
     "docs/zh-TW/GameplayGuide/enclosure-order.md": {
       "lastUpdated": "2025-08-12 15:44:02 +0800",
       "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1517,7 +2694,14 @@
     "docs/zh-TW/GameplayGuide/index.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 9,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 9
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1525,47 +2709,14 @@
     "docs/zh-TW/GameplayGuide/server-rules.md": {
       "lastUpdated": "2025-08-12 15:44:02 +0800",
       "totalCommits": 5,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-TW/InstallationTutorial/hmcl-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-TW/InstallationTutorial/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 8,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-TW/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 14,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-TW/InstallationTutorial/pcl2-installation.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 7,
-      "contributors": 1,
-      "months": [
-        "2025-08"
-      ]
-    },
-    "docs/zh-TW/components/index.md": {
-      "lastUpdated": "2025-08-12 19:32:57 +0800",
-      "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
       "months": [
         "2025-08"
       ]
@@ -1573,9 +2724,76 @@
     "docs/zh-TW/index.md": {
       "lastUpdated": "2025-10-15 20:55:25 +0800",
       "totalCommits": 6,
-      "contributors": 1,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
       "months": [
         "2025-10",
+        "2025-08"
+      ]
+    },
+    "docs/zh-TW/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-TW/InstallationTutorial/index.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 8,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-TW/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 14,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 14
+        }
+      ],
+      "months": [
+        "2025-08"
+      ]
+    },
+    "docs/zh-TW/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2025-08-12 19:32:57 +0800",
+      "totalCommits": 7,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 7
+        }
+      ],
+      "months": [
         "2025-08"
       ]
     }
@@ -1584,5 +2802,28 @@
     "2025-10",
     "2025-08",
     "2025-06"
+  ],
+  "contributors": [
+    {
+      "login": "Re0XIAOPA",
+      "avatar_url": "https://github.com/Re0XIAOPA.png",
+      "html_url": "https://github.com/Re0XIAOPA",
+      "contributions": 1644,
+      "email": "mckekejun@outlook.com"
+    },
+    {
+      "login": "MajorFoxs_OvO",
+      "avatar_url": "https://github.com/MajorFoxs_OvO.png",
+      "html_url": "https://github.com/MajorFoxs_OvO",
+      "contributions": 10,
+      "email": "mckekejun@gmail.com"
+    },
+    {
+      "login": "Re0XIAOPA",
+      "avatar_url": "https://github.com/Re0XIAOPA.png",
+      "html_url": "https://github.com/Re0XIAOPA",
+      "contributions": 1,
+      "email": "mckekejun@gmail.com"
+    }
   ]
 }

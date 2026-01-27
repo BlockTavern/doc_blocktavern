@@ -632,7 +632,7 @@ const fetchFileHistory = async () => {
         if (fileData && fileData.history && Array.isArray(fileData.history)) {
           rawHistory = fileData.history
         } else if (fileData && fileData.months && Array.isArray(fileData.months)) {
-          console.log(`📡 正在获取 ${fileData.months.length} 个月份的历史记录...`)
+          // console.log(`📡 正在获取 ${fileData.months.length} 个月份的历史记录...`)
           const historyBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`
 
           try {
@@ -679,10 +679,10 @@ const fetchFileHistory = async () => {
             }
           }))
 
-          console.log(`✅ 成功加载 ${validHistory.length} 条历史记录`)
+          // History loaded successfully
           return
         } else {
-          console.log(`⚠️ 文件 ${filePath} 没有历史记录数据`)
+          // No history data for this file
         }
       } else {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`)

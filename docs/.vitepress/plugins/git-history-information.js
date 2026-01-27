@@ -166,6 +166,66 @@ export function GitHistoryInformation(options = {}) {
 
   return {
     name: 'git-history-information',
+    // 开发服务器中间件: 处理本地 API 请求
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if (!req.url.startsWith('/api/git-history')) {
+          return next()
+        }
+
+        const url = new URL(req.url, 'http://localhost')
+        const type = url.searchParams.get('type')
+        const file = url.searchParams.get('file')
+
+        res.setHeader('Content-Type', 'application/json')
+        
+        try {
+          if (!repoRoot) {
+            throw new Error('Git repository not found')
+          }
+
+          let result = {}
+
+          if (type === 'history' || type === 'contributors') {
+            // 注意: 为了兼容前端组件的降级逻辑 (Contributors.vue 和 GitHistoryInformation.vue)
+            // 它们的 API 降级逻辑都是期望返回 { history: [...] } 或 { files: { [path]: { history: [...] } } }
+            // 这里我们简化处理，直接返回针对所请求文件的历史记录数组
+            
+            // 如果请求指定了文件
+            if (file) {
+                // 处理路径: 移除 docs/ 前缀如果存在，因为 getFileHistory 需要相对于 repoRoot 的路径
+                // 根据实际项目结构，docs/ 可能就是 repoRoot 下的目录
+                const relativePath = file
+                const history = getFileHistory(resolve(repoRoot, relativePath), repoRoot)
+                
+                // 构造前端期望的响应格式
+                result = {
+                    history: history,
+                    // 同时也为了通过 Contributors.vue 的检查: files[path].history
+                    files: {
+                        [file]: {
+                            history: history
+                        }
+                    }
+                }
+            } else if (type === 'contributors') {
+                // 全局贡献者请求 (虽然现在前端主要是按文件请求，但保留此逻辑)
+                const contributors = getContributors(repoRoot)
+                result = {
+                    contributors: contributors
+                } // 这里前端可能需要调整适配，或者仅仅用于调试
+            }
+          }
+
+          res.end(JSON.stringify(result))
+        } catch (error) {
+          console.error('API Error:', error)
+          res.statusCode = 500
+          res.end(JSON.stringify({ error: error.message }))
+        }
+      })
+    },
+
     configResolved(config) {
       // 查找 git 仓库根目录
       let currentDir = config.root
@@ -227,47 +287,9 @@ export function GitHistoryInformation(options = {}) {
       }
     },
 
-    // 提供 API 供组件使用
-    configureServer(server) {
-      server.middlewares.use('/api/git-history', (req, res, next) => {
-        if (req.method !== 'GET') {
-          return next()
-        }
+    
 
-        const url = new URL(req.url, `http://${req.headers.host}`)
-        const filePath = url.searchParams.get('file')
-        const type = url.searchParams.get('type')
 
-        res.setHeader('Content-Type', 'application/json')
-        res.setHeader('Access-Control-Allow-Origin', '*')
-
-        try {
-          if (type === 'contributors') {
-            const contributors = gitDataCache.get('contributors') || getContributors(repoRoot)
-            res.end(JSON.stringify(contributors.slice(0, maxContributors)))
-          } else if (type === 'history' && filePath) {
-            const cacheKey = `file:${filePath}`
-            let gitData = gitDataCache.get(cacheKey)
-            
-            if (!gitData) {
-              gitData = {
-                history: getFileHistory(filePath, repoRoot).slice(0, maxCommits),
-                lastUpdated: getLastUpdated(filePath, repoRoot)
-              }
-              gitDataCache.set(cacheKey, gitData)
-            }
-            
-            res.end(JSON.stringify(gitData))
-          } else {
-            res.statusCode = 400
-            res.end(JSON.stringify({ error: 'Invalid request' }))
-          }
-        } catch (error) {
-          res.statusCode = 500
-          res.end(JSON.stringify({ error: error.message }))
-        }
-      })
-    }
   }
 }
 

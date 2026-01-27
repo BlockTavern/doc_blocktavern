@@ -4,7 +4,8 @@
     <div v-if="loading" class="loading">{{ texts.loading }}</div>
     <div v-else-if="error" class="error">{{ texts.error }}: {{ error.message }}</div>
     <div v-else class="contributors-grid">
-      <a v-for="contributor in contributors" :key="contributor.id" :href="contributor.html_url" target="_blank" rel="noopener noreferrer" class="contributor-card">
+      <a v-for="contributor in contributors" :key="contributor.id" :href="contributor.html_url" target="_blank"
+        rel="noopener noreferrer" class="contributor-card">
         <img :src="contributor.avatar_url" :alt="contributor.login" class="contributor-avatar" />
         <span class="contributor-name">{{ contributor.login }}</span>
       </a>
@@ -79,7 +80,7 @@ const getCurrentTexts = () => {
   // 获取当前路径来判断语言
   const currentPath = page.value.relativePath || ''
   let currentLang = page.value.lang || 'zh-CN'
-  
+
   // 从路径中提取语言代码
   if (currentPath.startsWith('en-US/')) {
     currentLang = 'en-US'
@@ -102,7 +103,7 @@ const getCurrentTexts = () => {
   } else if (currentPath.startsWith('zh-CN/') || !currentPath.includes('/')) {
     currentLang = 'zh-CN'
   }
-  
+
   // 调试信息（开发环境下）
   if (process.env.NODE_ENV === 'development') {
     console.log('Contributors Language Debug:', {
@@ -112,7 +113,7 @@ const getCurrentTexts = () => {
       'available': Object.keys(i18nTexts)
     })
   }
-  
+
   return i18nTexts[currentLang] || i18nTexts['zh-CN']
 }
 
@@ -126,128 +127,54 @@ const fetchContributors = async () => {
   try {
     loading.value = true
     error.value = null
-    
-    // 首先尝试从静态 JSON 文件中读取历史数据（用于生产环境）
+
+    // 获取当前文件路径
+    const filePath = page.value.filePath
+    let fullPath = filePath
+    if (!fullPath) {
+      error.value = texts.value.error
+      return
+    }
+
+    // 处理多语言路径补全
+    if (!fullPath.startsWith('docs/')) {
+      const currentLang = page.value.lang || 'zh-CN'
+      if (currentLang !== 'zh-CN' && !fullPath.startsWith(currentLang + '/')) {
+        fullPath = `${currentLang}/${fullPath}`
+      }
+      fullPath = `docs/${fullPath}`
+    }
+
+    // 首先尝试从静态 JSON 文件中读取历史数据
     try {
       const baseUrl = site.value.base || '/'
       const gitHistoryUrl = baseUrl.endsWith('/') ? `${baseUrl}git-history.json` : `${baseUrl}/git-history.json`
       const response = await fetch(gitHistoryUrl)
-      
+
       if (response.ok) {
         const gitHistoryData = await response.json()
-        
-        // 验证JSON数据结构
-        if (!gitHistoryData || typeof gitHistoryData !== 'object') {
-          throw new Error('无效的JSON数据格式')
-        }
-        
-        // 检查是否有files字段（新格式）或直接文件数据（旧格式）
         const filesData = gitHistoryData.files || gitHistoryData
-        const contributorMap = new Map()
-        
-        // 遍历所有文件的历史记录
-        Object.values(filesData).forEach(fileData => {
-          if (fileData.history && Array.isArray(fileData.history)) {
-            fileData.history.forEach(commit => {
-              const { authorName, authorEmail } = commit
-              if (authorName && authorEmail) {
-                const key = `${authorName}|${authorEmail}`
-                if (contributorMap.has(key)) {
-                  contributorMap.get(key).contributions++
-                } else {
-                  contributorMap.set(key, {
-                    login: authorName,
-                    avatar_url: `https://github.com/${authorName}.png`,
-                    html_url: `https://github.com/${authorName}`,
-                    contributions: 1,
-                    email: authorEmail
-                  })
-                }
-              }
-            })
-          }
-        })
-        
-        // 转换为数组并按贡献数排序
-        contributors.value = Array.from(contributorMap.values())
-          .sort((a, b) => b.contributions - a.contributions)
-        
-        console.log(`✅ 成功加载 ${contributors.value.length} 位贡献者`)
-        return
-      } else {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+        const fileData = filesData[fullPath]
+
+        // 1. 优先使用文件特定的贡献者列表
+        if (fileData && fileData.contributors && Array.isArray(fileData.contributors)) {
+          contributors.value = fileData.contributors.map(c => ({
+            login: c.name || c.login,
+            avatar_url: c.avatar || c.avatar_url,
+            html_url: `https://github.com/${c.name || c.login}`,
+            contributions: c.contributions
+          }));
+          return;
+        }
+
+        contributors.value = []
       }
-    } catch (staticError) {
-      console.log('静态历史数据不可用，尝试本地 API:', staticError.message)
+    } catch (err) {
+      console.warn('Failed to load contributors:', err)
     }
-    
-    // 如果静态数据不可用，回退到本地 Git API（用于开发环境）
-    try {
-      const response = await axios.get('/api/git-history', {
-        params: {
-          type: 'contributors'
-        },
-        timeout: 10000 // 10秒超时
-      })
-      
-      // 验证响应数据
-      if (!response.data || typeof response.data !== 'object') {
-        throw new Error('API返回无效数据格式')
-      }
-      
-      const gitData = response.data
-      const contributorMap = new Map()
-      
-      // 处理API返回的数据
-      if (gitData.files) {
-        Object.values(gitData.files).forEach(fileData => {
-          if (fileData.history && Array.isArray(fileData.history)) {
-            fileData.history.forEach(commit => {
-              const { authorName, authorEmail } = commit
-              if (authorName && authorEmail) {
-                const key = `${authorName}|${authorEmail}`
-                if (contributorMap.has(key)) {
-                  contributorMap.get(key).contributions++
-                } else {
-                  contributorMap.set(key, {
-                    login: authorName,
-                    avatar_url: `https://github.com/${authorName}.png`,
-                    html_url: `https://github.com/${authorName}`,
-                    contributions: 1,
-                    email: authorEmail
-                  })
-                }
-              }
-            })
-          }
-        })
-      }
-      
-      // 转换为数组并按贡献数排序
-      contributors.value = Array.from(contributorMap.values())
-        .sort((a, b) => b.contributions - a.contributions)
-      
-      console.log(`✅ 从API成功加载 ${contributors.value.length} 位贡献者`)
-    } catch (apiError) {
-      console.error('本地 Git API 也不可用:', apiError)
-      
-      // 根据错误类型提供更具体的错误信息
-      if (apiError.code === 'ECONNABORTED') {
-        error.value = '请求超时，请稍后重试'
-      } else if (apiError.response) {
-        error.value = `API错误 (${apiError.response.status}): ${apiError.response.statusText}`
-      } else if (apiError.request) {
-        error.value = '网络连接失败，请检查网络状态'
-      } else {
-        error.value = `获取贡献者失败: ${apiError.message}`
-      }
-      
-      contributors.value = []
-    }
+
   } catch (err) {
-    console.error('获取贡献者失败:', err)
-    error.value = texts.value.error + ': ' + err.message
-    contributors.value = []
+    error.value = texts.value.error
   } finally {
     loading.value = false
   }
