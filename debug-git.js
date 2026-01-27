@@ -59,8 +59,8 @@ try {
     console.log(`Result 1: ${log1 ? log1 : '(empty)'}`);
 
     // If correction needed, try corrected path
-    // Let's assume the user has "Command-list.md"
-    const correctedCasing = "docs/zh-CN/GameplayGuide/Command-list.md";
+    // Let's assume the user has "command-list.md"
+    const correctedCasing = "docs/zh-CN/GameplayGuide/command-list.md";
     const relCorrected = path.relative(repoRoot, path.resolve(repoRoot, correctedCasing));
     
     console.log(`Command 2: git log -n 1 -- "${relCorrected}"`);

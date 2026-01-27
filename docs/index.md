@@ -28,6 +28,30 @@ features:
     title: English
     details: Click here for English
     link: /en-US/
+
+  - icon:
+      src: /flags/es.svg
+    title: Español
+    details: Haga clic aquí para español
+    link: /es-ES/
+
+  - icon:
+      src: /flags/sa.svg
+    title: العربية
+    details: انقر هنا للغة العربية
+    link: /ar-SA/
+
+  - icon:
+      src: /flags/ru.svg
+    title: Русский
+    details: Нажмите здесь для русского языка
+    link: /ru-RU/
+
+  - icon:
+      src: /flags/fr.svg
+    title: Français
+    details: Cliquez ici pour le français
+    link: /fr-FR/
 ---
 
 <script setup>
@@ -80,6 +104,42 @@ onUnmounted(() => {
 .VPButton[href^="/en-US/"],
 .VPButton[href^="/en-US/"]:hover {
   background-image: url('/flags/us.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 12px center !important;
+  background-size: 24px auto !important;
+  padding-left: 44px !important;
+}
+
+.VPButton[href^="/es-ES/"],
+.VPButton[href^="/es-ES/"]:hover {
+  background-image: url('/flags/es.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 12px center !important;
+  background-size: 24px auto !important;
+  padding-left: 44px !important;
+}
+
+.VPButton[href^="/ar-SA/"],
+.VPButton[href^="/ar-SA/"]:hover {
+  background-image: url('/flags/sa.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 12px center !important;
+  background-size: 24px auto !important;
+  padding-left: 44px !important;
+}
+
+.VPButton[href^="/ru-RU/"],
+.VPButton[href^="/ru-RU/"]:hover {
+  background-image: url('/flags/ru.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 12px center !important;
+  background-size: 24px auto !important;
+  padding-left: 44px !important;
+}
+
+.VPButton[href^="/fr-FR/"],
+.VPButton[href^="/fr-FR/"]:hover {
+  background-image: url('/flags/fr.svg') !important;
   background-repeat: no-repeat !important;
   background-position: 12px center !important;
   background-size: 24px auto !important;

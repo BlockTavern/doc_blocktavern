@@ -21,10 +21,5 @@ build
 # 日志文件
 *.log
 
-# 系统文件
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
 # VitePress 配置文件的备份
 .config.js.bak
