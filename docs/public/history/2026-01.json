@@ -1,0 +1,11 @@
+{
+  "docs/index.md": [
+    {
+      "hash": "0ef84219e3b99f8eb6ecc023081a08feb251deaf",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-27 22:40:54 +0800",
+      "message": "Add per-file and global contributor stats to git history"
+    }
+  ]
+}
