@@ -1,5 +1,192 @@
 {
+  "docs/ar-SA/Components/index.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/configuration.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/deployment.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/development-details.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/index.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/project-structure.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/troubleshooting.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/writing-docs.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/FAQ/faq-details.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/FAQ/index.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/command-list.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/dummy-command.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/enclosure-order.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/index.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/server-rules.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/hmcl-installation.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/index.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/installation-details.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/pcl2-installation.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/index.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
   "docs/index.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    },
     {
       "hash": "0ef84219e3b99f8eb6ecc023081a08feb251deaf",
       "authorName": "Re0XIAOPA",

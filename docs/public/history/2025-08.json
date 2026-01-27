@@ -1,4 +1,527 @@
 {
+  "docs/ar-SA/Components/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "c0af83df2529ec73152bf25a978db5f4702c44d8",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:01:04 +0800",
+      "message": "创建 index.md"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/configuration.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/deployment.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/development-details.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/index.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/project-structure.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/troubleshooting.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/DevelopmentGuide/writing-docs.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/FAQ/faq-details.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/FAQ/index.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/command-list.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/dummy-command.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "0a39adc6ab002f09bfd4dff9349cc21d24ebfc24",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:10:45 +0800",
+      "message": "fix: 修复英文文档的图片路径"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/enclosure-order.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "0a39adc6ab002f09bfd4dff9349cc21d24ebfc24",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:10:45 +0800",
+      "message": "fix: 修复英文文档的图片路径"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/index.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    }
+  ],
+  "docs/ar-SA/GameplayGuide/server-rules.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/hmcl-installation.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/index.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/installation-details.md": [
+    {
+      "hash": "dac76397b7f69ebf3848a39c0a21a980230b0a77",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 20:09:47 +0800",
+      "message": "fix: 修复重复的符号引起的文档错误"
+    },
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/InstallationTutorial/pcl2-installation.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    }
+  ],
+  "docs/ar-SA/index.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    },
+    {
+      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:20:18 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    }
+  ],
   "docs/de-DE/DevelopmentGuide/configuration.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",

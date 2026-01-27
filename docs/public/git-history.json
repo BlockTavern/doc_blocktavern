@@ -1,12 +1,333 @@
 {
   "_meta": {
-    "totalCommits": 308,
+    "totalCommits": 310,
     "contributors": 4,
     "firstCommit": "2025-06-06 19:51:21 +0800",
-    "lastCommit": "2026-01-28 00:18:40 +0800",
-    "generatedAt": "2026-01-27T16:18:53.858Z"
+    "lastCommit": "2026-01-28 01:13:28 +0800",
+    "generatedAt": "2026-01-27T17:13:42.149Z"
   },
   "files": {
+    "docs/ar-SA/Components/index.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 3,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/DevelopmentGuide/configuration.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/DevelopmentGuide/deployment.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 2,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 2
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/DevelopmentGuide/development-details.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/DevelopmentGuide/index.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 6,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/DevelopmentGuide/project-structure.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 3,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/DevelopmentGuide/troubleshooting.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/DevelopmentGuide/writing-docs.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 3,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 3
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/FAQ/faq-details.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/FAQ/index.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 6,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/GameplayGuide/command-list.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/GameplayGuide/dummy-command.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 5,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/GameplayGuide/enclosure-order.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 5,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/GameplayGuide/index.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 6,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/GameplayGuide/server-rules.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/InstallationTutorial/hmcl-installation.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/InstallationTutorial/index.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 6,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 6
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/InstallationTutorial/installation-details.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 5,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 5
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/InstallationTutorial/pcl2-installation.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 4,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 4
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-08"
+      ]
+    },
+    "docs/ar-SA/index.md": {
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 8,
+      "contributors": [
+        {
+          "name": "Re0XIAOPA",
+          "email": "mckekejun@outlook.com",
+          "avatar": "https://github.com/Re0XIAOPA.png",
+          "contributions": 8
+        }
+      ],
+      "months": [
+        "2026-01",
+        "2025-10",
+        "2025-08"
+      ]
+    },
     "docs/de-DE/DevelopmentGuide/configuration.md": {
       "lastUpdated": "2025-08-12 19:32:57 +0800",
       "totalCommits": 12,
@@ -1197,14 +1518,14 @@
       ]
     },
     "docs/index.md": {
-      "lastUpdated": "2026-01-27 22:40:54 +0800",
-      "totalCommits": 18,
+      "lastUpdated": "2026-01-28 01:13:28 +0800",
+      "totalCommits": 19,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 13
+          "contributions": 14
         },
         {
           "name": "MajorFoxs_OvO",
@@ -2975,7 +3296,7 @@
       "login": "Re0XIAOPA",
       "avatar_url": "https://github.com/Re0XIAOPA.png",
       "html_url": "https://github.com/Re0XIAOPA",
-      "contributions": 1702,
+      "contributions": 1793,
       "email": "mckekejun@outlook.com"
     },
     {
