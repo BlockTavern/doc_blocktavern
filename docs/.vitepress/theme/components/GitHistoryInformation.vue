@@ -419,16 +419,6 @@ const getCurrentTexts = () => {
     currentLang = 'zh-CN'
   }
 
-  // 调试信息（开发环境下）
-  if (process.env.NODE_ENV === 'development') {
-    console.log('GitHistory Language Debug:', {
-      'page.lang': page.value.lang,
-      'relativePath': currentPath,
-      'detected': currentLang,
-      'available': Object.keys(i18nTexts)
-    })
-  }
-
   return i18nTexts[currentLang] || i18nTexts['zh-CN']
 }
 
@@ -688,7 +678,7 @@ const fetchFileHistory = async () => {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`)
       }
     } catch (staticError) {
-      console.log('静态历史数据不可用，尝试本地 API:', staticError.message)
+      // Static data unavailable, will try API fallback
     }
 
     // 如果静态数据不可用，回退到本地 Git API（用于开发环境）
@@ -733,7 +723,6 @@ const fetchFileHistory = async () => {
           }
         }))
 
-        console.log(`✅ 从API成功加载 ${validHistory.length} 条历史记录`)
       } else {
         console.warn('API返回数据中没有有效的history字段')
         fileHistory.value = []
@@ -839,7 +828,7 @@ onMounted(() => {
   background-color: var(--vp-c-bg-soft);
   cursor: pointer;
   user-select: none;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 480px) {

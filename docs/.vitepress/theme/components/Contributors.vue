@@ -18,7 +18,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useData } from 'vitepress'
 import axios from 'axios'
 
-const { site } = useData()
+const { site, page } = useData()
 
 // 多语言文本配置
 const i18nTexts = {
@@ -104,16 +104,6 @@ const getCurrentTexts = () => {
     currentLang = 'zh-CN'
   }
 
-  // 调试信息（开发环境下）
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Contributors Language Debug:', {
-      'page.lang': page.value.lang,
-      'relativePath': currentPath,
-      'detected': currentLang,
-      'available': Object.keys(i18nTexts)
-    })
-  }
-
   return i18nTexts[currentLang] || i18nTexts['zh-CN']
 }
 
@@ -146,31 +136,66 @@ const fetchContributors = async () => {
     }
 
     // 首先尝试从静态 JSON 文件中读取历史数据
-    try {
-      const baseUrl = site.value.base || '/'
-      const gitHistoryUrl = baseUrl.endsWith('/') ? `${baseUrl}git-history.json` : `${baseUrl}/git-history.json`
-      const response = await fetch(gitHistoryUrl)
+    let loadedFromStatic = false
 
-      if (response.ok) {
-        const gitHistoryData = await response.json()
-        const filesData = gitHistoryData.files || gitHistoryData
-        const fileData = filesData[fullPath]
+    // 开发环境下跳过静态文件检查，直接使用 API，以便获得实时数据和调试日志
+    const isDev = import.meta.env.DEV
 
-        // 1. 优先使用文件特定的贡献者列表
-        if (fileData && fileData.contributors && Array.isArray(fileData.contributors)) {
-          contributors.value = fileData.contributors.map(c => ({
-            login: c.name || c.login,
-            avatar_url: c.avatar || c.avatar_url,
-            html_url: `https://github.com/${c.name || c.login}`,
-            contributions: c.contributions
-          }));
-          return;
+    if (!isDev) {
+      try {
+        const baseUrl = site.value.base || '/'
+        const gitHistoryUrl = baseUrl.endsWith('/') ? `${baseUrl}git-history.json` : `${baseUrl}/git-history.json`
+        const response = await fetch(gitHistoryUrl)
+
+        if (response.ok) {
+          const gitHistoryData = await response.json()
+          const filesData = gitHistoryData.files || gitHistoryData
+          const fileData = filesData[fullPath]
+
+          if (fileData && fileData.contributors && Array.isArray(fileData.contributors) && fileData.contributors.length > 0) {
+            contributors.value = fileData.contributors.map(c => ({
+              login: c.name || c.login,
+              avatar_url: c.avatar || c.avatar_url,
+              html_url: `https://github.com/${c.name || c.login}`,
+              contributions: c.contributions
+            }));
+            loadedFromStatic = true
+          }
         }
-
-        contributors.value = []
+      } catch (err) {
+        console.warn('Failed to load static contributors, falling back to API:', err)
       }
-    } catch (err) {
-      console.warn('Failed to load contributors:', err)
+    }
+
+    // 如果静态文件没有数据（如开发环境），尝试本地 API
+    if (!loadedFromStatic) {
+      try {
+        const apiUrl = `/api/git-history?file=${encodeURIComponent(fullPath)}&type=contributors`
+        const apiResponse = await fetch(apiUrl)
+
+        if (apiResponse.ok) {
+          const apiData = await apiResponse.json()
+
+          // API 返回的是 { contributors: [...], ... } 格式
+          if (apiData.contributors && Array.isArray(apiData.contributors)) {
+            contributors.value = apiData.contributors.map(c => ({
+              login: c.name || c.login,
+              avatar_url: c.avatar || c.avatar_url,
+              html_url: c.html_url || `https://github.com/${c.name || c.login}`,
+              contributions: c.contributions
+            }))
+          } else if (Array.isArray(apiData)) {
+            contributors.value = apiData.map(c => ({
+              login: c.name || c.login,
+              avatar_url: c.avatar || c.avatar_url,
+              html_url: c.html_url || `https://github.com/${c.name || c.login}`,
+              contributions: c.contributions
+            }))
+          }
+        }
+      } catch (apiErr) {
+        console.error('Failed to load contributors from API:', apiErr)
+      }
     }
 
   } catch (err) {
@@ -223,17 +248,25 @@ h2 {
   align-items: center;
   text-decoration: none;
   color: var(--vp-c-text-1);
-  transition: background-color 0.2s ease-in-out;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: 1px solid var(--vp-c-bg);
+  transition: all 0.3s ease;
+  padding: 6px 14px;
+  border-radius: 24px;
+  border: 1px solid var(--vp-c-divider);
   background-color: transparent;
+  cursor: pointer;
+  /* Webkit内核浏览器兼容（Chrome/Safari） */
+  -webkit-user-drag: none;
+  /* 禁止文本选中（可选，防止拖拽时连带选中文本） */
+  user-select: none;
+  /* 兼容Firefox（可选，实际效果不如HTML属性） */
+  -moz-user-select: none;
 }
 
 .contributor-card:hover {
+  border-color: var(--vp-c-brand-1);
   background-color: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-brand-1);
   text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .contributor-avatar {
@@ -243,6 +276,8 @@ h2 {
   margin-right: 8px;
   border: 1px solid var(--vp-c-divider);
   object-fit: cover;
+  /* 禁用图片拖拽 */
+  -webkit-user-drag: none;
 }
 
 .contributor-name {

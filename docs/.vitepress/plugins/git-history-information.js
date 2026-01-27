@@ -1,6 +1,6 @@
 import { execSync } from 'child_process'
-import { resolve, relative, join } from 'path'
-import { existsSync } from 'fs'
+import { resolve, relative, join, dirname, basename } from 'path'
+import { existsSync, readdirSync } from 'fs'
 
 /**
  * Git History Information Plugin for VitePress
@@ -193,18 +193,90 @@ export function GitHistoryInformation(options = {}) {
             
             // 如果请求指定了文件
             if (file) {
-                // 处理路径: 移除 docs/ 前缀如果存在，因为 getFileHistory 需要相对于 repoRoot 的路径
-                // 根据实际项目结构，docs/ 可能就是 repoRoot 下的目录
-                const relativePath = file
-                const history = getFileHistory(resolve(repoRoot, relativePath), repoRoot)
+                let relativePath = file
+
+                // 尝试通过 Git Index 修复路径 (Git 是大小写敏感的)
+                try {
+                  const checkPath = resolve(repoRoot, relativePath);
+                  const dirRelative = relative(repoRoot, dirname(checkPath)).replace(/\\/g, '/');
+                  const filename = basename(checkPath);
+                  
+                  // 查询 Git 索引中的实际文件名
+                  // 注意: dirRelative 可能为空或点
+                  const searchPath = dirRelative === '' ? '.' : dirRelative;
+                  const cmd = `git ls-files "${searchPath}"`;
+                  const output = execSync(cmd, { cwd: repoRoot, encoding: 'utf-8' }).trim();
+                  
+                  if (output) {
+                      const lines = output.split('\n');
+                      // 构造预期的 Git 路径后缀 (Normalized)
+                      // relativePath 已经是相对路径，但分隔符可能不同，统一一下
+                      const targetPathNorm = relativePath.replace(/\\/g, '/');
+
+                      // 在输出中寻找匹配项 (忽略大小写)
+                      const match = lines.find(line => line.toLowerCase() === targetPathNorm.toLowerCase());
+                      
+                      if (match) {
+                          if (match !== relativePath) {
+                              console.log(`[API] 路径修正 (Git): ${relativePath} -> ${match}`);
+                              relativePath = match;
+                          }
+                      } else {
+                          // 如果没找到全路径匹配，尝试匹配文件名 (以防路径层级有微小差异)
+                          const matchFile = lines.find(line => basename(line).toLowerCase() === filename.toLowerCase());
+                          if (matchFile) {
+                              console.log(`[API] 文件名匹配修正: ${relativePath} -> ${matchFile}`);
+                              relativePath = matchFile;
+                          }
+                      }
+                  }
+                } catch(e) { console.warn('[API] Git path check error:', e.message); }
+
+                let history = getFileHistory(resolve(repoRoot, relativePath), repoRoot)
                 
+                // 尝试移除 docs/ 前缀 (如果第一次获取失败)
+                if (history.length === 0 && relativePath.startsWith('docs/')) {
+                    const altPath = relativePath.replace(/^docs\//, '')
+                    const altHistory = getFileHistory(resolve(repoRoot, altPath), repoRoot)
+                    if (altHistory.length > 0) {
+                        history = altHistory
+                    }
+                }
+
+                // 动态计算该文件的贡献者列表 (Dev模式)
+                const contributorMap = new Map();
+                history.forEach(commit => {
+                    const key = `${commit.authorName}|${commit.authorEmail}`;
+                    if (contributorMap.has(key)) {
+                        contributorMap.get(key).contributions++;
+                    } else {
+                        contributorMap.set(key, {
+                            name: commit.authorName,
+                            login: commit.authorName, // 兼容字段
+                            email: commit.authorEmail,
+                            avatar: `https://github.com/${commit.authorName}.png`,
+                            avatar_url: `https://github.com/${commit.authorName}.png`, // 兼容字段
+                            contributions: 1
+                        });
+                    }
+                });
+                
+                const fileContributors = Array.from(contributorMap.values())
+                    .sort((a, b) => b.contributions - a.contributions);
+
+                console.log(`[API] File: ${file} | History: ${history.length} | Contributors: ${fileContributors.length}`)
+                if (history.length === 0) {
+                     console.log(`[API] Warn: No history found for ${file} in ${repoRoot}`)
+                }
+
                 // 构造前端期望的响应格式
                 result = {
                     history: history,
-                    // 同时也为了通过 Contributors.vue 的检查: files[path].history
+                    contributors: fileContributors,
                     files: {
                         [file]: {
-                            history: history
+                            history: history,
+                            contributors: fileContributors
                         }
                     }
                 }
