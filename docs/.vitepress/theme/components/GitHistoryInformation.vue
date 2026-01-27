@@ -395,7 +395,7 @@ const getCurrentTexts = () => {
   // 获取当前路径来判断语言
   const currentPath = page.value.relativePath || ''
   let currentLang = page.value.lang || 'zh-CN'
-  
+
   // 从路径中提取语言代码
   if (currentPath.startsWith('en-US/')) {
     currentLang = 'en-US'
@@ -418,7 +418,7 @@ const getCurrentTexts = () => {
   } else if (currentPath.startsWith('zh-CN/') || !currentPath.includes('/')) {
     currentLang = 'zh-CN'
   }
-  
+
   // 调试信息（开发环境下）
   if (process.env.NODE_ENV === 'development') {
     console.log('GitHistory Language Debug:', {
@@ -428,7 +428,7 @@ const getCurrentTexts = () => {
       'available': Object.keys(i18nTexts)
     })
   }
-  
+
   return i18nTexts[currentLang] || i18nTexts['zh-CN']
 }
 
@@ -492,17 +492,17 @@ const getCommitPR = (message) => {
 // 安全的日期解析函数，兼容iOS Safari
 const parseDate = (dateString) => {
   if (!dateString) return null
-  
+
   // 尝试直接解析
   let date = new Date(dateString)
-  
+
   // 如果解析失败，尝试处理ISO格式的日期字符串
   if (isNaN(date.getTime())) {
     // 将空格替换为T，确保ISO格式兼容性
     const isoString = dateString.replace(' ', 'T')
     date = new Date(isoString)
   }
-  
+
   // 如果仍然失败，尝试手动解析常见格式
   if (isNaN(date.getTime())) {
     // 处理 "YYYY-MM-DD HH:mm:ss +ZZZZ" 格式
@@ -513,7 +513,7 @@ const parseDate = (dateString) => {
       date = new Date(isoString)
     }
   }
-  
+
   return isNaN(date.getTime()) ? null : date
 }
 
@@ -521,11 +521,11 @@ const parseDate = (dateString) => {
 const formatCommitTime = (dateString) => {
   const date = parseDate(dateString)
   if (!date) return texts.value.errors.unknown
-  
+
   const now = new Date()
   const diffTime = Math.abs(now - date)
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-  
+
   if (diffDays === 1) {
     return texts.value.timeFormat.onDayAgo.replace('{n}', '1')
   } else if (diffDays < 7) {
@@ -549,11 +549,11 @@ const formatCommitTime = (dateString) => {
 const formatRelativeTime = (dateString) => {
   const date = parseDate(dateString)
   if (!date) return texts.value.errors.unknown
-  
+
   const now = new Date()
   const diffTime = Math.abs(now - date)
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-  
+
   if (diffDays === 1) {
     return texts.value.timeFormat.dayAgo.replace('{n}', '1')
   } else if (diffDays < 7) {
@@ -627,9 +627,38 @@ const fetchFileHistory = async () => {
         const filesData = gitHistoryData.files || gitHistoryData
         const fileData = filesData[filePath]
 
+        let rawHistory = []
+
         if (fileData && fileData.history && Array.isArray(fileData.history)) {
+          rawHistory = fileData.history
+        } else if (fileData && fileData.months && Array.isArray(fileData.months)) {
+          console.log(`📡 正在获取 ${fileData.months.length} 个月份的历史记录...`)
+          const historyBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`
+
+          try {
+            const monthPromises = fileData.months.map(async (month) => {
+              try {
+                const res = await fetch(`${historyBase}history/${month}.json`)
+                if (res.ok) {
+                  const monthData = await res.json()
+                  return monthData[filePath] || []
+                }
+              } catch (e) {
+                console.warn(`Failed to fetch history for ${month}:`, e)
+              }
+              return []
+            })
+
+            const results = await Promise.all(monthPromises)
+            rawHistory = results.flat().sort((a, b) => new Date(b.date) - new Date(a.date))
+          } catch (err) {
+            console.error('Failed to fetch monthly history:', err)
+          }
+        }
+
+        if (rawHistory.length > 0) {
           // 验证历史记录数据
-          const validHistory = fileData.history.filter(commit => {
+          const validHistory = rawHistory.filter(commit => {
             return commit.hash && commit.authorName && commit.date && commit.message
           })
 
@@ -826,7 +855,7 @@ onMounted(() => {
   .view-history-link {
     display: none;
   }
-  
+
 }
 
 .changelog-header:hover {

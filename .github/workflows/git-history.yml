@@ -2,11 +2,13 @@
 name: Generate Git History
 
 on:
-  schedule:
-    # 每天凌晨 2 点自动更新历史数据
-    - cron: '0 2 * * *'
-  workflow_call:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "docs/public/git-history.json"
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: write
@@ -34,9 +36,9 @@ jobs:
           const { execSync } = require('child_process');
           const fs = require('fs');
           const path = require('path');
-          
+
           console.log('🚀 开始生成 Git 历史数据...');
-          
+
           // 获取所有文件的 git 历史
           function getFileHistory(filePath) {
             try {
@@ -62,7 +64,7 @@ jobs:
               return [];
             }
           }
-          
+
           // 获取所有 .md 文件
           function getAllMarkdownFiles(dir, fileList = []) {
             const files = fs.readdirSync(dir);
@@ -80,7 +82,7 @@ jobs:
             
             return fileList;
           }
-          
+
           // 获取仓库统计信息
           function getRepoStats() {
             try {
@@ -107,51 +109,91 @@ jobs:
               };
             }
           }
-          
-          // 生成历史数据
+
+          // 主逻辑
           const docsDir = './docs';
           const markdownFiles = getAllMarkdownFiles(docsDir);
-          const gitHistoryData = {
+
+          // 汇总数据
+          const summaryData = {
             _meta: getRepoStats(),
-            files: {}
+            files: {},
+            months: [] // 记录有哪些月份的数据
           };
-          
+
+          // 月份数据: keys are 'YYYY-MM', values are { 'filePath': [commits] }
+          const monthlyData = {};
+
           console.log(`📁 发现 ${markdownFiles.length} 个 Markdown 文件`);
-          
+
           let processedCount = 0;
           markdownFiles.forEach(filePath => {
             const relativePath = path.relative('.', filePath).replace(/\\/g, '/');
             const history = getFileHistory(relativePath);
             
             if (history.length > 0) {
-              gitHistoryData.files[relativePath] = {
-                history,
+              const fileMonths = new Set();
+              
+              // 按月份拆分历史记录
+              history.forEach(commit => {
+                const date = new Date(commit.date);
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                
+                if (!monthlyData[monthKey]) {
+                  monthlyData[monthKey] = {};
+                }
+                if (!monthlyData[monthKey][relativePath]) {
+                  monthlyData[monthKey][relativePath] = [];
+                }
+                
+                monthlyData[monthKey][relativePath].push(commit);
+                fileMonths.add(monthKey);
+              });
+
+              // 更新文件汇总信息
+              summaryData.files[relativePath] = {
                 lastUpdated: history[0]?.date || null,
                 totalCommits: history.length,
-                contributors: [...new Set(history.map(h => h.authorName))].length
+                contributors: [...new Set(history.map(h => h.authorName))].length,
+                months: [...fileMonths].sort().reverse()
               };
+              
               console.log(`✅ ${relativePath}: ${history.length} 次提交`);
               processedCount++;
             } else {
               console.log(`⚠️ ${relativePath}: 无提交历史`);
             }
           });
-          
-          // 保存到 JSON 文件
-          const outputPath = './docs/public/git-history.json';
-          fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-          fs.writeFileSync(outputPath, JSON.stringify(gitHistoryData, null, 2));
-          
+
+          // 确保输出目录存在
+          const publicDir = './docs/public';
+          const historyDir = path.join(publicDir, 'history');
+          fs.mkdirSync(historyDir, { recursive: true });
+
+          // 写入月份数据文件
+          const sortedMonths = Object.keys(monthlyData).sort().reverse(); // 最近的月份在前
+          summaryData.months = sortedMonths;
+
+          sortedMonths.forEach(month => {
+            const monthFile = path.join(historyDir, `${month}.json`);
+            fs.writeFileSync(monthFile, JSON.stringify(monthlyData[month], null, 2));
+            console.log(`📅 生成月份历史: ${month}.json`);
+          });
+
+          // 写入汇总文件 (git-history.json)
+          const summaryPath = path.join(publicDir, 'git-history.json');
+          fs.writeFileSync(summaryPath, JSON.stringify(summaryData, null, 2));
+
           console.log(`\n🎉 Git 历史数据生成完成!`);
           console.log(`📊 统计信息:`);
           console.log(`   - 总文件数: ${markdownFiles.length}`);
           console.log(`   - 有历史记录的文件: ${processedCount}`);
-          console.log(`   - 总提交数: ${gitHistoryData._meta.totalCommits}`);
-          console.log(`   - 贡献者数: ${gitHistoryData._meta.contributors}`);
-          console.log(`   - 输出文件: ${outputPath}`);
-          console.log(`   - 文件大小: ${(fs.statSync(outputPath).size / 1024).toFixed(2)} KB`);
+          console.log(`   - 总提交数: ${summaryData._meta.totalCommits}`);
+          console.log(`   - 历史月份数: ${sortedMonths.length}`);
+          console.log(`   - 汇总文件: ${summaryPath}`);
+          console.log(`   - 历史文件目录: ${historyDir}`);
           EOF
-          
+
           # 运行脚本生成历史数据
           node generate-git-history.js
 
@@ -161,22 +203,22 @@ jobs:
             echo "❌ Git 历史数据文件未生成"
             exit 1
           fi
-          
+
           # 检查 JSON 格式是否有效
           if ! node -e "JSON.parse(require('fs').readFileSync('docs/public/git-history.json', 'utf8'))"; then
             echo "❌ 生成的 JSON 文件格式无效"
             exit 1
           fi
-          
+
           echo "✅ Git 历史数据验证通过"
 
       - name: Commit and push git history data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
+
           if [ -f "docs/public/git-history.json" ]; then
-            git add docs/public/git-history.json
+            git add docs/public/git-history.json docs/public/history/*.json
             if git diff --staged --quiet; then
               echo "ℹ️ Git 历史数据无变更"
             else
@@ -197,7 +239,7 @@ jobs:
         run: |
           echo "## 📊 Git 历史数据生成报告" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          
+
           if [ -f "docs/public/git-history.json" ]; then
             FILE_SIZE=$(stat -c%s "docs/public/git-history.json")
             FILE_SIZE_KB=$((FILE_SIZE / 1024))
