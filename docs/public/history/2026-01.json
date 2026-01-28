@@ -1,76 +1,4 @@
 {
-  "docs/ar-SA/Components/index.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
-  "docs/ar-SA/DevelopmentGuide/configuration.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
-  "docs/ar-SA/DevelopmentGuide/deployment.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
-  "docs/ar-SA/DevelopmentGuide/development-details.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
-  "docs/ar-SA/DevelopmentGuide/index.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
-  "docs/ar-SA/DevelopmentGuide/project-structure.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
-  "docs/ar-SA/DevelopmentGuide/troubleshooting.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
-  "docs/ar-SA/DevelopmentGuide/writing-docs.md": [
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
   "docs/ar-SA/FAQ/faq-details.md": [
     {
       "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
@@ -172,11 +100,54 @@
   ],
   "docs/ar-SA/index.md": [
     {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    },
+    {
       "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
       "authorName": "Re0XIAOPA",
       "authorEmail": "mckekejun@outlook.com",
       "date": "2026-01-28 01:13:28 +0800",
       "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/de-DE/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/en-US/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/es-ES/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/fr-FR/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
     }
   ],
   "docs/index.md": [
@@ -193,6 +164,60 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2026-01-27 22:40:54 +0800",
       "message": "Add per-file and global contributor stats to git history"
+    }
+  ],
+  "docs/ja-JP/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/ko-KR/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/ru-RU/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/zh-CN/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/zh-HK/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    }
+  ],
+  "docs/zh-TW/index.md": [
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
     }
   ]
 }
