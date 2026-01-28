@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "totalCommits": 312,
+    "totalCommits": 314,
     "contributors": 4,
     "firstCommit": "2025-06-06 19:51:21 +0800",
-    "lastCommit": "2026-01-28 11:11:24 +0800",
-    "generatedAt": "2026-01-28T03:11:38.641Z"
+    "lastCommit": "2026-01-28 16:27:50 +0800",
+    "generatedAt": "2026-01-28T08:28:12.333Z"
   },
   "files": {
     "docs/ar-SA/FAQ/faq-details.md": {
@@ -184,14 +184,14 @@
       ]
     },
     "docs/ar-SA/index.md": {
-      "lastUpdated": "2026-01-28 11:11:24 +0800",
-      "totalCommits": 9,
+      "lastUpdated": "2026-01-28 16:27:50 +0800",
+      "totalCommits": 10,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 9
+          "contributions": 10
         }
       ],
       "months": [
@@ -548,14 +548,14 @@
       ]
     },
     "docs/en-US/index.md": {
-      "lastUpdated": "2026-01-28 11:11:24 +0800",
-      "totalCommits": 8,
+      "lastUpdated": "2026-01-28 16:27:50 +0800",
+      "totalCommits": 9,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 8
+          "contributions": 9
         }
       ],
       "months": [
@@ -730,14 +730,14 @@
       ]
     },
     "docs/es-ES/index.md": {
-      "lastUpdated": "2026-01-28 11:11:24 +0800",
-      "totalCommits": 9,
+      "lastUpdated": "2026-01-28 16:27:50 +0800",
+      "totalCommits": 10,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 9
+          "contributions": 10
         }
       ],
       "months": [
@@ -942,14 +942,14 @@
       ]
     },
     "docs/fr-FR/index.md": {
-      "lastUpdated": "2026-01-28 11:11:24 +0800",
-      "totalCommits": 8,
+      "lastUpdated": "2026-01-28 16:27:50 +0800",
+      "totalCommits": 9,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 8
+          "contributions": 9
         }
       ],
       "months": [
@@ -1526,14 +1526,14 @@
       ]
     },
     "docs/ru-RU/index.md": {
-      "lastUpdated": "2026-01-28 11:11:24 +0800",
-      "totalCommits": 8,
+      "lastUpdated": "2026-01-28 16:27:50 +0800",
+      "totalCommits": 9,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 8
+          "contributions": 9
         }
       ],
       "months": [
@@ -1708,14 +1708,14 @@
       ]
     },
     "docs/zh-CN/index.md": {
-      "lastUpdated": "2026-01-28 11:11:24 +0800",
-      "totalCommits": 18,
+      "lastUpdated": "2026-01-28 16:27:50 +0800",
+      "totalCommits": 19,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 12
+          "contributions": 13
         },
         {
           "name": "MajorFoxs_OvO",
@@ -2113,7 +2113,7 @@
       "login": "Re0XIAOPA",
       "avatar_url": "https://github.com/Re0XIAOPA.png",
       "html_url": "https://github.com/Re0XIAOPA",
-      "contributions": 1089,
+      "contributions": 1095,
       "email": "mckekejun@outlook.com"
     },
     {
