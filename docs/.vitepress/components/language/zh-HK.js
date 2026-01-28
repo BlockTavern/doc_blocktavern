@@ -18,7 +18,6 @@ export const zhHKConfig = {
       },
       { text: "遊戲指南", link: "/zh-HK/GameplayGuide/command-list" },
       { text: "常見問題", link: "/zh-HK/FAQ/faq-details" },
-      { text: "開發指南", link: "/zh-HK/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

@@ -15,7 +15,6 @@ export const enConfig = {
       { text: "Installation", link: "/en-US/InstallationTutorial/installation-details" },
       { text: "Gameplay Guide", link: "/en-US/GameplayGuide/command-list" },
       { text: "FAQ", link: "/en-US/FAQ/faq-details" },
-      { text: "Development", link: "/en-US/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

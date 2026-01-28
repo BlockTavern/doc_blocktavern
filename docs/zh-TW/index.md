@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: 進入教程
       link: /zh-TW/InstallationTutorial/installation-details
-    - theme: alt
-      text: 開發指南(貢獻文檔)
-      link: /zh-TW/DevelopmentGuide/development-details
 
 features:
   - icon: 📦

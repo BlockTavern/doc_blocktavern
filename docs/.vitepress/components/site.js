@@ -40,7 +40,7 @@ export const themeBaseConfig = {
   // 页脚配置
   footer: {
     message: 'BlockTavern Docs',
-    copyright: 'Copyright © 2025 | 方块酒馆文档站点'
+    copyright: `Copyright © 2025${new Date().getFullYear() > 2025 ? ' - ' + new Date().getFullYear() : ''} | 方块酒馆文档站点`
   },
 
   // 中文本地化配置

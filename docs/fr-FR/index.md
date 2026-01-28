@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: Commencer le tutoriel
       link: /fr-FR/InstallationTutorial/installation-details
-    - theme: alt
-      text: Guide de développement (Contribuer à la documentation)
-      link: /fr-FR/DevelopmentGuide/development-details
 
 features:
   - icon: 📦

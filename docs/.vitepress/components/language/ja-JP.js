@@ -18,7 +18,6 @@ export const jaConfig = {
       },
       { text: "ゲームガイド", link: "/ja-JP/GameplayGuide/command-list" },
       { text: "よくある質問", link: "/ja-JP/FAQ/faq-details" },
-      { text: "開発ガイド", link: "/ja-JP/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

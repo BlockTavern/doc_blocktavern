@@ -18,7 +18,6 @@ export const ruConfig = {
       },
       { text: "Руководство по игре", link: "/ru-RU/GameplayGuide/command-list" },
       { text: "FAQ", link: "/ru-RU/FAQ/faq-details" },
-      { text: "Руководство разработчика", link: "/ru-RU/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

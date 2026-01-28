@@ -18,7 +18,6 @@ export const koConfig = {
       },
       { text: "게임 가이드", link: "/ko-KR/GameplayGuide/command-list" },
       { text: "FAQ", link: "/ko-KR/FAQ/faq-details" },
-      { text: "개발 가이드", link: "/ko-KR/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

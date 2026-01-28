@@ -18,7 +18,6 @@ export const frConfig = {
       },
       { text: "Guide de jeu", link: "/fr-FR/GameplayGuide/command-list" },
       { text: "FAQ", link: "/fr-FR/FAQ/faq-details" },
-      { text: "Guide développeur", link: "/fr-FR/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

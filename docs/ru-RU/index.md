@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: Перейти к руководству
       link: /ru-RU/InstallationTutorial/installation-details
-    - theme: alt
-      text: Руководство разработчика (Документация)
-      link: /ru-RU/DevelopmentGuide/development-details
 
 features:
   - icon: 📦

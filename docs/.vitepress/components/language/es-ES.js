@@ -18,7 +18,6 @@ export const esConfig = {
       },
       { text: "Guía de juego", link: "/es-ES/GameplayGuide/command-list" },
       { text: "FAQ", link: "/es-ES/FAQ/faq-details" },
-      { text: "Guía de desarrollo", link: "/es-ES/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

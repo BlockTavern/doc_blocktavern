@@ -18,7 +18,6 @@ export const deConfig = {
       },
       { text: "Spielanleitung", link: "/de-DE/GameplayGuide/command-list" },
       { text: "FAQ", link: "/de-DE/FAQ/faq-details" },
-      { text: "Entwicklerhandbuch", link: "/de-DE/DevelopmentGuide/development-details" },
     ],
 
     // 编辑链接配置

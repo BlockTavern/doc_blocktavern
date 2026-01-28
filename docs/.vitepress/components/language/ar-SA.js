@@ -18,7 +18,6 @@ export const arConfig = {
       },
       { text: "دليل اللعب", link: "/ar-SA/GameplayGuide/command-list" },
       { text: "الأسئلة الشائعة", link: "/ar-SA/FAQ/faq-details" },
-      { text: "دليل التطوير", link: "/ar-SA/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {

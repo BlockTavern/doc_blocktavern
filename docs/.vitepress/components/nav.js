@@ -24,9 +24,5 @@ export const navConfig = [
   { 
     text: '常见问题', 
     link: '/FAQ/' 
-  },
-  { 
-    text: '开发指南', 
-    link: '/DevelopmentGuide/' 
   }
 ]

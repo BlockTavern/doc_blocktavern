@@ -19,7 +19,6 @@ export const zhConfig = {
       },
       { text: "游戏指南", link: "/zh-CN/GameplayGuide/command-list" },
       { text: "常见问题", link: "/zh-CN/FAQ/faq-details" },
-      { text: "开发指南", link: "/zh-CN/DevelopmentGuide/development-details" },
     ],
 
     // 编辑链接配置

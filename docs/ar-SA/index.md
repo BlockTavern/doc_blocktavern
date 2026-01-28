@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: Enter Tutorial
       link: /en-US/InstallationTutorial/installation-details
-    - theme: alt
-      text: Development Guide (Contribute Documentation)
-      link: /en-US/DevelopmentGuide/development-details
 
 features:
   - icon: 📦

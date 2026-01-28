@@ -18,7 +18,6 @@ export const zhTWConfig = {
       },
       { text: "遊戲指南", link: "/zh-TW/GameplayGuide/command-list" },
       { text: "常見問題", link: "/zh-TW/FAQ/faq-details" },
-      { text: "開發指南", link: "/zh-TW/DevelopmentGuide/development-details" },
     ],
     // Edit link configuration
     editLink: {
