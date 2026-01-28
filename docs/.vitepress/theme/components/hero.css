@@ -4,6 +4,60 @@
   它定义了 Hero 区域的布局、文本和图片动画，以及浮动Logo装饰及其动画效果。
 */
 
+/* Minecraft 风格标题 - 苦力怕绿色像素风格 */
+.VPHero .name {
+  font-family: 'Press Start 2P', monospace !important;
+  font-weight: 400 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  line-height: 1.2 !important;
+  
+  /* 经典的 Minecraft 绿色渐变，但颜色更鲜艳，对比度更高 */
+  color: #57a639 !important;
+  background: linear-gradient(180deg, #7dd956 20%, #57a639 50%, #3d7829 80%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  
+  /* 黑色像素描边和立体阴影 - 增强对比度和立体感 */
+  filter: drop-shadow(4px 4px 0px #000000)
+          drop-shadow(2px 2px 0px #000000) !important;
+
+  /* 像素化渲染 */
+  image-rendering: pixelated;
+  padding-bottom: 20px;
+  
+  /* 响应式字体调整，确保不溢出 */
+  white-space: normal !important;
+  font-size: clamp(2rem, 8vw, 64px) !important;
+  width: 100% !important;
+  display: block !important;
+  overflow: visible !important;
+}
+
+/* 暗色模式下的标题 */
+html.dark .VPHero .name {
+  /* 暗色模式下稍微亮一点的绿色，确保在深色背景上清晰可见 */
+  background: linear-gradient(180deg, #99e550 20%, #6fbf47 50%, #4a8f31 80%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  
+  filter: drop-shadow(4px 4px 0px #000000)
+          drop-shadow(2px 2px 0px #000000) !important;
+}
+
+/* 暗色模式下的标题 */
+html.dark .VPHero .name {
+  background: linear-gradient(180deg, #8ce765 0%, #6fbf47 50%, #57a639 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  
+  filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.5))
+          drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.3)) !important;
+}
+
 /* Hero区域整体优化 */
 .VPHero {
   position: relative;
@@ -17,218 +71,227 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255, 208, 0, 0.1) 0%,
-    transparent 70%
-  );
+  /* 
+    淡网格背景 
+    使用 linear-gradient 绘制 20x20px 的网格
+  */
+  background-image: 
+    linear-gradient(rgba(60, 60, 60, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(60, 60, 60, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  
+  /* 叠加原有的径向渐变，让边缘柔和 */
+  background: 
+    radial-gradient(ellipse at center, rgba(255, 208, 0, 0.1) 0%, transparent 70%),
+    linear-gradient(rgba(128, 128, 128, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  
   pointer-events: none;
+  z-index: 0;
 }
-/* 浮动Logo装饰 - 增加更多logo */
-.VPHero::after {
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 60px;
-  height: 60px;
-  background: url("/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.1;
-  animation: floatLogo1 8s ease-in-out infinite;
-  pointer-events: none;
-}
+/*
+  角色与装饰定位 - 新布局
+*/
 
-.VPHero .container::before {
-  content: "";
-  position: absolute;
-  top: 60%;
-  right: 15%;
-  width: 40px;
-  height: 40px;
-  background: url("/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.08;
-  animation: floatLogo2 10s ease-in-out infinite 2s;
-  pointer-events: none;
-}
-
-.VPHero .container::after {
-  content: "";
-  position: absolute;
-  top: 30%;
-  right: 8%;
-  width: 50px;
-  height: 50px;
-  background: url("/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.06;
-  animation: floatLogo3 12s ease-in-out infinite 4s;
-  pointer-events: none;
-}
-
-/* 额外的浮动Logo */
-.VPHero .main::before {
-  content: "";
-  position: absolute;
-  top: 10%;
-  right: 25%;
-  width: 35px;
-  height: 35px;
-  background: url("/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.05;
-  animation: floatLogo4 14s ease-in-out infinite 1s;
-  pointer-events: none;
-}
-
-.VPHero .main::after {
-  content: "";
-  position: absolute;
-  bottom: 20%;
-  left: 20%;
-  width: 45px;
-  height: 45px;
-  background: url("/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.07;
-  animation: floatLogo5 16s ease-in-out infinite 3s;
-  pointer-events: none;
-}
-
-.VPHero .content::before {
-  content: "";
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 30px;
-  height: 30px;
-  background: url("/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.04;
-  animation: floatLogo6 18s ease-in-out infinite 5s;
-  pointer-events: none;
-}
-
-.VPHero .content::after {
-  content: "";
-  position: absolute;
-  bottom: 10%;
-  right: 5%;
-  width: 55px;
-  height: 55px;
-  background: url("/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.09;
-  animation: floatLogo7 20s ease-in-out infinite 6s;
-  pointer-events: none;
-}
-
-@keyframes floatLogo1 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translateY(-15px) rotate(5deg) scale(1.1);
-  }
-  50% {
-    transform: translateY(-10px) rotate(-3deg) scale(0.9);
-  }
-  75% {
-    transform: translateY(-20px) rotate(8deg) scale(1.05);
-  }
-}
-
-@keyframes floatLogo2 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-  33% {
-    transform: translateY(-12px) rotate(-6deg) scale(1.15);
-  }
-  66% {
-    transform: translateY(-8px) rotate(4deg) scale(0.85);
-  }
-}
-
-@keyframes floatLogo3 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-  40% {
-    transform: translateY(-18px) rotate(10deg) scale(1.2);
-  }
-  80% {
-    transform: translateY(-5px) rotate(-5deg) scale(0.8);
-  }
-}
-
-@keyframes floatLogo4 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-  30% {
-    transform: translateY(-10px) rotate(-8deg) scale(1.3);
-  }
-  70% {
-    transform: translateY(-15px) rotate(6deg) scale(0.7);
-  }
-}
-
-@keyframes floatLogo5 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translateY(-20px) rotate(12deg) scale(1.1);
-  }
-  75% {
-    transform: translateY(-8px) rotate(-10deg) scale(0.9);
-  }
-}
-
-@keyframes floatLogo6 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-  50% {
-    transform: translateY(-25px) rotate(-15deg) scale(1.4);
-  }
-}
-
-@keyframes floatLogo7 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg) scale(1);
-  }
-  35% {
-    transform: translateY(-12px) rotate(7deg) scale(1.25);
-  }
-  65% {
-    transform: translateY(-18px) rotate(-12deg) scale(0.75);
-  }
-}
-
-/* 文字发光效果 - 黄色系 */
+/* 
+  1. Steve & Alex - 位于标题左右两侧
+  使用 .VPHero .name 的伪元素
+*/
+/* 
+  1. Steve & Alex - 位于标题左右两侧
+  使用 .VPHero .name 的伪元素
+*/
 .VPHero .name {
-  transform: translateY(0);
+  position: relative !important; 
+  display: inline-block !important; /* 关键修复：让容器宽度适应文字，这样 pseudo-element 才会紧贴文字 */
+  width: auto !important;
+  max-width: 100% !important;
 }
 
-.VPHero .text {
-  animation: heroFadeIn 1s ease-out 0.2s both;
+/* Alex - 标题左侧 (护体) */
+.VPHero .name::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -70px; /* 紧贴文字 */
+  width: 90px;
+  height: 120px;
+  background: url("/characters/alex.png") no-repeat center bottom;
+  background-size: contain;
+  opacity: 1;
+  z-index: 5;
+  /* Alex 原图面朝右，保持原样即可面向标题 */
+  transform: none; 
+  animation: charFloat 5s ease-in-out infinite 0.5s;
+  pointer-events: none;
 }
 
-.VPHero .tagline {
-  animation: heroFadeIn 1s ease-out 0.4s both;
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin: 1.5rem 0;
+/* Steve - 标题右侧 (护体) */
+.VPHero .name::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 70px; /* 紧贴文字 */
+  top: 120px;
+  width: 90px;
+  height: 120px;
+  background: url("/characters/steve.png") no-repeat center bottom;
+  background-size: contain;
+  opacity: 1;
+  z-index: 5;
+  /* Steve 原图面朝左下，保持原样则背对标题? 
+     如果不翻转，面朝左下（即朝向标题）。
+     之前的代码是翻转了导致面朝右（背对标题）。
+     所以这里去掉翻转。 */
+  transform: none;
+  animation: steveIdle 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* 
+  2. Wolf - 已移除
+*/
+.VPHero .actions::before {
+  display: none !important;
+}
+
+/* 移除旧的角色定位 (绑定在 .main/.container 的) */
+.VPHero .main::before,
+.VPHero .main::after,
+.VPHero .container::before {
+  display: none !important;
+}
+
+/* 
+  3. 土块金字塔修正
+  分开左右基座，避免重叠
+*/
+/* 
+  3. 满级附魔台造型
+  Left/Right: 书架 (Bookshelves)
+  Center: 附魔台 (Enchanting Table)
+*/
+/* 
+  3. 满级附魔台造型 - 合成渲染
+  Layer 1 (Back): ::before - 后排书架
+  Layer 2 (Middle): .image-src - 附魔台
+  Layer 3 (Front): ::after - 前排书架
+*/
+
+/* 
+  容器尺寸调整 
+  为了容纳宽大的书架阵列（600x450画布），我们需要扩大容器或允许溢出
+*/
+/* 
+  容器尺寸调整 
+  移除固定宽度，使用 flex 居中
+*/
+/* 
+  容器尺寸调整 
+  移除固定宽度，使用 flex 布局
+*/
+.VPHero .image {
+  margin: 0;
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  /* 移除 transform, 因为会被 animation 覆盖 */
+}
+
+/* 强制内部容器居中 */
+.VPHero .image-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: auto !important;
+  height: auto !important;
+  /* 
+     关键修复：
+     将平移应用到内部容器。
+     外部容器 .image 在做浮动动画(transform)，内部容器做位置偏移(transform)，互不冲突。
+  */
+  transform: translateX(-80px); 
+}
+
+/* 
+  响应式适配：移动端/平板 
+  强制图片在这些设备上居中显示
+*/
+@media (max-width: 960px) {
+  .VPHero .image {
+    margin: 0 auto; /* 平板/移动端居中 */
+  }
+  
+  .VPHero .image-container {
+    transform: none; /* 移动端取消平移 */
+  }
+}
+
+/* 背景光效适配 */
+.VPHero .image-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(-45deg, #bd93f9 50%, #8be9fd 50%);
+  filter: blur(40px);
+  opacity: 0.2;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* 后排书架 - 已移除 */
+.VPHero .image::before { 
+  display: none !important;
+}
+
+/* 前排书架 - 已移除 */
+.VPHero .image::after { 
+  display: none !important;
+}
+
+.VPHero .image-src { /* 主图 - 附魔台 */
+  /* content: url(...) 已移除，直接通过 frontmatter 设置 */
+  z-index: 3;
+  width: 140px; /* 匹配 Python 脚本中的比例预估 */
+  height: auto;
+  transform: translateY(10px); /* 微调垂直对齐 */
+  filter: drop-shadow(0 0 20px rgba(189, 147, 249, 0.6)); /* 紫色附魔光效 */
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 15px rgba(189, 147, 249, 0.4)); transform: translateY(10px) scale(1); }
+  to { filter: drop-shadow(0 0 30px rgba(189, 147, 249, 0.8)); transform: translateY(10px) scale(1.05); }
+}
+
+/* 角色动画 */
+@keyframes charFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes wolfSit {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@keyframes steveIdle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-3px) rotate(1deg); }
+}
+
+/* 移除旧的浮动 Logo 动画及元素 */
+.VPHero::after, 
+.VPHero .container::after,
+.VPHero .content::before,
+.VPHero .content::after {
+  display: none !important;
 }
 
 .VPHero .actions {
@@ -236,8 +299,61 @@
   gap: 1rem;
 }
 
+/* Hero Image Animation & Mountain Stack Effect */
 .VPHero .image {
+  /* 浮动动画 */
   animation: heroImageFloat 1s ease-out, imageFloat 6s ease-in-out infinite 1s;
+  
+  /* 确保相对定位以便放置伪元素 */
+  position: relative;
+  z-index: 1;
+  /* 稍微增加底部padding给堆叠的方块留空间 */
+  padding-bottom: 20px;
+}
+
+/* 左侧基座 Logo */
+.VPHero .image::before {
+  content: "";
+  position: absolute;
+  /* 位置调整：在主图左下方 */
+  bottom: -15px;
+  left: -25%;
+  width: 75%;
+  height: 75%;
+  background: url("/logo.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.9;
+  z-index: -1;
+  /* 移除凌乱的旋转，只保留缩放 */
+  transform: scale(0.9);
+  filter: brightness(0.7); /* 变暗作为背景 */
+}
+
+/* 右侧基座 Logo */
+.VPHero .image::after {
+  content: "";
+  position: absolute;
+  /* 位置调整：在主图右下方 */
+  bottom: -15px;
+  right: -25%;
+  width: 75%;
+  height: 75%;
+  background: url("/logo.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.9;
+  z-index: -1;
+  /* 移除凌乱的旋转，只保留缩放 */
+  transform: scale(0.9);
+  filter: brightness(0.7); /* 变暗作为背景 */
+}
+
+/* 主 Logo (原本的 img 标签) - 位于金字塔顶端 */
+.VPHero .image-src {
+  position: relative;
+  z-index: 2;
+  /* 主图保持原样或微调 */
+  transform: scale(1);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
 }
 
 @keyframes textGlow {
@@ -280,5 +396,83 @@
   }
   50% {
     transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+.VPHero .main {
+  max-width: 100% !important;
+  margin: 0 auto;
+}
+
+.VPHero .name, .VPHero .name span {
+  max-width: 100% !important;
+}
+
+@media (min-width: 640px) {
+  .VPHero .name {
+    max-width: none !important;
+  }
+}
+
+/* 
+  响应式适配 
+*/
+
+/* 平板设备 (小于 960px) - 缩小角色尺寸，拉近距离 */
+@media (max-width: 960px) {
+  .VPHero .name::before { /* Alex */
+    width: 70px;
+    height: 95px;
+    left: -50px;
+    bottom: -20px;
+  }
+  
+  .VPHero .name::after { /* Steve */
+    width: 70px;
+    height: 95px;
+    right: 50px;
+    top: auto;
+    bottom: -20px;
+  }
+}
+
+/* 移动设备 (小于 640px) - 调整布局结构 */
+@media (max-width: 640px) {
+  /* 标题区域 */
+  .VPHero .name {
+    display: block !important; /* 回归块级显示 */
+    margin-top: 60px !important; /* 给头顶的角色留空间 */
+  }
+
+  /* 角色移动到标题上方 */
+  .VPHero .name::before { /* Alex */
+    width: 60px;
+    height: 80px;
+    left: 10% !important; /* 放置在左上方 */
+    bottom: 100% !important; /* 位于标题上方 */
+    margin-bottom: -10px;
+  }
+
+  .VPHero .name::after { /* Steve */
+    width: 60px;
+    height: 80px;
+    right: 10% !important; /* 放置在右上方 */
+    top: auto !important;
+    bottom: 100% !important; /* 位于标题上方 */
+    margin-bottom: -10px;
+  }
+
+  /* 狼 - 调整位置 */
+  .VPHero .actions::before {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px; /* 居中 */
+    top: -55px; /* 位于按钮上方 */
+    bottom: auto;
+  }
+  
+  .VPHero .actions {
+    margin-top: 40px; /* 给狼留空间 */
   }
 }

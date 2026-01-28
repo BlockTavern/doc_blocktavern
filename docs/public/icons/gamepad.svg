@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Minecraft 像素风格剑 -->
+  <!-- 剑刃 - 钻石蓝色 -->
+  <rect x="28" y="8" width="8" height="4" fill="#5DADE2"/>
+  <rect x="28" y="12" width="8" height="4" fill="#3498DB"/>
+  <rect x="28" y="16" width="8" height="4" fill="#5DADE2"/>
+  <rect x="28" y="20" width="8" height="4" fill="#3498DB"/>
+  <rect x="28" y="24" width="8" height="4" fill="#5DADE2"/>
+  <rect x="28" y="28" width="8" height="4" fill="#3498DB"/>
+  
+  <!-- 剑柄 - 棕色 -->
+  <rect x="28" y="32" width="8" height="4" fill="#8B4513"/>
+  <rect x="24" y="36" width="16" height="4" fill="#A0522D"/>
+  <rect x="28" y="40" width="8" height="8" fill="#654321"/>
+  
+  <!-- 剑尖 -->
+  <polygon points="28,8 32,4 36,8" fill="#85C1E9"/>
+  
+  <!-- 剑底 -->
+  <rect x="28" y="48" width="8" height="4" fill="#5C2E0A"/>
+  
+  <!-- 高光效果 -->
+  <rect x="30" y="12" width="2" height="16" fill="#AED6F1" opacity="0.6"/>
+</svg>

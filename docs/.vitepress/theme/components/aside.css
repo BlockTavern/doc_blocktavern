@@ -36,3 +36,11 @@
   border-bottom: 1px solid var(--vp-c-divider);
   z-index: 1000;
 }
+
+/* 
+  修复侧边栏透视问题
+  强制设置背景色，防止背景粒子的穿透显示
+*/
+.VPSidebar {
+  background-color: transparent !important;
+}

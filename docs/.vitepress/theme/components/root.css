@@ -1,105 +1,63 @@
 /*
-  root.css
-  此文件包含亮色和暗色主题的颜色变量定义。
-  它定义了全局的CSS变量，用于控制网站的品牌色、文本色、背景色、边框色等，并支持根据系统偏好设置和手动主题切换来调整颜色。
+  root.css - Minecraft Theme
+  简洁的 Minecraft 配色
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
-  /* 亮色主题颜色 */
-  --vp-c-brand-1: #2563eb;
-  --vp-c-brand-2: #1d4ed8;
-  --vp-c-brand-3: #1e40af;
-  --vp-c-accent: #2563eb;
-  --vp-c-accent-soft: rgba(37, 99, 235, 0.1);
+  /* Minecraft 主色 */
+  --vp-c-brand-1: #57a639;
+  --vp-c-brand-2: #4a8f31;
+  --vp-c-brand-3: #3d7829;
+  --vp-c-accent: #57a639;
+  --vp-c-accent-soft: rgba(87, 166, 57, 0.1);
 
-  /* 文本颜色 */
-  --vp-c-text-1: rgba(0, 0, 0, 0.9);
-  --vp-c-text-2: rgba(0, 0, 0, 0.7);
-  --vp-c-text-3: rgba(0, 0, 0, 0.5);
-  --vp-c-text-4: rgba(0, 0, 0, 0.3);
+  /* Minecraft 金色 */
+  --mc-gold: #ffc107;
+  --mc-gold-dark: #ffa000;
 
-  /* 链接颜色 */
-  --vp-c-link: #28a096;
-  --vp-c-link-soft: rgba(37, 99, 235, 0.7);
+  /* 文本 */
+  --vp-c-text-1: #2c3e50;
+  --vp-c-text-2: #5a6c7d;
+  --vp-c-text-3: #7f8c9a;
 
+  /* 链接 */
+  --vp-c-link: #57a639;
+  --vp-c-link-hover: #4a8f31;
 
-  /* 背景颜色 */
+  /* 背景 */
   --vp-c-bg: #ffffff;
-  --vp-c-bg-soft: #f6f6f6;
-  --vp-c-bg-alt: #eeeeee;
+  --vp-c-bg-soft: #f8f9fa;
+  --vp-c-bg-alt: #f1f3f5;
 
-  /* 边框颜色 */
-  --vp-c-border: #e0e0e0;
-
-  /* 蒙版颜色 */
-  --vp-c-gutter: rgba(0, 0, 0, 0.1);
-  --vp-c-tooltip-bg: #ffffff;
-  --vp-c-tooltip-text: #333333;
-  --vp-c-link-hover: var(--vp-c-brand-2);
-  --vp-c-divider: #e0e0e0;
+  /* 边框 */
+  --vp-c-border: #dee2e6;
+  --vp-c-divider: #e9ecef;
 }
 
 html.dark {
-  /* 暗色主题颜色 */
-  --vp-c-brand-1: #ffc107;
-  --vp-c-brand-2: #ffc107;
-  --vp-c-brand-3: #e0a800;
-  --vp-c-accent: #ffc107;
-  --vp-c-accent-soft: rgba(255, 193, 7, 0.1);
+  --vp-c-brand-1: #6fbf47;
+  --vp-c-brand-2: #57a639;
+  --vp-c-brand-3: #4a8f31;
+  --vp-c-accent: #6fbf47;
+  --vp-c-accent-soft: rgba(111, 191, 71, 0.15);
 
-  /* 文本颜色 */
-  --vp-c-text-1: rgba(255, 255, 255, 0.9);
-  --vp-c-text-2: rgba(255, 255, 255, 0.7);
-  --vp-c-text-3: rgba(255, 255, 255, 0.5);
-  --vp-c-text-4: rgba(255, 255, 255, 0.3);
+  --mc-gold: #ffd54f;
+  --mc-gold-dark: #ffc107;
 
-  /* 链接颜色 */
-  --vp-c-link: #ff4d4d;
-  --vp-c-link-soft: rgba(255, 193, 7, 0.7);
+  --vp-c-text-1: #e9ecef;
+  --vp-c-text-2: #ced4da;
+  --vp-c-text-3: #adb5bd;
 
-  /* 背景颜色 */
+  --vp-c-link: #6fbf47;
+  --vp-c-link-hover: #7dd956;
+
   --vp-c-bg: #1a1a1a;
   --vp-c-bg-soft: #242424;
-  --vp-c-bg-alt: #333333;
+  --vp-c-bg-alt: #2e2e2e;
 
-  /* 边框颜色 */
-  --vp-c-border: #333333;
-
-  /* 蒙版颜色 */
-  --vp-c-gutter: rgba(255, 255, 255, 0.1);
-  --vp-c-tooltip-bg: #333333;
-  --vp-c-tooltip-text: #ffffff;
-  --vp-c-link-hover: var(--vp-c-brand-2);
-  --vp-c-divider: #333333;
-}
-
-/* Fallback for systems not preferring dark mode, but light mode is active */
-@media (prefers-color-scheme: light) {
-  html:not(.dark) {
-    --vp-c-brand-1: #2563eb;
-    --vp-c-brand-2: #1d4ed8;
-    --vp-c-brand-3: #1e40af;
-    --vp-c-accent: #2563eb;
-    --vp-c-accent-soft: rgba(37, 99, 235, 0.1);
-
-    /* 文本颜色 */
-    --vp-c-text-1: rgba(0, 0, 0, 0.9);
-    --vp-c-text-2: rgba(0, 0, 0, 0.7);
-    --vp-c-text-3: rgba(0, 0, 0, 0.5);
-    --vp-c-text-4: rgba(0, 0, 0, 0.3);
-
-    /* 背景颜色 */
-    --vp-c-bg: #ffffff;
-    --vp-c-bg-soft: #f6f6f6;
-    --vp-c-bg-alt: #eeeeee;
-
-    /* 边框颜色 */
-    --vp-c-border: #e0e0e0;
-
-    /* 蒙版颜色 */
-    --vp-c-gutter: rgba(0, 0, 0, 0.1);
-    --vp-c-tooltip-bg: #ffffff;
-    --vp-c-tooltip-text: #333333;
-    --vp-c-link-hover: var(--vp-c-brand-2);
-    --vp-c-divider: #e0e0e0;
-  }
+  --vp-c-border: #3a3a3a;
+  --vp-c-divider: #303030;
 }

@@ -1,29 +1,67 @@
 /*
-  button.css
-  此文件包含网站按钮的样式。
-  它定义了按钮的圆角、字体样式、背景和边框颜色，以及悬停效果，确保按钮在不同状态下保持一致的视觉表现。
+  button.css - 简洁按钮设计
 */
-/* 按钮样式 - 移除动效 */
+
 .VPButton {
-  border-radius: 12px;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  border: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-/* 首页Hero区域按钮 */
-.VPHero .VPButton {
-  font-weight: 600;
-  letter-spacing: 0.5px;
+/* 绿色按钮 */
+.VPButton.brand {
+  background-color: rgba(87, 166, 57, 0.9) !important;
+  border-color: #57a639 !important;
+  color: #ffffff !important;
 }
 
-  .VPHero .VPButton.brand {
-    background: var(--vp-c-brand-1);
-  }
+.VPButton.brand:hover {
+  background-color: rgba(74, 143, 49, 0.95) !important;
+  border-color: #4a8f31 !important;
+}
 
-  .VPHero .VPButton.alt {
-    border: 1px solid var(--vp-c-divider);
-  }
+.VPButton.brand:active {
+  background-color: rgba(61, 120, 41, 1) !important;
+}
 
-  .VPHero .VPButton:hover {
-    background: var(--vp-c-brand-1);
-    border-color: var(--vp-c-brand-1);
-    color: var(--vp-c-bg);
-  }
+/* 金色按钮 */
+.VPButton.alt {
+  background-color: rgba(255, 193, 7, 0.9) !important;
+  border-color: #ffc107 !important;
+  color: #2c3e50 !important;
+}
+
+.VPButton.alt:hover {
+  background-color: rgba(255, 160, 0, 0.95) !important;
+  border-color: #ffa000 !important;
+}
+
+.VPButton.alt:active {
+  background-color: rgba(255, 143, 0, 1) !important;
+}
+
+/* 暗色模式 */
+html.dark .VPButton.brand {
+  background-color: rgba(111, 191, 71, 0.85) !important;
+  border-color: #6fbf47 !important;
+}
+
+html.dark .VPButton.brand:hover {
+  background-color: rgba(87, 166, 57, 0.9) !important;
+  border-color: #57a639 !important;
+}
+
+html.dark .VPButton.alt {
+  background-color: rgba(255, 213, 79, 0.85) !important;
+  border-color: #ffd54f !important;
+  color: #1a1a1a !important;
+}
+
+html.dark .VPButton.alt:hover {
+  background-color: rgba(255, 193, 7, 0.9) !important;
+  border-color: #ffc107 !important;
+}

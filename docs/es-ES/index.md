@@ -6,25 +6,28 @@ hero:
   text: ""
   tagline: Aquí, cada bloque tiene una historia, cada jugador es una leyenda
   image:
-    src: /logo.png
-    alt: Logo BlockTavern
+    src: /blocks/crafting_table.png
+    alt: Crafting Table Logo
   actions:
     - theme: brand
-      text: Comenzar tutorial
+      text: 🇪🇸 Comenzar tutorial
       link: /es-ES/InstallationTutorial/installation-details
 
 features:
-  - icon: 📦
+  - icon:
+      src: /icons/Crafting_Table_JE4_BE3.png
     title: Tutorial de instalación
     details: Instala BlockTavern y prepárate para tu aventura
     link: /es-ES/InstallationTutorial/installation-details
 
-  - icon: 🎮
+  - icon:
+      src: /icons/Enchanted_Book.gif
     title: Guía de juego
     details: Aprende las reglas básicas y la jugabilidad
     link: /es-ES/GameplayGuide/server-rules
 
-  - icon: ❓
+  - icon:
+      src: /icons/Lectern_JE3_BE2.png
     title: Preguntas frecuentes
     details: Resuelve tus problemas rápidamente
     link: /es-ES/FAQ/faq-details
