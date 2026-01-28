@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "totalCommits": 314,
+    "totalCommits": 316,
     "contributors": 4,
     "firstCommit": "2025-06-06 19:51:21 +0800",
-    "lastCommit": "2026-01-28 16:27:50 +0800",
-    "generatedAt": "2026-01-28T08:28:12.333Z"
+    "lastCommit": "2026-01-28 17:51:59 +0800",
+    "generatedAt": "2026-01-28T09:52:13.689Z"
   },
   "files": {
     "docs/ar-SA/FAQ/faq-details.md": {
@@ -1678,17 +1678,18 @@
       ]
     },
     "docs/zh-CN/InstallationTutorial/installation-details.md": {
-      "lastUpdated": "2025-08-12 01:05:38 +0800",
-      "totalCommits": 12,
+      "lastUpdated": "2026-01-28 17:51:59 +0800",
+      "totalCommits": 13,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 12
+          "contributions": 13
         }
       ],
       "months": [
+        "2026-01",
         "2025-08"
       ]
     },
@@ -2113,7 +2114,7 @@
       "login": "Re0XIAOPA",
       "avatar_url": "https://github.com/Re0XIAOPA.png",
       "html_url": "https://github.com/Re0XIAOPA",
-      "contributions": 1095,
+      "contributions": 1096,
       "email": "mckekejun@outlook.com"
     },
     {

@@ -228,6 +228,15 @@
       "message": "Remove DevelopmentGuide and components from non-Chinese docs"
     }
   ],
+  "docs/zh-CN/InstallationTutorial/installation-details.md": [
+    {
+      "hash": "4def54b1f399a1597e429964a0ffffb2b7a282f0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 17:51:59 +0800",
+      "message": "Update installation tutorial with new JDK link and table formatting"
+    }
+  ],
   "docs/zh-CN/index.md": [
     {
       "hash": "50a478d05d73266ab1204e04089625535888e1a2",
