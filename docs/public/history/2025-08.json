@@ -202,6 +202,50 @@
       "message": "fix: 修复语言配置&&添加英文docs"
     }
   ],
+  "docs/ar-SA/index.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    },
+    {
+      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:20:18 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    }
+  ],
   "docs/ar-SA/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
@@ -313,50 +357,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-12 01:05:38 +0800",
       "message": "fix: 修复语言配置&&添加英文docs"
-    }
-  ],
-  "docs/ar-SA/index.md": [
-    {
-      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:59:38 +0800",
-      "message": "fix: 修复英文内容翻译"
-    },
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 01:05:38 +0800",
-      "message": "fix: 修复语言配置&&添加英文docs"
-    },
-    {
-      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:20:18 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:10:02 +0800",
-      "message": "language"
     }
   ],
   "docs/de-DE/FAQ/faq-details.md": [
@@ -828,6 +828,50 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/de-DE/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:56:33 +0800",
+      "message": "fix: 修复index"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:15:53 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    }
+  ],
   "docs/de-DE/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -1102,50 +1146,6 @@
       "message": "完善内容ing................."
     }
   ],
-  "docs/de-DE/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:56:33 +0800",
-      "message": "fix: 修复index"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:15:53 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
-    }
-  ],
   "docs/en-US/FAQ/faq-details.md": [
     {
       "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
@@ -1349,6 +1349,50 @@
       "message": "fix: 修复语言配置&&添加英文docs"
     }
   ],
+  "docs/en-US/index.md": [
+    {
+      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:59:38 +0800",
+      "message": "fix: 修复英文内容翻译"
+    },
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 01:05:38 +0800",
+      "message": "fix: 修复语言配置&&添加英文docs"
+    },
+    {
+      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:20:18 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    }
+  ],
   "docs/en-US/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
@@ -1460,50 +1504,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-12 01:05:38 +0800",
       "message": "fix: 修复语言配置&&添加英文docs"
-    }
-  ],
-  "docs/en-US/index.md": [
-    {
-      "hash": "c78aae76c024de4b7d227ec074118bcb468d350b",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:59:38 +0800",
-      "message": "fix: 修复英文内容翻译"
-    },
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 01:05:38 +0800",
-      "message": "fix: 修复语言配置&&添加英文docs"
-    },
-    {
-      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:20:18 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:10:02 +0800",
-      "message": "language"
     }
   ],
   "docs/es-ES/FAQ/faq-details.md": [
@@ -1975,6 +1975,57 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/es-ES/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:21:15 +0800",
+      "message": "docs: docs"
+    },
+    {
+      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:56:33 +0800",
+      "message": "fix: 修复index"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:15:53 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    }
+  ],
   "docs/es-ES/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -2247,57 +2298,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-10 13:27:08 +0800",
       "message": "完善内容ing................."
-    }
-  ],
-  "docs/es-ES/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 16:21:15 +0800",
-      "message": "docs: docs"
-    },
-    {
-      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:56:33 +0800",
-      "message": "fix: 修复index"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:15:53 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
     }
   ],
   "docs/examples/CONVENTIONAL_COMMITS.md": [
@@ -2815,6 +2815,50 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/fr-FR/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:21:15 +0800",
+      "message": "docs: docs"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:15:53 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    }
+  ],
   "docs/fr-FR/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -3087,50 +3131,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-10 13:27:08 +0800",
       "message": "完善内容ing................."
-    }
-  ],
-  "docs/fr-FR/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 16:21:15 +0800",
-      "message": "docs: docs"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:15:53 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
     }
   ],
   "docs/index.md": [
@@ -3695,6 +3695,57 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/ja-JP/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:21:15 +0800",
+      "message": "docs: docs"
+    },
+    {
+      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:56:33 +0800",
+      "message": "fix: 修复index"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:15:53 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    }
+  ],
   "docs/ja-JP/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -3981,57 +4032,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-10 13:27:08 +0800",
       "message": "完善内容ing................."
-    }
-  ],
-  "docs/ja-JP/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 16:21:15 +0800",
-      "message": "docs: docs"
-    },
-    {
-      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:56:33 +0800",
-      "message": "fix: 修复index"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:15:53 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
     }
   ],
   "docs/ko-KR/FAQ/faq-details.md": [
@@ -4503,6 +4503,43 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/ko-KR/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:15:53 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    }
+  ],
   "docs/ko-KR/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -4768,43 +4805,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-10 13:27:08 +0800",
       "message": "完善内容ing................."
-    }
-  ],
-  "docs/ko-KR/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:15:53 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
     }
   ],
   "docs/obsolete/configuration-old.md": [
@@ -5306,6 +5306,50 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/ru-RU/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:21:15 +0800",
+      "message": "docs: docs"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:15:53 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    }
+  ],
   "docs/ru-RU/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -5566,50 +5610,6 @@
       "message": "完善内容ing................."
     }
   ],
-  "docs/ru-RU/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 16:21:15 +0800",
-      "message": "docs: docs"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:15:53 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
-    }
-  ],
   "docs/zh-CN/FAQ/faq-details.md": [
     {
       "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
@@ -5738,57 +5738,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-09 14:10:05 +0800",
       "message": "Add development and usage guides to docs"
-    }
-  ],
-  "docs/zh-CN/GameplayGuide/Command-list.md": [
-    {
-      "hash": "8e13aae6f17804f2fc6d2e890a7b64f3babe33a4",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 01:05:38 +0800",
-      "message": "fix: 修复语言配置&&添加英文docs"
-    },
-    {
-      "hash": "7963c63fcd043fad4a38d578da36eb4fdf0084c9",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:50:18 +0800",
-      "message": "fix: 修复<GitHistoryInformation />"
-    },
-    {
-      "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 19:57:50 +0800",
-      "message": "修改文件目录配置"
-    },
-    {
-      "hash": "770792039e53269f491bc3064f1f3bc10eb2b7a1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 16:36:49 +0800",
-      "message": "【修复】大小写错误"
-    },
-    {
-      "hash": "f6f16c6d128fe33bfe66ae4db4cef56b97b6922b",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 16:32:36 +0800",
-      "message": "【修复】补全错误内容"
-    },
-    {
-      "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 15:59:16 +0800",
-      "message": "【新增】教程"
-    },
-    {
-      "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 09:33:43 +0800",
-      "message": "docs"
     }
   ],
   "docs/zh-CN/GameplayGuide/dummy-command.md": [
@@ -5937,6 +5886,85 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-11 15:59:16 +0800",
       "message": "【新增】教程"
+    }
+  ],
+  "docs/zh-CN/index.md": [
+    {
+      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:21:15 +0800",
+      "message": "docs: docs"
+    },
+    {
+      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:56:33 +0800",
+      "message": "fix: 修复index"
+    },
+    {
+      "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 19:57:50 +0800",
+      "message": "修改文件目录配置"
+    },
+    {
+      "hash": "dbe47b8840ba35356e60ea5ed3f35d858c438257",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 17:20:00 +0800",
+      "message": "移除提示"
+    },
+    {
+      "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 15:59:16 +0800",
+      "message": "【新增】教程"
+    },
+    {
+      "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 09:33:43 +0800",
+      "message": "docs"
+    },
+    {
+      "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 19:28:13 +0800",
+      "message": "fix: 修改一点点"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    },
+    {
+      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:10:02 +0800",
+      "message": "language"
+    },
+    {
+      "hash": "cc77f42427ec60ac1e8dfd02f88bb1cb5ed7dff1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 15:56:31 +0800",
+      "message": "fix: 修复路径"
+    },
+    {
+      "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 14:10:05 +0800",
+      "message": "Add development and usage guides to docs"
     }
   ],
   "docs/zh-CN/InstallationTutorial/hmcl-installation.md": [
@@ -6141,85 +6169,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-10 13:27:08 +0800",
       "message": "完善内容ing................."
-    }
-  ],
-  "docs/zh-CN/index.md": [
-    {
-      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 16:21:15 +0800",
-      "message": "docs: docs"
-    },
-    {
-      "hash": "f9edc429c4e4bfa796b07a9286eb50b67e1840b6",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:56:33 +0800",
-      "message": "fix: 修复index"
-    },
-    {
-      "hash": "cfffa9834614f1989c831d3b93ddc15f98387cee",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 19:57:50 +0800",
-      "message": "修改文件目录配置"
-    },
-    {
-      "hash": "dbe47b8840ba35356e60ea5ed3f35d858c438257",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 17:20:00 +0800",
-      "message": "移除提示"
-    },
-    {
-      "hash": "dc88b60183b1a834024a752e6614982bb35494fa",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 15:59:16 +0800",
-      "message": "【新增】教程"
-    },
-    {
-      "hash": "bdedcf474453df368ba58860cf5f2bbf1c546a71",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 09:33:43 +0800",
-      "message": "docs"
-    },
-    {
-      "hash": "5edf5f2cc2db81faa26827145c093951cc471223",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 19:28:13 +0800",
-      "message": "fix: 修改一点点"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
-    },
-    {
-      "hash": "e52bcdaab17e1864cee980e2d2d378699a8f33eb",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:10:02 +0800",
-      "message": "language"
-    },
-    {
-      "hash": "cc77f42427ec60ac1e8dfd02f88bb1cb5ed7dff1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 15:56:31 +0800",
-      "message": "fix: 修复路径"
-    },
-    {
-      "hash": "efe12625d5109ada6b7a6dc1b31c8942aa9f57f1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 14:10:05 +0800",
-      "message": "Add development and usage guides to docs"
     }
   ],
   "docs/zh-HK/FAQ/faq-details.md": [
@@ -6649,6 +6598,50 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/zh-HK/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:21:15 +0800",
+      "message": "docs: docs"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:20:18 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:15:53 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:03:14 +0800",
+      "message": "fix: 修复"
+    }
+  ],
   "docs/zh-HK/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -6907,50 +6900,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-10 13:27:08 +0800",
       "message": "完善内容ing................."
-    }
-  ],
-  "docs/zh-HK/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 16:21:15 +0800",
-      "message": "docs: docs"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:20:18 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "06efe2ec07536bb3dfb9f5be88758fd456a071e3",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:15:53 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "10b5125835ae88f639ce001d03a5540e08c350ba",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:03:14 +0800",
-      "message": "fix: 修复"
     }
   ],
   "docs/zh-TW/FAQ/faq-details.md": [
@@ -7352,6 +7301,43 @@
       "message": "【新增】教程"
     }
   ],
+  "docs/zh-TW/index.md": [
+    {
+      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 19:32:57 +0800",
+      "message": "fix: 修复所有翻译&关闭八个语言"
+    },
+    {
+      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 16:21:15 +0800",
+      "message": "docs: docs"
+    },
+    {
+      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-12 15:44:02 +0800",
+      "message": "docs: 添加支持八种语言的文档（机翻）"
+    },
+    {
+      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-11 22:20:18 +0800",
+      "message": "fix: 修复"
+    },
+    {
+      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2025-08-09 16:57:25 +0800",
+      "message": "fix: 语言配置"
+    }
+  ],
   "docs/zh-TW/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
@@ -7610,43 +7596,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2025-08-10 13:27:08 +0800",
       "message": "完善内容ing................."
-    }
-  ],
-  "docs/zh-TW/index.md": [
-    {
-      "hash": "fd41cee70d1949380f19a3ef56c533099b99a416",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 19:32:57 +0800",
-      "message": "fix: 修复所有翻译&关闭八个语言"
-    },
-    {
-      "hash": "53cfc17ba0a0b3dfd9da13fcaaedb9bbd3cd0d16",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 16:21:15 +0800",
-      "message": "docs: docs"
-    },
-    {
-      "hash": "a7c990f6b8450688ef2b73f093072e355a2746da",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-12 15:44:02 +0800",
-      "message": "docs: 添加支持八种语言的文档（机翻）"
-    },
-    {
-      "hash": "00b111e43d21c7f6cfc60649efa2732752056fde",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-11 22:20:18 +0800",
-      "message": "fix: 修复"
-    },
-    {
-      "hash": "b465767c03d34ec8fd67d1dc8df598376c65b44e",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2025-08-09 16:57:25 +0800",
-      "message": "fix: 语言配置"
     }
   ]
 }
