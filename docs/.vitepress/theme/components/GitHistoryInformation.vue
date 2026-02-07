@@ -86,6 +86,10 @@ const i18nTexts = {
     loading: '加载中...',
     noHistory: '暂无日志',
     timeFormat: {
+      justNow: '刚刚',
+      secondsAgo: '{n} 秒前',
+      minutesAgo: '{n} 分钟前',
+      hoursAgo: '{n} 小时前',
       dayAgo: '{n} 天前',
       daysAgo: '{n} 天前',
       weekAgo: '{n} 周前',
@@ -94,6 +98,10 @@ const i18nTexts = {
       monthsAgo: '{n} 个月前',
       yearAgo: '超过 {n} 年前',
       yearsAgo: '超过 {n} 年前',
+      onJustNow: '刚刚',
+      onSecondsAgo: '于 {n} 秒前',
+      onMinutesAgo: '于 {n} 分钟前',
+      onHoursAgo: '于 {n} 小时前',
       onDayAgo: '于 {n} 天前',
       onDaysAgo: '于 {n} 天前',
       onWeekAgo: '于 {n} 周前',
@@ -117,6 +125,10 @@ const i18nTexts = {
     loading: '載入中...',
     noHistory: '暫無日誌',
     timeFormat: {
+      justNow: '剛剛',
+      secondsAgo: '{n} 秒前',
+      minutesAgo: '{n} 分鐘前',
+      hoursAgo: '{n} 小時前',
       dayAgo: '{n} 天前',
       daysAgo: '{n} 天前',
       weekAgo: '{n} 週前',
@@ -125,6 +137,10 @@ const i18nTexts = {
       monthsAgo: '{n} 個月前',
       yearAgo: '超過 {n} 年前',
       yearsAgo: '超過 {n} 年前',
+      onJustNow: '剛剛',
+      onSecondsAgo: '於 {n} 秒前',
+      onMinutesAgo: '於 {n} 分鐘前',
+      onHoursAgo: '於 {n} 小時前',
       onDayAgo: '於 {n} 天前',
       onDaysAgo: '於 {n} 天前',
       onWeekAgo: '於 {n} 週前',
@@ -148,6 +164,10 @@ const i18nTexts = {
     loading: '載入中...',
     noHistory: '暫無日誌',
     timeFormat: {
+      justNow: '剛剛',
+      secondsAgo: '{n} 秒前',
+      minutesAgo: '{n} 分鐘前',
+      hoursAgo: '{n} 小時前',
       dayAgo: '{n} 日前',
       daysAgo: '{n} 日前',
       weekAgo: '{n} 星期前',
@@ -156,6 +176,10 @@ const i18nTexts = {
       monthsAgo: '{n} 個月前',
       yearAgo: '超過 {n} 年前',
       yearsAgo: '超過 {n} 年前',
+      onJustNow: '剛剛',
+      onSecondsAgo: '於 {n} 秒前',
+      onMinutesAgo: '於 {n} 分鐘前',
+      onHoursAgo: '於 {n} 小時前',
       onDayAgo: '於 {n} 日前',
       onDaysAgo: '於 {n} 日前',
       onWeekAgo: '於 {n} 星期前',
@@ -179,6 +203,10 @@ const i18nTexts = {
     loading: 'Loading...',
     noHistory: 'No history available',
     timeFormat: {
+      justNow: 'just now',
+      secondsAgo: '{n} seconds ago',
+      minutesAgo: '{n} minutes ago',
+      hoursAgo: '{n} hours ago',
       dayAgo: '{n} day ago',
       daysAgo: '{n} days ago',
       weekAgo: '{n} week ago',
@@ -187,6 +215,10 @@ const i18nTexts = {
       monthsAgo: '{n} months ago',
       yearAgo: 'over {n} year ago',
       yearsAgo: 'over {n} years ago',
+      onJustNow: 'just now',
+      onSecondsAgo: 'on {n} seconds ago',
+      onMinutesAgo: 'on {n} minutes ago',
+      onHoursAgo: 'on {n} hours ago',
       onDayAgo: 'on {n} day ago',
       onDaysAgo: 'on {n} days ago',
       onWeekAgo: 'on {n} week ago',
@@ -514,11 +546,21 @@ const formatCommitTime = (dateString) => {
 
   const now = new Date()
   const diffTime = Math.abs(now - date)
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+  const diffSeconds = Math.floor(diffTime / 1000)
+  const diffMinutes = Math.floor(diffTime / (1000 * 60))
+  const diffHours = Math.floor(diffTime / (1000 * 60 * 60))
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
 
-  if (diffDays === 1) {
-    return texts.value.timeFormat.onDayAgo.replace('{n}', '1')
+  if (diffSeconds < 60) {
+    return texts.value.timeFormat.onJustNow || '刚刚'
+  } else if (diffMinutes < 60) {
+    return texts.value.timeFormat.onMinutesAgo ? texts.value.timeFormat.onMinutesAgo.replace('{n}', diffMinutes) : `${diffMinutes}分钟前`
+  } else if (diffHours < 24) {
+    return texts.value.timeFormat.onHoursAgo ? texts.value.timeFormat.onHoursAgo.replace('{n}', diffHours) : `${diffHours}小时前`
   } else if (diffDays < 7) {
+    if (diffDays <= 1) {
+      return texts.value.timeFormat.onDayAgo.replace('{n}', '1')
+    }
     return texts.value.timeFormat.onDaysAgo.replace('{n}', diffDays)
   } else if (diffDays < 30) {
     const weeks = Math.floor(diffDays / 7)
@@ -542,11 +584,21 @@ const formatRelativeTime = (dateString) => {
 
   const now = new Date()
   const diffTime = Math.abs(now - date)
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+  const diffSeconds = Math.floor(diffTime / 1000)
+  const diffMinutes = Math.floor(diffTime / (1000 * 60))
+  const diffHours = Math.floor(diffTime / (1000 * 60 * 60))
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
 
-  if (diffDays === 1) {
-    return texts.value.timeFormat.dayAgo.replace('{n}', '1')
+  if (diffSeconds < 60) {
+    return texts.value.timeFormat.justNow || '刚刚'
+  } else if (diffMinutes < 60) {
+    return texts.value.timeFormat.minutesAgo ? texts.value.timeFormat.minutesAgo.replace('{n}', diffMinutes) : `${diffMinutes}分钟前`
+  } else if (diffHours < 24) {
+    return texts.value.timeFormat.hoursAgo ? texts.value.timeFormat.hoursAgo.replace('{n}', diffHours) : `${diffHours}小时前`
   } else if (diffDays < 7) {
+    if (diffDays <= 1) {
+      return texts.value.timeFormat.dayAgo.replace('{n}', '1')
+    }
     return texts.value.timeFormat.daysAgo.replace('{n}', diffDays)
   } else if (diffDays < 30) {
     const weeks = Math.floor(diffDays / 7)
