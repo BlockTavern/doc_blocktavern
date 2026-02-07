@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "totalCommits": 324,
+    "totalCommits": 326,
     "contributors": 4,
-    "firstCommit": "2026-02-07 21:12:34 +0800",
-    "lastCommit": "2026-02-07 21:12:34 +0800",
-    "generatedAt": "2026-02-07T13:12:47.945Z"
+    "firstCommit": "2026-02-07 21:31:33 +0800",
+    "lastCommit": "2026-02-07 21:31:33 +0800",
+    "generatedAt": "2026-02-07T13:33:00.253Z"
   },
   "files": {
     "docs/ar-SA/FAQ/faq-details.md": {
@@ -1573,15 +1573,15 @@
         "2025-08"
       ]
     },
-    "docs/zh-CN/GameplayGuide/Command-list.md": {
-      "lastUpdated": "2026-02-07 17:21:51 +0800",
-      "totalCommits": 8,
+    "docs/zh-CN/GameplayGuide/command-list.md": {
+      "lastUpdated": "2026-02-07 21:31:33 +0800",
+      "totalCommits": 9,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 8
+          "contributions": 9
         }
       ],
       "months": [
@@ -2119,7 +2119,7 @@
       "login": "Re0XIAOPA",
       "avatar_url": "https://github.com/Re0XIAOPA.png",
       "html_url": "https://github.com/Re0XIAOPA",
-      "contributions": 1100,
+      "contributions": 1101,
       "email": "mckekejun@outlook.com"
     },
     {
