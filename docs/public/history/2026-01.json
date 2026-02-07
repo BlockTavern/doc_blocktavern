@@ -62,29 +62,6 @@
       "message": "Add Arabic (ar-SA) language support and docs"
     }
   ],
-  "docs/ar-SA/index.md": [
-    {
-      "hash": "50a478d05d73266ab1204e04089625535888e1a2",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 16:27:50 +0800",
-      "message": "Revamp homepage theme with Minecraft-inspired styles"
-    },
-    {
-      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 11:11:24 +0800",
-      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
-    },
-    {
-      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 01:13:28 +0800",
-      "message": "Add Arabic (ar-SA) language support and docs"
-    }
-  ],
   "docs/ar-SA/InstallationTutorial/hmcl-installation.md": [
     {
       "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
@@ -113,6 +90,29 @@
     }
   ],
   "docs/ar-SA/InstallationTutorial/pcl2-installation.md": [
+    {
+      "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 01:13:28 +0800",
+      "message": "Add Arabic (ar-SA) language support and docs"
+    }
+  ],
+  "docs/ar-SA/index.md": [
+    {
+      "hash": "50a478d05d73266ab1204e04089625535888e1a2",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 16:27:50 +0800",
+      "message": "Revamp homepage theme with Minecraft-inspired styles"
+    },
+    {
+      "hash": "5ba611e45c3399298fdc4cbca20640e2870b3da0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 11:11:24 +0800",
+      "message": "Remove DevelopmentGuide and components from non-Chinese docs"
+    },
     {
       "hash": "116641a7f06c6579e5b27df842ed4465eee8a8d1",
       "authorName": "Re0XIAOPA",
@@ -228,6 +228,15 @@
       "message": "Remove DevelopmentGuide and components from non-Chinese docs"
     }
   ],
+  "docs/zh-CN/InstallationTutorial/installation-details.md": [
+    {
+      "hash": "4def54b1f399a1597e429964a0ffffb2b7a282f0",
+      "authorName": "Re0XIAOPA",
+      "authorEmail": "mckekejun@outlook.com",
+      "date": "2026-01-28 17:51:59 +0800",
+      "message": "Update installation tutorial with new JDK link and table formatting"
+    }
+  ],
   "docs/zh-CN/index.md": [
     {
       "hash": "50a478d05d73266ab1204e04089625535888e1a2",
@@ -242,15 +251,6 @@
       "authorEmail": "mckekejun@outlook.com",
       "date": "2026-01-28 11:11:24 +0800",
       "message": "Remove DevelopmentGuide and components from non-Chinese docs"
-    }
-  ],
-  "docs/zh-CN/InstallationTutorial/installation-details.md": [
-    {
-      "hash": "4def54b1f399a1597e429964a0ffffb2b7a282f0",
-      "authorName": "Re0XIAOPA",
-      "authorEmail": "mckekejun@outlook.com",
-      "date": "2026-01-28 17:51:59 +0800",
-      "message": "Update installation tutorial with new JDK link and table formatting"
     }
   ],
   "docs/zh-HK/index.md": [
