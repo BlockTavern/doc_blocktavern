@@ -36,6 +36,12 @@ order: 1
 
 ![err](/assets/FAQ/faq-details/faq-details01.png)
 
+## 退出游戏崩溃
+由于Minecraft 1.21版本的注册表问题，部分玩家在退出游戏时可能会遇到客户端崩溃的情况。目前暂时无法完全修复。
+
+**解决方案：**
+推荐直接关闭游戏窗口，或者使用 `Alt + F4` 快捷键强制退出游戏，以避免触发崩溃报告。
+
 
 <Contributors />
 
