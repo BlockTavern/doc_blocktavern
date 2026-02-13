@@ -16,6 +16,16 @@ hero:
       text: 访问官网
       link: https://blocktavern.cn
 
+  Notice:
+    title: '访问速度太慢？'
+    desc: |
+      如果您访问当前站点速度较慢，请尝试访问我们的加速站点：
+      <span class="promo-text">docs-cn.blocktavern.cn</span>
+    date: '2026年2月13日'
+    dateIcon: '⚡'
+    dateText: '发布时间'
+    link: 'https://docs-cn.blocktavern.cn'
+
 features:
   - icon:
       src: /icons/Crafting_Table_JE4_BE3.png
