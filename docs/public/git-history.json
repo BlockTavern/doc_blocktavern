@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "totalCommits": 326,
+    "totalCommits": 328,
     "contributors": 4,
-    "firstCommit": "2026-02-07 21:31:33 +0800",
-    "lastCommit": "2026-02-07 21:31:33 +0800",
-    "generatedAt": "2026-02-07T13:33:00.253Z"
+    "firstCommit": "2026-02-14 00:08:03 +0800",
+    "lastCommit": "2026-02-14 00:08:03 +0800",
+    "generatedAt": "2026-02-13T16:08:28.219Z"
   },
   "files": {
     "docs/ar-SA/FAQ/faq-details.md": {
@@ -1713,14 +1713,14 @@
       ]
     },
     "docs/zh-CN/index.md": {
-      "lastUpdated": "2026-01-28 16:27:50 +0800",
-      "totalCommits": 19,
+      "lastUpdated": "2026-02-14 00:08:03 +0800",
+      "totalCommits": 20,
       "contributors": [
         {
           "name": "Re0XIAOPA",
           "email": "mckekejun@outlook.com",
           "avatar": "https://github.com/Re0XIAOPA.png",
-          "contributions": 13
+          "contributions": 14
         },
         {
           "name": "MajorFoxs_OvO",
@@ -1736,6 +1736,7 @@
         }
       ],
       "months": [
+        "2026-02",
         "2026-01",
         "2025-10",
         "2025-08",
@@ -2119,7 +2120,7 @@
       "login": "Re0XIAOPA",
       "avatar_url": "https://github.com/Re0XIAOPA.png",
       "html_url": "https://github.com/Re0XIAOPA",
-      "contributions": 1101,
+      "contributions": 1102,
       "email": "mckekejun@outlook.com"
     },
     {
