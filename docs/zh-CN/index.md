@@ -17,13 +17,13 @@ hero:
       link: https://blocktavern.cn
 
   Notice:
-    title: '访问速度太慢？'
+    title: '镜像站提示'
     desc: |
-      如果您访问当前站点速度较慢，请尝试访问我们的加速站点：
+      当前站点为 BlockTavern 文档的镜像站，提供稳定的访问体验。
       <span class="promo-text">docs-cn.blocktavern.cn</span>
     date: '2026年2月13日'
-    dateIcon: '⚡'
-    dateText: '发布时间'
+    dateIcon: '🔄'
+    dateText: '更新时间'
     link: 'https://docs-cn.blocktavern.cn'
 
 features:

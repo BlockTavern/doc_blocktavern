@@ -7,7 +7,7 @@ const isHome = computed(() => frontmatter.value.layout === 'home')
 
 const isVisible = ref(false)
 
-// 公告配置
+// 公告配置 - 已禁用
 const announcement = {
   title: '访问加速提示',
   content: '如果您访问当前站点速度较慢，<br/>请尝试访问我们的加速站点：<br/><br/><a href="https://docs-cn.blocktavern.cn" target="_blank" style="color: var(--vp-c-brand); font-weight: bold; text-decoration: underline;">docs-cn.blocktavern.cn</a>',
@@ -22,14 +22,8 @@ const close = () => {
 }
 
 onMounted(() => {
-  // 检查是否已经关闭过
-  const isClosed = sessionStorage.getItem('blocktavern-announcement-closed-session')
-  if (!isClosed) {
-    // 延迟一点显示，体验更好
-    setTimeout(() => {
-      isVisible.value = true
-    }, 500)
-  }
+  // 禁用弹窗显示
+  isVisible.value = false
 })
 </script>
 

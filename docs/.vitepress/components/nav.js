@@ -13,16 +13,16 @@ export const navConfig = [
     text: '首页', 
     link: '/zh-CN/' 
   },
-   { 
+  { 
     text: '安装教程', 
-    link: '/InstallationTutorial/' 
+    link: '/zh-CN/InstallationTutorial/installation-details' 
   },
   { 
-    text: '游玩指南', 
-    link: '/GameplayGuide/' 
+    text: '游戏指南', 
+    link: '/zh-CN/GameplayGuide/command-list' 
   },
   { 
     text: '常见问题', 
-    link: '/FAQ/' 
+    link: '/zh-CN/FAQ/faq-details' 
   }
 ]

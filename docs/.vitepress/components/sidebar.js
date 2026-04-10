@@ -23,20 +23,9 @@ const defaultConfig = {
   manualSortFileNameByPriority: ["index.md"],
 };
 
-// 联合国六大官方语言配置
+// 只保留中文语言配置
 const languages = [
   { code: 'zh-CN', groupText: '文档导航' },      // 汉语 (Chinese)
-  { code: 'en-US', groupText: 'Documentation' }, // 英语 (English)
-  { code: 'es-ES', groupText: 'Documentación' }, // 西班牙语 (Spanish)
-  { code: 'ar-SA', groupText: 'التوثيق' },       // 阿拉伯语 (Arabic)
-  { code: 'ru-RU', groupText: 'Документация' },  // 俄语 (Russian)
-  { code: 'fr-FR', groupText: 'Documentation' }, // 法语 (French)
-  // 其他语言（可选）
-  // { code: 'zh-TW', groupText: '文檔導航' },
-  // { code: 'zh-HK', groupText: '文檔導航' },
-  // { code: 'ja-JP', groupText: 'ドキュメント' },
-  // { code: 'ko-KR', groupText: '문서 탐색' },
-  // { code: 'de-DE', groupText: 'Dokumentation' },
 ];
 
 /**
