@@ -1,0 +1,113 @@
+site_name: BlockTavern Docs
+site_url: https://docs.blocktavern.cn
+site_description: BlockTavern 游戏文档 - 在这里，每一个方块都有故事，每一个玩家都是传奇
+site_author: Re0XIAOPA
+
+repo_name: BlockTavern/doc_blocktavern
+repo_url: https://github.com/BlockTavern/doc_blocktavern
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+
+nav:
+  - 首页: index.md
+  - 安装教程:
+    - 安装前准备: InstallationTutorial/installation-details.md
+    - PCL2安装教程: InstallationTutorial/pcl2-installation.md
+    - HMCL安装教程: InstallationTutorial/hmcl-installation.md
+  - 游玩指南:
+    - 服务器规则: GameplayGuide/server-rules.md
+    - 指令列表: GameplayGuide/command-list.md
+    - 圈地指令: GameplayGuide/enclosure-order.md
+    - 假人指令: GameplayGuide/dummy-command.md
+  - 常见问题:
+    - FAQ: FAQ/faq-details.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - tags
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/BlockTavern/doc_blocktavern
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/3690972705720633
+  generator: false
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+copyright: Copyright &copy; 2024 - 2026 BlockTavern

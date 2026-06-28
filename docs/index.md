@@ -1,154 +1,50 @@
 ---
-layout: home
-
-hero:
-  name: "BlockTavern"
-  text: ""
-  tagline: 请选择语言 | Select Language
-  image:
-    src: /logo.png
-    alt: BlockTavern Logo
-  # actions:
-  #   - theme: alt
-  #     text: 简体中文
-  #     link: /zh-CN/
-  #   - theme: alt
-  #     text: English
-  #     link: /en-US/
-
-features:
-  - icon:
-      src: /flags/cn.svg
-    title: 简体中文
-    details: 中文用户请点击
-    link: /zh-CN/
-
-  - icon:
-      src: /flags/us.svg
-    title: English
-    details: Click here for English
-    link: /en-US/
-
-  - icon:
-      src: /flags/es.svg
-    title: Español
-    details: Haga clic aquí para español
-    link: /es-ES/
-
-  - icon:
-      src: /flags/sa.svg
-    title: العربية
-    details: انقر هنا للغة العربية
-    link: /ar-SA/
-
-  - icon:
-      src: /flags/ru.svg
-    title: Русский
-    details: Нажмите здесь для русского языка
-    link: /ru-RU/
-
-  - icon:
-      src: /flags/fr.svg
-    title: Français
-    details: Cliquez ici pour le français
-    link: /fr-FR/
+title: BlockTavern
+description: 在这里，每一个方块都有故事，每一个玩家都是传奇
 ---
 
-<script setup>
-import { onMounted, onUnmounted } from 'vue'
+# BlockTavern 文档
 
-onMounted(() => {
-  document.documentElement.classList.add('landing-page')
-})
+欢迎来到 BlockTavern 官方文档！
 
-onUnmounted(() => {
-  document.documentElement.classList.remove('landing-page')
-})
-</script>
+在这里，每一个方块都有故事，每一个玩家都是传奇。
 
-<style>
-.VPHero .text {
-  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+---
 
-.VPFeature {
-  transition: transform 0.2s ease;
-}
+## 快速开始
 
-.VPFeature:hover {
-  transform: translateY(-2px);
-}
+如果你是新玩家，建议按照以下步骤开始：
 
-.flag-icon {
-  width: 24px;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 8px;
-  display: inline-block;
-  border-radius: 2px;
-}
+1. [安装前准备](InstallationTutorial/installation-details.md) - 安装 Java 和游戏启动器
+2. [PCL2 安装教程](InstallationTutorial/pcl2-installation.md) - 使用 PCL2 启动器安装游戏
+3. [服务器规则](GameplayGuide/server-rules.md) - 了解服务器规则
 
-/* Custom Flag Button Styles */
-.VPButton[href^="/zh-CN/"],
-.VPButton[href^="/zh-CN/"]:hover {
-  background-image: url('/flags/cn.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: 12px center !important;
-  background-size: 24px auto !important;
-  padding-left: 44px !important;
-}
+---
 
-.VPButton[href^="/en-US/"],
-.VPButton[href^="/en-US/"]:hover {
-  background-image: url('/flags/us.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: 12px center !important;
-  background-size: 24px auto !important;
-  padding-left: 44px !important;
-}
+## 文档分类
 
-.VPButton[href^="/es-ES/"],
-.VPButton[href^="/es-ES/"]:hover {
-  background-image: url('/flags/es.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: 12px center !important;
-  background-size: 24px auto !important;
-  padding-left: 44px !important;
-}
+### 安装教程
 
-.VPButton[href^="/ar-SA/"],
-.VPButton[href^="/ar-SA/"]:hover {
-  background-image: url('/flags/sa.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: 12px center !important;
-  background-size: 24px auto !important;
-  padding-left: 44px !important;
-}
+- [安装前准备](InstallationTutorial/installation-details.md) - Java 安装、启动器选择
+- [PCL2 安装教程](InstallationTutorial/pcl2-installation.md) - PCL2 启动器安装指南
+- [HMCL 安装教程](InstallationTutorial/hmcl-installation.md) - HMCL 启动器安装指南
 
-.VPButton[href^="/ru-RU/"],
-.VPButton[href^="/ru-RU/"]:hover {
-  background-image: url('/flags/ru.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: 12px center !important;
-  background-size: 24px auto !important;
-  padding-left: 44px !important;
-}
+### 游玩指南
 
-.VPButton[href^="/fr-FR/"],
-.VPButton[href^="/fr-FR/"]:hover {
-  background-image: url('/flags/fr.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: 12px center !important;
-  background-size: 24px auto !important;
-  padding-left: 44px !important;
-}
+- [服务器规则](GameplayGuide/server-rules.md) - 服务器基本规则
+- [指令列表](GameplayGuide/command-list.md) - 常用指令一览
+- [圈地指令](GameplayGuide/enclosure-order.md) - 领地系统使用指南
+- [假人指令](GameplayGuide/dummy-command.md) - 假人系统使用指南
 
-/* Hide navbar content ONLY for landing page */
-.landing-page .VPNavBarSearch,
-.landing-page .VPNavBarMenu {
-  display: none !important;
-}
-</style>
+### 常见问题
+
+- [FAQ](FAQ/faq-details.md) - 常见问题解答
+
+---
+
+## 相关链接
+
+- [GitHub](https://github.com/BlockTavern/doc_blocktavern) - 开源仓库
+- [哔哩哔哩](https://space.bilibili.com/3690972705720633) - 官方账号
+- [官网](https://blocktavern.cn) - 官方网站
+- [下载中心](https://www.blocktavern.cn/download) - 游戏下载

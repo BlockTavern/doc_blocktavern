@@ -1,25 +1,25 @@
-# Node.js 依赖
-node_modules/
-.nuxt/
-dist/
-build
-.trae
-.log
-.vercel
+# MkDocs build output
+site/
 
-# VitePress 生成的静态文件目录
-.out/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
 
-# 编辑器和 IDE 的临时文件
-.DS_Store
-*.sublime-workspace
-*.sublime-project
-*.code-workspace
-.vscode/
+# IDE
 .idea/
+.vscode/
+*.swp
+*.swo
 
-# 日志文件
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
 *.log
-
-# VitePress 配置文件的备份
-.config.js.bak
