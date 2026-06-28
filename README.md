@@ -16,23 +16,20 @@ python -m mkdocs serve
 
 ### 自动部署
 
-推送到 `main` 分支会自动构建并部署到 GitHub Pages。
+推送到 `main` 分支会自动部署到 GitHub Pages。
 
 ### 版本发布
 
-创建版本标签会自动发布 Release：
+在 GitHub Actions 页面手动触发：
 
-```bash
-# 创建标签
-git tag v1.0.0
-
-# 推送标签
-git push origin v1.0.0
-```
+1. 进入 **Actions** → **Release**
+2. 点击 **Run workflow**
+3. 输入版本号（如 `1.0.0`）
+4. 点击 **Run workflow**
 
 自动完成：
-- 构建文档
-- 生成 Release（自动从提交记录生成版本说明）
+- 创建标签
+- 生成 Release
 - 部署到 GitHub Pages
 
 ## 许可证
