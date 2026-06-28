@@ -20,16 +20,19 @@ python -m mkdocs serve
 
 ### 版本发布
 
-只有手动创建 Release 时才会触发版本发布：
+创建版本标签会自动发布 Release：
 
-1. 在 GitHub 仓库页面点击 "Releases"
-2. 点击 "Create a new release"
-3. 创建新标签（如 `v1.0.0`）
-4. 使用模板填写版本说明（参考 `.github/RELEASE_TEMPLATE.md`）
-5. 发布
+```bash
+# 创建标签
+git tag v1.0.0
 
-发布后会自动：
+# 推送标签
+git push origin v1.0.0
+```
+
+自动完成：
 - 构建文档
+- 生成 Release（自动从提交记录生成版本说明）
 - 部署到 GitHub Pages
 
 ## 许可证
