@@ -4,13 +4,35 @@
 
 ## 快速开始
 
+### 前置条件
+
+- Python >= 3.8
+- Git
+
+### 开发预览
+
 ```bash
+# 克隆仓库
+git clone https://github.com/BlockTavern/doc_blocktavern.git
+cd doc_blocktavern
+
 # 安装依赖
 pip install -r requirements.txt
 
 # 启动开发服务器
 python -m mkdocs serve
 ```
+
+浏览器访问 `http://localhost:8000` 即可预览文档。
+
+### 生产构建
+
+```bash
+# 构建站点
+python -m mkdocs build
+```
+
+构建产物将输出到 `site/` 目录，可部署到任意静态站点托管服务。
 
 ## 部署
 

@@ -66,12 +66,18 @@ tags:
 
 **解决方案：**
 
-!!! success "推荐做法"
+!!! warning "旧的解决方案已废弃"
     - 直接关闭游戏窗口
     - 或者使用 ++alt+f4++ 快捷键强制退出游戏
     - 避免触发崩溃报告
 
 ---
+
+!!! success "推荐做法"
+    - 可以前往下载修复模组，修复后即可正常退出游戏。
+    - 修复模组地址：[修复模组下载](https://www.blocktavern.cn/download)
+    - 模组仓库：[模组仓库](https://github.com/BlockTavern/pcl-exit-crash-fix)
+
 
 ## 还有问题？
 
